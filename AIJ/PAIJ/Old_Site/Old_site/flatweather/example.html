@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather Plugin Example</title>
+
+		<head>
+		<!-- include flatWeatherPlugin.css -->
+		<link href="css/flatWeatherPlugin.css" rel="stylesheet">
+		<!-- include a copy of jquery (if you haven't already) -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<!-- include flatWeatherPlugin.js -->
+		<script src="js/jquery.flatWeatherPlugin.min.js"></script>  
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			//Setup the plugin, see readme for more examples
+			var example = $("#example").flatWeatherPlugin({
+
+	            //Required options Yahoo and Openweather
+	            location: "Mexicali", //city and region *required 
+	            country: "Mexico",         //country *required 
+
+	            //Required options for wunderground
+	            //zmw : "02108.1.99999", //zmw location code *required for wunderground
+	            //use tool in readme for finding zmw location code
+
+	            //Full options:
+	            api: "yahoo", //default: yahoo (openweathermap, yahoo or wunderground)
+	            apikey: "0b076ee587917e123b0065cf3e8c508c",   //api key required for openweather
+	            //apikey: "apikey_number",   //api key required for wunderground
+
+	            //visit openweathermap.org or wunderground.com/weather/api and sign up for a free account to get an api key
+	                
+	            view : "partial", //default: full (partial, full, simple, today or forecast)
+	            lang: "es", //default: en only openweathermap supports translation (see below for supported languages)
+	            timeformat: "24", //"24" or "12" default: "12"
+	            displayCityNameOnly : false, //default: false (true/false) if you want to display only city name
+	            forecast:5, //default: 5 (0 -5) how many days you want forecast
+	            render: true, //default: true (true/false) if you want plugin to generate markup
+	            loadingAnimation: true, //default: true (true/false) if you want plugin to show loading animation
+	            units : "metric", //"metric" or "imperial" to overide units default: "auto" 
+	     
+	            lang: "ES",
+	            strings : {
+	            	days: ['DOM','LUN','MAR','MIE','JUE','VIE','SAB'],
+	            	min : "Min",
+	            	max : "Max",
+	            	direction :  ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW", "NNW"]
+	             },
+
+			});
+
+		});
+		</script>
+
+		<style>
+			
+			/* style the container however you please */
+			#example {
+				color:#333; 
+				background: #ffffff6e;
+				padding: 10px;
+				margin: 30px auto;
+				width: 340px;
+				border-radius: 1px;
+
+			}
+
+			/* styling for this page only, ignore */
+			body {font-family: sans-serif; background: fff; padding: 0; margin: 0;}
+			p {color: #888; width: 340px; margin: 0 auto; text-align: center;}
+
+		</style>
+
+
+	</head>
+	<body>
+
+		<div id="example"></div>
+
+	
+	</body>
+</html>

@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/* Custom Foms */
+/**** variable passengers ****/
+/** Created by ElisaTeran on 23/11/17. **/
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url("fonts/MontserratRegular.eot");
+  src: url("fonts/MontserratRegular.eot") format("embedded-opentype"), url("fonts/MontserratRegular.woff2") format("woff2"), url("fonts/MontserratRegular.woff") format("woff"), url("fonts/MontserratRegular.ttf") format("truetype"), url("fonts/MontserratRegular.svg#MontserratRegular") format("svg"); }
+@font-face {
+  font-family: 'MontserratLight';
+  src: url("fonts/MontserratLight.eot");
+  src: url("fonts/MontserratLight.eot") format("embedded-opentype"), url("fonts/MontserratLight.woff2") format("woff2"), url("fonts/MontserratLight.woff") format("woff"), url("fonts/MontserratLight.ttf") format("truetype"), url("fonts/MontserratLight.svg#MontserratLight") format("svg"); }
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url("fonts/MontserratSemiBold.eot");
+  src: url("fonts/MontserratSemiBold.eot") format("embedded-opentype"), url("fonts/MontserratSemiBold.woff2") format("woff2"), url("fonts/MontserratSemiBold.woff") format("woff"), url("fonts/MontserratSemiBold.ttf") format("truetype"), url("fonts/MontserratSemiBold.svg#MontserratSemiBold") format("svg"); }
+@font-face {
+  font-family: 'MontserratBold';
+  src: url("fonts/MontserratBold.eot");
+  src: url("fonts/MontserratBold.eot") format("embedded-opentype"), url("fonts/MontserratBold.woff2") format("woff2"), url("fonts/MontserratBold.woff") format("woff"), url("fonts/MontserratBold.ttf") format("truetype"), url("fonts/MontserratBold.svg#MontserratBold") format("svg"); }
+@font-face {
+  font-family: 'MontserratExtraLight';
+  src: url("fonts/MontserratExtraLight.eot");
+  src: url("fonts/MontserratExtraLight.eot") format("embedded-opentype"), url("fonts/MontserratExtraLight.woff2") format("woff2"), url("fonts/MontserratExtraLight.woff") format("woff"), url("fonts/MontserratExtraLight.ttf") format("truetype"), url("fonts/MontserratExtraLight.svg#MontserratExtraLight") format("svg"); }
+/* nombre de las fuentes */
+/* Booking con autocomplete */
+main strong {
+  font-family: "MontserratRegular", sans-serif;
+  font-weight: normal; }
+main .places-col {
+  width: 100%; }
+  @media (min-width: 992px) {
+    main .places-col {
+      foat: left;
+      width: 25%; } }
+  main .places-col li {
+    padding: 2px 0; }
+    main .places-col li a,
+    main .places-col li span {
+      font-family: "MontserratRegular", sans-serif;
+      color: #7f7f7f;
+      text-decoration: none;
+      font-size: 0.9em;
+      font-weight: normal; }
+      main .places-col li a:hover,
+      main .places-col li span:hover {
+        text-decoration: none;
+        color: #6cace4; }
+    main .places-col li.active a,
+    main .places-col li.active span {
+      color: #6cace4; }
+      main .places-col li.active a:hover,
+      main .places-col li.active span:hover {
+        color: #1B4298; }
+main .places-sublist li {
+  padding-left: 1em;
+  position: relative; }
+  main .places-sublist li:before {
+    content: "ÔÇó";
+    color: #6cace4;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: -0.35em;
+    font-size: 2em; }
+main .places-main-container {
+  width: 100%;
+  /*@media (min-width: 992px) {
+      min-height: 30rem;
+  }*/ }
+  @media (max-width: 992px) {
+    main .places-main-container {
+      max-height: 24rem;
+      overflow-y: auto;
+      margin-top: 0.5rem; } }
+main .places-content-mod {
+  display: none; }
+  @media (max-width: 992px) {
+    main .places-content-mod {
+      padding-left: 2%; } }
+  @media (max-width: 767px) {
+    main .places-content-mod {
+      padding-left: 4%; } }
+  main .places-content-mod h3 {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em 0;
+    margin: 0;
+    color: #1B4298;
+    font-family: "MontserratSemiBold", sans-serif;
+    float: left; }
+    main .places-content-mod h3.subtitle {
+      font-size: 0.95em; }
+    main .places-content-mod h3.three-quarters {
+      width: 75%; }
+      @media (max-width: 992px) {
+        main .places-content-mod h3.three-quarters {
+          width: 100%; } }
+    main .places-content-mod h3.one-quarter {
+      width: 25%; }
+      @media (max-width: 992px) {
+        main .places-content-mod h3.one-quarter {
+          width: 100%; } }
+    @media (max-width: 992px) {
+      main .places-content-mod h3.desk {
+        display: none; } }
+    main .places-content-mod h3.mob {
+      display: none; }
+      @media (max-width: 992px) {
+        main .places-content-mod h3.mob {
+          display: inline-block; } }
+  main .places-content-mod.active {
+    display: inline-block;
+    width: 100%; }
+  @media (min-width: 992px) {
+    main .places-content-mod.thirds-wrp .places-col {
+      float: left;
+      width: 33.33333%; } }
+  @media (min-width: 992px) {
+    main .places-content-mod.quarters-wrp .places-col {
+      float: left;
+      width: 25%; } }
+  @media (min-width: 992px) {
+    main .places-content-mod.fifths-wrp .places-col {
+      float: left;
+      width: 20%; } }
+  @media (min-width: 992px) {
+    main .places-content-mod.sixths-wrp .places-col {
+      float: left;
+      width: 16.66667%; } }
+  @media (min-width: 992px) {
+    main .places-content-mod.sevenths-wrp .places-col {
+      float: left;
+      width: 14.28571%; } }
+  @media (min-width: 992px) {
+    main .places-content-mod.eighths-wrp .places-col {
+      float: left;
+      width: 12.5%; } }
+main .places-not-found {
+  padding: 10px 28px 10px 10px;
+  color: #1B4298; }
+main .places-tabs-wrp {
+  width: 100%;
+  border-bottom: 1px solid #dee2e6;
+  margin: 0;
+  margin-bottom: 1.1em; }
+  main .places-tabs-wrp.active {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap; }
+  @media (max-width: 992px) {
+    main .places-tabs-wrp {
+      margin-top: 0.95em; } }
+  main .places-tabs-wrp li {
+    margin: 0 5px; }
+    main .places-tabs-wrp li:first-child {
+      margin-left: 0; }
+      @media (max-width: 992px) {
+        main .places-tabs-wrp li:first-child {
+          margin-left: 5px; } }
+    @media (max-width: 992px) {
+      main .places-tabs-wrp li {
+        margin-bottom: 0.5em; } }
+main .places-tab a {
+  display: inline-block;
+  padding: 10px 1.5em;
+  color: #1B4298;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  border-bottom: none; }
+  @media (max-width: 992px) {
+    main .places-tab a {
+      padding: 6px 10px;
+      border: 1px solid #dee2e6; } }
+  main .places-tab a.active {
+    background-color: #6cace4;
+    color: white;
+    border: 1px solid #6cace4;
+    border-bottom: none; }
+    @media (max-width: 992px) {
+      main .places-tab a.active {
+        border: 1px solid #6cace4; } }
+main .places-bottom-list {
+  display: none; }
+  main .places-bottom-list.active {
+    display: inline-block;
+    width: 100%;
+    height: auto !important; }
+  main .places-bottom-list.booking-options-menu .places-list li {
+    border-bottom: none;
+    margin-bottom: 7px; }
+  @media (max-width: 767px) {
+    main .places-bottom-list.booking-options-menu .places-sublist li:before {
+      top: 0.1rem; } }
+  main .places-bottom-list.booking-options-menu .places-wrp {
+    overflow: hidden;
+    max-height: 100%; }
+  main .places-bottom-list.booking-options-menu .places-mod-container {
+    overflow-y: auto;
+    max-height: 14rem; }
+main .places-note {
+  display: inline-block;
+  width: 100%;
+  font-family: "MontserratLight", sans-serif;
+  font-style: italic; }
+  @media (max-width: 767px) {
+    main .places-note {
+      padding-bottom: 0.85em; } }
+  main .places-note.blue {
+    position: relative;
+    padding-left: 1em; }
+    main .places-note.blue:before {
+      content: "ÔÇó";
+      color: #6cace4;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+      top: -0.05em;
+      font-size: 2em; }
+
+.booking-bg {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(51, 51, 51, 0.5);
+  z-index: 1050;
+  top: 0;
+  left: 0; }
+.booking-autocomplete-wrp .bookingInterjet ul[role="listbox"] [aria-selected="true"] {
+  background-color: #edf5fc; }
+.booking-autocomplete-wrp .bookingInterjet ul[role="listbox"] li {
+  display: none; }
+.booking-autocomplete-wrp .bookingInterjet.booking-home .booking-options-item {
+  max-width: 258px; }
+  @media (max-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet.booking-home .booking-options-item {
+      max-width: 100%; } }
+.booking-autocomplete-wrp .bookingInterjet .booking {
+  /* content tab 1, Options Flights*/ }
+  .booking-autocomplete-wrp .bookingInterjet .booking-wrp {
+    margin-top: 30px; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-wrp strong {
+      font-weight: normal; }
+    @media (min-width: 992px) {
+      .booking-autocomplete-wrp .bookingInterjet .booking-wrp {
+        margin-top: auto; } }
+    .booking-autocomplete-wrp .bookingInterjet .booking-wrp.no-alert {
+      margin-top: 0; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp {
+      position: relative;
+      padding: 0;
+      background: #FFF;
+      border: 1px solid #dee2e6;
+      height: 50px; }
+      .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp input {
+        padding: 20px 2.75em 0 15px; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp input.txt-left {
+          padding-right: 34px; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp input::-ms-clear {
+          display: none; }
+      .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp .arrow {
+        content: "";
+        position: absolute;
+        top: 2.5%;
+        right: 0;
+        width: 45px;
+        height: 95%;
+        border-left: 1px solid #dee2e6; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp .arrow-down {
+          background: url("../img/arrow-down-lb.svg") no-repeat center;
+          display: inline-block;
+          background-size: 40% auto; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp .arrow-up {
+          display: none;
+          background: url("../img/arrow-up-lb.svg") no-repeat center;
+          background-size: 40% auto; }
+      .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.selected, .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.active {
+        border: 2px solid #6cace4;
+        z-index: 80; }
+        @media (min-width: 992px) {
+          .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.selected:after, .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.active:after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 15px 0;
+            border-color: #1B4298 transparent;
+            display: block;
+            width: 0;
+            z-index: 71;
+            margin-left: -15px;
+            bottom: -25px;
+            left: 50%; } }
+        @media (min-width: 1200px) {
+          .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.selected:after, .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.active:after {
+            bottom: -32px; } }
+      .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp.suggested:after {
+        display: none; }
+      .booking-autocomplete-wrp .bookingInterjet .booking-wrp .input-wrp label {
+        left: 15px;
+        top: 15px; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-wrp input.search-place:focus ~ label, .booking-autocomplete-wrp .bookingInterjet .booking-wrp input.search-place:valid ~ label {
+      top: 6px; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-title {
+    font-size: 25px; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-wrp .box {
+    width: 100%; }
+    @media (max-width: 992px) {
+      .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-wrp .box {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 6px; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-wrp .box:first-child {
+          padding-top: 0; } }
+    @media (max-width: 992px) {
+      .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-wrp .box p {
+        width: 50%;
+        float: left; } }
+  @media (max-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-item {
+      padding: 0; } }
+  @media (max-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-count {
+      padding: 5px 10px; } }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list {
+    padding: 0;
+    left: 0;
+    top: 100%; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list:after {
+      display: none; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul {
+      width: 100%;
+      max-height: 15rem;
+      overflow-y: auto; }
+      .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li {
+        width: 100%;
+        border-bottom: 1px solid #dee2e6;
+        padding: 0; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li:last-child {
+          border-bottom: none; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li [role=option] {
+          padding: 15px 28px;
+          display: inline-block;
+          color: #7f7f7f; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li.places-main, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li.places-not-found {
+          cursor: default;
+          pointer-events: none; }
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li.places-main {
+          padding: 10px;
+          background-color: #edf5fc;
+          color: #1B4298; }
+
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li.places-main div{ /*hgp*/
+              color: #1B4298 !important;             
+          }
+
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list ul li.option-selected {
+          background-color: #edf5fc; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list .places-wrp {
+      padding: 0;
+      overflow-y: hidden; }
+      @media (max-width: 767px) {
+        .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.places-suggested-list .places-wrp {
+          box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.5); } }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .menu-title {
+    width: 100%;
+    padding: 0 0 12px 30px; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-show-all {
+    padding: 10px 28px;
+    display: inline-block !important;
+    color: #7f7f7f;
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+    background: none; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-show-all:hover {
+      color: #6cace4; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-title.first-child {
+    margin-top: 0; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li a,
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li span, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li a,
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li span {
+    font-family: "MontserratRegular", sans-serif; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li a.highlight,
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li span.highlight, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li a.highlight,
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li span.highlight {
+      color: #6cace4;
+      font-weight: bold;
+      background-color: transparent;
+      padding: 0;
+      display: inline-block;
+      width: auto; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li a:hover,
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li span:hover, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li a:hover,
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li span:hover {
+      text-decoration: none; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li a strong,
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li span strong, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li a strong,
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li span strong {
+      color: #6cace4;
+      font-family: "MontserratRegular", sans-serif;
+      font-weight: normal; }
+  @media (max-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li.place-title-wrp, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li.place-title-wrp {
+      display: none !important; } }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li.option-selected, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li.option-selected {
+    color: #6cace4; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li.selected a,
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col li.selected span, .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li.selected a,
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-list li.selected span {
+    color: #6cace4; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col {
+    width: 100%; }
+    @media (min-width: 992px) {
+      .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-col {
+        float: left;
+        width: 25%; } }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-sublist li {
+    padding-left: 1em; }
+  @media (min-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-content-mod.thirds-wrp .places-col {
+      float: left;
+      width: 33.33333%; } }
+  @media (min-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-content-mod.quarters-wrp .places-col {
+      float: left;
+      width: 25%; } }
+  @media (min-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-content-mod.fifths-wrp .places-col {
+      float: left;
+      width: 20%; } }
+  @media (min-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-content-mod.sixths-wrp .places-col {
+      float: left;
+      width: 16.66667%; } }
+  @media (min-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-content-mod.sevenths-wrp .places-col {
+      float: left;
+      width: 14.28571%; } }
+  @media (min-width: 992px) {
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .places-content-mod.eighths-wrp .places-col {
+      float: left;
+      width: 12.5%; } }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.passengers {
+    padding: 25px; }
+    .booking-autocomplete-wrp .bookingInterjet .booking-options-menu.passengers h2 {
+      padding-left: 0; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-wrp {
+    max-width: 100%; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-menu .passenger-item:last-child {
+    padding-right: 0; }
+  .booking-autocomplete-wrp .bookingInterjet .booking-options-item.passengers {
+    width: 225px; }
+    @media (max-width: 992px) {
+      .booking-autocomplete-wrp .bookingInterjet .booking-options-item.passengers {
+        width: 100%; } }
+.booking-lightbox-menu {
+  display: none; }
+  .booking-lightbox-menu.active {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+    padding: 1.2em; }
+    @media (max-height: 800px) {
+      .booking-lightbox-menu.active {
+        top: 12%; } }
+  .booking-lightbox-menu h2,
+  .booking-lightbox-menu strong {
+    color: #6cace4; }
+  .booking-lightbox-menu .close-btn {
+    right: 1em; }

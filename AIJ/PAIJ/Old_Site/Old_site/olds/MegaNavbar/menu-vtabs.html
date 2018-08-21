@@ -1,0 +1,628 @@
+<!DOCTYPE&nbsp;html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+    <meta content="" name="Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers." />
+    <meta content="" name="MegaNavbar.com" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/MegaNavbar.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/skins/navbar-inverse.css" title="inverse">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation/animation.css" title="inverse">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+
+</head>
+
+
+<body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <div  id="toc" class="jumbotron" style="color: #fff; background-color: #026881; padding: 0;">
+    	<div class="container">
+    		<h2 class="page-header" style="margin: 25px 0 25px;">
+    			<i class="fa fa-credit-card"></i> MegaNavbar. (v 2.2.0) <small style="color: #ddd;">Advanced Navbar for Bootstrap 3.0+ from Twitter.</small>
+    		</h2>
+    		<p class="text-justify"><small>Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers.</small></p>
+    	</div>
+    </div>
+
+    <div class="container">
+<nav class="navbar navbar-inverse navbar-static-top" id="main_navbar" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand_size_lg">
+			<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+            <ul class="nav navbar-nav navbar-left">
+				<li><a href="javascript:void(0);" class="toggle_fixing"><i class="fa fa-chevron-down"></i>&nbsp;</a></li>
+			</ul>
+			<a class="navbar-brand" href="#">MegaNavbar</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-brand_size_lg">
+			<ul class="nav navbar-nav navbar-left">
+
+                <li class="dropdown-full" style="position: static;">
+                	<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-align-justify"></i> Category</a>
+                	<div class="dropdown-menu" role="menu">
+
+                		<ul class="nav nav-tabs col-lg-3 col-md-3 col-sm-4 col-xs-12" role="tablist" style=" border-bottom: none;border-right: 1px solid #555;">
+                			<li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab" aria-expanded="true">1 column + additional field <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">1 column + large description description</span></a></li>
+                			<li role="presentation" class=""><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab" aria-expanded="false">2 columns + additional field <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">2 columns + middle description description</span></a></li>
+                			<li role="presentation" class=""><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab" aria-expanded="false">3 levels + additional field<i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">3 columns description</span></a></li>
+                			<li role="presentation" class=""><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab" aria-expanded="false">4 columns<i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">4 columns description</span></a></li>
+                		</ul>
+
+                		<div class="tab-content col-lg-9 col-md-9  col-sm-8 col-xs-12 no-padding">
+
+                            <!-- First item -->
+                			<div role="tabpanel" class="tab-pane active" id="tab1">
+                				<ul class="nav nav-tabs col-lg-4 col-md-4 col-sm-6" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                					<li role="presentation" class=""><a href="#tab11" aria-controls="tab11" role="tab" data-toggle="tab" aria-expanded="false">First subitem <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">First subitem with some description</span></a></li>
+                					<li role="presentation" class=""><a href="#tab12" aria-controls="tab12" role="tab" data-toggle="tab" aria-expanded="true">Second subitem <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Second subitem with image &amp; description</span></a></li>
+                					<li role="presentation" class="active"><a href="#tab13" aria-controls="tab13" role="tab" data-toggle="tab" aria-expanded="true">Third subitem<i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Third subitem with carousel</span></a></li>
+                					<li role="presentation" class=""><a href="#tab14" aria-controls="tab14" role="tab" data-toggle="tab" aria-expanded="true">Fourth subitem <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Fourth subitem with more links</span></a></li>
+                				</ul>
+
+                				<div class="tab-content col-lg-8 col-md-8 col-sm-6 col-xs-12" style="padding-right: 0;">
+                                    <!--Description-->
+                					<div role="tabpanel" class="tab-pane" id="tab11">
+              							<h4 class="page-header" style="border-bottom-color: #555;">You can add <span class="hidden-sm">some</span> description</h4>
+              							<br>
+              							<p class="text-justify text-muted no-margin">
+                                              <span class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline text-primary"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</span><span class="visible-sm-inline"> ...</span>
+                                              <span class="visible-xs-inline visible-md-inline visible-lg-inline text-warning"> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum</span><span class="visible-md-inline"> ...</span>
+                                              <span class="visible-xs-inline visible-lg-inline text-success"> passages, and more recently with desktop publishing software like Aldus</span><span class="visible-lg-inline"> ...</span>
+                                              <span class="visible-xs-inline"> PageMaker including versions of Lorem Ipsum.</span>
+                                          </p>
+                					</div>
+                                    <!--Image & Description-->
+                					<div role="tabpanel" class="tab-pane" id="tab12">
+              							<h4 class="page-header" style="border-bottom-color: #555;">You can add some image<span class="hidden-sm"> &amp; description</span></h4>
+              							<br>
+                                        <div class="col-lg-6 visible-lg-block" style="padding:0;"><img src="http://placehold.it/269x140/777/444/&amp;text=LG Image"></div>
+                                        <div class="col-md-6 visible-md-block" style="padding:0;"><img src="http://placehold.it/219x140/777/444/&amp;text=MD Image"></div>
+                                        <div class="col-sm-12 visible-sm-block" style="padding:0;"><img src="http://placehold.it/214x140/777/444/&amp;text=SM Image"></div>
+                                        <div class="col-xs-12 visible-xs-block" style="padding:0;"><img class="img-responsive" src="http://placehold.it/1980x1080/777/444/&amp;text=XS Image"></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 hidden-sm col-xs-12" style="padding-right: 0;">
+                                            <p class="text-justify text-muted no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                                <span class="visible-xs-inline visible-lg-inline text-success">took a galley of type and scrambled it to make a type specimen book.</span>
+                                                <span class="visible-xs-inline"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                                            </p>
+                                        </div>
+                					</div>
+
+                                    <!--Carousel-->
+                					<div role="tabpanel" class="tab-pane active" id="tab13">
+              							<h4 class="page-header" style="border-bottom-color: #555;">You can add carousel</h4>
+              							<br>
+                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                        	<!-- Indicators -->
+                                        	<!--ol class="carousel-indicators">
+                                        		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        	</ol-->
+                                        	<!-- Wrapper for slides -->
+                                        	<div class="carousel-inner" role="listbox">
+                                        		<div class="item active">
+                                        			<img class="visible-lg-block" src="http://placehold.it/539x140/b00/fff/&amp;text=1 LG Image" alt="...">
+                                        			<img class="visible-md-block" src="http://placehold.it/439x140/b00/fff/&amp;text=1 MD Image" alt="...">
+                                        			<img class="visible-sm-block" src="http://placehold.it/214x140/b00/fff/&amp;text=1 SM Image" alt="...">
+                                        			<img class="visible-xs-block" src="http://placehold.it/1980x1080/b00/fff/&amp;text=1 XS Image" alt="...">
+                                        		</div>
+                                        		<div class="item">
+                                        			<img class="visible-lg-block" src="http://placehold.it/539x140/0b0/fff/&amp;text=2 LG Image" alt="...">
+                                        			<img class="visible-md-block" src="http://placehold.it/439x140/0b0/fff/&amp;text=2 MD Image" alt="...">
+                                        			<img class="visible-sm-block" src="http://placehold.it/214x140/0b0/fff/&amp;text=2 SM Image" alt="...">
+                                        			<img class="visible-xs-block" src="http://placehold.it/1980x1080/0b0/fff/&amp;text=2 XS Image" alt="...">
+                                        		</div>
+                                        		<div class="item">
+                                        			<img class="visible-lg-block" src="http://placehold.it/539x140/00b/fff/&amp;text=3 LG Image" alt="...">
+                                        			<img class="visible-md-block" src="http://placehold.it/439x140/00b/fff/&amp;text=3 MD Image" alt="...">
+                                        			<img class="visible-sm-block" src="http://placehold.it/214x140/00b/fff/&amp;text=3 SM Image" alt="...">
+                                        			<img class="visible-xs-block" src="http://placehold.it/1980x1080/00b/fff/&amp;text=3 XS Image" alt="...">
+                                        		</div>
+                                        	</div>
+                                        </div>
+                					</div>
+
+                                    <!--More links-->
+                					<div role="tabpanel" class="tab-pane" id="tab14">
+                                        <div class="row" style="margin-right: 0;">
+                        					<ul class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        						<li><a href="http://google.com">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                        						<li><a href="http://google.com">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                        						<li><a href="http://google.com">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                        						<li><a href="http://google.com">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                        					</ul>
+                        					<ul class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        						<li><a href="http://google.com">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                        						<li><a href="http://google.com">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                        						<li><a href="http://google.com">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                        						<li><a href="http://google.com">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                        					</ul>
+                                        </div>
+                				    </div>
+                				</div>
+                			</div>
+
+                            <!--Second item-->
+                			<div role="tabpanel" class="tab-pane" id="tab2">
+
+                                <ul class="nav nav-tabs col-lg-6 col-md-6 col-sm-6 col-xs-12" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 active"><a href="#tab21" aria-controls="tab21" role="tab" data-toggle="tab" aria-expanded="false">First subitem <span class="desc">First subitem with description</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab22" aria-controls="tab22" role="tab" data-toggle="tab" aria-expanded="false">Second subitem <span class="desc">Second subitem with image</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab23" aria-controls="tab23" role="tab" data-toggle="tab" aria-expanded="false">Third subitem <span class="desc">Third subitem with carousel</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab24" aria-controls="tab24" role="tab" data-toggle="tab" aria-expanded="false">Fourth subitem <span class="desc">Fourth subitem with Youtube</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab25" aria-controls="tab25" role="tab" data-toggle="tab" aria-expanded="false">Fifth subitem <span class="desc">Fifth subitem with Google maps</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab26" aria-controls="tab26" role="tab" data-toggle="tab" aria-expanded="false">Sixth subitem <span class="desc">Sixth subitem with more links</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab27" aria-controls="tab27" role="tab" data-toggle="tab" aria-expanded="false">Seventh subitem <span class="desc">Seventh subitem image &amp; description</span></a></li>
+                					<li role="presentation" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="#tab28" aria-controls="tab28" role="tab" data-toggle="tab" aria-expanded="false">Eighth subitem <span class="desc">Eighth subitem with form</span></a></li>
+                				</ul>
+                                <div class="tab-content col-lg-6 col-md-6 col-sm-6 col-xs-12" style="padding-right: 0;">
+
+                                    <!--Description-->
+                					<div role="tabpanel" class="tab-pane active" id="tab21">
+              							<h4 class="page-header" style="border-bottom-color: #555;">You can add <span class="hidden-sm">some</span> description</h4>
+              							<br>
+              							<p class="text-justify text-muted no-margin">
+                                              <span class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline text-primary"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</span><span class="visible-sm-inline"> ...</span>
+                                              <span class="visible-xs-inline visible-md-inline visible-lg-inline text-warning"> and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</span><span class="visible-md-inline"> ...</span>
+                                              <span class="visible-xs-inline visible-lg-inline text-success"> remaining essentially unchanged.</span><span class="visible-lg-inline"> ...</span>
+                                              <span class="visible-xs-inline">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                                          </p>
+                                    </div>
+
+                                    <!--Image-->
+                					<div role="tabpanel" class="tab-pane" id="tab22">
+                                        <img class="visible-lg-block" src="http://placehold.it/400x200/b00/fff/&amp;text=LG Image">
+                                        <img class="visible-md-block" src="http://placehold.it/325x200/b00/fff/&amp;text=MD Image">
+                                        <img class="visible-sm-block" src="http://placehold.it/215x200/b00/fff/&amp;text=SM Image">
+                                        <div class="col-xs-12 visible-xs-block" style="padding:0;"><img class="img-responsive" src="http://placehold.it/1980x1080/777/444/&amp;text=XS Image"></div>
+                                    </div>
+
+                                    <!--Carousel-->
+                					<div role="tabpanel" class="tab-pane" id="tab23">
+                                        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-generic1" data-slide-to="1" class=""></li>
+                                                <li data-target="#carousel-example-generic1" data-slide-to="2" class=""></li>
+                                            </ol>
+
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="item active">
+                                                  <img class="visible-lg-block" src="http://placehold.it/400x200/b00/fff/&amp;text=1 LG Image" alt="...">
+                                                    <img class="visible-md-block" src="http://placehold.it/325x200/b00/fff/&amp;text=1 MD Image" alt="...">
+                                                    <img class="visible-sm-block" src="http://placehold.it/215x200/b00/fff/&amp;text=1 SM Image" alt="...">
+                                                    <img class="visible-xs-block" src="http://placehold.it/1980x1080/b00/fff/&amp;text=1 XS Image" alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="visible-lg-block" src="http://placehold.it/400x200/0b0/fff/&amp;text=2 LG Image" alt="...">
+                                                    <img class="visible-md-block" src="http://placehold.it/325x200/0b0/fff/&amp;text=2 MD Image" alt="...">
+                                                    <img class="visible-sm-block" src="http://placehold.it/215x200/0b0/fff/&amp;text=2 SM Image" alt="...">
+                                                    <img class="visible-xs-block" src="http://placehold.it/1980x1080/0b0/fff/&amp;text=2 XS Image" alt="...">
+                                                </div>
+                                                <div class="item">
+                                                    <img class="visible-lg-block" src="http://placehold.it/400x200/00b/fff/&amp;text=3 LG Image" alt="...">
+                                                    <img class="visible-md-block" src="http://placehold.it/325x200/00b/fff/&amp;text=3 MD Image" alt="...">
+                                                    <img class="visible-sm-block" src="http://placehold.it/215x200/00b/fff/&amp;text=3 SM Image" alt="...">
+                                                    <img class="visible-xs-block" src="http://placehold.it/1980x1080/00b/fff/&amp;text=3 XS Image" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Youtube-->
+                					<div role="tabpanel" class="tab-pane" id="tab24" style="max-height: 200px">
+                                        <div class="embed-responsive embed-responsive-16by9" style="max-height: 200px">
+                                            <iframe style="max-height: 200px" class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!--Google maps-->
+                					<div role="tabpanel" class="tab-pane" id="tab25" style="max-height: 200px">
+        								<div class="embed-responsive embed-responsive-16by9" style="max-height: 200px">
+        									<iframe style="max-height: 200px" class="embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ch/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Bern&amp;aq=&amp;sll=46.813187,8.22421&amp;sspn=3.379772,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Bern&amp;t=m&amp;z=12&amp;ll=46.947922,7.444608&amp;output=embed&amp;iwloc=near"></iframe>
+        								</div>
+                                    </div>
+
+                                    <!--More links-->
+                					<div role="tabpanel" class="tab-pane" id="tab26">
+                                        <div class="row" style="margin-right: 0;">
+                        					<ul class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        						<li><a href="http://google.com">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                        						<li><a href="http://google.com">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                        						<li><a href="http://google.com">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                        						<li><a href="http://google.com">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                        					</ul>
+                        					<ul class="col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        						<li><a href="http://google.com">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                        						<li><a href="http://google.com">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                        						<li><a href="http://google.com">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                        						<li><a href="http://google.com">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                        					</ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Image & description  -->
+                					<div role="tabpanel" class="tab-pane" id="tab27">
+                                        <div class="col-lg-6 visible-lg-block" style="padding:0;"><img src="http://placehold.it/200x200/0b0/fff/&amp;text=LG Image"></div>
+                                        <div class="col-md-6 visible-md-block" style="padding:0;"><img src="http://placehold.it/162x200/b00/fff/&amp;text=MD Image"></div>
+                                        <div class="col-sm-12 visible-sm-block" style="padding:0;"><img src="http://placehold.it/214x200/00b/fff/&amp;text=SM Image"></div>
+                                        <div class="col-xs-12 visible-xs-block" style="padding:0;"><img class="img-responsive" src="http://placehold.it/1980x1080/bb0/fff/&amp;text=XS Image"></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 hidden-sm col-xs-12" style="padding-right: 0;">
+                                            <p class="text-justify text-muted no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                                <span class="visible-xs-inline visible-lg-inline text-success">took a galley of type and scrambled it to make a type specimen book.</span>
+                                                <span class="visible-xs-inline"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!--Forms-->
+                					<div role="tabpanel" class="tab-pane" id="tab28">
+                                        <form role="form">
+        									<div class="form-group">
+        										<label for="exampleInputEmail1">Email address</label>
+        										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        									</div>
+        									<div class="form-group">
+        										<label for="exampleInputPassword1">Password</label>
+        										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        									</div>
+
+        									<button type="submit" class="btn btn-default pull-right" style="margin-top: 18px;">Submit</button>
+        								</form>
+                                    </div>
+                                </div>
+                			</div>
+
+                            <!--Third item-->
+                			<div role="tabpanel" class="tab-pane" id="tab3">
+                				<ul class="nav nav-tabs col-lg-4 col-md-4 col-sm-6" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                					<li role="presentation" class="active"><a href="#tab31" aria-controls="tab31" role="tab" data-toggle="tab" aria-expanded="false">Electronics &amp; Computers <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">First subitem with some description</span></a></li>
+                					<li role="presentation" class=""><a href="#tab32" aria-controls="tab32" role="tab" data-toggle="tab" aria-expanded="false">Clothing, Shoes &amp; Jewelry <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Second subitem with image &amp; description</span></a></li>
+                					<li role="presentation" class=""><a href="#tab33" aria-controls="tab33" role="tab" data-toggle="tab" aria-expanded="false">Toys, Kids &amp; Baby<i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Third subitem with carousel</span></a></li>
+                					<li role="presentation" class=""><a href="#tab34" aria-controls="tab34" role="tab" data-toggle="tab" aria-expanded="false">Home, Garden &amp; Tools <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Fourth subitem with more links</span></a></li>
+                				</ul>
+
+                				<div class="tab-content col-lg-8 col-md-8 col-sm-6 col-xs-12 no-padding">
+                					<div role="tabpanel" class="tab-pane active" id="tab31">
+                        				<ul class="nav nav-tabs col-lg-6 col-md-6 col-sm-6 col-xs-12" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                        					<li role="presentation" class=""><a href="#tab41" aria-controls="tab41" role="tab" data-toggle="tab" aria-expanded="false">Laptops &amp; Tablets <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">First subitem with some description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab42" aria-controls="tab42" role="tab" data-toggle="tab" aria-expanded="false">Home Audio &amp; Theater <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Second subitem with image &amp; description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab43" aria-controls="tab43" role="tab" data-toggle="tab" aria-expanded="false">Camera, Photo &amp; Video <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Third subitem with carousel</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab44" aria-controls="tab44" role="tab" data-toggle="tab" aria-expanded="false">Musical Instruments <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Fourth subitem with more links</span></a></li>
+                        				</ul>
+                        				<div class="tab-content col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        					<div role="tabpanel" class="tab-pane active" id="tab40" style="padding-left: 15px;">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-chevron-left"></i> Please select some category first</div>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab41">
+                            					<ul>
+                            						<li><a href="#">Laptops<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Ultrabook<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Tablet <span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Chromebooks<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab42">
+                            					<ul>
+                            						<li><a href="#">Sound Bar Speakers<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Surround Speaker<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Wireless &amp; Multiroom<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">A/V Receivers<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab43">
+                            					<ul>
+                            						<li><a href="#">Compact Cameras<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Digital SLRs<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Mirrorless Cameras<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">DSLR Cameras<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab44">
+                            					<ul>
+                            						<li><a href="#">Bass Guitars<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Wind &amp; Woodwind <span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Brass Instruments<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Stringed Instruments<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                					<div role="tabpanel" class="tab-pane" id="tab32">
+                        				<ul class="nav nav-tabs col-lg-6 col-md-6 col-sm-6 col-xs-12" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                        					<li role="presentation" class=""><a href="#tab51" aria-controls="tab51" role="tab" data-toggle="tab" aria-expanded="false">Women <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">First subitem with some description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab52" aria-controls="tab52" role="tab" data-toggle="tab" aria-expanded="false">Men <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Second subitem with image &amp; description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab53" aria-controls="tab53" role="tab" data-toggle="tab" aria-expanded="false">Girls <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Third subitem with carousel</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab54" aria-controls="tab54" role="tab" data-toggle="tab" aria-expanded="false">Boys <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Fourth subitem with more links</span></a></li>
+                        				</ul>
+                        				<div class="tab-content col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        					<div role="tabpanel" class="tab-pane active" id="tab50" style="padding-left: 15px;">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-chevron-left"></i> Please select some category first</div>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab51">
+                            					<ul>
+                            						<li><a href="#">Women Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Women Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Women Jewelry<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Women Watches<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab52">
+                            					<ul>
+                            						<li><a href="#">Men Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Men Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Men Jewelry<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Men Watches<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab53">
+                            					<ul>
+                            						<li><a href="#">Girls Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Girls Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Girls Jewelry<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Girls Watches<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab54">
+                            					<ul>
+                            						<li><a href="#">Boys Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Boys Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Boys Jewelry<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Boys Watches<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                					<div role="tabpanel" class="tab-pane" id="tab33">
+                        				<ul class="nav nav-tabs col-lg-6 col-md-6 col-sm-6 col-xs-12" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                        					<li role="presentation" class=""><a href="#tab61" aria-controls="tab61" role="tab" data-toggle="tab" aria-expanded="false">Toys &amp; Games <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">First subitem with some description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab62" aria-controls="tab62" role="tab" data-toggle="tab" aria-expanded="false">For Girls <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Second subitem with image &amp; description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab63" aria-controls="tab63" role="tab" data-toggle="tab" aria-expanded="false">For Boys <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Third subitem with carousel</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab64" aria-controls="tab64" role="tab" data-toggle="tab" aria-expanded="false">For Baby <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Fourth subitem with more links</span></a></li>
+                        				</ul>
+                        				<div class="tab-content col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        					<div role="tabpanel" class="tab-pane active" id="tab60" style="padding-left: 15px;">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-chevron-left"></i> Please select some category first</div>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab61">
+                            					<ul>
+                            						<li><a href="#">Action Figures<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Arts &amp; Crafts<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Building Toys <span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Electronics for Kids <span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab62">
+                            					<ul>
+                            						<li><a href="#">For Girls Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">For Girls Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">For Girls Jewelry<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">For Girls Watches<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab63">
+                            					<ul>
+                            						<li><a href="#">For Boys Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">For Boys Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">For Boys Jewelry<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">For Boys Watches<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab64">
+                            					<ul>
+                            						<li><a href="#">Baby Girls Clothing<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Baby Girls Shoes<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Baby Boys Clothing<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Baby Boys Shoes<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                					<div role="tabpanel" class="tab-pane" id="tab34">
+                        				<ul class="nav nav-tabs col-lg-6 col-md-6 col-sm-6 col-xs-12" role="tablist" style="float: left; border-bottom: none;border-right: 1px solid #555;">
+                        					<li role="presentation" class=""><a href="#tab71" aria-controls="tab71" role="tab" data-toggle="tab" aria-expanded="false">Kitchen &amp; Dining <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">First subitem with some description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab72" aria-controls="tab72" role="tab" data-toggle="tab" aria-expanded="false">Furniture &amp; Décor <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Second subitem with image &amp; description</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab73" aria-controls="tab73" role="tab" data-toggle="tab" aria-expanded="false">Bedding &amp; Bath <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Third subitem with carousel</span></a></li>
+                        					<li role="presentation" class=""><a href="#tab74" aria-controls="tab74" role="tab" data-toggle="tab" aria-expanded="false">Patio, Lawn &amp; Garden <i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Fourth subitem with more links</span></a></li>
+                        				</ul>
+                        				<div class="tab-content col-lg-6 col-md-6 col-sm-6 col-xs-12 no-padding">
+                        					<div role="tabpanel" class="tab-pane active" id="tab70" style="padding-left: 15px;">
+                                                <div class="alert alert-info" role="alert"><i class="fa fa-chevron-left"></i> Please select some category first</div>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab71">
+                            					<ul>
+                            						<li><a href="#">Bakeware<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Coffee, Tea &amp; Espresso <span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Cookware<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Furniture<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab72">
+                            					<ul>
+                            						<li><a href="#">Living Room Furniture<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Bedroom Furniture<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Home Entertainment Furniture<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Home Office Furniture<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab73">
+                            					<ul>
+                            						<li><a href="#">Bathroom Accessories<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Bathroom Hardware<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Bath Rugs<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Bath Sheets<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                        					<div role="tabpanel" class="tab-pane" id="tab74">
+                            					<ul>
+                            						<li><a href="#">Gardening Tools<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                            						<li><a href="#">Plant Containers<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                            						<li><a href="#">Plants, Seeds &amp; Bulbs<span class="desc">Get a new paid app for free every day</span></a></li>
+                            						<li><a href="#">Watering Equipment<span class="desc">Save up to 10% on apps and games</span></a></li>
+                            					</ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                			</div>
+
+                            <!--Fourth item-->
+                			<div role="tabpanel" class="tab-pane" id="tab4">
+                				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding">
+                					<ul>
+                						<li><a href="#">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                						<li><a href="#">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                						<li><a href="#">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                						<li><a href="#">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                					</ul>
+                				</div>
+                				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding">
+                					<ul>
+                						<li><a href="#">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                						<li><a href="#">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                						<li><a href="#">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                						<li><a href="#">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                					</ul>
+                				</div>
+                				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding">
+                					<ul>
+                						<li><a href="#">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                						<li><a href="#">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                						<li><a href="#">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                						<li><a href="#">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                					</ul>
+                				</div>
+                				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding">
+                					<ul>
+                						<li><a href="#">Apps<span class="desc">Shop over 340,000 apps and games</span></a></li>
+                						<li><a href="#">Games<span class="desc">Shop new, bestselling, and free games</span></a></li>
+                						<li><a href="#">Free App of the Day<span class="desc">Get a new paid app for free every day</span></a></li>
+                						<li><a href="#">Amazon Coins<span class="desc">Save up to 10% on apps and games</span></a></li>
+                					</ul>
+                				</div>
+                			</div>
+                		</div>
+                	</div>
+                </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<style>@media (max-width: 767px) {
+        .nav-tabs {width: 100%!important;border-right: none!important;border-bottom: 1px solid #555!important;}
+        .tab-content {width: 100%!important;padding-left: 0!important;}
+    }
+
+    .tab-pane {width: 100%!important;}
+    .nav-tabs>li{padding: 0;margin-bottom: 0;}
+    .nav-tabs>li:not([class*="col-"]) {width: 100%!important;}
+    .nav-tabs>li>a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {margin-right: 0;border-radius: 0; border: none;}
+    @media (min-width: 768px) {
+      .navbar .dropdown-toggle {margin-bottom: -1px;border-bottom: 1px solid transparent!important;}
+      .navbar.navbar-fixed-bottom .dropdown-toggle {margin-top: -1px;border-top: 1px solid transparent!important;}
+    }
+</style>
+<script>// Prevent unexpected menu close
+    $(window).load(function(){ $(document).on('click', '.navbar .dropdown-menu', function(e){e.stopPropagation();})});
+
+    // Carousel
+    $('.carousel').carousel({interval: 1500});
+
+    // Tabs on hover
+    $(function() {
+        $('.dropdown, .dropdown-wide, .dropdown-full, .dropdown-short, .dropdown-grid')
+            .mouseenter(function(){if (!('ontouchstart' in window)) $(this).addClass('open');})
+            .mouseleave(function(){if (!('ontouchstart' in window)) $(this).removeClass('open');})
+            .click(function(e){if (!('ontouchstart' in window)) e.stopPropagation();});
+
+        $('[data-toggle=tab]').mouseenter(function(e){
+              e.preventDefault();
+              $(this).tab('show');
+              $(this).closest('.dropdown-menu').css({right:0});
+        })
+        $('[data-toggle=tab]').click(function(e){e.preventDefault();})
+
+    });
+ </script>
+
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-3">
+                <div class="list-group">
+                    <span class="list-group-item" style="background-color: #026881; color: #fff;">DEMOS</span>
+                    <a class="list-group-item" href="index.html" role="button">Index</a>
+                    <a class="list-group-item" href="menu-basic.html" role="button">Demo basic</a>
+                    <a class="list-group-item" href="menu_components.html" role="button">Demo components</a>
+                    <a class="list-group-item" href="menu-animation.html" role="button">Demo animation</a>
+                    <a class="list-group-item" href="menu-forms.html" role="button">Demo forms</a>
+                    <a class="list-group-item" href="menu-grid.html" role="button">Demo grid</a>
+                    <a class="list-group-item" href="menu-images.html" role="button">Demo images</a>
+                    <a class="list-group-item" href="menu-maps.html" role="button">Demo maps</a>
+                    <a class="list-group-item" href="menu-search.html" role="button">Demo search</a>
+                    <a class="list-group-item" href="menu-shop.html" role="button">Demo shop</a>
+                    <a class="list-group-item" href="menu-submenus.html" role="button">Demo submenus</a>
+                    <a class="list-group-item" href="menu-tabs.html" role="button">Demo tabs</a>
+                    <a class="list-group-item active" href="menu-vtabs.html" role="button">Demo vertical tabs</a>
+                    <a class="list-group-item" href="menu-video.html" role="button">Demo video</a>
+                </div>
+            </div>
+
+    		<div class="col-sm-9">
+                <h2 class="page-header">What is Lorem Ipsum?</h2>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2 class="page-header">Where does it come from?</h2>
+                <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h2 class="page-header">Why do we use it?</h2>
+                <p class="text-justify">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <h2 class="page-header">Where can I get some?</h2>
+                <p class="text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div class="hidden-xs"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+

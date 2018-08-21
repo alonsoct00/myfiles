@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!--META TAGS Social Media & FAVICON's -->
+    <!--Cambiar de acuerdo a descripción/tipo de página-->
+    <meta property="og:title" content="Interjet" />
+    <meta property="og:url" content="http://www.interjet.com.mx" />
+    <meta property="og:image" content="assets/images/logo_interjet_web.png" />
+    <meta property="og:description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación." />
+    <meta property="og:site_name" content="Interjet" />
+    <link rel="canonical" href="https://www.interjet.com.mx/">
+    <meta name="description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <meta name="keywords" content="La mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <!--Cambiar de acuerdo a descripción/tipo de página-->
+    <!--Apple icons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="60×60" href="/assets/favicons/apple-touch-icon-60x60-precomposed.png">
+    <link rel="apple-touch-icon" sizes="76×76" href="/assets/favicons/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120×120" href="/assets/favicons/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152×152" href="/assets/favicons/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180×180" href="/assets/favicons/apple-touch-icon.png">
+    <!--Android & Generic icons-->
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <link rel="icon" sizes="192×192" href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" sizes="96×96" href="/assets/favicons/android-icon-96x96.png">
+    <link rel="icon" sizes="72×72" href="/assets/favicons/android-icon-72x72.png">
+    <link rel="icon" sizes="48×48" href="/assets/favicons/android-icon-48x48.png">
+    <link rel="icon" sizes="36×36" href="/assets/favicons/android-icon-36x36.png">
+    <!--Desktop and browser bookmarks icons-->
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1b248">
+    <meta name="theme-color" content="#ffffff">
+    <!--END META TAGS Social Media & FAVICON's -->
+    <title>Interjet App Móvil</title>
+    <!-- Bootstrap Default Assets -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="/assets/css/ripples.min.css" rel="stylesheet">
+    <!--Custom CSS Assets-->
+    <link href="/assets/css/core_interjet.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <!--Outdated browsers plugin-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/outdatedbrowser.css">
+    <!--Slick carousel plugin CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/slick/slick.css">
+    <style>
+    #AppMBanner {
+        display: block;
+        width: 100%;
+        background-color: #f2f2f2;
+        min-height: 350px;
+        text-align: center;
+        padding-top: 20px;
+        background: rgba(255, 255, 255, 1);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(242, 242, 242, 1)));
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=1);
+    }
+
+    #AppMBannerImg {
+        width: 340px;
+        display: inline-block;
+        float: none;
+        position: relative;
+        bottom: 50px;
+    }
+
+    #AppMBannerImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    #AppMBannerTxt {
+        display: inline-block;
+        position: relative;
+        top: 30px;
+    }
+
+
+
+    #AppMBannerTxt h1 {
+        font-family: VAGRoundedStd-Light;
+        font-size: 22px;
+        color: #2654A8;
+        letter-spacing: 0;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    #AppMBannerTxt p {
+        font-size: 18px;
+        margin: 0px auto;
+    }
+
+    div#appIcons {
+        margin-top: 40px;
+    }
+
+    #AppMBannerTxt h1 span {
+        font-size: 25px;
+    }
+
+    .appSlide {
+        position: relative;
+        text-align: center;
+    }
+
+    #sliderContent h2 {
+        font-family: VAGRoundedStd-Light;
+        font-size: 22px;
+        color: #2654A8;
+        letter-spacing: 0;
+        margin-bottom: 0px;
+    }
+
+    div#sliderApp {
+        display: block;
+        clear: both;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #sliderContent p {
+        margin: 5px 0px;
+    }
+
+    .imgAppSlide {
+        max-width: 244px;
+        height: auto;
+        display: inline-block;
+    }
+
+    .imgAppSlide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .txtAppSlide {
+        position: relative;
+        margin: 0px auto;
+        display: inline-block;
+        width: auto;
+        text-align: left;
+        bottom: 230px;
+        left: 10px;
+    }
+
+    .txtAppSlide h3 {
+        font-family: VAGRoundedStd-Bold;
+        font-size: 22px;
+        color: #2654A8;
+        letter-spacing: 0;
+        margin: 0px;
+    }
+
+    .txtAppSlide p {
+        font-size: 16px;
+        color: #666666;
+        letter-spacing: 0;
+        margin: 0px;
+    }
+
+    .txtAppSlide i {
+        width: 53px;
+        height: 53px;
+        line-height: 53px;
+        text-align: center;
+        color: #6caddf;
+        display: inline-block;
+        float: left;
+        position: relative;
+        bottom: 8px;
+    }
+
+    .txtAppSlide>div {
+        display: inline-block;
+        float: left;
+    }
+
+    #appLPFooter {
+        background-color: #f2f2f2;
+        display: block;
+        clear: both;
+        width: 100%;
+        padding: 0px 0px;
+        float: left;
+        background: rgba(255, 255, 255, 1);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(242, 242, 242, 1)));
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=1);
+    }
+
+    #appIcons span {
+        width: auto;
+        height: 53px;
+        display: inline-block;
+        margin: 20px 10px;
+    }
+
+    #appIcons span img {
+        width: auto;
+        height: 100%;
+    }
+
+    #AppMFooter h3 {
+        font-family: VAGRoundedStd-Light;
+        font-size: 22px;
+        color: #1B4298;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .appFeature {
+        display: inline-block;
+        clear: both;
+        margin-bottom: 20px;
+        margin: 20px auto;
+        float: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+    }
+
+    .appFeature i {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        color: #1b4298;
+        line-height: 80px;
+        float: left;
+        display: inline-block;
+        border: 1px solid #1b4298;
+        border-radius: 100px;
+        margin-right: 20px;
+    }
+
+    .appFeature i img {
+        width: 80%;
+        height: auto;
+        line-height: 80px;
+    }
+
+    .appFeature span {
+        float: left;
+        display: inline-block;
+        max-width: 465px;
+    }
+
+
+    .appFeature span p {
+        font-family: OpenSans;
+        font-size: 16px;
+        color: #666666;
+        letter-spacing: 0;
+        line-height: 16px;
+        max-width: 450px;
+    }
+
+    .appFeature span h4 {
+        font-size: 18px;
+        color: #6caddf;
+        letter-spacing: 0;
+    }
+
+    .imgMask {
+        display: inline-block;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .imgMask img {
+        width: auto;
+        height: 100%;
+    }
+    /* Dots */
+
+    .slick-slider {
+        margin-bottom: 30px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: -45px;
+
+        display: block;
+
+        width: 100%;
+        padding: 0;
+
+        list-style: none;
+
+        text-align: center;
+    }
+
+    .slick-dots li {
+        position: relative;
+
+        display: inline-block;
+
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+
+        cursor: pointer;
+    }
+
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+
+    .slick-dots li button:hover,
+    .slick-dots li button:focus {
+        outline: none;
+    }
+
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before {
+        opacity: 1;
+    }
+
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 30px;
+        line-height: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 20px;
+        height: 20px;
+
+        content: '•';
+        text-align: center;
+
+        opacity: .25;
+        color: #6caddf;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #6caddf;
+    }
+
+    .slick-disabled {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    div#appFeatures {
+        padding: 0px 0px;
+        text-align: center;
+        margin-top: 34px;
+    }
+
+
+
+    @media (max-width: 520px) {
+        #AppMBanner {
+            background: transparent;
+        }
+
+        #AppMBannerImg {
+            width: 80%;
+            display: block;
+            position: static;
+            margin: 0px auto;
+        }
+
+        .txtAppSlide {
+            position: static;
+            clear: both;
+            text-align: center;
+            width: 100%;
+        }
+        .appSlide {
+            padding: 0px;
+            text-align: center;
+        }
+
+        .container-fluid {
+            overflow: hidden;
+        }
+        div#appFeatures {
+            padding: 0px;
+        }
+
+        .appFeature {
+            display: block;
+            text-align: center;
+            float: left;
+            margin: 10px auto;
+        }
+        .appFeature i {
+            display: block;
+            text-align: center;
+            margin: 0px auto;
+            float: none;
+            margin-bottom: 10px;
+        }
+
+        .txtAppSlide>div {
+            display: inline-block;
+            float: none;
+            max-width: 300px;
+        }
+        .txtAppSlide i {
+            float: none;
+        }
+
+        .imgAppSlide img {
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        .imgMask {
+            display: none;
+        }
+
+        #appLPFooter {
+            background: transparent;
+        }
+
+        .appFeature:last-child {
+            border: 0px;
+        }
+
+        .slick-dots li button:before {
+
+            font-size: 40px;
+        }
+
+        .appFeature span p{padding: 0px 10px; }
+    }
+    </style>
+</head>
+
+<body>
+    <!--Header Interjet-->
+    <header id="mainHeader">
+    </header>
+    <!--Main Content Begins-->
+    <div class="container-fluid" id="main-content">
+        <div class="section-page-content" id="AppMBanner">
+            <div id="AppMBannerImg"><img src="/assets/images/lpappmovil/headrimg.png"></div>
+            <div id="AppMBannerTxt">
+                <h1>Descarga la app de Interjet y consigue <br> <span>descuentos exclusivos</span></h1>
+                <p>Nuestra aplicación te permite acceder a promociones y ofertas que no
+                    <br/> podrás encontrar en ningún otro canal de venta.</p>
+                <div id="appIcons">
+                    <span><a href="https://itunes.apple.com/mx/app/interjet/id1180249224"><img src="/assets/images/lpappmovil/app-store.png"></a></span>
+                    <span><a href="https://play.google.com/store/apps/details?id=com.interjet.mobile.interjet&hl=en"><img src="/assets/images/lpappmovil/googleplay.png"></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="main_page_wrapper col-lg-12" id="lp_app_movil">
+                    <div class="section-page-content text-center" id="sliderContent">
+                        <h2>Descubre una nueva experiencia de viaje</h2>
+                        <p>El optimizado proceso de compra de nuestra aplicación te permitirá encontrar vuelos de una manera rápida y sencilla.</p>
+                    </div>
+                    <div class="section-page-content" id="sliderApp">
+                        <div class="appCarousel">
+                            <div class="appSlide">
+                                <div class="imgAppSlide">
+                                    <img src="/assets/images/lpappmovil/slide_1.png" alt="slide">
+                                </div>
+                                <div class="txtAppSlide">
+                                    <i><img src="/assets/images/lpappmovil/vuela.png" alt="slide"></i>
+                                    <div>
+                                        <h3>Reserva tus boletos de avión</h3>
+                                        <p>Compara precios por calendario o fecha.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appSlide">
+                                <div class="imgAppSlide">
+                                    <img src="/assets/images/lpappmovil/slide_2.png" alt="slide">
+                                </div>
+                                <div class="txtAppSlide">
+                                    <i><img src="/assets/images/lpappmovil/notificaciones.png" alt="slide"></i>
+                                    <div>
+                                        <h3>Recibe notificaciones de vuelos</h3>
+                                        <p>Habilita ésta opción para recibir avisos de nuestras promociones.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appSlide">
+                                <div class="imgAppSlide">
+                                    <img src="/assets/images/lpappmovil/slide_3.png" alt="slide">
+                                </div>
+                                <div class="txtAppSlide">
+                                    <i><img src="/assets/images/lpappmovil/checkin.png" alt="slide"></i>
+                                    <div>
+                                        <h3>Haz check-in en línea</h3>
+                                        <p>Así podrás mostrar tu pase de abordar de forma digital.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="appSlide">
+                                <div class="imgAppSlide">
+                                    <img src="/assets/images/lpappmovil/slide_4.png" alt="slide">
+                                </div>
+                                <div class="txtAppSlide">
+                                    <i><img src="/assets/images/lpappmovil/itinerario.png" alt="slide"></i>
+                                    <div>
+                                        <h3>Conoce el estatus de tu vuelo</h3>
+                                        <p>La información se actualiza en tiempo real.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-page-content" id="AppMFooter">
+            <h3>¡Todo lo que necesitas, al alcance de tu mano!</h3>
+            <div id="appLPFooter">
+                <div id="appFeatures" class="col-sm-12 col-lg-6">
+                    <div class="appFeature">
+                        <i><img src="/assets/images/lpappmovil/Conexion.png"></i>
+                        <span>
+                    <h4>Vuela a más lugares</h4>
+                    <p>Llega a cualquiera de nuestros destinos, aunque no exista una ruta directa entre ambos puntos.</p>   
+                    </span>
+                    </div>
+                    <div class="appFeature">
+                        <i><img src="/assets/images/lpappmovil/Ofertas_exclusivas.png"></i>
+                        <span>
+                    <h4>Ofertas en vuelos</h4>
+                    <p>Accede en exclusiva a grandes promociones y descuentos en boletos de avión.</p>  
+                    </span>
+                    </div>
+                    <div class="appFeature">
+                        <i><img src="/assets/images/lpappmovil/Complementa.png"></i>
+                        <span>
+                    <h4>Complementa tu viaje</h4>
+                    <p>Solicita la transportación de tu mascota, intrumentos musicales, equipo deportivo o equipaje extra.</p>  
+                    </span>
+                    </div>
+                </div>
+                <div class="imgMask col-sm-12 col-lg-6">
+                    <img src="/assets/images/lpappmovil/img_benfetis.jpg" alt="appInterjet">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Content ENDS-->
+    <!--FOOTER Begins-->
+    <footer class="navbar-fixed-bottom ">
+        <div id="outdated "></div>
+    </footer>
+    <!--Bootstrap default scripts-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js "></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js "></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js "></script>
+    <script src="/assets/js/material.min.js "></script>
+    <script src="/assets/js/ripples.min.js "></script>
+    <!--Plugins Scripts-->
+    <!--Outdated browsers plugin-->
+    <script type="text/javascript " src="/assets/js/outdatedbrowser.js "></script>
+    <script src="/assets/js/bootstrap-rating-input.js "></script>
+    <script src="/assets/js/modernizr.js "></script>
+    <script type="text/javascript " src="/assets/plugins/slick/slick.min.js "></script>
+    <!--Custom Scripts-->
+    <script src="/assets/js/functions.min.js " async defer></script>
+    <script src="/assets/js/main_functions.js " async defer></script>
+    <!--Loading Header&Footer-->
+    <script type="text/javascript " charset="utf-8 " async>
+    $(window).load(function() {
+        setTimeout(function() {
+            $('header').load('header.html');
+            $('footer').load('footer-intern.html');
+        }, 100);
+    });
+    </script>
+    <!--Carousel funcion-->
+    <script type="text/javascript" charset="utf-8" async defer>
+    $('.appCarousel').slick({
+        dots: true,
+        speed: 500,
+        slidesToShow: 1,
+        infinite: false
+    });
+    </script>
+</body>
+
+</html>

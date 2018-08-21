@@ -1,0 +1,1063 @@
+<!DOCTYPE&nbsp;html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+    <meta content="" name="Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers." />
+    <meta content="" name="MegaNavbar.com" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/MegaNavbar.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/skins/navbar-inverse.css" title="inverse">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation/animation.css" title="inverse">
+
+    <!--Highlight-->
+    <link href="documentation/assets/plugins/highlight/styles/github.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+    <!--Highlight-->
+    <script src="documentation/assets/plugins/highlight/highlight.pack.js" type="text/javascript"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+
+<body>
+<style>
+  .toTop {position: fixed;right: 15px;bottom: 56px;z-index: 10000;color: #999;}
+</style>
+
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <div  id="toc" class="jumbotron" style="color: #fff; background-color: #026881; padding: 0;">
+    	<div class="container">
+    		<h2 class="page-header" style="margin: 25px 0 25px;">
+    			<i class="fa fa-credit-card"></i> MegaNavbar. (v 2.2.0) <small style="color: #ddd;">Advanced Navbar for Bootstrap 3.0+ from Twitter.</small>
+    		</h2>
+    		<p class="text-justify"><small>Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers.</small></p>
+    	</div>
+    </div>
+    <div class="container">
+    	<nav class="navbar navbar-inverse no-border-radius" id="main_navbar" role="navigation">
+    		<div class="container-fluid">
+    			<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+    				<span class="sr-only">Toggle navigation</span>
+    				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+    				</button>
+    				<a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Brand</a>
+    			</div>
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+    				<!-- text -->
+    				<p class="navbar-text navbar-left"><i class="fa fa-h-square"></i>&nbsp;<span class="hidden-sm hidden-md">Text</span></p>
+    				<!-- regular link -->
+    				<a href="#" class="navbar-link navbar-left"><i class="fa fa-link"></i>&nbsp;<span class="hidden-sm hidden-md">Link</span></a>
+    				<ul class="nav navbar-nav navbar-left">
+    					<!-- divider -->
+    					<li class="divider"></li>
+    					<!-- dropdown default -->
+    					<li class="dropdown-short">
+    						<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle" aria-expanded="true"><i class="fa fa-bars"></i>&nbsp;<span class="hidden-sm">Short</span><span class="caret"></span></a>
+    						<ul class="dropdown-menu">
+    							<li class="dropdown-header">Header. Menu items</li>
+    							<li class="divider"></li>
+    							<li class="dropdown-right-onhover no-fix">
+    								<!-- Menu item with submenu -->
+    								<a href="javascript:;" data-toggle="collapse" data-target="#id_3ac0aa8ea29f2302" class="dropdown-toggle collapsed"><i class="fa fa-bars"></i> With submenu<span class="desc">Show on hover &amp; don't fix</span></a>
+    								<!-- start submenu -->
+    								<ul class="dropdown-menu collapse" id="id_3ac0aa8ea29f2302">
+    									<li class="dropdown-header">Submenu header</li>
+    									<li class="divider"></li>
+    									<li class="dropdown-right-onhover">
+    										<!-- Menu item with submenu -->
+    										<a href="javascript:;" data-toggle="collapse" data-target="#id_c7a0dc0830f7d307" class="dropdown-toggle collapsed"><i class="fa fa-bars"></i> With submenu<span class="desc">Show on hover &amp; fix on click</span></a>
+    										<!-- start submenu -->
+    										<ul class="dropdown-menu collapse" id="id_c7a0dc0830f7d307">
+    											<li class="dropdown-header">Submenu header</li>
+    											<li class="divider"></li>
+    											<li><a href="#" class="">Default item<span class="desc">Default description</span></a></li>
+    											<li class="active"><a href="#" class="">Active item<span class="desc">Active description</span></a></li>
+    											<li class="disabled"><a href="#" class="">Disabled item<span class="desc">Disabled description</span></a></li>
+    											<li class="open"><a href="#" class="">Open item<span class="desc">Open description</span></a></li>
+    											<li class="divider"></li>
+    											<li>
+    												<p><a href="#&quot;"><i class="fa fa-link"></i> Regular link<span class="desc">Regular link description</span></a></p>
+    											</li>
+    											<li class="divider"></li>
+    											<li><a href="#">Separated link</a></li>
+    										</ul>
+    										<!-- end submenu -->
+    									</li>
+    									<li><a href="#" class="">Default item<span class="desc">Default description</span></a></li>
+    									<li class="active"><a href="#" class="">Active item<span class="desc">Active description</span></a></li>
+    									<li class="disabled"><a href="#" class="">Disabled item<span class="desc">Disabled description</span></a></li>
+    									<li class="open"><a href="#" class="">Open item<span class="desc">Open description</span></a></li>
+    									<li class="divider"></li>
+    									<li>
+    										<p><a href="#&quot;"><i class="fa fa-link"></i> Regular link<span class="desc">Regular link description</span></a></p>
+    									</li>
+    									<li class="divider"></li>
+    									<li><a href="#">Separated link</a></li>
+    								</ul>
+    								<!-- end submenu -->
+    							</li>
+    							<li class="divider"></li>
+    							<li><a href="#">Default item<span class="desc">Default description</span></a></li>
+    							<li class="active"><a href="#" class="">Active item<span class="desc">Active description</span></a></li>
+    							<li class="disabled"><a href="#" class="">Disabled item<span class="desc">Disabled description</span></a></li>
+    							<li class="open"><a href="#" class="">Open item<span class="desc">Open description</span></a></li>
+    							<li class="divider"></li>
+    							<li>
+    								<p><a href="#&quot;">Regular link<span class="desc">Regular link description</span></a></p>
+    							</li>
+    							<li class="divider"></li>
+    							<li>
+    								<form class="navbar-form navbar-right" role="search" style="margin-left: -15px;">
+    									<div class="input-group"><input type="text" placeholder="input" class="form-control"><span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i>&nbsp;</button></span></div>
+    								</form>
+    							</li>
+    						</ul>
+    					</li>
+    					<!-- divider -->
+    					<li class="divider"></li>
+    					<!-- dropdown disabled -->
+    					<li class="dropdown-short disabled hidden-sm hidden-md"><a>Disabled</a></li>
+    					<!-- divider -->
+    					<li class="divider hidden-sm hidden-md"></li>
+    					<!-- wide -->
+    					<li class="dropdown-wide">
+    						<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-check-square-o"></i>&nbsp;<span class="hidden-sm hidden-md">Wide</span><span class="caret"></span></a>
+    						<ul class="dropdown-menu">
+    							<li class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+    								<address>
+    									<br>
+    									<strong>MegaNavbar, Inc.</strong><br>
+    									123 Folsom Ave, Suite 456<br>
+    									San Francisco, CA 987654<br>
+    									<abbr title="Phone">P:</abbr> (123) 456-7890
+    								</address>
+    								<address>
+    									<strong>Full Name</strong><br>
+    									<a href="mailto:#">first.last@example.com</a>
+    								</address>
+    							</li>
+    							<li class="col-xs-6 col-sm-8 col-md-5 col-lg-5">
+    								<form role="form">
+    									<div class="form-group">
+    										<label for="exampleInputEmail1">Email address</label>
+    										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    									</div>
+    									<div class="form-group">
+    										<label for="exampleInputPassword1">Password</label>
+    										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    									</div>
+    									<div class="form-group">
+    										<div class="col-sm-8">
+    											<div class="checkbox"><label><input type="checkbox"> Remember me</label></div>
+    										</div>
+    										<div class="col-sm-4">
+    											<button type="submit" class="pull-right btn btn-default">Submit</button>
+    										</div>
+    									</div>
+    								</form>
+    							</li>
+    							<li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    								<div class="embed-responsive embed-responsive-16by9">
+    									<iframe class="embed-responsive-item" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ch/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Bern&amp;aq=&amp;sll=46.813187,8.22421&amp;sspn=3.379772,8.453979&amp;ie=UTF8&amp;hq=&amp;hnear=Bern&amp;t=m&amp;z=12&amp;ll=46.947922,7.444608&amp;output=embed&amp;iwloc=near"></iframe>
+    								</div>
+    							</li>
+    						</ul>
+    					</li>
+    					<!-- divider -->
+    					<li class="divider"></li>
+    					<li class="dropdown-full">
+    						<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle" aria-expanded="true"><i class="fa fa-leaf"></i>&nbsp;<span class="hidden-sm hidden-md">Envato</span><span class="caret"></span></a>
+    						<div class="dropdown-menu no-padding HingeUpToDown">
+    							<ul>
+    								<li class="col-sm-12 dropdown-header text-center" style="padding-bottom: 15px; border-bottom: 1px solid #555; background: #1abc9c;color: white; margin: 0 -1px; width: calc(100% + 2px);">
+    									<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    									<h4><i class="fa fa-refresh fa-spin"></i> Everything you need for your next creative project.</h4>
+    									<small class="" style="font-size: 13px; font-weight: normal; white-space: normal;">Over 4.5 million digital products created by a global community of designers, developers, photographers, illustrators &amp; producers.</small>
+    									<p class="" style="font-size: 14px; font-weight: normal;"><i class="fa fa-arrow-down"></i> Try to click... <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i> Try to resize</p>
+    								</li>
+    							</ul>
+    							<ul id="myTab" style="margin-top: 1px;">
+    								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#themeforest" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #1abc9c"></i> Themeforest<span class="desc"> marketplace</span></a></li>
+    								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#codecanyon" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #e78733;"></i> Codecanyon<span class="desc"> marketplace</span></a></li>
+    								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#videohive" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #e7a802;"></i> Videohive<span class="desc"> marketplace</span></a></li>
+    								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#activeden" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #d35400;"></i> Activeden<span class="desc"> marketplace</span></a></li>
+    								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#3docean" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #ab0f34;"></i> 3docean<span class="desc"> marketplace</span></a></li>
+    								<li class="hidden-sm hidden-md hidden-lg col-xs-6 no-padding"><a href="#graphicriver" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #308eb1"></i> Graphicriver<span class="desc"> marketplace</span></a></li>
+    								<li class="hidden-sm hidden-md hidden-lg col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#audiojungle" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #9ac130"></i> Audiojungle<span class="desc"> marketplace</span></a></li>
+    								<li class="hidden-sm hidden-md hidden-lg col-xs-6 no-padding"><a href="#photodune" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #0f8c98"></i> Photodune<span class="desc"> marketplace</span></a></li>
+    								<li class="hidden-xs col-lg-2 col-md-2 col-sm-2 no-padding no-border-radius no-shadow dropdown-center-onhover no-fix rtl">
+    									<a data-toggle="collapse" data-target="#id_4640f9fd6be74fcf" class="dropdown-toggle collapsed" aria-expanded="false"><i class="fa fa-star" style="color: #308eb1"></i><i class="fa fa-star" style="color: #9ac130"></i><i class="fa fa-star" style="color: #0f8c98"></i> More...<span class="desc">See more options</span></a>
+    									<ul class="h-divided dropdown-menu no-padding col-lg-2 col-md-2 col-sm-2 col-xs-6 collapse" style="width: calc(100% + 2px); left: 0px; height: 2px;" id="id_4640f9fd6be74fcf" aria-expanded="false">
+    										<li class="more"><a href="#graphicriver" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #308eb1"></i> Graphicriver<span class="desc"> marketplace</span></a></li>
+    										<li class="more"><a href="#audiojungle" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #9ac130"></i> Audiojungle<span class="desc"> marketplace</span></a></li>
+    										<li class="more"><a href="#photodune" role="tab" data-toggle="tab"><i class="fa fa-star" style="color: #0f8c98"></i> Photodune<span class="desc"> marketplace</span></a></li>
+    									</ul>
+    								</li>
+    							</ul>
+    							<div id="myTabContent" class="tab-content">
+    								<div class="tab-pane" id="themeforest">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #1abc9c; color: white;">
+    												16,000+ Site Templates and Themes from $3
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">WordPress</a></li>
+    											<li><a href="#">HTML</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Marketing</a></li>
+    											<li><a href="#">CMS <span class="label label-danger pull-right">New</span></a></li>
+    											<li><a href="#">eCommerce</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">PSD</a></li>
+    											<li><a href="#">Tumblr</a></li>
+    											<li><a href="#">Ghost</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Muse</a></li>
+    											<li><a href="#">Plugins</a></li>
+    											<li><a href="#">More...</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane" id="codecanyon">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #e78733; color: white;">
+    												10,000+ Scripts and Snippets from $2
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">PHP Scripts</a></li>
+    											<li><a href="#">WordPress</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">eCommerce</a></li>
+    											<li><a href="#">JavaScript</a></li>
+    											<li><a href="#">CSS</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Mobile</a></li>
+    											<li><a href="#">HTML5</a></li>
+    											<li><a href="#">Skins</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">WP Themes</a></li>
+    											<li><a href="#">Plugins</a></li>
+    											<li><a href="#">More</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane " id="videohive">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #e7a802; color: white;">
+    												100,000+ Royalty Free Video Files from $2
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">Project Files</a></li>
+    											<li><a href="#">Product Promo</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Apple Motion</a></li>
+    											<li><a href="#">Motion Graphics</a></li>
+    											<li><a href="#">Stock Footage</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Cinema 4D Templates</a></li>
+    											<li><a href="#">Add Ons</a></li>
+    											<li><a href="#">Logo Files</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">News Files</a></li>
+    											<li><a href="#">Wedding Files</a></li>
+    											<li><a href="#">More</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane " id="activeden">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #d35400; color: white;">
+    												11,000+ Flash &amp; Flex Files from $1
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">Unity 3D</a></li>
+    											<li><a href="#">Flash</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Animations</a></li>
+    											<li><a href="#">Games</a></li>
+    											<li><a href="#">Site Templates</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Video Players</a></li>
+    											<li><a href="#">Image Viewers</a></li>
+    											<li><a href="#">Flex</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Facebook Themes</a></li>
+    											<li><a href="#">JSFL Extensions</a></li>
+    											<li><a href="#">More</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane " id="3docean">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #ab0f34; color: white;">
+    												18,000+ 3D Models &amp; Accessories from $1
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">3D Models</a></li>
+    											<li><a href="#">Cars</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">HDRI Images</a></li>
+    											<li><a href="#">CG Textures</a></li>
+    											<li><a href="#">Materials &amp; Shaders</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Base Meshes</a></li>
+    											<li><a href="#">Scripts &amp; Plugins</a></li>
+    											<li><a href="#">2D Concepts</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Animation Data</a></li>
+    											<li><a href="#">Render Setup</a></li>
+    											<li><a href="#">More</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane " id="graphicriver">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #308eb1; color: white;">
+    												285,000+ Stock Graphics Files from $1
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">Graphics</a></li>
+    											<li><a href="#">Print</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Web Elements</a></li>
+    											<li><a href="#">Add-ons</a></li>
+    											<li><a href="#">Vectors</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Presentations</a></li>
+    											<li><a href="#">Infographics</a></li>
+    											<li><a href="#">Icons</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Fonts</a></li>
+    											<li><a href="#">Logos</a></li>
+    											<li><a href="#">More</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane " id="audiojungle">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #9ac130; color: white;">
+    												195,800 Royalty Free Audio Files from $1
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">Music</a></li>
+    											<li><a href="#">Music Packs</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Sound Effects</a></li>
+    											<li><a href="#">Sound Packs</a></li>
+    											<li><a href="#">Custom Sounds</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Source Files</a></li>
+    											<li><a href="#">Source Packs</a></li>
+    											<li><a href="#">Custom Source</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Logos</a></li>
+    											<li><a href="#">Idents</a></li>
+    											<li><a href="#">More ...</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    								<div class="tab-pane " id="photodune">
+    									<ul class="row">
+    										<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="margin: 0 -1px; width: calc(100% + 2px); padding:0 15px;">
+    											<h4 style="background: #0f8c98 ; color: white;">
+    												Royalty Free Stock Photography from $3
+    											</h4>
+    										</li>
+    									</ul>
+    									<div class="divided">
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">All Items</a></li>
+    											<li><a href="#">Animals</a></li>
+    											<li><a href="#">Architecture</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Business</a></li>
+    											<li><a href="#">Food</a></li>
+    											<li><a href="#">Health</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Sports</a></li>
+    											<li><a href="#">People</a></li>
+    											<li><a href="#">Technology</a></li>
+    										</ul>
+    										<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+    											<li><a href="#">Travel</a></li>
+    											<li><a href="#">Nature</a></li>
+    											<li><a href="#">More ...</a></li>
+    										</ul>
+    									</div>
+    								</div>
+    							</div>
+    							<script>
+    								$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+    								    $('a[data-toggle="tab"]').each(function() {
+    								 			    $(this).parent('li').removeClass('active');
+    								    });
+    								})
+
+    								/*$('.carousel').carousel();*/
+    							</script>
+    						</div>
+    					</li>
+    				</ul>
+    				<ul class="nav navbar-nav navbar-right">
+    					<!-- search form -->
+    					<form class="navbar-form-expanded navbar-form navbar-left visible-lg-block visible-md-block visible-xs-block" role="search">
+    						<div class="input-group">
+    							<input type="text" class="form-control" data-width="80px" data-width-expanded="170px" placeholder="Search..." name="query">
+    							<span class="input-group-btn"><button class="btn btn-default" type="submit"><i class="fa fa-search"></i>&nbsp;</button></span>
+    						</div>
+    					</form>
+    					<li class="dropdown-grid visible-sm-block">
+    						<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-search"></i> Search</a>
+    						<div class="dropdown-grid-wrapper" role="menu">
+    							<ul class="dropdown-menu col-sm-6">
+    								<li>
+    									<form class="no-margin">
+    										<div class="input-group">
+    											<input type="text" class="form-control">
+    											<span class="input-group-btn"><button class="btn btn-default" type="button">&nbsp;<i class="fa fa-search"></i></button></span>
+    										</div>
+    									</form>
+    								</li>
+    							</ul>
+    						</div>
+    					</li>
+    					<!-- media -->
+    					<li class="dropdown-grid">
+    						<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-tasks"></i>&nbsp;<span class="hidden-sm">Media</span><span class="caret"></span></a>
+    						<div class="dropdown-grid-wrapper" role="menu">
+    							<ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+    								<li>
+    									<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    										<div class="row">
+    											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 divided" style="padding-right: 0;">
+    												<ol class="carousel-indicators navbar-carousel-indicators h-divided">
+    													<li data-target="#carousel-example-generic" data-slide-to="0" class="active"><a href="#" class="">Cars<span class="hidden-xs desc">Short description</span></a></li>
+    													<li data-target="#carousel-example-generic" data-slide-to="1" class=""><a href="#" class="">Animals<span class="hidden-xs desc">Slide with caption</span></a></li>
+    													<li data-target="#carousel-example-generic" data-slide-to="2" class=""><a href="#" class="">Nature<span class="hidden-xs desc">Short description</span></a></li>
+    													<li data-target="#carousel-example-generic" data-slide-to="3" class=""><a href="#" class="">City<span class="hidden-xs desc">Short description</span></a></li>
+    													<li data-target="#carousel-example-generic" data-slide-to="4" class=""><a href="#" class="">Space<span class="hidden-xs desc">Short description</span></a></li>
+    												</ol>
+    											</div>
+    											<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+    												<div class="carousel-inner">
+    													<div class="item active">
+    														<div class="embed-responsive embed-responsive-16by9">
+    															<img class="embed-responsive-item" src="images/cars.jpg">
+    														</div>
+    													</div>
+    													<div class="item">
+    														<div class="embed-responsive embed-responsive-16by9">
+    															<img class="embed-responsive-item" src="images/animals.jpg">
+    															<div class="carousel-caption">
+    																<h3>The Eurasian eagle-owl</h3>
+    																<p>(Bubo bubo) is a species of eagle-owl resident in much of Eurasia. It is sometimes called the European eagle-owl</p>
+    															</div>
+    														</div>
+    													</div>
+    													<div class="item">
+    														<div class="embed-responsive embed-responsive-16by9">
+    															<img class="embed-responsive-item" src="images/nature.jpg">
+    														</div>
+    													</div>
+    													<div class="item">
+    														<div class="embed-responsive embed-responsive-16by9">
+    															<img class="embed-responsive-item" src="images/city.jpg">
+    														</div>
+    													</div>
+    													<div class="item">
+    														<div class="embed-responsive embed-responsive-16by9">
+    															<img class="embed-responsive-item" src="images/space.jpg">
+    														</div>
+    													</div>
+    												</div>
+    											</div>
+    										</div>
+    									</div>
+    									<script>
+    										$('.carousel').carousel()
+    									</script>
+    								</li>
+    							</ul>
+    						</div>
+    					</li>
+    					<!-- divider -->
+    					<li class="divider"></li>
+    					<!-- account -->
+    					<li class="dropdown-grid">
+    						<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-lock"></i>&nbsp;<span class="hidden-sm">Account</span><span class="caret"></span></a>
+    						<div class="dropdown-grid-wrapper" role="menu">
+    							<ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7">
+    								<li>
+    									<div id="carousel-example-account" class="carousel slide">
+    										<div class="row">
+    											<div class="col-lg-8 col-md-8 col-sm-8">
+    												<div class="carousel-inner">
+    													<div class="item active">
+    														<h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-lock"></i> Sign in</h3>
+    														<br>
+    														<form class="form-horizontal" role="form">
+    															<div class="form-group">
+    																<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+    																<div class="col-sm-9"><input type="text" class="input-sm form-control" id="inputEmail3" placeholder="Email" autocomplete="off"></div>
+    															</div>
+    															<div class="form-group">
+    																<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+    																<div class="col-sm-9"><input type="password" class="input-sm form-control" id="inputPassword3" placeholder="Password" autocomplete="off"></div>
+    															</div>
+    															<div class="form-group">
+    																<div class="col-sm-offset-3 col-sm-9">
+    																	<button class="btn btn-default pull-right" type="submit"><i class="fa fa-unlock-alt"></i> Sign in</button>
+    																</div>
+    															</div>
+    														</form>
+    														<p class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="1" ><small>Don’t have a account? Sign up for FREE</small></p>
+    														<p class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="2" ><small>Lost Your Username?</small></p>
+    														<p class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="3" ><small>Lost Your Password?</small></p>
+    													</div>
+    													<div class="item">
+    														<h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-user"></i> Create new account</h3>
+    														<br>
+    														<form class="form-horizontal" role="form">
+    															<div class="form-group">
+    																<label for="inputEmail3" class="col-sm-5 control-label">Email</label>
+    																<div class="col-sm-7"><input type="text" class="input-sm form-control" id="inputEmail3" placeholder="Enter your email address" autocomplete="off"></div>
+    															</div>
+    															<div class="form-group">
+    																<label for="inputPassword3" class="col-sm-5 control-label">Password</label>
+    																<div class="col-sm-7"><input type="password" class="input-sm form-control" id="inputPassword3" placeholder="Enter password" autocomplete="off"></div>
+    															</div>
+    															<div class="form-group">
+    																<label for="inputPassword3" class="col-sm-5 control-label">Confirm password</label>
+    																<div class="col-sm-7"><input type="password" class="input-sm form-control" id="inputPassword3" placeholder="Enter confirm password" autocomplete="off"></div>
+    															</div>
+    															<div class="form-group">
+    																<div class="col-sm-12">
+    																	<div class="checkbox">
+    																		<label>
+    																		<input type="checkbox"> <small>I have read and agree to our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.</small>
+    																		</label>
+    																	</div>
+    																</div>
+    															</div>
+    															<div class="form-group">
+    																<div class="col-sm-offset-5 col-sm-7">
+    																	<button class="btn btn-default pull-right" type="submit"><i class="fa fa-save"></i> Create an account</button>
+    																</div>
+    															</div>
+    														</form>
+    													</div>
+    													<!-- Forgot your username -->
+    													<div class="item">
+    														<h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-warning"></i> Forgotten your Username?</h3>
+    														<br>
+    														<p class="text-justify">Enter your email address, you signed up with (or entered in your settings), and we'll send you an email with your username.</p>
+    														<br>
+    														<form id="lost_password" method="post" class="form" role="form">
+    															<div class="input-group">
+    																<input type="text" class="form-control" placeholder="Enter your username" autocomplete="off">
+    																<span class="input-group-btn">
+    																<button class="btn btn-default" type="button"><i class="fa fa-envelope"></i> Send it to me!</button>
+    																</span>
+    															</div>
+    														</form>
+    														<br><br>
+    														<p class="text-justify"><small><i>If you've forgotten your username and password, you must first retrieve your username (using your email address) and then reset your password using those details.</i></small></p>
+    													</div>
+    													<!-- Forgot your password -->
+    													<div class="item">
+    														<h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-warning"></i> Forgot your password?</h3>
+    														<br>
+    														<p class="text-justify">Enter your username, and we'll send you an email with a link and instructions to reset your password.
+    															If you signed up without an email address (or removed it from settings), visit the FAQ.
+    														</p>
+    														<br>
+    														<form id="lost_password" method="post" class="form" role="form">
+    															<div class="input-group">
+    																<input type="text" class="form-control" placeholder="Enter your username" autocomplete="off">
+    																<span class="input-group-btn">
+    																<button class="btn btn-default" type="button"><i class="fa fa-envelope"></i> Send it to me!</button>
+    																</span>
+    															</div>
+    														</form>
+    														<br>
+    														<p class="text-justify"><small><i>If you've forgotten your username and password, you must first <span class="text-primary" style="cursor: pointer;" data-target="#carousel-example-account" data-slide-to="2">retrieve your username</span> (using your email address) and then reset your password using those details.</i></small></p>
+    													</div>
+    													<div class="item">
+    														<h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h3>
+    														<br>
+    														<p class="text-justify" ><i><small>Get the freebies from us and latest updates about YourApp! We hate spam as much as you do, trust us we won't give your details away to other people.</small></i></p>
+    														<br>
+    														<form class="form-horizontal" role="form">
+    															<div class="form-group">
+    																<label for="inputEmail" class="col-sm-5 control-label">Your email address</label>
+    																<div class="col-sm-7"><input type="text" class="input-sm form-control" id="inputEmail" name="inputEmail" placeholder="Your email address"></div>
+    															</div>
+    															<div class="form-group">
+    																<label for="inputName" class="col-sm-5 control-label">Your Name</label>
+    																<div class="col-sm-7"><input type="text" class="input-sm form-control" id="inputName" name="inputName" placeholder="Your Name"></div>
+    															</div>
+    															<br>
+    															<div class="form-group">
+    																<div class="col-sm-offset-5 col-sm-7">
+    																	<button class="btn btn-default pull-right" type="submit"><i class="fa fa-envelope-o"></i> Subscribe</button>
+    																</div>
+    															</div>
+    														</form>
+    													</div>
+    													<div class="item">
+    														<h3 class="text-right" style="padding-top:0px; border-bottom: 1px solid #555;"><i class="fa fa-envelope"></i> Contact us</h3>
+    														<br>
+    														<div class="row">
+    															<form class="" role="form">
+    																<div class="col-xs-6 col-md-6 ">
+    																	<div class="form-group">
+    																		<input type="text" class="input-sm form-control" id="inputName" name="inputName" placeholder="Enter your name">
+    																	</div>
+    																</div>
+    																<div class="col-xs-6 col-md-6 ">
+    																	<div class="form-group">
+    																		<input type="password" class="input-sm form-control" id="inputEmail" name="inputEmail" placeholder="Enter your email address">
+    																	</div>
+    																</div>
+    																<div class="col-xs-12 col-md-12 ">
+    																	<div class="form-group">
+    																		<input type="password" class="input-sm form-control" id="inputSubject" name="inputSubject" placeholder="Subject ...">
+    																	</div>
+    																</div>
+    																<div class="col-xs-12 col-md-12 ">
+    																	<div class="form-group">
+    																		<textarea style="resize: none;" class="form-control"  id="inputMessage" name="inputMessage" placeholder="Message" rows="3"></textarea>
+    																	</div>
+    																</div>
+    																<div class="form-group col-sm-offset-3 col-sm-9">
+    																	<button class="btn btn-default pull-right" type="submit"><i class="fa fa-chevron-circle-right"></i> Submit</button>
+    																</div>
+    															</form>
+    														</div>
+    													</div>
+    												</div>
+    											</div>
+    											<div class="col-lg-4 col-md-4 col-sm-4" style="border-left: 1px solid #555;">
+    												<ol class="carousel-indicators navbar-carousel-indicators" style="">
+    													<li data-target="#carousel-example-account" data-slide-to="0" class="active"><a href="#" class="">Sign In<span class="desc">Already have an account? Log in</span></a></li>
+    													<li data-target="#carousel-example-account" data-slide-to="1" class=""><a href="#" class="">Sign Up<span class="desc">Create new account</span></a></li>
+    													<li data-target="#carousel-example-account" data-slide-to="2" class=""><a href="#" class="">Forgot username?<span class="desc">No problem, we can remind you by email</span></a></li>
+    													<li data-target="#carousel-example-account" data-slide-to="3" class=""><a href="#" class="">Forgot password?<span class="desc">Don't worry, it happens!</span></a></li>
+    													<li data-target="#carousel-example-account" data-slide-to="4" class=""><a href="#" class="">Subscribe<span class="desc">Subscribe to our Newsletters</span></a></li>
+    													<li data-target="#carousel-example-account" data-slide-to="5" class=""><a href="#" class="">Contact us<span class="desc">If you have any questions ...</span></a></li>
+    												</ol>
+    											</div>
+    										</div>
+    									</div>
+    								</li>
+    							</ul>
+    						</div>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</nav>
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-3" style="padding-right: 0;">
+            			<div class="jumbotron" style="color: #fff; background-color: #026881; padding: 10px;  height: 147px">
+        					<small class="prepend-top">
+        						<strong><br>
+        						Created: 11/12/2014<br>
+        						Updated: 07/08/2016<br>
+        						By: Eduard Neganov<br>
+        						Email: <a style="color: #E8EBAE;" href="mailto:info@meganavbar.com">info@meganavbar.com</a><br>
+        						Web: <a style="color: #E8EBAE;" href="http://meganavbar.com">MegaNavbar.com</a>
+        						</strong>
+        					</small>
+            			</div>
+                    </div>
+                    <div class="col-sm-9">
+            			<div class="jumbotron" style="color: #fff; background-color: #026881; padding: 10px;">
+            				<div class="container">
+            					<h4 class="text-center"><b>Complete online documentation:  <a style="color: #E8EBAE;" href="http://meganavbar.com">MegaNavbar.com</a></b></h4>
+            					<small class="text-justify">What’s New in Version 2.2.0: animation added, RTL languages support, SASS-powered skins, Simple Line Icons added, some additional features added, etc...</small><br><br>
+                                <small class="text-justify">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a style="color: #E8EBAE;" href="http://codecanyon.net/item/meganavbar-advanced-mega-menu-for-bootstrap-30/8516895/support">here</a>. Thanks so much!</small>
+            				</div>
+            			</div>
+                    </div>
+                </div>
+
+                <hr id="whats-included"><br>
+                <h3>What's included</h3>
+                <p>Within MegaNavbar you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p>
+<pre><code>MegaNavbar/
+├──assets/
+│  ├──css/
+│  │  ├── animation/ ...
+│  │  ├── less/ ...
+│  │  ├── sass/ ...
+│  │  ├── skins/ ...
+│  │  │
+│  │  ├── MegaNavbar.min.css
+│  │  ├── MegaNavbar-rtl.min.css
+│  │  ├── MegaNavbar.css
+│  │  └── MegaNavbar-rtl.css
+│  │
+│  └──plugins/
+│     ├── bootstrap/ ...
+│     ├── bootstrap-rtl/ ...
+│     ├── font-awesome/ ...
+│     ├── simple-line-icons/ ...
+│     │
+│     └── jquery-1.11.1.min
+│
+├──changelog.txt
+└──index.html
+</code></pre>
+
+                <hr id="basic-setup-ltr"><br>
+                <h3>Basic setup (LTR language version)</h3>
+                <p>Start with this basic HTML template. We hope that you can easily customize our examples, adapting them to suit your needs.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;MegaNavbar: advanced Bootstrap navbar plugin&lt;/title&gt;
+
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;!-- Font Awesome --&gt;
+    &lt;link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+    &lt;!-- Simple Line Icons --&gt;
+    &lt;link href=&quot;MegaNavbar/assets/plugins/simple-line-icons/simple-line-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;!-- MegaNavbar--&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MegaNavbar/assets/css/MegaNavbar.min.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MegaNavbar/assets/css/skins/navbar-inverse.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MegaNavbar/assets/css/animation/animation.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- begin MegaNavbar--&gt;
+    &lt;nav class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+      &lt;div class=&quot;container-fluid&quot;&gt;
+        &lt;!-- for full width layout or use class=&quot;container&quot; for boxed layout --&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#MegaNavbar&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;MegaNavbar&quot;&gt;
+          &lt;ul class=&quot;nav navbar-nav navbar-left&quot;&gt;
+            &lt;!-- Left side navigation--&gt;
+            ...
+          &lt;/ul&gt;
+          &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+            &lt;!-- Right side navigation--&gt;
+            ...
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;!-- end MegaNavbar--&gt;
+
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- jQuery JavaScript--&gt;
+    &lt;script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Bootstrap JavaScript--&gt;
+    &lt;script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+                <hr id="basic-setup-rtl"><br>
+                <h3>Basic setup (RTL language version)</h3>
+                <p>Start with this basic HTML template. We hope that you can easily customize our examples, adapting them to suit your needs.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;MegaNavbar: advanced Bootstrap navbar plugin&lt;/title&gt;
+
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href="MegaNavbar/assets/plugins/bootstrap-rtl/css/bootstrap-arabic.min.css" rel="stylesheet"&gt;
+    &lt;!-- Font Awesome --&gt;
+    &lt;link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"&gt;
+    &lt;!-- Simple Line Icons --&gt;
+    &lt;link href=&quot;MegaNavbar/assets/plugins/simple-line-icons/simple-line-icons.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;!-- MegaNavbar--&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MegaNavbar/assets/css/MegaNavbar-rtl.min.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MegaNavbar/assets/css/skins/navbar-inverse.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="MegaNavbar/assets/css/animation/animation.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- begin MegaNavbar--&gt;
+    &lt;nav class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+      &lt;div class=&quot;container-fluid&quot;&gt;
+        &lt;!-- for full width layout or use class=&quot;container&quot; for boxed layout --&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#MegaNavbar&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;MegaNavbar&quot;&gt;
+          &lt;ul class=&quot;nav navbar-nav navbar-left&quot;&gt;
+            &lt;!-- Left side navigation--&gt;
+            ...
+          &lt;/ul&gt;
+          &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+            &lt;!-- Right side navigation--&gt;
+            ...
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;!-- end MegaNavbar--&gt;
+
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- jQuery JavaScript--&gt;
+    &lt;script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Bootstrap JavaScript--&gt;
+    &lt;script src="MegaNavbar/assets/plugins/bootstrap-rtl/js/bootstrap-arabic.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+
+                <hr id="credits"><br>
+                <h3>Sources and Credits</h3>
+                <p>I've used the following javascripts, framework, icons or other files as listed.</p>
+    			<ul>
+    				<li>Bootstrap (v. 3.2.0) - <a href="http://getbootstrap.com" target="_blank">http://getbootstrap.com</a> is released under the MIT http://opensource.org/licenses/mit-license.html license and is copyright 2014 Twitter.</li>
+    				<li>Bootstrap arabic (v. 3.2.0) for RTL languages support <a href="https://github.com/izer0x/bootstrap-3-arabic" target="_blank">https://github.com/izer0x/bootstrap-3-arabic</a> is released under the MIT http://opensource.org/licenses/mit-license.html license and is copyright 2014 Twitter.</li>
+    				<li>jQuery (v. 1.11.1) - <a href="http://jquery.com" target="_blank">http://jquery.com</a> projects are released under the terms of the MIT license. http://opensource.org/licenses/mit-license.html</li>
+    				<li>Font awesome icon (v. 4.2.0) - <a href="http://fontawesome.io/" target="_blank">http://fontawesome.io/</a> licensed under SIL OFL 1.1 http://scripts.sil.org/OFL. Code licensed under MIT License http://opensource.org/licenses/mit-license.html</li>
+    				<li>Simple Line Icons - <a href="http://graphicburger.com" target="_blank">http://graphicburger.com</a> licensed under GraphicBurger License http://graphicburger.com/license/</li>
+    			</ul>
+
+                <hr id="license"><br>
+                <h3>License</h3>
+                <p>MegaNavbar is released under <a href="http://codecanyon.net/licenses/terms/regular" target="_blank">Regular License</a> (http://codecanyon.net/licenses/regular) and <a href="http://codecanyon.net/licenses/terms/extended" target="_blank">Extended License</a> (http://codecanyon.net/licenses/extended) </p>
+
+
+                <hr id="documentation"><br>
+                <h3>Online documentation</h3>
+    			<ul>
+        			<li><a href="http://meganavbar.com">Documentation for current version (v 2.2.0)</a></li>
+        			<li><a href="http://meganavbar.com">Documentation for version 2.1.0</a></li>
+        			<li><a href="http://meganavbar.com/2.0.0/">Documentation for version 2.0.0</a></li>
+        			<li><a href="http://meganavbar.com/1.0.0/">Documentation for version 1.0.0</a></li>
+        			<li><a href="http://meganavbar.com#doc/skin/builder.html">Visual Skin Builder</a></li>
+                </ul>
+
+    		</div>
+    		<div class="col-sm-3" id="Table_of_Contents" >
+    			<div class="list-group">
+    				<span class="list-group-item" style="background-color: #026881; color: #fff;">Table of Contents</span>
+    				<a class="list-group-item" href="javascript:;" onclick='$("html, body").delay(100).animate({scrollTop: $("#whats-included").offset().top }, 1000);'>What's included</a>
+    				<a class="list-group-item" href="javascript:;" onclick='$("html, body").delay(100).animate({scrollTop: $("#basic-setup-ltr").offset().top }, 1000);'>Basic setup</a>
+    				<a class="list-group-item" href="javascript:;" onclick='$("html, body").delay(100).animate({scrollTop: $("#basic-setup-rtl").offset().top }, 1000);'>Basic setup (rtl language layout)</a>
+    				<a class="list-group-item" href="javascript:;" onclick='$("html, body").delay(100).animate({scrollTop: $("#credits").offset().top }, 1000);'>Sources and Credits</a>
+    				<a class="list-group-item" href="javascript:;" onclick='$("html, body").delay(100).animate({scrollTop: $("#license").offset().top }, 1000);'>License </a>
+    				<a class="list-group-item" href="javascript:;" onclick='$("html, body").delay(100).animate({scrollTop: $("#documentation").offset().top }, 1000);'>Online documentation</a>
+                    <span class="list-group-item active" style="background-color: #026881; color: #fff;">DEMOS</span>
+                    <a class="list-group-item" href="menu-basic.html" role="button">Demo basic</a>
+                    <a class="list-group-item" href="menu_components.html" role="button">Demo components</a>
+                    <a class="list-group-item" href="menu-animation.html" role="button">Demo animation</a>
+                    <a class="list-group-item" href="menu-forms.html" role="button">Demo forms</a>
+                    <a class="list-group-item" href="menu-grid.html" role="button">Demo grid</a>
+                    <a class="list-group-item" href="menu-images.html" role="button">Demo images</a>
+                    <a class="list-group-item" href="menu-maps.html" role="button">Demo maps</a>
+                    <a class="list-group-item" href="menu-search.html" role="button">Demo search</a>
+                    <a class="list-group-item" href="menu-shop.html" role="button">Demo shop</a>
+                    <a class="list-group-item" href="menu-submenus.html" role="button">Demo submenus</a>
+                    <a class="list-group-item" href="menu-tabs.html" role="button">Demo complex tabs (horizontal)</a>
+                    <a class="list-group-item" href="menu-tabs-v.html" role="button">Demo complex tabs (vertical)</a>
+                    <a class="list-group-item" href="menu-video.html" role="button">Demo video</a>
+                    <a class="list-group-item" href="menu_height.html" role="button">Demo change menu height</a>
+                    <a class="list-group-item" href="menu_height_onfix.html" role="button">Demo change menu height on fix</a>
+                    <a class="list-group-item" href="menu_image_logo.html" role="button">Demo image brand</a>
+                    <a class="list-group-item" href="menu_image_logo_centred.html" role="button">Demo image brand (centred)</a>
+                    <a class="list-group-item" href="menu_opacity_onfix.html" role="button">Demo add opacity on fix</a>
+                </div>
+    		</div>
+    	</div>
+    	<hr>
+    	<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on Codecanyon.net, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+    	<b>For additional information about installation, usage, customization and numerous examples you can see on site: <a href="http://MegaNavbar.com" target="_self" title="MegaNavbar.com">MegaNavbar.com</a></b>
+    	<hr class="space">
+
+
+
+
+    </div>
+
+
+
+
+    <button class="toTop btn btn-default btn-lg"><i class="fa fa-chevron-up"></i></button>
+
+    <footer style="background-color: #026881; color: #fff;">
+    	<p class="text-center" style="padding: 15px; margin: 0;">2014 &copy; MegaNavbar.com All Rights Reserved. We will take legal action against those who copy our HTML content, CSS style sheets and JavaScript functions  without a license.</p>
+    </footer>
+    <script>
+    	//Start Fix MegaNavbar on scroll page
+    	var navHeight = $('#main_navbar').offset().top;
+    	FixMegaNavbar(navHeight);
+    	$(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
+
+    	function FixMegaNavbar(navHeight) {
+    	    if (!$('#main_navbar').hasClass('navbar-fixed-bottom')) {
+    	        if ($(window).scrollTop() > navHeight) {
+    	            $('#main_navbar').addClass('navbar-fixed-top')
+    	            $('body').css({'margin-top': $('#main_navbar').height()+'px'});
+    	            if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+    	            else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	        }
+    	        else {
+    	            $('#main_navbar').removeClass('navbar-fixed-top');
+    	            $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	            $('body').css({'margin-top': ''});
+    	        }
+    	    }
+    	}
+    	//Start Fix MegaNavbar on scroll page
+
+
+/*    	//Start Fix MegaNavbar on scroll page
+    	var tocHeight = $('#Table_of_Contents').offset().top;
+    	FixTOC(tocHeight);
+    	$(window).bind('scroll', function() {FixTOC(tocHeight);});
+
+    	function FixTOC(tocHeight) {
+
+    	        if ($(window).scrollTop() > (tocHeight-75)) {
+                    $('#Table_of_Contents').css({'position':'relative', 'top':(($(window).scrollTop()-tocHeight)+90)+"px", 'right':'auto'});
+    	        }
+    	        else {
+                    $('#Table_of_Contents').css({'position':'relative', 'top':'0px', 'right':'auto'});
+    	        }
+    	}
+    	//Start Fix MegaNavbar on scroll page
+ */
+
+    	//Next code used to prevent unexpected menu close when using some components (like accordion, tabs, forms, etc), please add the next JavaScript to your page
+    	$( window ).load(function() {
+    	    $(document).on('click', '.navbar .dropdown-menu', function(e) {e.stopPropagation();});
+    	});
+
+        /*SCROLL PAGE TO TOP*/
+        $(document).ready(function() {
+            $(".toTop").css("display", "none");
+
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 0){$(".toTop").fadeIn("slow");} else {$(".toTop").fadeOut("slow");}
+            });
+
+            $(".toTop").click(function(){
+                event.preventDefault();
+                $("html, body").animate({scrollTop:0},"slow");
+            });
+        });
+
+    </script>
+</body>
+</html>

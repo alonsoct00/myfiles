@@ -1,0 +1,195 @@
+#unitMapPax{float:left;width:330px;padding:0;margin:0 15px 0 0}      
+
+.seatSelect input{
+width:40px;
+display: block;
+height: 30px;
+padding: 5px;
+font-size: 14px;
+line-height: 1.32857143;
+color: #555555;
+background-color: #ffffff;
+background-image: none;
+color:#1B4298;
+font-weight: bold;
+border: 1px solid #cccccc;
+border-radius: 3px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}  
+
+.unitMapViewTrain{overflow:auto;position:absolute;width:384px;height:402px;padding:0;margin:0 0 0 15px}
+.unitMapViewJetAircraft{
+	overflow-y:auto;
+	overflow-x:hidden;
+	position:absolute;
+	width:100%;
+	height:402px;
+	margin:0;
+}
+#unitMap{
+	height:870px;
+	padding:0
+}
+#unitMap var{color:#123cda;font-weight:bold;display:block;text-align:center;border:1px solid #000;background-color:#ddd;margin:5px auto;padding:0 5px;width:60px}#Train{overflow:auto;float:right;width:400px;height:405px}
+#JetAircraft{background-color:#EAF3FA;
+             overflow:auto;float:right;width:100%;height:800px}
+.unitMapViewTrain,.unitMapViewJetAircraft,
+#heightDiv{height:800px}
+#unitTipId{background-color:#fff;position:absolute;z-index:100;border:1px solid #000;padding:5px 10px;font-size:80%;width:120px}
+.compartment{
+	top:0 !important;
+	right:0;
+	left:22%;
+	width:310px !important;
+}
+.equipmentCompartments{overflow:auto;margin:0}#findSeatsBtn{margin:10px}
+.JetAircraft{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/back-clouds.jpg)}#filterDivBody a:link,#filterDivBody a:visited,#filterDivBody a:hover,#filterDivBody a:active{margin-right:10px}#filterDivBody .formCheckbox{padding:0;margin-top:5px}#filterDivBody .formCheckbox input{float:left}#filterDivBody .formCheckbox label{margin:0 1em 5px 4px;padding:0}#unitMap img{margin:0;padding:0}.unitMapViewTrain div,.unitMapViewJetAircraft div{position:absolute;top:5px}.car{border:1px solid #000;margin:5px auto;height:100px;width:60px;background:#999;cursor:pointer;padding:0 5px;font-size:80%}.carSelected{background:#DDD}#deckTabs{width:100%;margin:0;float:right;height:25px}.unit{background-position:center;position:absolute}
+.aUnit{left:0;font-size:11px;text-align:center;vertical-align:middle;cursor:pointer;background-position:center;position:absolute}
+.seat{width:28px;height:28px;background-color:#eee}.NS_Open_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_available_0.gif)}.NS_Open_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_available_90.gif)}.NS_Open_180{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_available_180.gif)}.NS_Open_270{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_available_270.gif)}.NS_Restricted_0,.NS_Blocked_0,.NS_Reserved_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_restricted_0.gif)}.NS_Restricted_90,.NS_Blocked_90,.NS_Reserved_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_restricted_90.gif)}.NS_Restricted_180,.NS_Blocked_180,.NS_Reserved_180{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_restricted_180.gif)}.NS_Restricted_270,.NS_Blocked_270,.NS_Reserved_270{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_restricted_270.gif)}.unit_match_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_match_0.gif)}.unit_match_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_match_90.gif)}.unit_match_180{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_match_180.gif)}.unit_match_270{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_match_270.gif)}.seat_blocked_0,.seat_blocked_90,.seat_blocked_180,.seat_blocked_270{background-color:#eee}.NS_Selected_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_selected_0.gif)}.NS_Selected_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_selected_90.gif)}.NS_Selected_180{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_selected_180.gif)}.NS_Selected_270{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/seat_selected_270.gif)}.ch_1_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed1_0.gif)}.ch_1_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed1_90.gif)}.ch_2_2_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed2_2_0.gif)}.ch_2_2_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed2_2_90.gif)}.ch_2_3_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed2_3_0.gif)}.ch_2_3_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed2_3_90.gif)}.ch_3_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed3_0.gif)}.ch_3_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed3_90.gif)}.ch_selected_1_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_1_0.gif)}.ch_selected_1_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_1_90.gif)}.ch_selected_2_2_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_2_2_0.gif)}.ch_selected_2_2_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_2_2_90.gif)}.ch_selected_2_3_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_2_3_0.gif)}.ch_selected_2_3_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_2_3_90.gif)}.ch_selected_3_0{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_3_0.gif)}.ch_selected_3_90{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/bed_selected_3_90.gif)}.unitGroupKey{padding:2px;margin:0;border:solid 1px black;float:left;height:8px;width:8px}
+/*.unitGroup0{background-color:#d3e7f2}
+.unitGroup1{background-color:#afd0ee}
+.unitGroup2{background-color:#71ade0}
+.unitGroup3{background-color:#3874a8}*/
+.unitGroup0{background-color: #71ade0;
+    border: 2px solid #428bca;}
+.unitGroup1{background-color: #71ade0;
+    border: 2px solid #428bca;}
+.unitGroup2{background-color: #71ade0;
+    border: 2px solid #428bca;}
+.unitGroup3{background-color: #71ade0;
+    border: 2px solid #428bca;}
+.unitGroup4{background-color:#224c70}
+.unitGroup5{background-color:#0b2942}
+.unitGroup6{background-color:#dfdfdf}
+.unitGroup7{background-color:#b5b5b5}
+.unitGroup8{background-color:#838383}.unitGroup9{background-color:#5e5e5e}.unitGroup10{background-color:#000}.unitGroup11{background-color:#c4ff60}.bulkhead{background-image:url(//static.interjet.com/assets/images/equipment/bulkhead.gif);width:28px;height:28px}.stairs{background-image:url(//static.interjet.com/assets/images/InterJet/equipment/stairs.gif);width:28px;height:28px;cursor:pointer}.wall{background-color:#555;border:1px solid silver;background-image:url(//static.interjet.com/assets/images/InterJet/equipment/wall.gif)}.wallLeft{background-position:right;background-image:url(//static.interjet.com/assets/images/InterJet/equipment/wall-right.gif);background-repeat:repeat-y}.wallRight{background-position:left;background-image:url(//static.interjet.com/assets/images/InterJet/equipment/wall-left.gif);background-repeat:repeat-y}.window{background:#EEF;width:14px}.floor{background:#dfdfdf}#passengerListTable,#seatingLegend{margin:10px 0 40px;width:80%}.wMedsAll input{width:40px}.activePassenger{color:Red}.activePassenger input{background:#fcc}
+
+.activeUnitInput{
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.unitInput{width:60px}
+#seatLegendBody{
+	margin:0;
+	width:100%;
+	float:right;
+	padding:5px 0;
+	display:block;
+	clear:both;
+	border-top:0
+}
+#seatLegendBody div{
+	float:right;
+	margin:0;
+	padding:0 0 0 8px;
+	font-size:90%;
+	width:360px
+}
+#seatLegendBody div ul{
+	display:block;
+	float:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	list-style:none
+}
+#seatLegendBody div ul li{
+	display:block;
+	float:right;
+	margin:1px 5px 0 1px;
+	padding:1px 0
+}
+#seatLegendBody div ul li img{margin:0 4px 0 0;float:left;position:relative}
+#mainLegend{width:auto}
+#mainLegend ul{width:auto}
+#mainLegend ul li{width:auto}
+#mainLegend ul li img{top:0}
+#propLegend{width:280px}
+#propLegend ul{width:280px}
+#propLegend ul li{width:140px;float:left}
+#propLegend ul li img{top:4px}
+.unitGroup{width:70px;float:left;margin:2px 0}
+.unitBody{background-color:#d2d2d2;padding:5px 10px;width:363px;float:right;border:1px solid #959595}
+.unitBody samp{float:left;font:normal 85% Verdana,Arial,Helvetica,sans-serif}#passengerListBody{width:auto;background:0}
+.seatAssignPerson{display:block;clear:both}
+.seatSegment{float:none;margin:0;padding:0 2px;width:60px}
+.seatSelect{float:right;margin:0;padding:0 2px;width:60px}
+.seatSelectLeg{float:left;clear:both}
+.property_NS_0{position:absolute;top:0;left:0}
+.property_NS_1{position:absolute;top:9px;left:0}
+.property_NS_2{position:absolute;top:18px;left:0}
+.property_NS_3{position:absolute;top:18px;left:9px}
+.property_NS_4{position:absolute;top:18px;left:18px}
+.property_NS_TRAIN_0{position:absolute;top:2px;left:0}
+.property_NS_TRAIN_1{position:absolute;top:11px;left:0}
+.property_NS_TRAIN_2{position:absolute;top:20px;left:0}
+.property_NS_TRAIN_3{position:absolute;top:29px;left:0}
+.property_NS_TRAIN_4{position:absolute;top:38px;left:0}
+.property_LS_TRAINV_0{position:absolute;top:2px;left:0}
+.property_LS_TRAINV_1{position:absolute;top:11px;left:0}
+.property_LS_TRAINV_2{position:absolute;top:20px;left:0}
+.property_LS_TRAINV_3{position:absolute;top:29px;left:0}
+.property_LS_TRAINV_4{position:absolute;top:38px;left:0}
+.property_LS_TRAINV_5{position:absolute;top:46px;left:0}
+.property_LS_TRAINV_6{position:absolute;top:56px;left:0}
+.property_LS_TRAINH_0{position:absolute;top:2px;left:0}
+.property_LS_TRAINH_1{position:absolute;top:11px;left:0}
+.property_LS_TRAINH_2{position:absolute;top:20px;left:0}
+.property_LS_TRAINH_3{position:absolute;top:29px;left:0}
+.property_LS_TRAINH_4{position:absolute;top:38px;left:0}
+.property_LS_TRAINH_5{position:absolute;top:38px;left:9px}
+.property_LS_TRAINH_6{position:absolute;top:38px;left:18px}
+.property_B1_0{position:absolute;top:0;left:0}
+.property_B1_1{position:absolute;top:9px;left:0}
+.property_B1_2{position:absolute;top:18px;left:0}
+.property_B1_3{position:absolute;top:27px;left:0}
+.property_B1_4{position:absolute;top:36px;left:0}
+.property_B2_0{position:absolute;top:0;left:0}
+.property_B2_1{position:absolute;top:9px;left:0}
+.property_B2_2{position:absolute;top:18px;left:0}
+.property_B2_3{position:absolute;top:27px;left:0}
+.property_B2_4{position:absolute;top:36px;left:0}
+.property_B3_0{position:absolute;top:0;left:0}
+.property_B3_1{position:absolute;top:9px;left:0}
+.property_B3_2{position:absolute;top:18px;left:0}
+.property_B3_3{position:absolute;top:27px;left:0}
+.property_B3_4{position:absolute;top:36px;left:0}.property_B4_0{position:absolute;top:0;left:0}.property_B4_1{position:absolute;top:9px;left:0}.property_B4_2{position:absolute;top:18px;left:0}.property_B4_3{position:absolute;top:27px;left:0}.property_B4_4{position:absolute;top:36px;left:0}.property_B5_0{position:absolute;top:0;left:0}.property_B5_1{position:absolute;top:9px;left:0}.property_B5_2{position:absolute;top:18px;left:0}.property_B5_3{position:absolute;top:27px;left:0}.property_B5_4{position:absolute;top:36px;left:0}.property_B6_0{position:absolute;top:0;left:0}.property_B6_1{position:absolute;top:9px;left:0}.property_B6_2{position:absolute;top:18px;left:0}.property_B6_3{position:absolute;top:27px;left:0}.property_B6_4{position:absolute;top:36px;left:0}
+acronym{padding:0;margin:8px 0 0 6px;font-size:10px;position:absolute;z-index:100;left:0;color:#000;font-family:Arial}
+acronym+acronym{padding:0;margin:7px 0 0 5px;font-size:10px;position:absolute;z-index:100;left:0;color:#fff;font-family:Arial}
+.unit{background-repeat:repeat-y}.noRepeat{background-repeat:no-repeat}.tile0{background-repeat:repeat-y}.tile90{background-repeat:repeat-x}.tile180{background-repeat:repeat-y}.tile270{background-repeat:repeat-x}.closeButton{position:absolute;margin:0;padding:0;background-color:Transparent}.closeButton a:link{color:#fff;display:block;width:97%;padding:0 24px 4px 0}.closeButton a:visited{color:#fff}.closeButton a:hover{color:#fff}.closeButton a:active{color:#fff}.closeButton a{color:#fff;font-weight:bold;text-decoration:none;margin:0;padding:0;display:block}#seatSSRtotal{border-top:2px solid #000;text-align:right;margin:10px 5px 20px 0;clear:both;padding-top:5px}#compHead{background-image:url(//static.interjet.com/assets/images/InterJet/Equipment/train-nose.gif);height:120px;width:336px;clear:both;position:absolute;top:-100px;left:30px;z-index:9998}#compTail{background-image:url(//static.interjet.com/assets/images/InterJet/Equipment/train-tail.gif);height:168px;width:336px;top:570px;left:30px;z-index:9999}#selectMainBodyTop{margin:-5px 0 0 0;padding:0}
+#confirmSeatContainer{/*height:250px;width:376px;margin:0;padding:0;float:right*/}
+#confirmSeatContainer h6{color:#fff}
+#confirmScroll{/*height:220px;*/overflow:auto}.fillBackground{background-color:#c1c1c1}#propertyId{overflow:auto;margin:5px 0 10px;font-size:80%}.propertyEquipmentSet{width:235px;float:left;margin:15px 15px 5px 10px}#propertyId label{clear:none;float:none;margin:5px 1em 5px 0;padding:5px 0 0;text-align:left;width:6em}#propertyId span{float:left;width:230px;margin:2px 0 0 20px}.passengersTable td,.passengersTable th{font-size:11px !important}
+acronym+acronym:before {
+    position: absolute;
+    content: "";
+    border-top: 2px solid rgba(0,0,0,.2);
+    width: 18px;
+    height: 0;
+    bottom: -3px;
+    left: 0px;
+}
+@media (min-width: 320px) {
+	.compartment{
+		left:10%;
+	}
+}
+@media (min-width: 480px) {
+	.compartment{
+		left:12%;
+	}
+}
+
+@media (min-width: 768px) {
+	.compartment{
+		left:14%;
+	}
+
+	
+}

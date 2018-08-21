@@ -1,0 +1,62 @@
+<div class="modal fade modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        ...
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <a href="#/">Back to Search</a>
+    <h2>Forcast for {{ city }}</h2>
+</div>
+
+<!--
+<hr>
+<div class="panel panel-default" onload="updateSaved()">
+    <div class="panel-heading"><h4 class="panel-title">Days to show</h4></div>
+    <div class="panel-body">
+        <ul class="nav nav-pills list-inline">
+            <li class=""><a href="#/forecast/2" ng-class="{ 'bg-primary' :  daysToShow === '2' }">2</a></li>
+            <li class=""><a href="#/forecast/5" ng-class="{ 'bg-primary' :  daysToShow === '5' }">5</a></li>
+            <li class=""><a href="#/forecast/7" ng-class="{ 'bg-primary' :  daysToShow === '7' }">7</a></li>
+            <select class="pull-right" id="select">
+            <option>select saved:</option>
+            </select>
+        </ul>
+    </div>
+</div>
+<hr>
+-->
+
+<hr>
+    <h4>Days to show:
+        <a href="#/forecast/2"><span ng-class="{ 'bg-primary' :  daysToShow === '2' }" class="tag tag-pill tag-info">2</span></a>
+        <a href="#/forecast/5"><span ng-class="{ 'bg-primary' :  daysToShow === '5' }" class="tag tag-pill tag-info">5</span></a>
+        <a href="#/forecast/7"><span ng-class="{ 'bg-primary' :  daysToShow === '7' }" class="tag tag-pill tag-info">7</span></a>
+    </h4>
+<hr>
+
+<div class="panel">
+<button ng-click="save()">save</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal-sm">Load</button>
+</div>
+
+<div class="save">
+<div ng-repeat="w in weatherResult.list" >
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ convertToDate(w.dt) | date: 'fullDate'}}</h3>
+                </div>
+
+                <div class="panel-body">
+                    <img src='{{ "http://openweathermap.org/img/w/"+w.weather[0].icon+".png" }}'></img>
+                    {{ convertToCelcius(w.temp.day) }}&#176;</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+

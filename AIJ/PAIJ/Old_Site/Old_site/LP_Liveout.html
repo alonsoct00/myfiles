@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!--META TAGS Social Media & FAVICON's -->
+    <!--Cambiar de acuerdo a descripción/tipo de página-->
+    <meta property="og:title" content="Interjet" />
+    <meta property="og:url" content="http://www.interjet.com.mx" />
+    <meta property="og:image" content="assets/images/logo_interjet_web.png" />
+    <meta property="og:description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación." />
+    <meta property="og:site_name" content="Interjet" />
+    <link rel="canonical" href="https://www.interjet.com.mx/">
+    <meta name="description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <meta name="keywords" content="La mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <!--Cambiar de acuerdo a descripción/tipo de página-->
+    <!--Apple icons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="60×60" href="/assets/favicons/apple-touch-icon-60x60-precomposed.png">
+    <link rel="apple-touch-icon" sizes="76×76" href="/assets/favicons/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120×120" href="/assets/favicons/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152×152" href="/assets/favicons/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180×180" href="/assets/favicons/apple-touch-icon.png">
+    <!--Android & Generic icons-->
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <link rel="icon" sizes="192×192" href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" sizes="96×96" href="/assets/favicons/android-icon-96x96.png">
+    <link rel="icon" sizes="72×72" href="/assets/favicons/android-icon-72x72.png">
+    <link rel="icon" sizes="48×48" href="/assets/favicons/android-icon-48x48.png">
+    <link rel="icon" sizes="36×36" href="/assets/favicons/android-icon-36x36.png">
+    <!--Desktop and browser bookmarks icons-->
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1b248">
+    <meta name="theme-color" content="#ffffff">
+    <!--END META TAGS Social Media & FAVICON's -->
+    <title>Interjet te lleva al Live Out</title>
+    <!-- Bootstrap Default Assets -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="/assets/css/ripples.min.css" rel="stylesheet">
+    <!--Custom CSS Assets-->
+    <link href="/assets/css/core_interjet.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <!--Outdated browsers plugin-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/outdatedbrowser.css">
+    <!--Slick carousel plugin CSS-->
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/slick/slick.css">
+    <!--main styles-->
+    <style type="text/css">
+    #liveout_top_bg {
+
+        background: url(/assets/images/lp_liveout/bgtop.jpg) no-repeat 0px 0px #000;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        display: block;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    #liveout_footer_bg {
+
+        background: url(/assets/images/lp_liveout/bgfooter.jpg) no-repeat 0px 0px #000;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        display: block;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    #liveout_top_bg .container {
+        min-height: 400px;
+    }
+
+    #liveout_top_bg .container>.row {
+        display: block;
+        max-height: 300px;
+    }
+
+    .imgContainer {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        max-height: 260px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    #liveout_top_bg .imgContainer img {
+        display: block;
+        height: auto;
+        max-height: 250px;
+        width: auto;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    #bookingContainer {
+        position: relative;
+        display: block;
+        width: 100%;
+            top: 60px;
+    }
+
+    #bookingEngine {
+        display: block;
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+        z-index: 99999;
+        width: 100%;
+        min-height: 145px;
+    }
+
+    #liveoutContent {
+        padding-top: 100px!important;
+    }
+
+    #flip-grid {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+    }
+
+
+
+    #flip-grid .face.back p {
+        font-size: 13px;
+        color: #fff;
+        padding: 20px 10px;
+        text-align: center;
+        line-height: normal
+    }
+
+    #flip-grid .face.back h2 {
+        color: #fff;
+        font-family: 'Open Sans',
+        Helvetica,
+        Arial,
+        sans-serif;
+    }
+
+    #flip-grid .flip-vertical .flipCard .back,
+    #flip-grid .flip .flipCard .back {
+        background: url(/assets/images/lp_liveout/bgfooter.jpg) no-repeat -200px 0px #fff;
+    }
+
+    #flip-grid .flip-vertical .flipCard .back {
+        min-height: 300px;
+    }
+
+#flip-grid .face.front img {
+    height: 100%;
+    margin: 0px auto;
+    width: auto;
+}
+
+
+    #flip-grid a.btn.btn-transparent {
+        width: 100px!important;
+        min-width: 100px;
+        height: 30px;
+        display: block;
+        margin: 0px auto;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        right: 0px;
+        color: #fff;
+        background: transparent!important;
+        border: 1px solid #fff;
+        line-height: 30px;
+        padding: 0px 0px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #flip-grid a.btn.btn-transparent:hover,
+    #flip-grid a.btn.btn-transparent:focus {
+        background: transparent!important;
+        border: 1px solid #fff;
+    }
+
+    #theXX,#paramore {
+        height: 385px;
+    }
+
+    #theXX .front img {
+    margin: 0px!important;
+    width: 100%!important;
+}
+
+    #phoenix,#interpol{height: 190px;}
+
+    div#LOrules {
+    text-align: left;
+    color: #fff;
+}
+
+div#LOrules h2{color:#fff;}
+
+ul#lo_dinamica li{    
+    display: block;
+    font-size: 16px;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 22px 0px;}
+
+
+    ul#lo_dinamica li:last-child{margin-bottom: 40px;}
+
+ul#lo_dinamica li i.inter-font {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #fff;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 50px;
+        float: left;
+    margin-right: 20px;
+}
+
+ul#lo_dinamica li span {
+    display: inline-block;
+    float: left;
+    max-width: 600px;
+}
+
+ul#lo_dinamica li i.inter-font:before{
+    margin: 0px auto;
+    width: 100%;
+    display: block;
+    line-height: 50px;
+}
+
+
+ul#lo_dinamica li i.inter-font.icon-intervale:before {
+    font-size: 1.8em;
+}
+
+ul#lo_dinamica li i.inter-font.icon-icn_mail:before {
+    font-size: 1.2em;
+}
+
+ul#lo_dinamica li i.inter-font.icon-newsletter:before {
+    font-size: 1.4em;
+    position: relative;
+    bottom: 3px;
+}
+
+
+#flip-grid > div > p {
+    margin-top: 25px;
+    display: block;
+    float: left;
+}
+
+div#footIMG {
+    position: relative;
+    top: 50px;
+}
+
+#LiveOut_tycs * {
+    font-size: 14px;
+    color: #4c4c4c;
+    text-align: left;
+}
+
+#LiveOut_tycs {
+    display: block;
+    clear: both;
+}
+
+#liveout_top_bg > div > div:nth-child(1) > div:nth-child(1) {
+    top: 60px;
+}
+
+@media (min-width: 720px) and (max-width:1200px){
+
+#theXX .front img {
+    margin: 0px auto!important;
+    width: initial!important;
+}
+
+#flip-grid .flipCard .front {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    background: #313131;
+}
+
+#liveout_top_bg .container>.row{max-height: 100%;}
+
+    div#bookingEngine {
+    bottom: 0px;
+}
+
+div#liveout_top_bg {
+    min-height: 880px;
+    position: relative;
+    display: block;
+}
+
+#bookingContainer,#bookingEngine{    
+    position: static;
+    width: 100%;
+    float: none;
+    margin: 20px auto;}
+
+    #liveout_top_bg > div > div:nth-child(1) > div:nth-child(1) {
+    top: 0px;
+}
+
+
+}
+
+@media (max-width:720px){
+
+    div#bookingEngine {
+    bottom: 0px;
+}
+
+#liveout_top_bg .container>.row{max-height: 100%;}
+
+div#liveout_top_bg {
+    min-height: 760px;
+    position: relative;
+    display: block;
+}
+
+#bookingContainer,#bookingEngine{    
+    position: static;
+    width: 100%;
+    float: none;
+    margin: 20px auto;}
+
+
+    #liveoutContent {
+    padding: 0px!important;
+}
+
+#flip-grid .flipCard .front {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    background: #313131;
+}
+
+
+
+#theXX .front img {
+    margin: 0px auto!important;
+    width: initial!important;
+}
+
+#flip-grid > div > p {
+    display: block;
+    float: none;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+}
+
+ul#lo_dinamica li {
+    text-align: center;
+    clear: both;
+}
+
+ul#lo_dinamica li i.inter-font {
+    display: block;
+    text-align: center;
+    float: none;
+    margin: 10px auto;
+}
+
+
+div#footIMG {
+    position: relative;
+    top: 10px;
+}
+
+
+#LiveOut_tycs li{
+
+    font-size: 13px;
+    display: block;
+    margin: 10px 0px;
+}
+
+#liveout_top_bg > div > div:nth-child(1) > div:nth-child(1) {
+    top: 0px;
+}
+
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <!--Header Interjet-->
+    <header id="mainHeader"></header>
+    <!--END Header Interjet-->
+    <!--Main Content Begins-->
+    <div class="container-fluid" id="main-content">
+        <div class="page-top-banner-img bg-img" id="liveout_top_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 imgContainer">
+                        <div class="col-sm-12">
+                            <img src="/assets/images/lp_liveout/interjet-logo.png" class="img-responsive" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5 imgContainer">
+                        <div class="col-sm-12">
+                            <img src="/assets/images/lp_liveout/liveout-logo.png" class="img-responsive" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 imgContainer">
+                        <div class="col-sm-12">
+                            <img src="/assets/images/lp_liveout/datepng.png" class="img-responsive" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="bookingContainer">
+                    <div class="LP_booking lg-booking" id="bookingEngine">
+                    <code>Aquí va el booking engine</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="liveoutContent">
+            <div class="row">
+                <div class="main_page_wrapper col-lg-12" id="Live_Out">
+                    <div class="section-page-content">
+                        <h2>Interjet te lleva a los mejores festivales</h2>
+                        <p>
+                            La tercera edición del Live Out Monterrey está por llegar al Parque Fundidora. <b>El próximo 21 octubre, bandas como Phoenix, The XX, Interpol y Paramore se darán cita en este increíble parque urbano</b> para satisfacer los oídos de sus seguidores con su música.
+                        </p>
+                        <p>
+                            <b>¡No lo pienses más!</b> Sigue los pasos que se encuentran a continuación para animarte al ritmo de
+                            <a href="https://www.youtube.com/watch?v=ub36ffWAqgQ" target="_blank">If I Ever Feel Better</a>, suspirar mientras escuchas <a href="https://www.youtube.com/watch?v=AEB6ibtdPZc" target="_blank">I Dare You</a> o bailar al compás de <a href="https://www.youtube.com/watch?v=qqflFMhkqHM" target="_blank">Hard Times</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="section-page-content" id="flip-grid">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12 col-md-12 col-lg-5">
+                            <div class="flip-vertical">
+                                <div class="col-sm-12 flipCard" id="theXX">
+                                    <div class="face front">
+                                        <img src="/assets/images/lp_liveout/img_thexx.jpg" alt="img-group" class="img-responsive">
+                                    </div>
+                                    <div class="face back">
+                                        <p>The XX es una banda de indie pop del suroeste de Londres, Inglaterra, formada en 2005. La componen tres veinteañeros que se conocieron en el Elliott School, conocido por haber dado grupos como Hot Chip, Burial y Four Tet. En The Future 50 list de New Musical Express (NME) ocuparon el puesto 6 en 2009. Su álbum debut xx fue editado el 17 de agosto de 2009 en el sello Young Turks Records. Aunque la banda trabajó con Diplo y Kwes, este trabajo fue producido por ellos mismos.</p>
+                                        <a href="https://open.spotify.com/artist/3iOvXCl6edW5Um0fXEBRXy" class="btn btn-transparent" target="_blank">Escuchar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <div class="flip">
+                                <div class="col-sm-12 flipCard" id="phoenix">
+                                    <div class="face front">
+                                        <img src="/assets/images/lp_liveout/img_phoenix.jpg" alt="img-group" class="img-responsive">
+                                    </div>
+                                    <div class="face back">
+                                        <p>Phoenix es uno de los grupos más populares de rock indie en el mundo. Formado en Francia a finales de los años 90 conformado por Thomas Mars, Deck d'Arcy, Laurent Brancowitz y Christian Mazzalai.</p>
+                                        <a href="https://open.spotify.com/artist/1xU878Z1QtBldR7ru9owdU" class="btn btn-transparent" target="_blank">Escuchar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip">
+                                <div class="col-sm-12 flipCard" id="interpol">
+                                    <div class="face front">
+                                        <img src="/assets/images/lp_liveout/img_interpol.jpg" alt="img-group" class="img-responsive">
+                                    </div>
+                                    <div class="face back">
+                                        <p>Interpol es una banda de Rock Neoyorquina formada en 1998. La banda se encuentra actualmente formada por Paul Banks (vocalista, guitarra y bajo), Daniel Kessler (guitarra) y Sam Fogarino (batería).</p>
+                                        <a href="https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B" class="btn btn-transparent" target="_blank">Escuchar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                            <div class="flip-vertical">
+                                <div class="col-sm-12 flipCard" id="paramore">
+                                    <div class="face front">
+                                        <img src="/assets/images/lp_liveout/img_paramore.jpg" alt="img-group" class="img-responsive">
+                                    </div>
+                                    <div class="face back">
+                                        <p>Paramore es una banda estadounidense de pop punk y rock alternativo1245 integrada por Hayley Williams (voz), Taylor York (guitarra) y Zac Farro (batería). En 2008, recibió su primera nominación a los premios Grammy en la categoría de mejor artista nuevo.</p>
+                                        <a href="https://open.spotify.com/artist/74XFHRwlV6OrjEM0A2NCMF" class="btn btn-transparent" target="_blank">Escuchar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><a href="http://liveoutoficial.com.mx/2017" target="_blank">Ver cartel completo de Live Out</a></p>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+        <div class="section-page-content" id="dinamica">
+            <div class="page-top-banner-img bg-img" id="liveout_footer_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-9" id="LOrules">
+                            <div class="col-sm-12">
+                                <h2 class="white-txt">Dinámica:</h2>
+                                <ul class="list-unstyled" id="lo_dinamica">
+                                    <li><i class="inter-font icon-intervale"></i><span>Compra tus boletos de avión para volar a Monterrey en la semana del evento, a través de www.interjet.com.mx/es-mx/promociones/boletos-live-out-2017</span></li>
+                                    <li><i class="inter-font icon-icn_mail"></i><span>Mándanos tu clave de reservación al correo oscar.lopez@interjet.com.mx, con el asunto: Quiero boletos para el Live Out 2017.</span></li>
+                                    <li><i class="inter-font icon-newsletter"></i><span>Espera un correo de confirmación con toda la información para recibir cuatro entradas para este magnífico evento.</span></li>
+                                </ul>
+                                <h2>¡No te lo puedes perder!</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 text-center pull-right" id="footIMG">
+                          
+                                <img src="/assets/images/lp_liveout/liveout-logo.png" class="img-responsive" alt="live-out-logo">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="LiveOut_tycs">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Términos y Condiciones</p>
+                    <ul class="list-unstyled">
+                        <li>Compra tus boletos del 16 al 20 de octubre de 2017.</li>
+                        <li>Para viajar a Monterrey en las fechas del Live Out 2017 (la semana del 21 de octubre).</li>
+                        <li>Promoción sujeta a límite de boletos disponibles por día.</li>
+                        <li>No acumulable con otras promociones o descuentos.</li>
+                        <li>Disponible únicamente en www.interjet.com.mx/es-mx/promociones/boletos-live-out-2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Content ENDS-->
+    <!--FOOTER Begins-->
+    <footer class="navbar-fixed-bottom ">
+        <div id="outdated "></div>
+    </footer>
+    <!--Bootstrap default scripts-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js "></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js "></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js "></script>
+    <script src="/assets/js/material.min.js "></script>
+    <script src="/assets/js/ripples.min.js "></script>
+    <!--Plugins Scripts-->
+    <!--Outdated browsers plugin-->
+    <script type="text/javascript " src="/assets/js/outdatedbrowser.js "></script>
+    <script src="/assets/js/bootstrap-rating-input.js "></script>
+    <script src="/assets/js/modernizr.js "></script>
+    <script type="text/javascript " src="/assets/plugins/slick/slick.min.js "></script>
+    <!--Custom Scripts-->
+    <script src="/assets/js/functions.min.js " async defer></script>
+    <script src="/assets/js/main_functions.js " async defer></script>
+    <!--Loading Header&Footer-->
+    <script type="text/javascript " charset="utf-8 " async>
+    $(window).load(function() {
+        setTimeout(function() {
+            $('header').load('header.html');
+            $('footer').load('footer-intern.html');
+        }, 100);
+    });
+    </script>
+
+</body>
+
+</html>

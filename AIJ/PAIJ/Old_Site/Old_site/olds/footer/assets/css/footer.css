@@ -1,0 +1,863 @@
+/* CUSTOM FONT */
+
+@import url('../fonts/VAGRounded/font-styles.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700');
+
+/* FONT AWESOME ICONS CSS */
+
+@import url(font-awesome.min.css);
+
+/*================================================ Footer General Styles  ================================================ */
+footer {
+    display: block;
+    clear: both;
+    width: 100%;
+    position: static!important;
+}
+
+.footer {
+    background: #f7fbfd;
+    padding: 0px;
+    margin: 0px;
+}
+
+#footer-interjet {
+    display: block;
+    background: #f7fbfd;
+    padding: 30px 30px 0px 30px;
+}
+
+.blue-p {
+    color: #1b4298
+}
+
+.light-blue {
+    color: #6caddf;
+}
+
+.title-list {
+    display: block;
+    margin-bottom: 0px;
+    font-family: VAGRoundedStd-Light;
+    font-size: 18px;
+}
+
+ul.footer-menu {
+    float: left;
+    padding: 0px;
+    list-style-type: none;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 13px;
+}
+
+ul.footer-menu li a {
+    line-height: 24px;
+    color: #666;
+}
+
+ul.footer-menu li a:hover {
+    color: #999;
+}
+
+ul.footer-menu.double {
+    font-size: 12px;
+}
+
+.row {
+    font-family: 'Open Sans', Arial;
+    font-size: 12px;
+}
+
+#left-side-footer {
+    display: inline-block;
+    float: left;
+    border-right: 2px solid #fff;
+    text-align: left;
+    -webkit-box-shadow: 2px 0px 1px 0px rgba(196, 222, 242, 0.30);
+    -moz-box-shadow:  2px 0px 1px 0px rgba(196, 222, 242, 0.30);
+     box-shadow: 2px 0px 1px 0px rgba(196, 222, 242, 0.30);
+}
+
+#right-side-footer {
+    display: inline-block;
+    float: right;
+    text-align: left;
+}
+
+#right-side-footer p {
+    display: block;
+    font-size: 16px;
+    font-family: VAGRoundedStd-Light;
+    margin-bottom: 0px;
+}
+
+#right-side-footer span {
+    display: block;
+    margin: 0px 0px 0px 0px;
+}
+
+.contact-mail {
+    float: left;
+    clear: both;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.directory-services {
+    float: left;
+    clear: both;
+    font-size: 12px;
+}
+
+.contact-mail a,
+.directory-services a {
+    line-height: 15px;
+    color: #666;
+    font-weight: 300;
+}
+
+.salesforce {
+    margin-bottom: 10px;
+}
+
+.contact-mail i,
+.directory-services i {
+    margin-right: 5px;
+    color: #666;
+}
+
+.phone-number {
+    display: inline-block;
+    float: left;
+}
+
+.phone-number span {
+    display: block;
+    color: #999;
+    font-size: 9px;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+.phone-number a {
+    font-size: 18px;
+    color: #666;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+}
+
+.phone-number.local-city {
+    margin-right: 15px;
+}
+
+#networks {
+    display: block;
+    float: left;
+    margin-top: 30px;
+}
+
+#networks p {
+    color: #6cadde;
+    font-size: 14px;
+    font-family: VAGRoundedStd-Light;
+}
+
+ul.social-networks {
+    float: left;
+    padding: 0px;
+    list-style-type: none;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+ul.social-networks li {
+    float: left;
+    display: inline-block;
+    margin: 5px 2.5px;
+    width: 25px;
+    height: 25px;
+}
+
+ul.social-networks li a img {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul.social-networks li a img:hover {
+    -webkit-filter: brightness(115%);
+    cursor: pointer
+}
+
+ul.social-networks li:last-child {
+    margin: 5px 0px 5px 5px;
+}
+
+ul.social-networks li a {}
+
+.int-magazine {
+    float: left;
+    display: inline-block;
+    margin-top: 35px;
+}
+
+.mag-img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.mag-img img {
+    width: 100%;
+    height: auto;
+}
+
+.int-magazine span {
+    display: inline-block;
+    float: left;
+}
+
+span.mag-txt {
+    font-size: 12px;
+    float: left;
+    display: inline-block;
+    width: 115px;
+    vertical-align: bottom;
+    padding-top: 12px;
+}
+
+#apps-container,
+#apps-container-mobile {
+    display: block;
+    clear: both;
+    margin-top: 35px;
+    float: left;
+}
+
+#promos {
+    float: left;
+    display: block;
+    margin-top: 35px;
+    padding: 0px;
+}
+
+#promos > span {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#separator-hor {
+    display: block;
+    margin: 5px 0px;
+    border: 1px solid #fff;
+    position: relative;
+    top: 146px;
+    width: 65%;
+    -webkit-box-shadow:  0px 2px 5px 0px rgba(196, 222, 242, 0.90);
+     -moz-box-shadow:  0px 2px 5px 0px rgba(196, 222, 242, 0.90);
+    box-shadow: 0px 2px 5px 0px rgba(196, 222, 242, 0.90);
+}
+
+#top-columns {
+    margin-bottom: 20px;
+}
+
+#apps-container a img,
+#apps-container-mobile a img {
+    width: 84px;
+    -webkit-filter: brightness(95%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#apps-container a img:hover,
+#apps-container-mobile a img:hover {
+    -webkit-filter: brightness(135%);
+    cursor: pointer;
+}
+
+#apps-container > span,
+#apps-container-mobile > span {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+#bottom-footer {
+    display: block;
+    clear: both;
+    background-color: #f1f2f2;
+    -webkit-box-shadow: inset 0px 2px 5px 0px rgba(204, 204, 204, 0.7);
+    -moz-box-shadow: inset 0px 2px 5px 0px rgba(204, 204, 204, 0.7);
+    box-shadow: inset 0px 2px 5px 0px rgba(204, 204, 204, 0.7);
+    padding: 0px;
+}
+
+#bottom-columns {
+    display: block;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: 20px 0px 4px 0px;
+
+}
+
+#bottom-columns > .container {
+    height: 25px;
+    vertical-align: middle;
+}
+
+ul#payments {
+    display: block;
+    float: left;
+    clear: both;
+    list-style-type: none;
+}
+
+ul#payments li {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+}
+
+img#visa-checkout {
+    width: 48px;
+}
+
+img#verified-visa {
+    width: 57px;
+}
+
+img#mastercard-secure {
+    width: 68px;
+}
+
+img#PayPal {
+    width: 77px;
+}
+
+img#sectur {
+    width: 70px;
+}
+
+img#navitaire {
+    width: 78px;
+}
+
+img#ecommerce-award {
+    width: 78px;
+}
+
+ul#ecommerce-verified {
+    display: inline-block;
+    float: right;
+    padding: 0px;
+}
+
+ul#ecommerce-verified li {
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+}
+
+#blue-bottom-footer {
+    display: block;
+    clear: both;
+    padding: 10px 10px;
+    background-color: #1b4298;
+    border-top: 3px solid #6caddf;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 9px;
+    color: #bac6e0;
+    padding-bottom: 7px;
+        width: 100%;
+    margin: 0px auto;
+}
+
+p.copyright {
+    float: left;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+ul#interest-links {
+    float: right;
+    display: block;
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+ul#interest-links li {
+    float: left;
+    display: inline-block;
+    margin-left: 24px;
+}
+
+ul#interest-links li.jobs {
+    padding-right: 20px;
+    border-right: 1px solid #5f7ab6;
+}
+
+ul#interest-links li a {
+    text-transform: uppercase;
+    color: #d1d9ea;
+    font-size: 9px;
+}
+
+ul#interest-links li a:hover {}
+
+.desktop-no,
+#apps-container-mobile {
+    display: none;
+}
+
+#news-content {
+    display: block;
+    position: relative;
+}
+
+#news-content > input[type="text"] {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #d2cfcd;
+        padding-left: 10px;
+}
+
+#news-content input[type="submit"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 1px solid #d2cfcd;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    top: 0px;
+    right: 0px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Light;
+    background: #f1f2f2;
+    font-size: 12px;
+    line-height: 27px;
+}
+
+.double-sub {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icon-f {
+        width: 12px;
+    display: inline-block;
+    float: none;
+    position: relative;
+    top: -1px;
+}
+
+.icon-f img {
+    width: 100%;
+}
+
+
+/*================================================ Footer Media Queries  ================================================ */
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1115px) {
+
+ #top-columns .col-md-4  {
+
+     padding-left: 0px;
+    padding-right: 0px;
+
+    }  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #footer-interjet {
+        width: 100%;
+    }
+    ul.footer-menu.double {
+        font-size: 12px;
+        float: left;
+        display: inline-block;
+    }
+    .double li {
+        display: block;
+        float: left;
+        clear: both;
+    }
+    .int-magazine {
+        margin-top: 10px;
+    }
+    #apps-container {
+        margin-top: 4px;
+    }
+    #promos {
+        margin-top: 2px;
+    }
+    #right-side-footer {
+        margin-top: 25px;
+        float: left;
+        font-size: 14px;
+    }
+    #networks {
+        margin-top: 0px;
+    }
+    .phone-number a {
+        font-size: 15px;
+    }
+    .container {
+        width: 100%;
+    }
+    ul#interest-links li {
+        float: left;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .crm-att * {
+        font-size: 11px;
+    }
+    #separator-hor {
+        display: none;
+    }
+    #left-side-footer {
+        border: 0px!important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .no-mobile {
+        display: none!important;
+    }
+    .mobile-yes {
+        display: block!important;
+    }
+    #right-side-footer {
+        padding: 0px;
+    }
+    .col-xs-4 {
+        width: 100%;
+        padding: 0px 78px;
+    }
+    #networks {
+        text-align: center;
+    }
+    #networks p {
+        margin-bottom: 0px;
+    }
+    .phone-number span {
+        font-size: 12px;
+    }
+    .contact-mail {
+        margin: 0px auto 6px auto;
+        padding: 10px 0px 8px;
+        float: none;
+        font-size: 14px;
+        text-align: center;
+    }
+    .directory-services {
+        margin: 0px auto;
+        padding: 0px 0px 5px;
+        float: none;
+        font-size: 14px;
+        text-align: center;
+    }
+    ul.social-networks {
+        float: none;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+    ul.social-networks li {
+        float: none;
+    }
+    #bottom-columns {
+        margin: 18px 0px;
+    }
+    img#visa-checkout {
+        width: 43px;
+    }
+    img#verified-visa {
+        width: 48px;
+    }
+    img#mastercard-secure {
+        width: 58px;
+    }
+    img#PayPal {
+        width: 65px;
+    }
+    ul#payments {
+        display: block;
+        float: left;
+        clear: both;
+        list-style-type: none;
+        padding: 0px;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    ul#payments li {
+        display: inline-block;
+        float: none;
+    }
+    #payments li:last-child {
+        margin-right: 0px;
+    }
+    ul#ecommerce-verified {
+        display: block;
+        float: left;
+        clear: both;
+        height: 24px;
+        width: 100%;
+        padding: 0px 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    ul#ecommerce-verified li {
+        display: inline-block;
+        float: none;
+    }
+    #ecommerce-verified li:first-child {
+        margin-left: 0px;
+    }
+    img#sectur {
+        width: 60px;
+    }
+    img#navitaire {
+        width: 65px;
+    }
+    img#ecommerce-award {
+        width: 65px;
+    }
+    #interest-links li {
+        float: none!important;
+        display: inline-block;
+        margin: 0px 5px!important;
+    }
+    #interest-links {
+        display: block;
+        list-style-type: disc!important;
+        padding: 0px;
+        text-align: center;
+        float: none!important;
+        margin: 0px auto 0px auto!important;
+    }
+    #interest-links li {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    li.bullet-m:before {
+        content: "・";
+        position: relative;
+        float: left;
+        line-height: 12px;
+        font-size: 20px;
+        left: 3px;
+    }
+    p.copyright {
+        float: right;
+        display: inline-block;
+        clear: both;
+        width: 100%;
+        text-align: center;
+        color: #d1d9ea;
+        font-size: 9px;
+            margin-bottom: 8px
+    }
+    .crm-att {
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    #apps-container-mobile {
+        padding-top: 20px;
+        float: none;
+        margin: 0px auto 0px auto;
+        width: 100%;
+        text-align: center;
+    }
+    .salesforce {
+        text-align: center;
+    }
+    #right-side-footer span {
+        display: block;
+        margin: 0px;
+        float: none!important;
+        padding: 0px;
+    }
+    .phone-number {
+        float: none;
+    }
+    #bottom-columns {
+        margin: 18px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .no-mobile {
+        display: none!important;
+    }
+    .mobile-yes {
+        display: block!important;
+    }
+    .col-xs-4 {
+        width: 310px;
+        max-width: 310px;
+        margin: 0px auto;
+        float: none;
+        text-align: center;
+    }
+    #apps-container-mobile {
+        padding-top: 10px;
+        float: left;
+        margin: 10px auto 10px auto;
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid #FFF;
+    }
+    .phone-number {
+        display: block;
+        float: none;
+        margin: 0px auto;
+        width: 100%;
+    }
+    .phone-number.local-city {
+        margin: 0px 0px 8px 0px;
+    }
+    .contact-mail {
+        margin: 0px auto;
+        padding: 10px 0px 8px;
+        float: none;
+        font-size: 14px;
+        text-align: center;
+    }
+    .directory-services {
+        margin: 0px auto;
+        padding: 0px 0px 5px;
+        float: none;
+        font-size: 14px;
+        text-align: center;
+    }
+    #networks {
+        text-align: center;
+        width: 100%;
+        clear: both;
+        float: none;
+    }
+    #networks p {
+        margin-bottom: 0px;
+    }
+    .phone-number span {
+        font-size: 11px;
+    }
+    ul.social-networks {
+        float: none;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+    ul.social-networks li {
+        float: none;
+    }
+    #bottom-columns {
+        margin: 18px 0px 0px 0px;
+    }
+    img#visa-checkout {
+        width: 43px;
+    }
+    img#verified-visa {
+        width: 48px;
+    }
+    img#mastercard-secure {
+        width: 58px;
+    }
+    img#PayPal {
+        width: 65px;
+    }
+    ul#payments {
+        display: block;
+        float: left;
+        clear: both;
+        list-style-type: none;
+        padding: 0px;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    ul#payments li {
+        display: inline-block;
+        float: none;
+    }
+    #payments li:last-child {
+        margin-right: 0px;
+    }
+    ul#ecommerce-verified {
+        display: block;
+        float: left;
+        clear: both;
+        height: 24px;
+        width: 100%;
+        padding: 0px 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    ul#ecommerce-verified li {
+        display: inline-block;
+        float: none;
+    }
+    #ecommerce-verified li:first-child {
+        margin-left: 0px;
+    }
+    img#sectur {
+        width: 60px;
+    }
+    img#navitaire {
+        width: 65px;
+    }
+    img#ecommerce-award {
+        width: 65px;
+    }
+    #interest-links {
+        display: block;
+        padding: 0px;
+        text-align: center;
+        float: left;
+        margin: 0px auto 10px auto!important;
+        clear: both;
+        width: 100%;
+    }
+    #interest-links li {
+        margin: 0px 10px 0px 0px!important;
+        float: none!important;
+    }
+    li.bullet-m:before {
+        content: "・";
+        position: relative;
+        float: left;
+        line-height: 12px;
+        font-size: 20px;
+        left: 3px;
+    }
+    p.copyright {
+        float: right;
+        display: inline-block;
+        clear: both;
+        width: 100%;
+        text-align: center;
+            margin-bottom: 8px;
+    }
+    .crm-att {
+        margin: 10px auto 2px auto!important;
+    }
+    #blue-bottom-footer {
+        text-align: center;
+    }
+}

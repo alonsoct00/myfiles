@@ -1,0 +1,1236 @@
+<!DOCTYPE&nbsp;html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+    <meta content="" name="Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers." />
+    <meta content="" name="MegaNavbar.com" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/MegaNavbar.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/skins/navbar-inverse.css" title="inverse">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation/animation.css" title="inverse">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+
+</head>
+
+
+<body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <div  id="toc" class="jumbotron" style="color: #fff; background-color: #026881; padding: 0;">
+    	<div class="container">
+    		<h2 class="page-header" style="margin: 25px 0 25px;">
+    			<i class="fa fa-credit-card"></i> MegaNavbar. (v 2.2.0) <small style="color: #ddd;">Advanced Navbar for Bootstrap 3.0+ from Twitter.</small>
+    		</h2>
+    		<p class="text-justify"><small>Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers.</small></p>
+    	</div>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-inverse no-border" role="navigation" id="main_navbar">
+        	<div class="container-fluid">
+        		<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand_size_lg">
+        			<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        			</button>
+                    <ul class="nav navbar-nav navbar-left">
+        			    <li><a href="javascript:void(0);" class="toggle_fixing"><i class="fa fa-chevron-down"></i>&nbsp;</a></li>
+        			</ul>
+        			<a class="navbar-brand" href="#">MegaNavbar</a>
+        		</div>
+        		<div class="collapse navbar-collapse" id="navbar-brand_size_lg">
+        			<ul class="nav navbar-nav navbar-left">
+        				<li class="divider"></li>
+        				<!-- dropdown active -->
+        				<li class="dropdown-full no-border-radius no-shadow active">
+        					<a data-toggle="dropdown" href="javascript:void(0);" class="dropdown-toggle"><i class="fa fa-leaf"></i>&nbsp;<span class="hidden-sm hidden-md reverse">Complex tabs</span><span class="caret"></span></a>
+        					<div class="dropdown-menu no-padding HingeUpToDown">
+        						<ul id="myTab1" style="margin-top: 1px;">
+        							<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item1" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 1<span class="desc"> description</span></a></li>
+        							<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item2" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 2<span class="desc"> description</span></a></li>
+        							<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item3" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 3<span class="desc"> description</span></a></li>
+        							<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item4" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 4<span class="desc"> description</span></a></li>
+        							<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item5" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 5<span class="desc"> description</span></a></li>
+        							<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item6" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 6<span class="desc"> description</span></a></li>
+        						</ul>
+        						<div id="myTabContent1" class="tab-content">
+        							<div class="tab-pane" id="item1">
+        								<ul>
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="background: #5E5E5E; color: white;">
+        										<br>
+        										<h4 style="background: #e78733; color: white;">Item 1 some content here</h4>
+        										<br>
+        										<ul class="row" style="margin-bottom: 15px;">
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/city.jpg"></div>
+        													City item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/cars.jpg"></div>
+        													Cars item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/nature.jpg"></div>
+        													Nature item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/animals.jpg"></div>
+        													Animals item
+        												</a>
+        											</li>
+        										</ul>
+        									</li>
+        								</ul>
+        								<div class="clearfix"></div>
+        								<ul id="myTab2" style="width: 100%">
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item11" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 11<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item12" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 12<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item13" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 13<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item14" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 14<span class="desc"> description</span></a></li>
+        								</ul>
+        								<div id="myTabContent2" class="tab-content" style="width: 100%">
+        									<div class="tab-pane" id="item11">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #e78733; color: white;">Item 11 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item12">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #E733A7; color: white;">Item 12 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item13">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #33A9E7; color: white;">Item 13 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item14">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #32A918; color: white;">Item 14 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        							<ul>
+        								<li class="divider" style="margin: 0 -1px; padding: 0 15px;"></li>
+        							</ul>
+        							<div class="tab-pane" id="item2">
+        								<ul id="myTab2" style="width: 100%">
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item21" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 21<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item22" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 22<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item23" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 23<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item24" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 24<span class="desc"> description</span></a></li>
+        								</ul>
+        								<div id="myTabContent3" class="tab-content" style="width: 100%">
+        									<div class="tab-pane" id="item21">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #e78733; color: white;">Item 21 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item22">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #E733A7; color: white;">Item 22 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item23">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #33A9E7; color: white;">Item 23 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item24">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #32A918; color: white;">Item 24 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        								</div>
+        								<ul>
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="background: #5E5E5E; color: white;">
+        										<br>
+        										<h4 style="background: #e78733; color: white;">Item 2 some content here</h4>
+        										<br>
+        										<ul class="row" style="margin-bottom: 15px;">
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/city.jpg"></div>
+        													City item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/cars.jpg"></div>
+        													Cars item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/nature.jpg"></div>
+        													Nature item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/animals.jpg"></div>
+        													Animals item
+        												</a>
+        											</li>
+        										</ul>
+        									</li>
+        								</ul>
+        								<div class="clearfix"></div>
+        							</div>
+        							<div class="tab-pane" id="item3">
+        								<ul id="myTab31" style="width: 100%">
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item31" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 21<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item32" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 22<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item33" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 23<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item34" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 24<span class="desc"> description</span></a></li>
+        								</ul>
+        								<ul>
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" style="background: #5E5E5E; color: white;">
+        										<br>
+        										<h4 style="background: #e78733; color: white;">Item 3 some content here</h4>
+        										<br>
+        										<ul class="row" style="margin-bottom: 15px;">
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/city.jpg"></div>
+        													City item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/cars.jpg"></div>
+        													Cars item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/nature.jpg"></div>
+        													Nature item
+        												</a>
+        											</li>
+        											<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        												<a href="javascript:void(0);">
+        													<div class="embed-responsive embed-responsive-16by9" style="margin: -5px -15px 10px -15px;"><img class="embed-responsive-item" src="images/animals.jpg"></div>
+        													Animals item
+        												</a>
+        											</li>
+        										</ul>
+        									</li>
+        								</ul>
+        								<div id="myTabContent31" class="tab-content" style="width: 100%">
+        									<div class="tab-pane" id="item31">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #e78733; color: white;">Item 31 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item32">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #E733A7; color: white;">Item 32 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item33">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #33A9E7; color: white;">Item 33 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item34">
+        										<ul class="row">
+        											<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        												<h4 style="background: #32A918; color: white;">Item 34 some content here</h4>
+        											</li>
+        										</ul>
+        										<div class="divided">
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">All Items</a></li>
+        												<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        												<li><a href="javascript:void(0);">WordPress</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">eCommerce</a></li>
+        												<li><a href="javascript:void(0);">JavaScript</a></li>
+        												<li><a href="javascript:void(0);">CSS</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">Mobile</a></li>
+        												<li><a href="javascript:void(0);">HTML5</a></li>
+        												<li><a href="javascript:void(0);">Skins</a></li>
+        											</ul>
+        											<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        												<li><a href="javascript:void(0);">WP Themes</a></li>
+        												<li><a href="javascript:void(0);">Plugins</a></li>
+        												<li><a href="javascript:void(0);">More</a></li>
+        											</ul>
+        										</div>
+        									</div>
+        								</div>
+        								<div class="clearfix"></div>
+        							</div>
+        							<div class="tab-pane" id="item4">
+        								<ul id="myTab41" style="width: 100%">
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item41" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 41<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item42" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 42<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item43" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 43<span class="desc"> description</span></a></li>
+        									<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item44" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 44<span class="desc"> description</span></a></li>
+        								</ul>
+        								<div id="myTabContent41" class="tab-content" style="width: 100%">
+        									<ul>
+        										<li class="divider" style="margin: 0 -1px; padding: 0 15px;"></li>
+        									</ul>
+        									<div class="tab-pane" id="item41">
+        										<div id="myTabContent411" class="tab-content" style="width: 100%">
+        											<ul id="myTab41" style="width: 100%">
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item411" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 411<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item412" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 412<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item413" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 413<span class="desc"> description</span></a></li>
+        											</ul>
+        											<div id="myTabContent411" class="tab-content" style="width: 100%">
+        												<div class="tab-pane" id="item411">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #e78733; color: white;">Item 41 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item412">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #E733A7; color: white;">Item 42 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item413">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #33A9E7; color: white;">Item 43 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item42">
+        										<div id="myTabContent421" class="tab-content" style="width: 100%">
+        											<ul id="myTab41" style="width: 100%">
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item421" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 421<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item422" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 422<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item423" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 423<span class="desc"> description</span></a></li>
+        											</ul>
+        											<div id="myTabContent421" class="tab-content" style="width: 100%">
+        												<div class="tab-pane" id="item421">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center">
+        															<h4 style="background: #e78733; color: white;">Item 421 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item422">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center">
+        															<h4 style="background: #E733A7; color: white;">Item 422 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item423">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #33A9E7; color: white;">Item 423 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item43">
+        										<div id="myTabContent431" class="tab-content" style="width: 100%">
+        											<ul id="myTab41" style="width: 100%">
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item431" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 431<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item432" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 432<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item433" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 433<span class="desc"> description</span></a></li>
+        											</ul>
+        											<div id="myTabContent431" class="tab-content" style="width: 100%">
+        												<div class="tab-pane" id="item431">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center">
+        															<h4 style="background: #e78733; color: white;">Item 431 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item432">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #E733A7; color: white;">Item 432 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item433">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center">
+        															<h4 style="background: #33A9E7; color: white;">Item 433 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        									<div class="tab-pane" id="item44">
+        										<div id="myTabContent441" class="tab-content" style="width: 100%">
+        											<ul id="myTab41" style="width: 100%">
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item441" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 441<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item442" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 442<span class="desc"> description</span></a></li>
+        												<li class="col-lg-4 col-md-4 col-sm-4 col-xs-6 no-padding" style="border-right: 1px solid #555;"><a href="#item443" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Item 443<span class="desc"> description</span></a></li>
+        											</ul>
+        											<div id="myTabContent441" class="tab-content" style="width: 100%">
+        												<div class="tab-pane" id="item431">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center">
+        															<h4 style="background: #e78733; color: white;">Item 431 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item442">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #E733A7; color: white;">Item 432 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        												<div class="tab-pane" id="item443">
+        													<ul class="row">
+        														<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        															<h4 style="background: #33A9E7; color: white;">Item 433 some content here</h4>
+        														</li>
+        													</ul>
+        													<div class="divided">
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">Mobile</a></li>
+        															<li><a href="javascript:void(0);">HTML5</a></li>
+        															<li><a href="javascript:void(0);">Skins</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">WP Themes</a></li>
+        															<li><a href="javascript:void(0);">Plugins</a></li>
+        															<li><a href="javascript:void(0);">More</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">eCommerce</a></li>
+        															<li><a href="javascript:void(0);">JavaScript</a></li>
+        															<li><a href="javascript:void(0);">CSS</a></li>
+        														</ul>
+        														<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        															<li><a href="javascript:void(0);">All Items</a></li>
+        															<li><a href="javascript:void(0);">PHP Scripts</a></li>
+        															<li><a href="javascript:void(0);">WordPress</a></li>
+        														</ul>
+        													</div>
+        												</div>
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        								<div class="clearfix"></div>
+        							</div>
+        							<div class="tab-pane " id="item5">
+        								<ul class="row">
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        										<h4 style="background: #ab0f34; color: white;">
+        											18,000+ 3D Models & Accessories from $1
+        										</h4>
+        									</li>
+        								</ul>
+        								<div class="divided">
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">All Items</a></li>
+        										<li><a href="javascript:void(0);">3D Models</a></li>
+        										<li><a href="javascript:void(0);">Cars</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">HDRI Images</a></li>
+        										<li><a href="javascript:void(0);">CG Textures</a></li>
+        										<li><a href="javascript:void(0);">Materials & Shaders</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Base Meshes</a></li>
+        										<li><a href="javascript:void(0);">Scripts & Plugins</a></li>
+        										<li><a href="javascript:void(0);">2D Concepts</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Animation Data</a></li>
+        										<li><a href="javascript:void(0);">Render Setup</a></li>
+        										<li><a href="javascript:void(0);">More</a></li>
+        									</ul>
+        								</div>
+        							</div>
+        							<div class="tab-pane " id="item6">
+        								<ul class="row">
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        										<h4 style="background: #308eb1; color: white;">
+        											285,000+ Stock Graphics Files from $1
+        										</h4>
+        									</li>
+        								</ul>
+        								<div class="divided">
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">All Items</a></li>
+        										<li><a href="javascript:void(0);">Graphics</a></li>
+        										<li><a href="javascript:void(0);">Print</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Web Elements</a></li>
+        										<li><a href="javascript:void(0);">Add-ons</a></li>
+        										<li><a href="javascript:void(0);">Vectors</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Presentations</a></li>
+        										<li><a href="javascript:void(0);">Infographics</a></li>
+        										<li><a href="javascript:void(0);">Icons</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Fonts</a></li>
+        										<li><a href="javascript:void(0);">Logos</a></li>
+        										<li><a href="javascript:void(0);">More</a></li>
+        									</ul>
+        								</div>
+        							</div>
+        							<div class="tab-pane " id="audiojungle1">
+        								<ul class="row">
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        										<h4 style="background: #9ac130; color: white;">
+        											195,800 Royalty Free Audio Files from $1
+        										</h4>
+        									</li>
+        								</ul>
+        								<div class="divided">
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">All Items</a></li>
+        										<li><a href="javascript:void(0);">Music</a></li>
+        										<li><a href="javascript:void(0);">Music Packs</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Sound Effects</a></li>
+        										<li><a href="javascript:void(0);">Sound Packs</a></li>
+        										<li><a href="javascript:void(0);">Custom Sounds</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Source Files</a></li>
+        										<li><a href="javascript:void(0);">Source Packs</a></li>
+        										<li><a href="javascript:void(0);">Custom Source</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Logos</a></li>
+        										<li><a href="javascript:void(0);">Idents</a></li>
+        										<li><a href="javascript:void(0);">More ...</a></li>
+        									</ul>
+        								</div>
+        							</div>
+        							<div class="tab-pane " id="photodune1">
+        								<ul class="row">
+        									<li class="col-lg-12 col-md-12 col-sm-12 col-xs-12 dropdown-header text-center" >
+        										<h4 style="background: #0f8c98 ; color: white;">
+        											Royalty Free Stock Photography from $3
+        										</h4>
+        									</li>
+        								</ul>
+        								<div class="divided">
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">All Items</a></li>
+        										<li><a href="javascript:void(0);">Animals</a></li>
+        										<li><a href="javascript:void(0);">Architecture</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Business</a></li>
+        										<li><a href="javascript:void(0);">Food</a></li>
+        										<li><a href="javascript:void(0);">Health</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Sports</a></li>
+        										<li><a href="javascript:void(0);">People</a></li>
+        										<li><a href="javascript:void(0);">Technology</a></li>
+        									</ul>
+        									<ul class="col-sm-3 col-xs-6 col-md-3 h-divided">
+        										<li><a href="javascript:void(0);">Travel</a></li>
+        										<li><a href="javascript:void(0);">Nature</a></li>
+        										<li><a href="javascript:void(0);">More ...</a></li>
+        									</ul>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</li>
+        				<!-- divider -->
+        			</ul>
+        		</div>
+        	</div>
+        </nav>
+
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-3">
+                <div class="list-group">
+                    <span class="list-group-item" style="background-color: #026881; color: #fff;">DEMOS</span>
+                    <a class="list-group-item" href="menu-basic.html" role="button">Demo basic</a>
+                    <a class="list-group-item" href="menu_components.html" role="button">Demo components</a>
+                    <a class="list-group-item" href="menu-animation.html" role="button">Demo animation</a>
+                    <a class="list-group-item" href="menu-forms.html" role="button">Demo forms</a>
+                    <a class="list-group-item" href="menu-grid.html" role="button">Demo grid</a>
+                    <a class="list-group-item" href="menu-images.html" role="button">Demo images</a>
+                    <a class="list-group-item" href="menu-maps.html" role="button">Demo maps</a>
+                    <a class="list-group-item" href="menu-search.html" role="button">Demo search</a>
+                    <a class="list-group-item" href="menu-shop.html" role="button">Demo shop</a>
+                    <a class="list-group-item" href="menu-submenus.html" role="button">Demo submenus</a>
+                    <a class="list-group-item active" href="menu-tabs.html" role="button">Demo complex tabs (horizontal)</a>
+                    <a class="list-group-item" href="menu-tabs-v.html" role="button">Demo complex tabs (vertical)</a>
+                    <a class="list-group-item" href="menu-video.html" role="button">Demo video</a>
+                    <a class="list-group-item" href="menu_height.html" role="button">Demo change menu height</a>
+                    <a class="list-group-item" href="menu_height_onfix.html" role="button">Demo change menu height on fix</a>
+                    <a class="list-group-item" href="menu_image_logo.html" role="button">Demo image brand</a>
+                    <a class="list-group-item" href="menu_image_logo_centred.html" role="button">Demo image brand (centred)</a>
+                    <a class="list-group-item" href="menu_opacity_onfix.html" role="button">Demo add opacity on fix</a>
+                </div>
+            </div>
+
+    		<div class="col-sm-9">
+                <h2 class="page-header">What is Lorem Ipsum?</h2>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2 class="page-header">Where does it come from?</h2>
+                <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h2 class="page-header">Why do we use it?</h2>
+                <p class="text-justify">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <h2 class="page-header">Where can I get some?</h2>
+                <p class="text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div class="hidden-xs"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+    </div>
+
+    <style>.nav-tabs>li:not(.active)>a {background-color: transparent!important;} </style>
+
+    <script>
+        //Start navbar toggle fix top bottom
+        $(document).on('click', '.toggle_fixing', function(e) {
+            e.preventDefault();
+            if ($('#main_navbar').hasClass('navbar-fixed-top')) {
+                $('#main_navbar').toggleClass('navbar-fixed-bottom navbar-fixed-top');
+                $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+            } else {
+                $('#main_navbar').toggleClass('navbar-fixed-bottom');
+                $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+                if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+                else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+                FixMegaNavbar(navHeight);
+            }
+            if ($('#main_navbar').hasClass('navbar-fixed-top')) {$('body').css({'margin-top': $('#main_navbar').height()+'px', 'margin-bottom': ''});}
+            else if ($('#main_navbar').hasClass('navbar-fixed-bottom')) {$('body').css({'margin-bottom': $('#main_navbar').height()+'px', 'margin-top': ''});}
+        })
+        //End navbar toggle fix top bottom
+
+    	//Start Fix MegaNavbar on scroll page
+    	var navHeight = $('#main_navbar').offset().top;
+    	FixMegaNavbar(navHeight);
+    	$(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
+
+    	function FixMegaNavbar(navHeight) {
+    	    if (!$('#main_navbar').hasClass('navbar-fixed-bottom')) {
+    	        if ($(window).scrollTop() > navHeight) {
+    	            $('#main_navbar').addClass('navbar-fixed-top')
+    	            $('body').css({'margin-top': $('#main_navbar').height()+'px'});
+    	            if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+    	            else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	        }
+    	        else {
+    	            $('#main_navbar').removeClass('navbar-fixed-top');
+    	            $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	            $('body').css({'margin-top': ''});
+    	        }
+    	    }
+    	}
+    	//End Fix MegaNavbar on scroll page
+
+    	//Next code used to prevent unexpected menu close when using some components (like accordion, tabs, forms, etc), please add the next JavaScript to your page
+    	$( window ).load(function() {
+    	    $(document).on('click', '.navbar .dropdown-menu', function(e) {e.stopPropagation();});
+
+            //Tabs
+            $(function() {
+                var active = $('a[data-toggle="tab"]').parents('.active').length;
+                var tabClicked = false;
+
+                // Closes current active tab (toggle and pane):
+                var close = function() {
+                    $('a[data-toggle="tab"]').parent().removeClass('active');
+                    $('.tab-pane.active').removeClass('active');
+                    active = false;
+                }
+
+                // Closing active tab on clicking on toggle:
+                $('[data-toggle=tab]').click(function(){
+                    if ($(this).parent().hasClass('active')){$($(this).attr("href")).toggleClass('active'); active = false;}
+                    else {tabClicked = true; active = this;}
+                });
+
+                // Closing active tab on clicking outside tab context (toggle and pane):
+                $(document).on('click.bs.tab.data-api', function(event) {
+                    if(active && !tabClicked && !$(event.target).closest('.tab-pane.active').length) {close();}
+                    tabClicked = false;
+                });
+
+                // Closing active tab on ESC key release:
+                $(document).keyup(function(e){
+                    if(active && e.keyCode === 27) {close();}
+                });
+            });
+
+
+    	});
+    </script>
+
+</body>
+</html>
+
+
+
+

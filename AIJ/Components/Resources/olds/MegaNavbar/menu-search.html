@@ -1,0 +1,234 @@
+<!DOCTYPE&nbsp;html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+    <meta content="" name="Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers." />
+    <meta content="" name="MegaNavbar.com" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/MegaNavbar.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/skins/navbar-brown-light.css" title="inverse">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation/animation.css" title="inverse">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+
+</head>
+
+
+<body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <div  id="toc" class="jumbotron" style="color: #fff; background-color: #026881; padding: 0;">
+    	<div class="container">
+    		<h2 class="page-header" style="margin: 25px 0 25px;">
+    			<i class="fa fa-credit-card"></i> MegaNavbar. (v 2.2.0) <small style="color: #ddd;">Advanced Navbar for Bootstrap 3.0+ from Twitter.</small>
+    		</h2>
+    		<p class="text-justify"><small>Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers.</small></p>
+    	</div>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-brown-light no-border-radius xs-height75" id="main_navbar" role="navigation">
+        	<div class="container-fluid">
+        		<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_id">
+        			<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        			</button>
+        			<a class="navbar-brand" href="#"><i class="fa fa-search"></i> Search demo</a>
+        		</div>
+        		<div class="collapse navbar-collapse" id="navbar_id">
+        			<ul class="nav navbar-nav navbar-left">
+        				<li class="hidden-sm">
+        					<form class="navbar-form navbar-left" role="search">
+        						<div class="input-group">
+        							<input type="text" class="form-control" data-width="130px">
+        							<span class="input-group-btn">
+        							<button class="btn btn-warning" type="button"><i class="fa fa-search"></i> Search</button>
+        							</span>
+        						</div>
+        					</form>
+        				</li>
+        				<li>
+        					<form class="navbar-form-expanded navbar-form" role="search">
+        						<div class="input-group">
+        							<span class="input-group-btn">
+        							<button class="btn btn-default" type="submit"><i class="fa fa-search"></i>&nbsp;</button>
+        							</span>
+        							<input type="text" class="form-control" data-width="70px" data-width-expanded="150px" placeholder="Search...">
+        						</div>
+        					</form>
+        				</li>
+        			</ul>
+        			<ul class="nav navbar-nav navbar-right">
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-search"></i>&nbsp;<span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper" role="menu">
+        						<div class="dropdown-menu col-sm-5 col-lg-4">
+        							<form class="no-margin">
+        								<div class="input-group">
+        									<input type="text" class="form-control">
+        									<span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i>&nbsp;Search!</button></span>
+        								</div>
+        							</form>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-search"></i>&nbsp;Advanced search<span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper" role="menu">
+        						<div class="dropdown-menu col-sm-6 col-lg-5">
+        							<h4 class="text-right">Advanced search</h4>
+        							<form role="form">
+        								<input type="text" class="form-control">
+        								<br>
+        								<div class="row">
+        									<div class="col-lg-5 col-md-5 col-sm-5">
+        										<p>Sort results by...</p>
+        										<div class="radio">
+        											<label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Title</label>
+        										</div>
+        										<div class="radio">
+        											<label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Price</label>
+        										</div>
+        										<div class="radio">
+        											<label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Date</label>
+        										</div>
+        									</div>
+        									<div class="col-lg-7 col-md-7 col-sm-7">
+        										<p>Order results by...</p>
+        										<div class="radio">
+        											<label><input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>From highest to lowest</label>
+        										</div>
+        										<div class="radio">
+        											<label><input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">From lowest to highest</label>
+        										</div>
+        										<button type="button" class="btn btn-default navbar-btn pull-right no-margin">Search</button>
+        									</div>
+        								</div>
+        							</form>
+        						</div>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        </nav>
+
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-3">
+                <div class="list-group">
+                    <span class="list-group-item" style="background-color: #026881; color: #fff;">DEMOS</span>
+                    <a class="list-group-item" href="menu-basic.html" role="button">Demo basic</a>
+                    <a class="list-group-item" href="menu_components.html" role="button">Demo components</a>
+                    <a class="list-group-item" href="menu-animation.html" role="button">Demo animation</a>
+                    <a class="list-group-item" href="menu-forms.html" role="button">Demo forms</a>
+                    <a class="list-group-item" href="menu-grid.html" role="button">Demo grid</a>
+                    <a class="list-group-item" href="menu-images.html" role="button">Demo images</a>
+                    <a class="list-group-item" href="menu-maps.html" role="button">Demo maps</a>
+                    <a class="list-group-item active" href="menu-search.html" role="button">Demo search</a>
+                    <a class="list-group-item" href="menu-shop.html" role="button">Demo shop</a>
+                    <a class="list-group-item" href="menu-submenus.html" role="button">Demo submenus</a>
+                    <a class="list-group-item" href="menu-tabs.html" role="button">Demo complex tabs (horizontal)</a>
+                    <a class="list-group-item" href="menu-tabs-v.html" role="button">Demo complex tabs (vertical)</a>
+                    <a class="list-group-item" href="menu-video.html" role="button">Demo video</a>
+                    <a class="list-group-item" href="menu_height.html" role="button">Demo change menu height</a>
+                    <a class="list-group-item" href="menu_height_onfix.html" role="button">Demo change menu height on fix</a>
+                    <a class="list-group-item" href="menu_image_logo.html" role="button">Demo image brand</a>
+                    <a class="list-group-item" href="menu_image_logo_centred.html" role="button">Demo image brand (centred)</a>
+                    <a class="list-group-item" href="menu_opacity_onfix.html" role="button">Demo add opacity on fix</a>
+                </div>
+            </div>
+
+    		<div class="col-sm-9">
+                <h2 class="page-header">What is Lorem Ipsum?</h2>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2 class="page-header">Where does it come from?</h2>
+                <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h2 class="page-header">Why do we use it?</h2>
+                <p class="text-justify">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <h2 class="page-header">Where can I get some?</h2>
+                <p class="text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div class="hidden-xs"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Start navbar toggle fix top bottom
+        $(document).on('click', '.toggle_fixing', function(e) {
+            e.preventDefault();
+            if ($('#main_navbar').hasClass('navbar-fixed-top')) {
+                $('#main_navbar').toggleClass('navbar-fixed-bottom navbar-fixed-top');
+                $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+            } else {
+                $('#main_navbar').toggleClass('navbar-fixed-bottom');
+                $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+                if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+                else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+                FixMegaNavbar(navHeight);
+            }
+            if ($('#main_navbar').hasClass('navbar-fixed-top')) {$('body').css({'margin-top': $('#main_navbar').height()+'px', 'margin-bottom': ''});}
+            else if ($('#main_navbar').hasClass('navbar-fixed-bottom')) {$('body').css({'margin-bottom': $('#main_navbar').height()+'px', 'margin-top': ''});}
+        })
+        //End navbar toggle fix top bottom
+
+    	//Start Fix MegaNavbar on scroll page
+    	var navHeight = $('#main_navbar').offset().top;
+    	FixMegaNavbar(navHeight);
+    	$(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
+
+    	function FixMegaNavbar(navHeight) {
+    	    if (!$('#main_navbar').hasClass('navbar-fixed-bottom')) {
+    	        if ($(window).scrollTop() > navHeight) {
+    	            $('#main_navbar').addClass('navbar-fixed-top')
+    	            $('body').css({'margin-top': $('#main_navbar').height()+'px'});
+    	            if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+    	            else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	        }
+    	        else {
+    	            $('#main_navbar').removeClass('navbar-fixed-top');
+    	            $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	            $('body').css({'margin-top': ''});
+    	        }
+    	    }
+    	}
+    	//End Fix MegaNavbar on scroll page
+
+    	//Next code used to prevent unexpected menu close when using some components (like accordion, tabs, forms, etc), please add the next JavaScript to your page
+    	$( window ).load(function() {
+    	    $(document).on('click', '.navbar .dropdown-menu', function(e) {e.stopPropagation();});
+    	});
+    </script>
+</body>
+</html>

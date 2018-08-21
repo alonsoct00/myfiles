@@ -1,0 +1,331 @@
+// mixin
+@import "mixin";
+
+// variables
+$menuBG: #03a9f4 !default;
+$bg: #03a9f4 !default;
+$white: transparentize(#fff, .14) !default;
+$textColor: #505050 !default;
+$black-color: transparentize(black, .14) !default;
+
+section.mash-menu-inner-container {
+  background: $bg;
+}
+
+.mash-brand {
+  > li {
+    @include mediaQuery_min {
+      &:hover > a {
+        background: lighten($menuBG, 5);
+      }
+    }
+    > a {
+      color: $white;
+    }
+  }
+}
+
+.mash-list-items {
+
+  > li {
+    &.active {
+      > a {
+        background: lighten($menuBG, 5);
+      }
+    }
+
+    &:hover {
+      > a {
+        color: white;
+        background: lighten($menuBG, 5);
+      }
+    }
+  }
+}
+
+&.separator {
+  .mash-brand > li > a {
+    border-right: 1px solid darken($menuBG, 3);
+
+    @include mediaQuery_max {
+      border-bottom: 1px solid darken($menuBG, 3);
+    }
+  }
+
+  .mash-list-items.right > li > a {
+    border-left: 1px solid darken($menuBG, 3);
+
+    @include mediaQuery_max {
+      border-bottom: 1px solid darken($menuBG, 3);
+    }
+  }
+
+  @include mediaQuery_max {
+    .mash-search-bar {
+      border: 1px solid darken($menuBG, 3);
+    }
+  }
+
+}
+
+.drop-down {
+  li:hover > a {
+    color: $menuBG;
+  }
+}
+
+.mash-search-bar {
+  @include mediaQuery_max {
+    background: darken($menuBG, 0);
+  }
+}
+
+.vertical-tabs {
+  a {
+    &:hover,
+    &.active {
+      color: $menuBG;
+    }
+  }
+}
+
+.thumbnail {
+  &:hover {
+    border-color: $menuBG;
+  }
+}
+
+blockquote {
+  border-left-color: lighten($menuBG, 20);
+}
+
+.list-items {
+
+  a {
+    &:hover {
+      color: $menuBG;
+    }
+  }
+}
+
+.btn {
+  &.btn-custom {
+    background: $menuBG;
+    border-bottom-color: darken($menuBG, 10);
+    &:hover {
+      background: lighten($menuBG, 3);
+    }
+  }
+}
+
+.card {
+  .card-action {
+    a {
+      color: $menuBG;
+    }
+  }
+
+  &.reveal {
+    a {
+      color: $menuBG;
+    }
+  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='file'],
+input[type='hidden'],
+input[type='image'],
+input[type='month'],
+input[type='number'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input[type='tel'],
+textarea,
+select {
+  background-image: linear-gradient($menuBG, $menuBG), linear-gradient(#d2d2d2, #d2d2d2) !important;
+
+  &:focus {
+    background-image: linear-gradient($menuBG, $menuBG), linear-gradient(#d2d2d2, #d2d2d2);;
+  }
+}
+
+label.menu-checkbox {
+  &:after {
+    background: $menuBG;
+  }
+}
+
+label.menu-toggle {
+
+  &:before, &:after {
+    background: lighten($menuBG, 20);
+  }
+
+  &:after {
+    background: $menuBG;
+  }
+}
+
+label.menu-radio {
+
+  &:after {
+    border-color: $menuBG;
+    background: lighten($menuBG, 0);
+  }
+}
+
+.mash-mobile-button {
+  background: $menuBG;
+}
+
+.mash-extra {
+  > .mash-extra-container {
+    background: darken($menuBG, 20);
+  }
+}
+
+.mash-categories {
+
+  a {
+    background: transparentize($menuBG, .7);
+    border-left: 1px solid darken($menuBG, 3);
+
+    &:hover {
+      background: lighten($menuBG, 5);
+    }
+
+  }
+}
+
+// extra colors mixin
+@mixin extra-color() {
+
+  .mash-brand {
+    > li {
+      > a {
+        color: $black-color;
+      }
+    }
+  }
+
+  .mash-list-items {
+    > li {
+      &:hover {
+        > a {
+          color: $black-color;
+        }
+      }
+    }
+  }
+
+  .mash-social-icons {
+    a {
+      color: transparentize($black-color, .2);
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  .mash-search-bar {
+    input {
+      color: $black-color;
+    }
+    :-moz-placeholder {
+      opacity: 1 !important;
+      color: $black-color;
+    }
+
+    ::-moz-placeholder {
+      opacity: 1 !important;
+      color: $black-color;
+    }
+
+    :-ms-input-placeholder {
+      opacity: 1 !important;
+      color: $black-color;
+    }
+
+    ::-webkit-input-placeholder {
+      opacity: 1 !important;
+      color: $black-color;
+    }
+
+    .mash-search-bar-border {
+      &:after {
+        background: transparentize($black-color, .50);
+      }
+    }
+  }
+
+  .mash-mobile-button span {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOAgMAAABSqtRjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACVBMVEViYmIAAAD///9/r5z6AAAAAnRSTlMA32D/An0AAAABYktHRAJmC3xkAAAACXBIWXMAAAsSAAALEgHS3X78AAAAEklEQVQI12MIBQEGCIkLkKgGAKK/CfcXmfkCAAAAAElFTkSuQmCC') no-repeat center;
+  }
+
+  .btn.btn-custom {
+    color: $black-color !important;
+  }
+}
+
+// color fix
+@mixin color-fix() {
+
+  .drop-down {
+    li:hover > a {
+      color: $menuBG;
+    }
+  }
+  .vertical-tabs {
+    a {
+      &:hover,
+      &.active {
+        color: $menuBG;
+      }
+    }
+  }
+  .list-items {
+    a {
+      &:hover {
+        color: $menuBG;
+      }
+    }
+  }
+  .card {
+    .card-action {
+      a {
+        color: $menuBG;
+      }
+    }
+    &.reveal {
+      a {
+        color: $menuBG;
+      }
+    }
+  }
+}
+
+.vertical-tabs-content-container {
+  .vertical-tabs-content-mobile {
+    @include mediaQuery_max {
+      color: $textColor;
+
+      &:hover {
+        color: $bg;
+      }
+    }
+  }
+}
+
+.panel{
+  a{
+    color: $menuBG;
+  }
+}

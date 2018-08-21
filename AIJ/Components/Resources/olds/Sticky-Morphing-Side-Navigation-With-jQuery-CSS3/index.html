@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sticky Morphing Side Navigation Demo</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family:'Roboto';
+  background-color:#fafafa;
+}
+
+.cont-txt {
+  border: 0;
+  overflow: hidden;
+  background: 0 0!important;
+  max-width: 728px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: 'Roboto', serif;
+  color: #999;
+}
+
+.cont-txt p {
+  margin-top: 20px;
+}
+
+.cont-txt span {
+  background: #CECECE;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  line-height: 20px;
+  height: auto;
+  color: transparent!important;
+  margin-top: 55px;
+}
+
+hr {
+  margin-top: 10px;
+  border: none;
+  border-top: 1px solid #EE283D;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #F2F2F2;
+  margin: auto;
+}
+
+.bar {
+  position:fixed;
+  height: 40px;
+  width: 100%;
+  background: #44B6EC;
+  z-index: 4;
+  top:0;
+}
+
+.menu-expanded {
+  background-color: transparent;
+  position: fixed;
+	width: 340px;
+  height:100%;
+  top: 0px;
+  right: 0px;
+  overflow: hidden !important;
+  z-index: 5;
+}
+
+.menu,
+.linee {
+  cursor: pointer;
+}
+
+.menu {
+  float: right;
+  margin: 15px 15px 0 0;
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  background-color: #EE283D;
+  border: none;
+  transition: all 0.40s ease-out;
+}
+
+.over {
+  transform: scale(100);
+  transition: all 0.350s ease-in;
+  cursor: default;
+}
+
+.linea1 {
+  background: #fff;
+  height: 2px;
+  width: 15px;
+  position: absolute;
+  right: 33px;
+  top: 33px;
+  transition: all 0.3s;
+}
+
+.linea2 {
+  background: #fff;
+  height: 2px;
+  width: 15px;
+  position: absolute;
+  right: 33px;
+  top: 38px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.linea3 {
+  background: #fff;
+  height: 2px;
+  width: 15px;
+  position: absolute;
+  right: 33px;
+  top: 43px;
+}
+
+.overL1 {
+  animation: closetop 1s forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+.overL2 {
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.overL3 {
+  animation: closebottom 1s forwards;
+  animation-direction: alternate;
+  cursor: pointer;
+}
+
+@keyframes closetop {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(5px) rotate(-45deg);
+  }
+}
+
+@keyframes closebottom {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(-5px) rotate(45deg);
+  }
+}
+
+.main-menu {
+  visibility: hidden;
+  position: absolute;
+  right: 50px;
+  top: 160px;
+  opacity: 0;
+  transition: all 0.300s;
+  transition-delay: 0s;
+}
+
+.overmain {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.400s;
+  transition-delay: 0.370s;
+}
+
+.main-menu ul {
+  list-style-type: none;
+}
+
+.main-menu ul li {
+  margin: 20px 0px;
+}
+
+.main-menu ul li a {
+  float: right;
+  text-decoration: none;
+  color: transparent;
+  background-color: #DB0024;
+  margin-top: 20px;
+}
+
+.main-menu ul li a:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 2;
+  background: #5F5F5F;
+  width: 100%;
+  height: 150px;
+}
+
+.footer div {
+  width: 200px;
+  text-align: center;
+}
+
+.footer div ul {
+  list-style-type: none;
+}
+
+.footer div ul li span {
+  text-align: center;
+  text-decoration: none;
+  color: transparent;
+  background-color: #999;
+  margin-top: 10px;
+  display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+  <div class="bar"></div>
+  <div class="menu-expanded">
+  <div id="menu" class="menu"></div>
+  <span class="linee linea1"></span>
+  <span class="linee linea2"></span>
+  <span class="linee linea3"></span>
+  <div class="main-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="cont-txt">
+    <h1>Sticky Morphing Side Navigation Demo</h1>
+    <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <hr/>
+    <p>
+      <span>Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel.</span>
+</p>
+<p>
+  <span>Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel.</span>
+</p>
+<p>
+  <span>Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel.</span>
+</p>
+<p>
+  <span>Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet, et delectus accommodare his, consul copiosae legendos at vix, ad putent delectus delicata usu. Vidit dissentiet eos cu, eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, dicat falli consulatu at vis.</br>Te facilisis mnesarchum qui, posse omnium mediocritatem est cu. Modus argumentum ne qui, tation efficiendi in eos. Ei mea falli legere efficiantur, et tollit aliquip debitis mei. No deserunt mediocritatem mel.</span>
+</p>
+</div>
+<div class="footer">
+  <div>
+    <ul>
+      <li><span>Footerasdasd</span></li>
+      <li><span>footer uno</span></li>
+      <li><span>footer 2</span></li>
+      <li><span>footerasd tre</span></li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><span>Footerasdasd</span></li>
+      <li><span>footer uno</span></li>
+      <li><span>footerasdasdasd 2</span></li>
+      <li><span>footer tre</span></li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><span>Footerfassass</span></li>
+      <li><span>footer uno</span></li>
+      <li><span>footer 2asdasdasd</span></li>
+      <li><span>footer tre</span></li>
+    </ul>
+  </div>
+</div>
+</div>
+<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+<script>
+$('.menu , .linee').on('click', function() {
+  $('.menu').toggleClass('over')
+  $('.linea1').toggleClass('overL1')
+  $('.linea2').toggleClass('overL2')
+  $('.linea3').toggleClass('overL3')
+  $('.main-menu').toggleClass('overmain')
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

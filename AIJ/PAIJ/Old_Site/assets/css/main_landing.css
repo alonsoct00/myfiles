@@ -1,0 +1,1298 @@
+/* CUSTOM FONT */
+
+
+/*cambiar rutas según estructura del servidor*/
+
+@import url('../fonts/VAGRounded/font-styles.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700');
+@import url('font-awesome.min.css');
+
+/*Interjet Icon Font*/
+
+@import url('../fonts/Interfont/css/interfont.css');
+@import url('../fonts/Interfont/css/animation.css');
+.inter-icon {
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    font: normal normal normal 14px/1 interfont;
+    transform: translate(0, 0);
+    margin: 0px auto;
+}
+
+i.inter-icon.icon-icn_card-payment:before,
+i.inter-icon.icon-icn_passenger:before {
+    margin-right: 7px!important;
+}
+
+
+/****Reset main styles ***/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+#main-content {
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0px auto 0px auto;
+    min-height: 100%;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    /*VAGRoundedStd-Bold, Arial, sans-serif;*/
+    font-size: 100%;
+    color: #333;
+}
+
+
+a.btn{width: 150px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;}
+
+    .btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: none;
+    outline: 0px;
+    outline-offset: 0px;
+}
+
+
+a.btn-transparent,
+input.btn-transparent,button.btn-transparent {
+    font-size: 20px;
+    width: 150px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border: 1px solid #6caddf;
+}
+
+a.btn-light-blue,
+input.btn-light-blue,button.btn-light-blue {
+    font-size: 20px;
+    background: #6caddf;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border-radius: 100px;
+    width: 160px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+}
+
+a.btn-blue,
+input.btn-blue,button.btn-blue{
+    font-size: 20px;
+    background: #368BCD;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border-radius: 100px;
+    width: 160px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+}
+
+a.btn-green,
+input.btn-green, a.btn-green:hover,
+input.btn-green:hover, a.btn-green:focus,
+input.btn-green:focus {
+    font-size: 20px;
+    width: 150px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    background: #d6e034;
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border: 1px solid #d6e034;
+    color:#666;
+}
+a.btn-cancel,
+input.btn-cancel,button.btn-cancel  {
+    font-size: 20px;
+    background: #ccc;
+    color: #666;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border-radius: 100px;
+    width: 160px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+}
+
+input[disabled].btn {
+    background: #ededed!important;
+    color: #666!important;
+}
+
+
+/****END reset main styles ***/
+
+
+/*/////////////////////////////-------------------Recovery SuperJet-------------------------/////////////////////////////////////*/
+
+#recoverySJContainer {
+    display: block;
+    clear: both;
+    margin-top: 30px;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.container-fluid{margin:0px auto; float: none;}
+
+#recoverySJContainer .topcontent {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 340px;
+}
+
+#recoverySJContainer .bannertop {
+    position: relative;
+    height: 100%;
+    display: block;
+    float: left;
+    background: url(../images/sorryPlane.png) no-repeat 0px 0px;
+    background-size: cover;
+    width: 100%;
+}
+
+#recoverySJContainer .bannertxt {
+    clear: both;
+    position: absolute;
+    max-width: 740px;
+    padding: 0px 30px;
+    bottom: 10px;
+    text-shadow: -3px 1px 1px rgba(80, 80, 80, 0.85);
+}
+
+ #recoverySJContainer .advice-txt {
+    clear: both;
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    max-width: 65%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+ #recoverySJContainer .advice-txt div ul {
+    padding: 0px 15px 0px 15px;
+}
+
+#recoverySJContainer .bannertop h3 {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-align: left;
+}
+
+#recoverySJContainer .bannertop p {
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+#recoverySJContainer .ticket {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    max-width: 310px;
+    z-index: 99;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.ticket#topTicket {
+    min-height: 430px;
+    border-radius: 2px;
+}
+
+.top-ticket {
+    display: block;
+    padding: 20px 0px 10px 0px;
+    float: none;
+    text-align: center;
+    background: #fafafa;
+    margin: 0px 0px;
+    box-shadow: 1px -1px 6px 0 rgba(160, 165, 169, 0.81);
+    border-radius: 3px;
+}
+
+.ticket .rip {
+    height: 20px;
+    margin: 0 10px;
+    background-image: url(../images/Line_x2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.ticket .rip:before,
+.ticket .rip:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: 5px solid transparent;
+    border-top-color: #fafafa;
+    border-right-color: #fafafa;
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.ticket .rip:before {
+    left: -10px;
+}
+
+.ticket .rip:after {
+    -webkit-transform: translate(-50%, -50%) rotate(225deg);
+    transform: translate(-50%, -50%) rotate(225deg);
+    right: -40px;
+}
+
+.top-ticket .logoimgIJ {
+    width: 135px;
+    height: 25px;
+    display: block;
+    margin: 0px auto;
+}
+
+.logoimgIJ img {
+    width: 100%;
+    height: auto;
+}
+
+.body-ticket {
+    display: block;
+    clear: both;
+    text-align: center;
+    margin-top: 0px;
+    background: #fafafa;
+    padding-top: 5px;
+    box-shadow: 0 2px 14px 0 rgba(160, 165, 169, 0.81);
+    float: left;
+    border-radius: 3px;
+}
+
+.body-ticket p {
+    display: block;
+    text-align: left;
+    padding: 0px 40px;
+    color: #666;
+    font-size: 14px;
+}
+.body-ticket p > b{color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;}
+
+   .body-ticket p > small {
+    color: #b0b4b8;
+}
+
+ .body-ticket p > small b{font-family: VAGRoundedStd-Bold, Arial, sans-serif;}
+
+.body-ticket > p:nth-child(3) {
+    padding: 15px 20px 10px 20px;
+    float: none;
+    margin: 0px auto;
+    line-height: normal;
+}
+
+form#ticketRecovery {
+    clear: both;
+    display: inline-block;
+    text-align: left;
+}
+
+#ticketRecovery .general-form-component {
+    display: block;
+    float: none;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    padding: 5px 8px 0px;
+    margin: 5px 10px 5px 0px;
+    box-shadow: 0px 2px 0px #dfdfdf;
+    -webkit-box-shadow: 0px 2px 0px #dfdfdf;
+    -moz-box-shadow: 0px 2px 0px #dfdfdf;
+    border-radius: 3px;
+    max-height: 50px;
+}
+
+#ticketRecovery .general-form-component label {
+    font-size: 12px;
+    color: #666;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+#ticketRecovery .general-form-component input {
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    font-size: 19px;
+    color: #6caddf;
+}
+
+input.reservationkey {
+    text-transform: uppercase!important;
+}
+
+input.pass-name {
+    text-transform: capitalize;
+    !important;
+}
+
+input.pass-lastname {
+    text-transform: capitalize!important;
+}
+
+#ticketRecovery .general-form-component.button-element {
+    background: none;
+    box-shadow: none;
+    border: 0px;
+    text-align: center;
+}
+
+#ticketRecovery .button-element .btn {
+    text-transform: none;
+    color: #fff;
+}
+
+#ticketRecovery .button-element .btn:hover,
+#ticketRecovery .button-element .btn:focus {
+    background: #6caddf!important;
+    outline: none;
+    outline: 0px;
+    outline-offset: 0px;
+}
+
+div#beneficiary-details {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.row-ticket {
+    clear: both;
+    display: block;
+    padding: 20px 30px;
+    float: left;
+}
+
+.bodycontent {
+    display: none;
+    float: none;
+    margin: 10px auto;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    background: #fafafa;
+    position: relative;
+    top: 0px;
+    padding: 0px;
+
+}
+
+.bodycontent h4 {
+    font-size: 30px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.bodycontent p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+#promoticket {
+    display: block;
+    clear: both;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.bodycontent p.top-titleTicket{float: left; color: #fff;font-family: VAGRoundedStd-Bold, Arial, sans-serif;font-size: 28px;margin-left: 20px;}
+
+.toppromo-ticket {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #1b4298;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 10px 10px 0px 0px;
+        z-index: 100;
+    position: relative;
+}
+
+.toppromo-ticket img {
+    width: 150px;
+    margin-right: 20px;
+    display: inline-block;
+    float: right;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#promo-ticket .flightDetails {
+    display: block;
+    float: left;
+}
+
+#promo-ticket .passengersbundle {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+p.T-title {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 24px;
+    color: #6caddf;
+}
+
+.theflight {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.theflight.returnflight {
+    margin-top: 30px;
+}
+
+.theflight small {
+    font-size: 15px;
+    color: #b2b2b2;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    clear: both;
+    display: block;
+}
+
+.theflight p {
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    color: #4c4c4c;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.passengersList {
+    display: block;
+}
+
+.passengersList ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.passengersList ul li {
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 14px;
+    color: #4c4c4c;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+div#promo-ticket {
+    clear: both;
+    display: block;
+    float: left;
+    min-height: 320px;
+    width: 100%;
+    box-shadow: 0 5px 19px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 13px 13px 0px 0px;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+}
+
+#promo-ticket div.col-ticket {
+    float: left;
+    min-height: 320px;
+    position: relative;
+    padding-top: 15px;
+}
+
+#promo-ticket div.col-ticket.col-passengers {
+    background: #fafafa;
+    border-left: 1px solid #d8d8d8;
+}
+
+#promo-ticket div.col-ticket > p {
+    font-size: 18px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    clear: both;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+}
+
+.bodypromoticket {
+    display: block;
+    float: left;
+    border: 1px solid #e8e7e6;
+    padding-left: 10px;
+    width: 100%;
+}
+
+a.btn-notify, a.btn-notify:focus, a.btn-notify:hover {
+    color: #999!important;
+    border: 1px solid #b2b2b2;
+    text-transform: none;
+    background-color: #fafafa!important;
+    width: 140px;
+    height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+        padding: 0px;
+}
+
+a.btn-notify i{color:#7F7F7F;}
+
+.coupons-container {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.coupon {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    text-align: center;
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+    box-shadow:0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    top: -20px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.boundown {
+    top: -10px;
+}
+
+.bounout {
+    top: -20px;
+}
+
+.coupon .topCoupon {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-bottom: 1px dashed #e8e7e6;
+    margin: 0px 15px;
+}
+
+.coupon .topCoupon:before {
+    content: "";
+    float: left;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    left: -5px;
+    top: 65px;
+    border-radius: 100px;
+    display: block;
+        box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.coupon .topCoupon:after {
+    content: "";
+    float: left;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    right: -5px;
+    top: 65px;
+    border-radius: 100px;
+    display: block;
+    box-shadow: -2px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topCoupon p {
+    font-size: 22px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.bodyCoupon .btn {
+    color: #fff;
+    text-transform: none;
+    text-align: center;
+    clear: both;
+    display: block;
+    margin: 0px auto;
+}
+
+
+
+.bodyCoupon a.btn.btn-light-blue:hover,
+.bodyCoupon a.btn.btn-light-blue:focus {
+    background: #6caddf;
+}
+
+.bodyCoupon a.btn.btn-green,.bodyCoupon a.btn.btn-green:hover, .bodyCoupon a.btn.btn-green:focus {
+    font-size: 20px;
+    width: 150px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    background: #d6e034;
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border: 1px solid #d6e034;
+    color:#666;
+}
+
+.bodyCoupon small {
+    font-size: 11px;
+    color: #7f7f7f;
+    margin: 10px auto 8px auto;
+    display: block;
+}
+
+p.discAmount {
+    font-size: 40px;
+    color: #1b4298;
+    display: block;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    padding-top: 10px;
+}
+
+p.discAmount small {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 18px;
+    color: #1b4298;
+    margin: 0px;
+    line-height: normal;
+    position: relative;
+    bottom: 10px;
+}
+
+.barCode {
+    width: 183px;
+    height: 51px;
+    margin: 19px auto;
+    display: block;
+    text-align: center;
+}
+
+.barCode img {
+    width: 100%;
+    height: auto;
+}
+
+#footerTerms{background: #fff;padding: 0px;padding: 30px 0px;}
+
+div#recoveryTermsConds {
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+#recoveryTermsConds p {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+ol#conditions {
+    list-style-type: upper-alpha;
+    padding: 0px 15px;
+    color: #7f7f7f;
+    font-size: 12px;
+}
+
+ol#conditions li {
+    color: #7f7f7f;
+    font-size: 12px;
+    clear: both;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+ol#conditions li b {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.close-ticket{    display: block;
+    position: static;
+    clear: both;
+    float: none;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px 0px 20px;
+    color: #6caddf!important;
+    cursor: pointer;}
+
+/////////////////-------------------Table Recovery SuperJet-------------------------/////////////////////////
+#exchangeSJContainer {
+    display: block;
+    clear: both;
+    width: 100%;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+.section-landing h3 {
+    font-size: 30px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+.section-landing p {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+p.contentSubtitle {
+    font-size: 24px;
+    color: #6caddf;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.passengerlistTable {
+    background: #f8f7f7;
+    box-shadow: inset 0 1px 0 0 #6caddf;
+    padding: 20px 20px;
+        float: left;
+    width: 100%;
+}
+
+.bookingEngine {
+    background: #f8f7f7;
+    box-shadow: inset 0 1px 0 0 #6caddf;
+    padding: 20px 20px;
+        float: left;
+    width: 100%;
+}
+
+.passengerlistTable table{margin-bottom: 0px;}
+
+.passengerlistTable table thead {
+    background: #f0f6fb;
+    color: #7f7f7f;
+    font-size: 14px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.passengerlistTable table > thead > tr > th {
+    border: 0px;
+    text-align: left;
+}
+
+.passengerlistTable table tbody {
+    background: #fff;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+}
+
+.passengerlistTable table tbody > tr > td {
+    border-top: 1px solid #ededed;
+    padding: 0px;
+    height: 40px;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: left;
+        padding-left: 10px;
+}
+
+.passengerlistTable table tbody > tr > td p {
+    display: block;
+    margin: 0px;
+}
+
+.passengerlistTable table tbody > tr > td p.changed{color:#8dc85a;}
+
+
+p.trip{display: block;}
+p.trip small {
+    display: block;
+    clear: both;
+    color: #666;
+}
+
+.passengerlistTable table tr td .general-form-component {
+    text-align: left;
+    float: left;
+}
+
+.passengerlistTable table tr td .general-form-component label {
+    float: left;
+    display: inline-table;
+    font-size: 16px;
+    color: #666;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+.passengerlistTable table tr td .general-form-component span.check {
+    float: left;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+}
+
+.passengerlistTable table tr td .checkbox .checkbox-material:before,
+.passengerlistTable table tr td label.checkbox-inline .checkbox-material:before {
+    width: 15px!important;
+    height: 15px!important;
+}
+
+.passengerlistTable table tr td .checkbox .checkbox-material .check:before,
+.passengerlistTable table tr td label.checkbox-inline .checkbox-material .check:before {
+    margin-top: -6px;
+    margin-left: 5px;
+}
+
+.passengerlistTable table tr td .checkbox input[type=checkbox]:checked+.checkbox-material .check,
+.passengerlistTable table tr td label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check {
+    color: #8dc85a;
+    border-color: #8dc85a;
+}
+
+.passengerlistTable table tr td .checkbox input[type=checkbox]:checked+.checkbox-material .check:before,
+.passengerlistTable table tr td label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check:before {
+    color: #8dc85a;
+    -webkit-box-shadow: 0 0 0 9px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -4px 5px 0 10px, 20px -12px 0 14px;
+    box-shadow: 0 0 0 9px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -4px 5px 0 10px, 20px -12px 0 14px;
+}
+
+.action-btns{float: right; display: block; clear: both;}
+.action-btns a.btn {
+    color: #fff;
+    text-transform: none;
+}
+
+.action-btns a.btn.btn-cancel,.action-btns a.btn.btn-cancel:hover, .action-btns a.btn.btn-cancel:focus{background:#368BCD;color:#fff;}
+
+code{font-size: 13px; display: block; margin: 20px auto 30px auto; clear: both;}
+
+
+/******Modal Notify*********/
+
+div#notify-modal-container {
+    margin-top: 30px;
+}
+
+
+#notify-modal-container p{
+    font-size: 15px;
+    color: #4c4c4c;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    margin: 0px 30px 0px 30px;}
+
+
+#notifyModal .modal-dialog.modal-md {
+    width: 800px;
+}
+
+#modal-notify-main-content {
+    text-align: left;
+    display: block;
+
+}
+
+
+#modal-notify-main-content .row {
+    margin: 0px;
+}
+
+form#notifyPassengers {
+display: block;
+    clear: both;
+    padding: 10 20px 0px; 10px;
+    background: #fafafa;
+    margin: 20px 30px 30px 30px;
+}
+
+
+
+#notifyPassengers .general-form-component.inline-style{    
+    display: block;
+    clear: both;
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8e7e6;
+    height: 60px;
+    padding-right: 20px;}
+
+#notifyPassengers .general-form-component.inline-style label {
+    color: #4c4c4c;
+    font-size: 16px;
+    float: left;
+    display: inline-block;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+#notifyPassengers .general-form-component.inline-style input.form-control.textfield {
+       float: right;
+    display: inline-block;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 0px #dfdfdf;
+    -webkit-box-shadow: 0px 2px 0px #dfdfdf;
+    -moz-box-shadow: 0px 2px 0px #dfdfdf;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 20px;
+    color: #6caddf;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+
+#modal-notify-main-content .action-btns {
+    display: block;
+    clear: both;
+    float: left;
+    text-align: right;
+    width: 100%;
+    padding: 10px 40px 10px;
+    margin: 10px 0px 0px 0px;
+    background: #f1f2f2;
+}
+
+#modal-notify-main-content .action-btns a.btn.btn-cancel.btn-transparent,#modal-notify-main-content .action-btns a.btn.btn-cancel.btn-transparent:hover,#modal-notify-main-content .action-btns a.btn.btn-cancel.btn-transparent:focus {
+    border: 1px solid #999;
+    background: none;
+    color: #999;
+}
+
+#modal-notify-main-content .action-btns button.submit{
+    background: #6caddf;
+    color: #fff;
+text-transform: none;
+line-height: 43px;
+    display: inline-block;
+    width: 200px;
+margin-left: 20px;}
+
+
+button#sendNotification:before{
+            content: "\f0e0";
+    font: normal normal normal 14px/1 FontAwesome;
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    top: -1px;
+    font-size: 17px;
+    }
+
+
+
+
+.sucessMSG {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    background: #f0f0f0;
+    height: 100%;
+    text-align: center;
+        padding: 35px 20px 25px 20px;
+}
+
+.sucessMSG p{display: block; margin: 35px 50px 50px 50px; font-size: 14px; color:#4c4c4c;}
+
+.sucessMSG img.logoInterjet {
+    width: 185px;
+    height: 35px;
+}
+
+.sucessMSG img.sendplane{width:154px; height: auto;}
+
+.sucessMSG a.btn-submit{text-transform: none; color:#fff; clear: both;margin: 60px auto 0px auto; display: block;}
+
+
+
+/*************************** Media Queries ********************************/
+
+@media (min-width: 968px) and (max-width: 1200px) {
+
+    #promo-ticket div.col-ticket {
+    float: left;
+    min-height: 320px;
+    position: relative;
+    padding-top: 15px;
+    width: 50%;
+}
+
+.theflight.returnflight {
+    margin-top: 10px;
+}
+
+#recoverySJContainer .bannertxt{max-width: 600px;}
+
+#notifyModal .modal-dialog.modal-md {
+    width: 700px;
+}
+
+
+
+}
+
+
+@media (min-width: 720px) and (max-width: 968px) {
+
+    .ticket#topTicket {
+    min-height: 430px;
+    border-radius: 2px;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.body-ticket{width: 100%;}
+
+form#ticketRecovery {
+    clear: both;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+#ticketRecovery .general-form-component {
+    margin: 5px 10px 12px 0px;
+}
+
+.body-ticket br {
+    display: none;
+}
+
+ .body-ticket{width: 100%;}
+
+}
+
+
+@media (min-width: 580px) and (max-width: 720px) {
+
+
+        #promo-ticket div.col-ticket {
+    float: left;
+    min-height: 320px;
+    position: relative;
+    padding-top: 15px;
+    width: 100%;
+}
+
+    .body-ticket{width: 100%;}
+
+form#ticketRecovery {
+    clear: both;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+#ticketRecovery .general-form-component {
+    margin: 5px 10px 12px 0px;
+}
+
+.body-ticket br {
+    display: none;
+}
+
+ .body-ticket{width: 100%;}
+
+}
+
+
+@media screen and (max-width: 720px) {
+
+
+#recoverySJContainer .bannertop {
+    position: relative;
+    height: 100%;
+    display: block;
+    float: left;
+    background: url(../images/sorryPlane.png) no-repeat -195px 0px;
+    background-size: cover;
+    width: 100%;
+}
+
+#recoverySJContainer .bannertxt {
+    clear: both;
+    position: static;
+    max-width: 100%;
+    padding: 0px 10px;
+    bottom: 10px;
+    text-shadow: -3px 1px 1px rgba(80, 80, 80, 0.85);
+}
+
+
+         #promo-ticket div.col-ticket {
+    float: left;
+    min-height: 320px;
+    position: relative;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.bodycontent {
+    float: left;
+    margin: 10px auto;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    background: #fafafa;
+    padding: 30px 20px;
+    position: static;
+    width: 100%;
+}
+
+.row-ticket {
+    clear: both;
+    display: block;
+    padding: 0px;
+    float: left;
+}
+
+
+form#ticketRecovery {
+    clear: both;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    padding: 0px 30px;
+}
+
+
+    .ticket#topTicket {
+    min-height: 430px;
+    border-radius: 2px;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+    .body-ticket{width: 100%;}
+
+#ticketRecovery .general-form-component {
+    margin: 5px 10px 12px 0px;
+}
+
+.body-ticket br {
+    display: none;
+}
+
+.bodypromoticket {
+    display: block;
+    float: left;
+    border: 1px solid #e8e7e6;
+    padding-left: 0px;
+}
+
+
+.coupons-container {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.coupon {
+    display: inline-block;
+    z-index: 10;
+    background: #fff;
+    text-align: center;
+    float: none;
+    width: 280px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.08);
+    top: -20px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    position: relative;
+    margin: 0px 15%;
+}
+
+
+
+
+}
+
+
+/////////////////////////////-------------------END Recovery SuperJet-------------------------/////////////////////////////////////

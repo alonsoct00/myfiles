@@ -1,0 +1,53 @@
+@media only screen and (min-width:780px) and (max-width:2500px) {
+/*Animation*/
+.wsmenu-list li > .wsmenu-submenu{
+	display:none
+	}
+	
+.wsmenu-list li:hover > .wsmenu-submenu{
+	display:block;
+	-moz-animation: bounceInDown .3s ease-in;
+    -webkit-animation: bounceInDown .3s ease-in ;
+    animation: bounceInDown .3s ease-in;
+	}
+
+.wsmenu-submenu li > .wsmenu-submenu-sub{
+	display:none;
+	}
+	
+.wsmenu-submenu li:hover > .wsmenu-submenu-sub{
+	display:block;
+	 -moz-animation: bounceInDown .3s ease-in;
+    -webkit-animation: bounceInDown .3s ease-in ;
+    animation: bounceInDown .3s ease-in;
+	}
+
+.wsmenu-submenu-sub li > .wsmenu-submenu-sub-sub{
+	display:none;
+	}
+	
+.wsmenu-submenu-sub li:hover > .wsmenu-submenu-sub-sub{
+	display:block;
+	 -moz-animation: bounceInDown .3s ease-in;
+    -webkit-animation: bounceInDown .3s ease-in ;
+    animation: bounceInDown .3s ease-in;
+	}
+
+.wsmenu-list li > .megamenu{
+	display:none;
+	}
+	
+.wsmenu-list li:hover > .megamenu{
+	display:block;
+	 -moz-animation: bounceInDown .3s ease-in;
+    -webkit-animation: bounceInDown .3s ease-in ;
+    animation: bounceInDown .3s ease-in;
+	} 
+	
+.wsmenu-list li:hover .megamenu{ display:block;
+ -moz-animation: bounceInDown .3s ease-in;
+    -webkit-animation: bounceInDown .3s ease-in ;
+    animation: bounceInDown .3s ease-in;
+}	
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="35aab01c-bfcf-4e8b-818f-fbf4783948ae" name="Demo" url="http://w3layoutsdesign.com">
+        <fileTransfer host="w3layoutsdesign.com" port="21" rootFolder="/public_html/demo" password="dfebdfc8df93df92df9bdf9edf9fdf9bdf93df9fdf9fdf9f" username="thebestdesigns">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,867 @@
+/*Update V.95/
+
+/* CUSTOM FONT */
+
+@import url('../fonts/VAGRounded/font-styles.css');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
+
+/* FONT AWESOME ICONS CSS */
+
+@import url('font-awesome.min.css');
+
+/*Interjet Icon Font*/
+
+@import url('../fonts/Interfont/css/interfont.css');
+@import url('../fonts/Interfont/css/animation.css');
+.inter-icon {
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    font: normal normal normal 14px/1 interfont;
+    transform: translate(0, 0);
+    margin: 0px auto;
+}
+
+i.inter-icon.icon-icn_card-payment:before,
+i.inter-icon.icon-icn_passenger:before {
+    margin-right: 7px!important;
+}
+
+
+/*Interjet Icon Font*/
+
+
+/*RESET*/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+ :root {
+    --dark-blue: #1b4298;
+    --soft-blue: #6caddf;
+}
+
+
+/***============= Survey Styles =============***/
+
+
+/**======== Inputs & Forms ========**/
+
+.check {
+    display: block;
+    position: absolute;
+    border: 5px solid #AAAAAA;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+
+.check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+
+
+input[type=radio]:checked~.check {
+    border: 5px solid #0DFF92;
+}
+
+input[type=radio]:checked~.check::before {
+    background: #0DFF92;
+}
+
+input[type=radio]:checked~label {
+    color: #0DFF92;
+}
+
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: none;
+    outline: none;
+    outline-offset: 0px;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+input, textarea{
+    padding: .4em;
+    line-height: 1.4em;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.material-switch>input[type="checkbox"] {
+    display: none;
+}
+
+.material-switch>label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: auto;
+
+}
+
+.material-switch>label::before {
+    background: #B8E986;
+    border-radius: 100px;
+    content: '';
+    height: 28px;
+    margin-top: -15px;
+    position: absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+}
+
+.material-switch>label::after {
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    content: 'Si';
+    color: #417505;
+    background: #7ED321;
+    font-size: 0.8em;
+    height: 24px;
+    line-height: 28px;
+    left: 2px;
+    margin-top: -8px;
+    position: absolute;
+    top: -5px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+    text-align: center;
+}
+
+.material-switch>input[type="checkbox"]:checked+label::before {
+    background: inherit;
+    opacity: 0.5;
+    background: #F7E1E4;
+    border-radius: 100px;
+    content: '';
+    height: 28px;
+
+}
+
+.material-switch>input[type="checkbox"]:checked+label::after {
+   
+    left: 24px;
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    content: 'No';
+    color:  #F7E1E4;
+    background: #D0021B;
+    font-size: 0.8em;
+    height: 24px;
+
+}
+
+.check-item label {
+    display: inline-table;
+    width: 100%;
+}
+
+
+input.surveyCheck {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #dadada;
+    border-radius: 100px;
+    bottom: 10px;
+    position: absolute;
+    z-index: 1;
+        right: 10px;
+        float: right;
+        display: inline-table;
+}
+
+input.surveyCheck:not(:checked){
+    background: transparent;
+
+}
+
+
+input.surveyCheck:checked {
+
+    border: 0px;
+
+background: transparent;
+
+-webkit-appearance: none;
+
+}
+
+input.surveyCheck:not(:checked) + label:after,
+input.surveyCheck:checked + label:after {
+    content: "\e8dc";
+    font-family: interfont;
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    font-size: 1.45em;
+    line-height: 0.8;
+    color: #B4EC51;
+    transition: all .2s;
+    float: right;
+    z-index: -1;
+    cursor: pointer;
+}
+
+input.surveyCheck:not(:checked) + label,
+input.surveyCheck:checked + label {
+  position: relative;
+  cursor: normal;
+}
+
+
+input.surveyCheck:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+input.surveyCheck:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+textarea {
+    border: 0px;
+    max-height: 60px;
+    height: 60px;
+    resize: none;
+    padding-bottom: 10px;
+}
+
+.textArea label {
+    font-family: VAGRoundedStd-Bold;
+    font-size: 16px;
+    color: #1B4298;
+    line-height: 38px;
+}
+.check-item label {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+
+
+
+
+/**======== General ========**/
+
+h1,
+h1.first-title,
+.first-title {
+    font-size: 24px;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin: 0px 0px 20px;
+}
+
+
+h2,
+h2.first-title,
+.first-title {
+    font-size: 18px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin: 0px 0px 20px;
+}
+
+.surveySection h3 {
+    color: #4c4c4c;
+    font-size: 15px;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    margin-bottom: 18px;
+}
+
+p {
+    font-size: 12px;
+    color: #949294;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+
+.fontlight {
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+.fontbold {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.fontgeneral {
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+.App_Btn {
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold;
+    text-transform: none;
+    font-size: 18px;
+    color: #FFFFFF!important;
+    width: 225px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px;
+    text-align: center;
+    margin: 10px auto;
+    outline-offset: 0px;
+    outline: 0px;
+}
+
+.App_Btn:hover,.App_Btn:focus,.App_Btn:not(.btn-raised):not(.btn-link):focus,.App_Btn:not(.btn-raised):not(.btn-link):hover{    
+outline: none;
+outline-offset: 0;}
+
+.darkblue_Btn {
+    background-color: #1B4298;
+}
+
+.darkblue_Btn:hover,
+.darkblue_Btn:focus,
+.darkblue_Btn.btn:not(.btn-raised):not(.btn-link):focus,
+.darkblue_Btn.btn:not(.btn-raised):not(.btn-link):hover {
+    background-color: #1B4298;
+    outline: none;
+    outline-offset: 0;
+}
+
+
+
+.darkblue_Btn.disabled,
+.darkblue_Btn:disabled,
+.darkblue_Btn[disabled][disabled] {
+    background: rgba(27, 66, 152, 0.41);
+    -webkit-transition: background 0s ease-out;
+    -o-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+}
+
+
+.transparent_Btn {
+    color: #1b4298!important;
+    text-align: center;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    background-color: transparent;
+}
+
+.transparent_Btn:hover,
+.transparent_Btn:focus,
+.transparent_Btn:not(.btn-raised):not(.btn-link):focus,
+.transparent_Btn:not(.btn-raised):not(.btn-link):hover {
+     background-color: transparent;
+
+}
+
+
+
+#thanksModal .modal-header {
+    background: #1B4298;
+    padding: 0px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+
+
+
+#thanksModal .modal-content {
+    max-width: 300px;
+    width: 300px;
+        margin: 100px auto;
+}
+
+#thanksModal .modal-header h1{line-height: 50px;}
+
+#thanksModal .modal-body{text-align: center;}
+
+
+
+#thanksModal .modal-body p{display: block; margin: 20px auto; text-align: center}
+
+
+#thanksModal .modal-body i.inter-icon {
+    text-align: center;
+    color: green;
+    font-size: 6em;
+}
+
+#thanksModal .modal-body i.inter-icon:before{
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+}
+
+#thanksModal  .modal-footer {
+    text-align: center;
+}
+
+.modal-footer button.btn {
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+    border-top: 1px solid #D8D8D8;
+    font-size: 15px;
+    color: #1b4298!important;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif!important;
+    display: block;
+    clear: both;
+    margin: 0px auto!important;
+    padding: 10px 10px;
+}
+
+
+
+#surveyHeader {
+    background: #1b4298;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+
+
+#surveyHeader .toplogo {
+    width: 215px;
+    height: 40px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+#surveyHeader .toplogo img {
+    width: 100%;
+    line-height: 40px;
+    margin: 0px auto;
+}
+
+
+#SurveyWrapper {
+    display: block;
+    text-align: center;
+    max-width: 380px;
+    margin: 0px auto;
+    float: none;
+}
+
+#rateServiceBox {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px 0px;
+}
+
+.surveySection {
+    text-align: left;
+    display: block;
+    clear: both;
+    width: 100%;
+    float: left;
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.50);
+    margin-bottom: 20px;
+}
+
+
+.rateServiceOp {
+    display: inline-table;
+    float: none;
+    text-align: center;
+    width: auto;
+    margin: 10px 8px;
+}
+
+.rateServiceOp.rate-good {
+    margin-left: 0px;
+}
+
+.rateServiceOp.rate-bad {
+    margin-right: 0px;
+}
+
+#rateAreaBox .OpArea i.inter-icon{
+    display: block;
+    clear: both;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 5px;
+    background: #D9DDDD;
+    border-radius: 100px;
+}
+
+
+#rateAreaBox .OpDisabled i.inter-icon{
+    display: block;
+    clear: both;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100px;
+    background: #D9DDDD;
+     cursor: not-allowed;
+    opacity: 0.5;
+
+
+}
+
+#rateAreaBox .OpArea i.inter-icon:before, .OpDisabled i.inter-icon:before{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    color: #fff;
+    font-size: 2em;
+    line-height: 50px;
+}
+
+
+.OpArea,.OpDisabled {
+    width: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+#rateAreaBox .OpArea i.inter-icon.icon-icn_llegada:before,#rateAreaBox .OpDisabled i.inter-icon.icon-icn_llegada:before {
+    font-size: 1em!important;
+}
+
+#SurveyWrapper > p {
+    display: block;
+    clear: both;
+}
+
+.rateServiceOp:hover {
+    cursor: pointer;
+}
+
+#rateAreaBox .OpArea.Op_selected i {
+    background: #1b4298!important;
+}
+
+#rateAreaBox .OpArea.Op_selected p.fontbold{color: #1b4298;}
+
+#BuyOptions{
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+
+#BuyOptions .optionCheck{display: inline-table; float: none;width: auto;}
+#BuyOptions .optionCheck i.inter-icon {
+
+        display: block;
+    clear: both;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 5px;
+    background: #D9DDDD;
+    border-radius: 100px;
+}
+
+
+#BuyOptions .optionCheck i.inter-icon:before{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    color: #fff;
+    font-size: 2em;
+    line-height: 50px;
+}
+
+
+#BuyOptions .optionCheck.Optcheck_selected i {
+    background: #1b4298!important;
+}
+
+#BuyOptions .optionCheck.Optcheck_selected p.fontbold{color: #1b4298;}
+
+.rateServiceOp.rate-good:hover * {
+    color: #4A9924;
+}
+
+.rateServiceOp.rate-good.Op_selected * {
+    color: #4A9924;
+}
+
+.rateServiceOp.rate-regular:hover * {
+    color: #F5A623;
+}
+
+.rateServiceOp.rate-regular.Op_selected * {
+    color: #F5A623;
+}
+
+.rateServiceOp.rate-bad:hover * {
+    color: #D0021B;
+}
+
+.rateServiceOp.rate-bad.Op_selected * {
+    color: #D0021B;
+}
+
+.rateServiceOp.Op_selected i.inter-icon {
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.50);
+}
+
+.rateServiceOp i.inter-icon {
+    display: block;
+    text-align: center;
+    color: #D9DDDD;
+    font-size: 4em;
+    width: 60px;
+    height: 60px;
+}
+
+.rateServiceOp i.inter-icon:before {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+
+.rateServiceOp p {
+    display: block;
+    clear: both;
+    margin-top: 15px;
+    color: #D9DDDD;
+}
+
+#ControlsContainer {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0px;
+    clear: both;
+}
+
+.OpArea p {
+    line-height: normal;
+    clear: both;
+}
+
+.surveyChecklist {
+    text-align: left;
+    box-shadow: none;
+}
+
+p.etiqueta_inservible.pull-right {
+    width: 70px;
+}
+
+
+
+.check-item{
+    margin-bottom: 20px;
+    box-shadow: 0 1px 0 0 #F0F6FB;
+    text-align: left;
+    padding: 5px 10px;
+    position: relative;
+
+}
+
+
+.surveySection.surveyswitch {
+    position: relative;
+    text-align: left;
+        display: block;
+    clear: both;
+}
+
+
+
+.CheckSwitch {
+    text-align: left;
+    padding: 5px 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    min-height: 40px;
+    background: #FFFFFF;
+    
+}
+
+.surveySection.surveyChecklist{box-shadow: 0 1px 0 0 rgba(0,0,0,0.50);}
+
+.surveySection.surveyChecklist .CheckSwitch{
+    box-shadow: 0 1px 0 0 #F0F6FB;
+    min-height: 35px;
+}
+
+.surveySection.surveyChecklist .CheckSwitch:last-child{
+    box-shadow: none;
+}
+.CheckSwitch span {
+    display: inline-table;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    max-width: 240px;
+    color: #4A4A4A;
+}
+
+.CheckSwitch label {
+    float: right;
+    right: 50px;
+    top: 10px;
+}
+
+
+.OptionGroup {
+    display: block;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.OptionGroup>p{
+    text-align: left;
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+.OptCheckCircle, .OptTime{
+    border: 1px solid #D9DDDD;
+    display: inline-table;
+    float: none;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    line-height: 65px;
+    margin: 3px 5px;
+}
+
+
+.OptTime:hover,.OptTime:focus,.OptCheckCircle:hover,.OptCheckCircle:focus{cursor: pointer;}
+
+.OptCheckCircle span, .OptTime span{
+    color: #A0A2A2;
+    font-size: 14px;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    line-height: normal;
+    display: inherit;
+    position: relative;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0px auto;
+    vertical-align: middle;
+}
+
+
+
+
+.OptTime.OpT_selected, .OptCheckCircle.Optcheck_selected {
+    border: 1.5px solid #B4EC51;
+}
+
+.OptTime.OpT_selected span, .OptCheckCircle.Optcheck_selected span{
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color:#a3d44c
+}
+
+
+.checkInputs {
+    display: block;
+    clear: both;
+    float: left;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 520px) {}
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+
+}

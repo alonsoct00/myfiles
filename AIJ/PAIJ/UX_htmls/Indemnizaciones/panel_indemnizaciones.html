@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Interjet Sistema de Indemnización :: Pasajeros</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css" />
+    <link href="assets/css/indemnizaciones.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="topNav">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="align-self-center">
+                <div class="row">
+                    <img src="assets/images/logo_interjet@2x.png" alt="interjet">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Wrapper -->
+    <div class="container-fluid" id="AIJ_indemnizaciones">
+        <div class="container" id="MainContainer" style="margin-top: 100px;">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2>Indemnización</h2></div>
+                <div class="col-lg-6 text-center" id="theBreadcrumbs">
+                    <nav aria-label="breadcrumb" class="text-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">MEX - PQM 3267</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pasajero</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Beneficios</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="apply_to_benefits">
+                        <label class="form-check-label">
+                            Todos los pasajeros tendran los mismos beneficios
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 PanelWrapper">
+                    <div class="row panelContainer">
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">ZHJD9</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Juanito Perez Alcaine</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row panelContainer">
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">RZXK67</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Maria Liliana Rosales Bahena</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">RZXK67</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Alberta Maria de la Juana</p>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row panelContainer">
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">OPIL7H</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">José de Luigi Gorgojo</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">OPIL7H</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Zeros Ramazoti Lopez</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">OPIL7H</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Maria Liliana Rosales Bahena</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row panelContainer">
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">R3KYWA</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Brendogro Shrek Gonzalez</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">R3KYWA</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Luigi Narices Rodriguez</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">R3KYWA</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Afedo Camate Pofavo</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">R3KYWA</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Urielo de la Rosa Godinez</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ReservationMainPanel">
+                            <h3 class="ReservationKey">R3KYWA</h3>
+                            <div class="ReservationIndemnity">
+                                <div class="IndemityOptions">
+                                    <p class="IndemnityBeneficiary">Alexandro Hacha Costillas</p>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_food">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Vales de comida</option>
+                                            <option value="food_court">Food Court</option>
+                                            <option value="wings">Wings</option>
+                                            <option value="vips">Vips</option>
+                                            <option value="lonche">Lunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_transportation">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Transporte</option>
+                                            <option value="uber">Uber</option>
+                                            <option value="cabify">Cabify</option>
+                                            <option value="taxi">Taxi</option>
+                                            <option value="renta_auto">Renta de auto</option>
+                                        </select>
+                                    </div>
+                                    <div class="IndemityBenefit disabled">
+                                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker indemBenfit benefit_accommodation" disabled="true">
+                                            <option label="Selecciona..." value="" selected="" hidden="">Hotel</option>
+                                            <option value="de_tlalpan">Hotel Maravilla</option>
+                                            <option value="fiesta_en">Fiesta en tu casa</option>
+                                            <option value="holiday_inn">Holiday Inn</option>
+                                            <option value="hostal">Hostal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="controlsWrapper">
+                    <button class="btn btn-lg btn-back">Regresar</button>
+                    <button class="btn btn-lg btn-continue">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Main Wrapper -->
+    <!--modals-->
+    <div class="modal fade InterModal" id="allowBenefit" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-lock"></i></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Necesitas autorización</h3>
+                            <p>Solicita un código de seguridad a un superior para asignar este beneficio</p>
+                            <code>Para validar OK introducir: CA238, AIJ998, POS0DJ</code>
+                            <br/>
+                            <code>Para devolver error introducir cualquier valor.</code>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 formContainer">
+                            <form action="">
+                                <div class="form-component input-text">
+                                    <label for="OpenCode">Código de seguridad
+                                        <input type="text" id="OpenCode" required minlength="5" maxlength="6" onkeyup="upperCaseF(this)">
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="col-lg-12 center-block">
+                        <div class="controlsWrapper">
+                            <button class="btn btn-lg btn-continue" id="verifyCode">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade InterModal successModal" id="SuccessBenefit" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-check"></i></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Beneficio Autorizado</h3>
+                            <p>Ahora puedes seleccionar un proveedor para este usuario</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="col-lg-12 center-block">
+                        <div class="controlsWrapper">
+                            <button class="btn btn-lg btn-continue" data-dismiss="modal" aria-hidden="true">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade InterModal errorModal" id="ErrorBenefit" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-times"></i></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Ups... Algo salió mal</h3>
+                            <p>El código de autorización que ingresaste no es válido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="col-lg-12 center-block">
+                        <div class="controlsWrapper">
+                            <button class="btn btn-lg btn-cancel" id="CloseModal" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="row no-gutters">
+        <div class="container">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 disclaimer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12 text-center">
+                        <ul class="list-inline">
+                            <!--li class="list-inline-item"><a href="#" class="disclaimer">Términos y Condiciones</a> | </li-->
+                            <li class="list-inline-item"><a href="#" class="disclaimer">Aviso de Privacidad</a> | </li>
+                            <li class="list-inline-item"><a href="#" class="disclaimer">Derechos del pasajero</a> | </li>
+                            <li class="list-inline-item"><a href="#" class="disclaimer">Mapa del sitio</a> | </li>
+                            <li class="list-inline-item no-mobile"><a href="#" class="disclaimer">Accesibilidad web</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center disclaimer">
+                        &copy; 2018 INTERJET - Todos los derechos reservados.
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/js/mainfunctions.js"></script>
+    <!--Data Tables plugin--->
+    <script type="text/javascript" src="assets/plugins/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.5/js/dataTables.select.min.js"></script>
+    <!--Documentation: https://datatables.net/reference/option/ and https://datatables.net/manual/ -->
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <circle id="Oval" fill="#FFFFFF" cx="21" cy="21" r="20"></circle>
+            <g id="Colombia" transform="translate(3.000000, 3.000000)">
+                <g id="Shape">
+                    <path d="M17.9368421,0.496551724 C8.08421053,0.496551724 0.0631578947,8.31724138 0.0631578947,18 L35.8736842,18 C35.8736842,8.31724138 27.8526316,0.496551724 17.9368421,0.496551724 Z" fill="#FBE908" fill-rule="nonzero"></path>
+                    <path d="M2.58947368,26.937931 L33.2842105,26.937931 C34.8631579,24.3310345 35.8105263,21.2896552 35.8105263,18 L0.0631578947,18 C0.0631578947,21.2275862 1.01052632,24.3310345 2.58947368,26.937931 Z" fill="#1D499F" fill-rule="nonzero"></path>
+                    <path d="M17.9368421,35.4413793 C24.4421053,35.4413793 30.1894737,32.0275862 33.2842105,26.937931 L2.58947368,26.937931 C5.74736842,32.0275862 11.4315789,35.4413793 17.9368421,35.4413793 Z" fill="#ED2025" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

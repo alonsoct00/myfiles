@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Icn_Alert_Exitoso" transform="translate(2.000000, 2.000000)">
+                <g id="Group">
+                    <circle id="Oval-3" stroke="#53B847" stroke-width="2" cx="25" cy="25" r="25"></circle>
+                    <path d="M37.5257322,14.0009098 C37.0544762,14.0154923 36.6221787,14.2348919 36.3719382,14.5864833 L21.0841674,35.6476232 L14.5164168,28.8159632 C14.1882628,28.4717872 13.6758239,28.3084191 13.1732063,28.3877411 C12.6705888,28.4670631 12.2546602,28.776944 12.0829698,29.2000043 C11.9112793,29.6230647 12.0100844,30.0946039 12.3419588,30.4360081 L20.1522568,38.5559711 C20.4438998,38.8602628 20.8829045,39.0241025 21.3343065,38.9971205 C21.7857085,38.9701385 22.1954847,38.755564 22.4376565,38.4193641 L38.7682796,15.933308 C39.0591157,15.5422115 39.0775037,15.0410216 38.8159406,14.6342411 C38.5543775,14.2274606 38.0566053,13.9831165 37.5257322,14.0009098 L37.5257322,14.0009098 Z" id="Path" fill="#53B847"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

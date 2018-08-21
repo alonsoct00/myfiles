@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Interjet</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assetsV2/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assetsV2/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assetsV2/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assetsV2/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assetsV2/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assetsV2/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assetsV2/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assetsV2/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assetsV2/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assetsV2/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assetsV2/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assetsV2/img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assetsV2/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/assetsV2/img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assetsV2/img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/assetsV2/img/icon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/assetsV2/img/icon/favicon.ico" rel="icon" type="image/x-icon" />
+    <script type="text/javascript" src="/assetsV2/js/src/gtm.js"></script>
+    <link href="/assetsV2/css/bootstrap.css" rel="stylesheet" />
+    <link href="/assetsV2/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZS2SF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="row alertTopWrp">
+        <div class="alertTop">
+            <div class="container alert-wrapper">
+                <p><span>Aviso:</span> Vuelos afectados por el huracán Irma</p>
+                <a href="#" class="moreInfo"></a>
+                <a href="#" class="closeBtn"></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-interjet home">
+        <div class="container menu-wrapper">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon top"></span>
+                <span class="navbar-toggler-icon med"></span>
+                <span class="navbar-toggler-icon bot"></span>
+            </button>
+            <div class="profile-mobile logged" style="display:none;">
+                <a href="#"></a>
+                <div class="userWrp">
+                    <p class="username">
+                        <span class="greet">¡Hola!</span> Elizabeth
+                    </p>
+                    <input class="arrow" type="button" name="button">
+                    <div class="user-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="iniciasesion">Mi perfil</a>
+                                <a class="miperfil" href="">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-mobile not-logged">
+                <!-- clase para usuario no logeado -->
+                <a href="#"></a>
+                <div class="userWrp">
+                    <input class="arrow" type="button" name="button">
+                    <div class="user-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="registrate">Inicia sesión</a>
+                                <a href="#" class="cerrarsesion">Regístrate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-8 col-sm-8 col-8 logointerjet">
+                <div class="row menu">
+                    <a class="navbar-brand" href="http://interjet-static.stg.interalia.net/html/home.html"><img src="/assetsV2/img/logointerjet.svg" class="" alt="" /></a>
+                    <ul class="menu-first-option d-none d-lg-block">
+                        <li><a href="#">CHECK-IN</a></li>
+                        <li><a href="#">ESTATUS DE VUELO</a></li>
+                        <li>
+                            <a class="admin-vuelo">ADMINISTRA TU VUELO</a>
+                            <div class="sub-gst hidden">
+                                <ul>
+                                    <li><a href="#">Estatus de vuelo</a></li>
+                                    <li><a href="#">Cambio de fecha</a></li>
+                                    <li><a href="#">Cambio de pasajeros</a></li>
+                                    <li><a href="#">Servicios complementarios</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse col-lg-7 col-md-12 col-sm-12 col-12 submenuWrp">
+                <div class="sub-menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item option-trip"> <a class="nav-link" href="#">Planea tu vuelo</a>
+                            <div class="menu-option col-lg-12 col-md-11 col-sm-12 col-12" style="visibility: hidden;">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 sub-menu-column">
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_prepare-trip.svg');"></span>
+                                                <h4>Prepara tu vuelo</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com/retrievebooking.aspx?culture=es-mx">Agregar servicios complementarios</a></li>
+                                                <li><a href="https://www.interjet.com/documentacion.aspx?culture=es-mx">Documentos importantes</a></li>
+                                                <li><a href="https://www.interjet.com/mujeres-embarazadas.aspx?culture=es-mx">Mujeres embarazadas</a></li>
+                                                <li><a href="https://www.interjet.com/viajando-con-ninios.aspx?culture=es-mx">Viajando con niños</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/mascotas">Viajando con mascotas</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/necesidades-especiales/menores-sin-acompanante">Menores sin acompañantes</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/necesidades-especiales/silla-de-ruedas-y-ayuda-para-movilidad">Silla de ruedas y movilidad</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/necesidades-especiales/necesidades-especiales.aspx?culture=es-mx">Pasajeros con necesidades especiales</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_prepare-trip.svg');"></span>
+                                                <h4>Complementa tu viaje</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/tickets-disney.aspx">Disney Tickets</a></li>
+                                                <li><a href="https://www.interjet.com.mx/seguro.aspx?culture=es-mx">Seguros Atlas</a></li>
+                                                <li><a href="https://www.interjet.com.mx/interjet-x-tierra.aspx?culture=es-mx">Interjet x tierra: shuttles y taxis</a></li>
+                                                <li><a href="https://www.interjet.com.mx/CompraEstacionamientoDistritoFederal.aspx">Estacionamiento</a></li>
+                                                <li><a href="https://www.interjet.com.mx/reservaciondeautos.aspx?culture=es-mx">Renta de autos</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/complementos/cross-border-xpress">Cross Border Xpress</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/complementos/solicita-servicios-especiales">Solicitar servicios especiales</a></li>
+                                                <li><a href="https://www.interjet.com/retrievebooking.aspx?culture=es-co">Más opciones para rentar auto</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 sub-menu-column">
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_luggage.svg')"></span>
+                                                <h4>Equipaje</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/de-mano">Equipaje de mano</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/documentado">Equipaje documentado</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/especial">Equipaje especial</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/exceso">Exceso de equipaje</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/restringidos">Artículos restringidos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_group-shop.svg');"></span>
+                                                <h4>Compras en grupo</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com/es-mx/compras-en-grupo/servicio-de-charter">Charters</a></li>
+                                                <li><a href="https://www.interjet.com/eventosinterjet.aspx?culture=es-mx">Eventos</a></li>
+                                                <li><a href="https://www.interjet.com/compras-grupos.aspx?culture=es-mx">Grupos</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_services-products.svg')"></span>
+                                                <h4>Productos y servicios</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjetvacations.com.mx/">Interjet Vacations</a></li>
+                                                <li><a href="https://www.interjet.com.mx/cupones.aspx?culture=es-mx">Jetbook</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_others.svg')"></span>
+                                                <h4>Otros</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/es-mx/vuela/metodos-pago">Formas de pago</a></li>
+                                                <li><a href="https://www.interjet.com/es-mx/equipaje/facturacionguatemala.aspx?culture=es-mx">Facturación</a></li>
+                                                <li><a href="https://www.interjet.com/aplicacion-movil.aspx">Descarga nuestra app</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item option-experience"> <a class="nav-link" href="#">Experiencia Interjet</a>
+                            <div class="menu-option col-lg-12 col-md-11 col-sm-12 col-12" style="visibility: hidden;">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 sub-menu-column">
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_travel.svg');"></span>
+                                                <h4>Viajando con Interjet</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/tarifas-mx-mx-latam.aspx?culture=es-mx">Tarifas (México y Latinoamérica)</a></li>
+                                                <li><a href="https://www.interjet.com.mx/tarifas-mx-usa.aspx?culture=es-mx">Tarifas (Estados Unidos y Canadá)</a></li>
+                                                <li><a href="https://www.interjet.com.mx/por-que-viajar-con-interjet.aspx?culture=es-mx">¿Por qué viajar con Interjet?</a></li>
+                                                <li><a href="https://www.interjet.com.mx/quienes-somos.aspx?culture=es-mx">¿Quiénes somos?</a></li>
+                                                <li><a href="https://www.interjet.com.mx/es-mx/quienes-somos/premios-y-reconocimientos">Premios y reconocimientos</a></li>
+                                                <li><a href="https://www.interjet.com.mx/nuestra-flota.aspx?culture=es-mx">Nuestra flota</a></li>
+                                                <li><a href="https://www.interjet.com.mx/espacio-mas-comodo.aspx?culture=es-mx">El espacio más cómodo</a></li>
+                                                <li><a href="https://www.interjet.com.mx/mantenimiento-certificaciones.aspx?culture=es-mx">Mantenimiento de excelencia</a></li>
+                                                <li><a href="https://www.interjet.com.mx/interjet-verde.aspx?culture=en-us">Interjet Verde</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_service.svg');"></span>
+                                                <h4>Servicios a bordo</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/interjet-verde.aspx?culture=es-mx">Entretenimiento abordo</a></li>
+                                                <li><a href="https://www.interjet.com.mx/snacks-bebidas-servicio.aspx?culture=es-mx">Snacks y bebidas</a></li>
+                                                <li><a href="https://www.interjet.com.mx/camara-despegues-aterrizajes.aspx?culture=es-mx">Cámara de despegues y aterrizajes</a></li>
+                                                <li><a href="https://www.interjet.com.mx/bano-mujeres.aspx?culture=es-mx">Baño para mujeres</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_client-service.svg');"></span>
+                                                <h4>Servicio al cliente</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/oficinas-interjet.aspx?culture=es-mx">Oficinas de información y ventas</a></li>
+                                                <li><a href="https://www.interjet.com.mx/centros-de-contacto.aspx?culture=es-mx">Centros de contacto</a></li>
+                                                <li><a href="https://www.interjet.com.mx/preguntas-frecuentes.aspx?culture=es-mx">Preguntas Frecuentes</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 sub-menu-column">
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_aliance.svg');"></span>
+                                                <h4>Alianzas y Convenios</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com/es-co/experiencia-interjet/alianzas">Alianzas con aerolíneas</a></li>
+                                                <li><a href="https://www.interjet.com.mx/alianza-payback.aspx?culture=es-mx">Payback</a></li>
+                                                <li><a href="https://www.interjet.com.mx/alianza-inbursa.aspx?culture=es-mx">Inbursa</a></li>
+                                                <li><a href="https://www.interjet.com.mx/uber.aspx?culture=es-mx">Uber</a></li>
+                                                <li><a href="https://www.interjet.com.mx/kivac.aspx?culture=es-mx">kivac</a></li>
+                                                <li><a href="https://www.interjet.com.mx/alianza-american-express_.aspx?culture=es-mx">American Express</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_club.svg');"></span>
+                                                <h4>Club Interjet</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/conoce-club-interjet.aspx">Conoce Club Interjet</a></li>
+                                                <li><a href="https://www.interjet.com.mx/beneficios-clubij.aspx?culture=es-mx">Beneficios</a></li>
+                                                <li><a href="https://www.interjet.com.mx/monedero-interjet.aspx?culture=es-mx">Monedero Interjet</a></li>
+                                                <li><a href="https://www.interjet.com.mx/register.aspx?culture=es-mx">Regístrate</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_agencies.svg');"></span>
+                                                <h4>Agencias y corporativos</h4>
+                                            </div>
+                                            <ul>
+                                                <li><a href="https://www.interjet.com.mx/agencias.aspx?culture=es-mx">Agencia Jet</a></li>
+                                                <li><a href="https://www.interjet.com.mx/registraragencia.aspx?culture=es-mx">Registrar agencia</a></li>
+                                                <li><a href="https://www.interjet.com.mx/registeragent.aspx?culture=es-mx">Registrar agente</a></li>
+                                                <li><a href="https://www.interjet.com.mx/loginagent.aspx?culture=es-mx">Empresa jet</a></li>
+                                                <li><a href="http://interjetcarga.com/" target="_blank">Interjet carga</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="nav-item option-destination"> <a class="nav-link " href="#">Destinos</a>
+                            <div class="menu-option col-lg-12 col-md-11 col-sm-12 col-12" style="visibility:hidden;">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-none d-lg-inline-block type-of-flight">
+                                        <ul>
+                                            <li class="destinations-menu selected">Nacionales</li>
+                                            <li class="destinations-menu">Internacionales</li>
+                                            <li><a href="#">Mapa de Rutas</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-lg-none type-of-flight destinations-menu selected"> <span style="background-image: url('/assetsV2/img/ico_plus.svg');background-size: 20px auto;"></span>Nacionales </div>
+                                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 no-gutters cities open">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-4 col-sm-4 col-12 cities-column">
+                                                <ul>
+                                                    <li class="top-7"><a href="#">Acapulco</a></li>
+                                                    <li class="top-7"><a href="#">Cancún</a></li>
+                                                    <li class="top-7"><a href="#">Ciudad Obregón</a></li>
+                                                    <li class="top-7"><a href="#">Ciudad Juárez</a></li>
+                                                    <li class="top-7"><a href="#">Ciudad del Carmen</a></li>
+                                                    <li><a href="#">Ciudad de México</a></li>
+                                                    <li><a href="#">Cozumel</a></li>
+                                                    <li><a href="#">Culiacán</a></li>
+                                                    <li><a href="#">Chetumal</a></li>
+                                                    <li><a href="#">Chihuahua</a></li>
+                                                    <li><a href="#">Guadalajara</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4 col-12 cities-column">
+                                                <ul>
+                                                    <li><a href="#">Hermosillo</a></li>
+                                                    <li><a href="#">Huatulco</a></li>
+                                                    <li><a href="#">Ixtapa Zihuatanejo</a></li>
+                                                    <li><a href="#">La Paz</a></li>
+                                                    <li><a href="#">León (N¡Bajío)</a></li>
+                                                    <li><a href="#">Los Cabos</a></li>
+                                                    <li><a href="#">Mazatlán</a></li>
+                                                    <li><a href="#">Mérida</a></li>
+                                                    <li><a href="#">Monterrey</a></li>
+                                                    <li><a href="#">Oaxaca</a></li>
+                                                    <li><a href="#">Palenque</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4 col-12 cities-column">
+                                                <ul>
+                                                    <li><a href="#">Puerto Escondido</a></li>
+                                                    <li><a href="#">Puerto Vallarta</a></li>
+                                                    <li><a href="#">Riviera Maya</a></li>
+                                                    <li><a href="#">San Luis Potosí</a></li>
+                                                    <li><a href="#">Tampico</a></li>
+                                                    <li><a href="#">Tijuana</a></li>
+                                                    <li><a href="#">Toluca</a></li>
+                                                    <li><a href="#">Torreón</a></li>
+                                                    <li><a href="#">Tuxtla Gutiérrez</a></li>
+                                                    <li><a href="#">Veracruz</a></li>
+                                                    <li><a href="#">Villahermosa</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-lg-none type-of-flight destinations-menu"> <span style="background-image: url('/assetsV2/img/ico_plus.svg');background-size: 20px auto;"></span>Internacionales </div>
+                                    <div class="col-lg-9 col-md-12 col-sm-12 col-12 no-gutters cities hidden">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-4 col-sm-4 col-12 cities-column">
+                                                <ul>
+                                                    <li class="country"><a href="">Colombia</a></li>
+                                                    <li><a href="#">San Andrés</a></li>
+                                                    <li><a href="#">Barranquilla</a></li>
+                                                    <li><a href="#">Bucaramanga</a></li>
+                                                    <li><a href="#">Cali</a></li>
+                                                    <li><a href="#">Cartagena</a></li>
+                                                    <li><a href="#">Cúcuta</a></li>
+                                                    <li><a href="#">Yopal</a></li>
+                                                    <li><a href="#">Leticia</a></li>
+                                                    <li><a href="#">Montería</a></li>
+                                                    <li><a href="#">Medellin</a></li>
+                                                    <li><a href="#">Pereira</a></li>
+                                                    <li><a href="#">Santa Marta</a></li>
+                                                    <li><a href="#">Valledupar</a></li>
+                                                    <li><a href="#">Bogotá</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4 col-12 cities-column">
+                                                <ul>
+                                                    <li class="country"><a href="#">Aruba</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Brasil</li>
+                                                    <li><a href="#">São Paulo</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country"><a href="#">Chile</a></li>
+                                                    <li><a href="#">Santiago</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country"><a href="#">Guatemala</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Cuba</li>
+                                                    <li><a href="#">La Habana</a></li>
+                                                    <li><a href="#">Varadero</a></li>
+                                                    <li><a href="#">Santa Clara</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Costa Rica</li>
+                                                    <li><a href="#">San José</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Perú</li>
+                                                    <li><a href="#">Lima</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4 col-12 cities-column">
+                                                <ul>
+                                                    <li class="country">Puerto Rico</li>
+                                                    <li><a href="#">San Juan P.R.</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Estados Unidos</li>
+                                                    <li><a href="#">Houston</a></li>
+                                                    <li><a href="#">Las Vegas</a></li>
+                                                    <li><a href="#">Miami</a></li>
+                                                    <li><a href="#">Nueva York</a></li>
+                                                    <li><a href="#">San Antonio</a></li>
+                                                    <li><a href="#">Dallas (Fort Worth)</a></li>
+                                                    <li><a href="#">Los Ángeles</a></li>
+                                                    <li><a href="#">Orlando (Sanford)</a></li>
+                                                    <li><a href="#">Chicago (O'Hare)</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Canadá</li>
+                                                    <li><a href="#">Montreal</a></li>
+                                                    <li><a href="#">Toronto</a></li>
+                                                    <li><a href="#">Vancouver</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li class="country">Jamaica</li>
+                                                    <li><a href="#">Sangster International Airport</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12 col-12 d-lg-none type-of-flight destinations-menu">Mapa de rutas</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item option-sale"> <a class="nav-link" href="#">Promociones</a>
+                            <div class="menu-option col-lg-12 col-md-11 col-sm-12 col-12" style="visibility: hidden;">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 sub-menu-column">
+                                        <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_complete-trip.svg')"></span>
+                                            <h4>Ofertas vigentes</h4>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">Buen fin</a></li>
+                                            <li><a href="#">Corona Capital</a></li>
+                                            <li><a href="#">Ofertas</a></li>
+                                        </ul>
+                                        <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_complete-trip.svg')"></span>
+                                            <h4>Ofertas permanentes</h4>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">Jetbook: Pases de destino frecuente</a></li>
+                                            <li><a href="#">15% Interjet Inbursa</a></li>
+                                            <li><a href="#">Descuento para mayores de 65 años</a></li>
+                                            <li><a href="#">Santander Universidades</a></li>
+                                            <li><a href="#">Mensualidades sin intereses</a></li>
+                                        </ul>
+                                        <div class="menu-subtitle"><span style="background-image: url('/assetsV2/img/ico_submenu/ico_news.svg');"></span>
+                                            <h4>Newsletter</h4>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#">Suscríbete</a></li>
+                                            <li><a href="#">Preferencias</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- selector de pais mobile -->
+                    <div class="language-mobile">
+                        <div class="act-country-mobile mx" id="country">MX - Español</div>
+                        <input class="arrow down" type="button" name="button">
+                        <div class="country-list close">
+                            <ul class="country-list-name">
+                                <li><a class="mx" href="#">MX - Español</a></li>
+                                <li><a class="eu" href="#">US - Inglés</a></li>
+                                <li><a class="gt" href="#">GT - Español</a></li>
+                                <li><a class="co" href="#">CO - Español</a></li>
+                                <li><a class="cr" href="#">CR - Español</a></li>
+                                <li><a class="pe" href="#">PE - Español</a></li>
+                                <li><a class="ca" href="#">CA - Inglés</a></li>
+                                <li><a class="ca-fr" href="#">CA - Francés</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- selector de pais mobile -->
+                </div>
+                <!-- contenedor de login version desktop -->
+                <div class="preferencesWrp">
+                    <ul>
+                        <li class="log">
+                            <!-- agregar clase a log para usuario logeado: logUser-->
+                            <a href="#"></a>
+                            <div class="userWrp">
+                                <p class="username">
+                                    <span class="greet">¡Hola!</span> Elizabeth
+                                </p>
+                                <input class="arrow" type="button" name="button">
+                                <div class="user-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="iniciasesion">Inicia sesión</a>
+                                            <a class="miperfil" href="">Mi perfil</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="registrate">Regístrate</a>
+                                            <a href="#" class="cerrarsesion">Cerrar sesión</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="chat"><a href="#"></a></li>
+                        <li class="language">
+                            <div class="active-country mx"></div>
+                            <input class="arrow down" type="button" name="button">
+                            <div class="country-list close">
+                                <ul>
+                                    <li><a class="mx" href="#">MX - Español</a></li>
+                                    <li><a class="eu" href="#">US - Inglés</a></li>
+                                    <li><a class="gt" href="#">GT - Español</a></li>
+                                    <li><a class="co" href="#">CO - Español</a></li>
+                                    <li><a class="cr" href="#">CR - Español</a></li>
+                                    <li><a class="pe" href="#">PE - Español</a></li>
+                                    <li><a class="ca" href="#">CA - Inglés</a></li>
+                                    <li><a class="ca-fr" href="#">CA - Francés</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Wrapper -->
+    <main>
+        <div class="container-fluid internalLP" id="facturacion">
+            <div class="page-top-banner-img CenterV">
+                <div class="container">
+                    <div class="row">
+                        <div class="TopContent">
+                            <h1>Facturación</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container salesWrp">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li itemscope itemtype="http://www.example.com/">
+                                <a href="http://www.example.com/" itemprop="url">
+                                    <span itemprop="title">Home</span>
+                                </a>
+                            </li>
+                            <li itemscope itemtype="http://www.example.com/">
+                                <a href="http://www.example.com/" itemprop="url">
+                                    <span itemprop="title">Servicios</span>
+                                </a>
+                            </li>
+                            <li class="active" itemscope itemtype="http://www.example.com/">
+                                <a href="http://www.example.com/" itemprop="url">
+                                    <span itemprop="title">Facturación</span>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Factura tu viaje</h2>
+                        <p class="text-justify center-block">
+                            Aquí puedes solicitar o recuperar la factura electrónica de tus compras con Interjet de forma fácil, rápida y segura.
+                            <br/> Para facturar existen dos caminos, el primero es a través de la <a href="https://www.interjet.com/es-mx/intinerario/consulta-tus-viajes">clave de reservación</a>, un <b>código alfanumérico de 6 caracteres</b> que se refleja en el itinerario de viaje, en cuanto realizas una compra en nuestro sitio web.
+                            <br/>El segundo camino es por medio del número de boleto electrónico, compuesto de <b>13 dígitos sin espacios</b>, que se genera cuando haces tu compra fuera del sitio oficial de Interjet.
+                        </p>
+                        <br/>
+                        <p> En ambos casos debes recordar que:</p>
+                        <ul class="classicList no-padding">
+                            <li>Necesitas datos fiscales, clave de reservación o número de boleto y fecha de compra a la mano.</li>
+                            <li>La factura tendrá como fecha de expedición el día en que fue solicitada.</li>
+                            <li>Tienes como fecha límite 7 días naturales después del último día del mes en el que se realizó la compra para facturar.</li>
+                            <li>La información necesaria para el proceso de facturación se localiza en el correo de confirmación. </li>
+                        </ul>
+                        <div id="factura_opciones">
+                            <div class="tabbable-panel">
+                                <div class="tabbable-line">
+                                    <ul class="nav nav-tabs" id="FacTabs">
+                                        <li>
+                                            <a href="#vuelo_web" data-toggle="tab" class="active">Compré mi vuelo en el sitio web </a>
+                                        </li>
+                                        <li>
+                                            <a href="#vuelo_otro" data-toggle="tab">Compré mi vuelo por otro medio </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="vuelo_web">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h3>Ingresa tus datos:</h3></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>Para generar o recuperar tu factura completa los campos indicados a continuación.</p>
+                                                </div>
+                                                <div class="FormContainer col-sm-offset-12 col-lg-4">
+                                                    <form action="">
+                                                        <div class="col-sm-offset-12 form-item-wrp">
+                                                            <div class="form-item input-wrp ClaveReservacion">
+                                                                <p>
+                                                                    <input type="text" required="required" maxlength="6" placeholder="XXXXXX" class="reservationkey">
+                                                                    <label>Clave de reservación<span class="txt-red">*</span></label>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-offset-12 form-item-wrp">
+                                                            <div class="form-item input-date BuyDate">
+                                                                <p>
+                                                                    <label>Fecha de compra<span class="txt-red">*</span></label>
+                                                                    <input type="date" placeholder="dd/mm/aaaa" name="Buydate" class="isDate" maxlength="10" />
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-next-wrp col-sm-12 text-center">
+                                                            <input class="ccgSubmitBut btn btn-primary btn-lg check-out btn-green-interjet" type="submit" value="Obtener factura">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="FormContainer col-sm-offset-12 col-lg-7">
+                                                    <div class="col-12">
+                                                        <img src="/assetsV2/img/fac-1.jpg" alt="facturacion_ejemplo" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="vuelo_otro">
+                                            <div class="row">
+                                                <h3>Para facturar en esta sección debes cumplir con las siguientes consideraciones:</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-offset-12 col-lg-5">
+                                                    <ul class="classicList">
+                                                        <li>La reservación fue comprada fuera del sitio oficial de Interjet (agencias de viaje, call center, oficinas de venta y mostradores en aeropuerto).</li>
+                                                        <li>El boleto electrónico cuenta con un código de 13 dígitos sin espacios.</li>
+                                                        <li>El comprobante fiscal (CFDI) estará disponible después de las 24 h de haber realizado la compra.</li>
+                                                    </ul>
+                                                    <div class="btn-next-wrp text-center">
+                                                        <input class="ccgSubmitBut btn btn-primary btn-lg check-out btn-green-interjet" type="submit" value="Obtener factura">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-offset-12 col-lg-6">
+                                                    <div class="col-12">
+                                                        <img src="/assetsV2/img/fac-2.jpg" alt="facturacion_ejemplo" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facDisclaimer col-12 center-block">
+                        <p>*Si necesitas asesoría para facturar o recuperar tu factura consulta nuestro <a href="#">tutorial de facturación</a> o comunícate al <b>1102 5555</b> desde la Ciudad de México, al <b>01 800 011 2345</b> desde el interior de la República o escríbenos al correo electrónico: <a href="mailto:facturacion@interjet.com.mx">facturacion@interjet.com.mx</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- END Main Wrapper -->
+    <!-- Modal Login -->
+    <div class="modal fade modallogin" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Inicia sesión</h5>
+                    <form action="" class="form-login">
+                        <div class="input-row">
+                            <div class="input-wrp input-mail">
+                                <p>
+                                    <input type="text" required="required">
+                                    <label for="">Correo electrónico*</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-wrp input-pswd">
+                                <p>
+                                    <input type="password" required="required">
+                                    <label for="">Contraseña*</label>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="forget-pass"><a href="#" class="link-forget-pass">¿Olvidaste tu contraseña?</a>
+                        </p>
+                        <button type="submit" value="Iniciar sesión" class="btn btn-secondary btn-green-interjet btn-login">Iniciar sesión</button>
+                    </form>
+                    <div class="box-create-account">
+                        <h5 class="modal-title">Crear cuenta</h5>
+                        <p>Disfrutar los beneficios que Club Interjet tiene para ti. Regístrate sin costo y obten ofertas exclusivas, preventas y outlets para socios.</p>
+                        <button type="button" class="btn btn-secondary btn-lightblue-interjet">Registrarme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Chat -->
+    <div class="modal fade modalchat" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title-wrp">
+                        <h5 class="modal-title icon-bottom">Chatear con un agente</h5>
+                    </div>
+                    <form action="" class="form-login form-chat">
+                        <div class="input-row">
+                            <div class="input-wrp">
+                                <p>
+                                    <input type="text" required="required">
+                                    <label for="">Correo electrónico</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-wrp">
+                                <p>
+                                    <input type="text" required="required">
+                                    <label for="">Nombre</label>
+                                </p>
+                            </div>
+                        </div>
+                        <button type="submit" form="" value="Iniciar chat" class="btn btn-secondary btn-green-interjet">Iniciar chat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-interjet"></div>
+    <footer class="row no-gutters">
+        <div class="btn-up btn-green-interjet"><span>SUBE</span></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12 data-left d-none d-md-block">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <ul class="list-unstyled">
+                                <li class="subtitle">Tu vuelo</li>
+                                <li><a href="#" class="footer-item">Nuestros destinos</a></li>
+                                <li><a href="#" class="footer-item">Prepara tu vuelo</a></li>
+                                <li><a href="#" class="footer-item">Administra tu vuelo</a></li>
+                                <li><a href="#" class="footer-item">Formas de pago</a></li>
+                                <li><a href="#" class="footer-item">Factura electrónica</a></li>
+                                <li><a href="#" class="footer-item">Preguntas frecuentes</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <ul class="list-unstyled">
+                                <li class="subtitle">Interjet</li>
+                                <li><a href="#" class="footer-item">Nuestra misión</a></li>
+                                <li><a href="#" class="footer-item">Bolsa de trabajo</a></li>
+                                <li><a href="#" class="footer-item">Sala de prensa</a></li>
+                                <li><a href="#" class="footer-item">Relación con inversionistas</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                            <ul class="list-unstyled">
+                                <li class="subtitle">Descarga la app</li>
+                                <li><a href="#" class="footer-item">Llévanos en tu teléfono</a></li>
+                                <li>
+                                    <a href="#" class="store"><img src="/assetsV2/img/appstore.png" class="img-fluid" alt="" /></a>
+                                    <a href="#" class="store google"><img src="/assetsV2/img/googleplay.png" class="img-fluid" alt="" /></a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li class="subtitle">Revista Interjet</li>
+                                <li><a href="#"><img src="/assetsV2/img/revista.png" class="img-fluid" alt="" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 data-right">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 op-wrp borderLine">
+                            <ul class="list-inline">
+                                <li class="list-inline-item subtitle">Síguenos</li>
+                                <li class="list-inline-item"><a class="social fb" href="#" target="_blank"></a></li>
+                                <li class="list-inline-item"><a class="social tw" href="#" target="_blank"></a></li>
+                                <li class="list-inline-item"><a class="social ig" href="#" target="_blank"></a></li>
+                                <li class="list-inline-item"><a class="social in" href="#" target="_blank"></a></li>
+                                <li class="list-inline-item"><a class="social yt" href="#" target="_blank"></a></li>
+                                <li class="list-inline-item"><a class="social sp" href="#" target="_blank"></a></li>
+                                <li class="list-inline-item"><a class="social bg" href="#" target="_blank"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 op-wrp">
+                            <ul class="list-unstyled contact">
+                                <li class="subtitle">Contáctanos</li>
+                                <li>Ventas, cambios y reservaciones</li>
+                                <li>CDMX y área metropolitana <span class="bold">1102 5555</span></li>
+                                <li>Interior de la República <span class="bold"> 01800 011 2345</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 op-wrp borderLine">
+                            <ul class="list-unstyled">
+                                <li class="subtitle">Quejas y Sugerencias</li>
+                                <li>Ventas, cambios y reservaciones</li>
+                                <li>CDMX y área metropolitana <span class="bold">1102 5511</span></li>
+                                <li>Interior de la República <span class="bold">01800 322 5050</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 op-wrp d-block d-md-none">
+                            <ul class="list-unstyled">
+                                <li class="subtitle">Descarga la app</li>
+                                <li><a href="#" class="footer-item">Llévanos en tu teléfono</a></li>
+                                <li>
+                                    <a class="store" href="#"><img src="/assetsV2/img/appstore.png" class="img-fluid" alt="" /></a>
+                                    <a class="store google" href="#"><img src="/assetsV2/img/googleplay.png" class="img-fluid" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 disclaimer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12 text-center">
+                        <ul class="list-inline">
+                            <!--li class="list-inline-item"><a href="#" class="disclaimer">Términos y Condiciones</a> | </li-->
+                            <li class="list-inline-item"><a href="#" class="disclaimer">Aviso de Privacidad</a> | </li>
+                            <li class="list-inline-item"><a href="#" class="disclaimer">Derechos del pasajero</a> | </li>
+                            <li class="list-inline-item"><a href="#" class="disclaimer">Mapa del sitio</a> | </li>
+                            <li class="list-inline-item no-mobile"><a href="#" class="disclaimer">Accesibilidad web</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center disclaimer">
+                        &copy; 2018 INTERJET - Todos los derechos reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assetsV2/js/plugins.js"></script>
+    <script src="/assetsV2/js/core.js"></script>
+</body>
+
+</html>

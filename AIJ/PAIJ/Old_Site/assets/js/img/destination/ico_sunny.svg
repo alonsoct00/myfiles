@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="34px" viewBox="0 0 37 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="-ico_nube-5" transform="translate(7.000000, 5.000000)">
+                <ellipse id="Oval-23" fill="#6CADDF" cx="12.0060347" cy="11.2053352" rx="6.8936094" ry="6.89559089"></ellipse>
+                <g id="Group" stroke="#6CADDF" stroke-width="1.4000001" stroke-linecap="round">
+                    <path d="M12.0060347,0.215487215 L12.0060347,2.8013338" id="Line"></path>
+                    <path d="M12.0060347,19.6093366 L12.0060347,22.1951832" id="Line-4"></path>
+                    <g id="Line-9-+-Line-5" transform="translate(11.711370, 11.274485) rotate(-270.000000) translate(-11.711370, -11.274485) translate(11.211370, -0.225515)">
+                        <path d="M0.430850587,0.215487215 L0.430850587,2.8013338" id="Line-9"></path>
+                        <path d="M0.430850587,19.6093366 L0.430850587,22.1951832" id="Line-5"></path>
+                    </g>
+                    <g id="Line-9-+-Line-6" transform="translate(11.748779, 11.045872) rotate(-225.000000) translate(-11.748779, -11.045872) translate(11.248779, -0.454128)">
+                        <path d="M0.430850587,0.215487215 L0.430850587,2.8013338" id="Line-9"></path>
+                        <path d="M0.430850587,19.6093366 L0.430850587,22.1951832" id="Line-5"></path>
+                    </g>
+                    <g id="Line-9-+-Line-7" transform="translate(12.165498, 10.948080) rotate(-135.000000) translate(-12.165498, -10.948080) translate(11.665498, -0.551920)">
+                        <path d="M0.430850587,0.215487215 L0.430850587,2.8013338" id="Line-9"></path>
+                        <path d="M0.430850587,19.6093366 L0.430850587,22.1951832" id="Line-5"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

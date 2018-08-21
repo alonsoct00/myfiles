@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Interjet</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assetsV2/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assetsV2/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assetsV2/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assetsV2/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assetsV2/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assetsV2/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assetsV2/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assetsV2/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assetsV2/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assetsV2/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assetsV2/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assetsV2/img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assetsV2/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/assetsV2/img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assetsV2/img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/assetsV2/img/icon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/assetsV2/img/icon/favicon.ico" rel="icon" type="image/x-icon" />
+    <script type="text/javascript" src="/assetsV2/js/src/gtm.js"></script>
+    <link href="/assetsV2/css/bootstrap.css" rel="stylesheet" />
+    <link href="/assetsV2/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZS2SF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="row alertTopWrp">
+        <div class="alertTop">
+            <div class="container alert-wrapper">
+                <p><span>Aviso:</span> Vuelos afectados por el huracán Irma</p>
+                <a href="#" class="moreInfo"></a>
+                <a href="#" class="closeBtn"></a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+    </header>
+    <!-- /header -->
+    <main role="main">
+        <!-- Insertar Aqui Booking -->
+        <div class="bookingInterjet">
+            <!--background over content -->
+            <div class="booking-bg hidden" style="z-index: 50;"></div>
+            <!--Booking content -->
+            <div class="booking-wrp">
+                <!-- button tabs -->
+                <ul class="booking-tabs">
+                    <li class="tab-flights">
+                        <button>Vuelos</button>
+                    </li>
+                    <li class="tab-hotelflights disable">
+                        <button>Hotel + avión</button>
+                    </li>
+                </ul>
+                <!-- TAB 1 -->
+                <div class="booking-content booking-content-tab">
+                    <button class="btn-radio active"><span></span>Sólo ida</button>
+                    <button class="btn-radio"><span></span>Ida y vuelta</button>
+                    <div class="booking-options">
+                        <div class="booking-options-item" data-option="origin">
+                            <!-- Botón Origen -->
+                            <button class="btn-select">
+                                <p class="label-origin txt-gray">Origen</p>
+                                <p class="select-origin">
+                                    <!-- Ciudad de México <span class="txt-blue">(MEX)</span> --></p>
+                            </button>
+                            <!-- MENU ORIGEN -->
+                            <div class="booking-options-menu hidden">
+                                <h2 class="menu-title">Selecciona un origen</h2>
+                                <input type="text" class="search-place search-origin" placeholder="Buscar destino" />
+                                <div class="places-wrp places-origin">
+                                    <div class="places-col">
+                                        <h3 class="places-title">México</h3>
+                                        <ul class="places-list">
+                                            <li data-codeid="MEX">Ciudad de México</li>
+                                            <li data-codeid="MEX">Monterrey</li>
+                                            <li class="active" data-codeid="MEX">Cancún</li>
+                                            <li class="disable" data-codeid="MEX">Guadalajara</li>
+                                            <li data-codeid="MEX">Tijuana</li>
+                                            <li data-codeid="MEX">Toluca</li>
+                                            <li data-codeid="MEX">Acapulco</li>
+                                            <li data-codeid="MEX">Ciudad Obregón</li>
+                                            <li data-codeid="MEX">Ciudad Juárez</li>
+                                            <li data-codeid="MEX">Ciudad del Carmen</li>
+                                            <li data-codeid="MEX">Cozumel</li>
+                                            <li data-codeid="MEX">Culiacán</li>
+                                            <li data-codeid="MEX">Chetumal</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Chihuahua</li>
+                                            <li>Hermosillo</li>
+                                            <li>Huatulco</li>
+                                            <li>La Paz</li>
+                                            <li>León/Bajío</li>
+                                            <li>Los Cabos</li>
+                                            <li>Mazatlán</li>
+                                            <li>Mérida</li>
+                                            <li>Oaxaca</li>
+                                            <li>Palenque</li>
+                                            <li>Puerto Escondido</li>
+                                            <li>Puerto Vallarta</li>
+                                            <li>San Luis Potosí</li>
+                                            <li>Tampico</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Torréón</li>
+                                            <li>Tuxtla Gutiérrez</li>
+                                            <li>Veracruz</li>
+                                            <li>Villahermosa</li>
+                                            <li>Zihuatanejo</li>
+                                        </ul>
+                                        <h3 class="places-title">Norteamérica</h3></li>
+                                        <ul class="places-list">
+                                            <li>Houston</li>
+                                            <li>Las Vegas</li>
+                                            <li>Miami</li>
+                                            <li>Nueva York</li>
+                                            <li>San Antonio</li>
+                                            <li>San Diego</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Dallas</li>
+                                            <li>Los Ángeles</li>
+                                            <li>Orlando</li>
+                                            <li>Chicago</li>
+                                            <li>Montreal</li>
+                                            <li>Toronto</li>
+                                            <li>Vancuver</li>
+                                        </ul>
+                                        <h3 class="places-title">Latinoamérica</h3></li>
+                                        <ul class="places-list">
+                                            <li>Bogotá</li>
+                                            <li>Guatemala</li>
+                                            <li>La Habana</li>
+                                            <li>San José</li>
+                                            <li>Lima</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Varadero</li>
+                                            <li>Santa Clara</li>
+                                        </ul>
+                                        <h3 class="places-title">En conexión</h3></li>
+                                        <ul class="places-list">
+                                            <li>Singapur</li>
+                                            <li>Japón</li>
+                                            <li>Islandia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-options-item" data-option="destination">
+                            <!-- Botón Destino -->
+                            <button class="btn-select">
+                                <p class="label-destination txt-gray">Destino</p>
+                                <p class="select-destination"></p>
+                            </button>
+                            <!-- MENU DESTINO -->
+                            <div class="booking-options-menu hidden">
+                                <h2 class="menu-title">Selecciona un destino</h2>
+                                <input type="text" class="search-place search-destination" placeholder="Buscar destino" />
+                                <div class="places-wrp places-destination">
+                                    <div class="places-col">
+                                        <h3 class="places-title">México</h3>
+                                        <ul class="places-list">
+                                            <li>Ciudad de México</li>
+                                            <li>Monterrey</li>
+                                            <li class="active">Cancún</li>
+                                            <li class="disable">Guadalajara</li>
+                                            <li>Tijuana</li>
+                                            <li>Toluca</li>
+                                            <li>Acapulco</li>
+                                            <li>Ciudad Obregón</li>
+                                            <li>Ciudad Juárez</li>
+                                            <li>Ciudad del Carmen</li>
+                                            <li>Cozumel</li>
+                                            <li>Culiacán</li>
+                                            <li>Chetumal</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Chihuahua</li>
+                                            <li>Hermosillo</li>
+                                            <li>Huatulco</li>
+                                            <li>La Paz</li>
+                                            <li>León/Bajío</li>
+                                            <li>Los Cabos</li>
+                                            <li>Mazatlán</li>
+                                            <li>Mérida</li>
+                                            <li>Oaxaca</li>
+                                            <li>Palenque</li>
+                                            <li>Puerto Escondido</li>
+                                            <li>Puerto Vallarta</li>
+                                            <li>San Luis Potosí</li>
+                                            <li>Tampico</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Torréón</li>
+                                            <li>Tuxtla Gutiérrez</li>
+                                            <li>Veracruz</li>
+                                            <li>Villahermosa</li>
+                                            <li>Zihuatanejo</li>
+                                        </ul>
+                                        <h3 class="places-title">Norteamérica</h3></li>
+                                        <ul class="places-list">
+                                            <li>Houston</li>
+                                            <li>Las Vegas</li>
+                                            <li>Miami</li>
+                                            <li>Nueva York</li>
+                                            <li>San Antonio</li>
+                                            <li>San Diego</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Dallas</li>
+                                            <li>Los Ángeles</li>
+                                            <li>Orlando</li>
+                                            <li>Chicago</li>
+                                            <li>Montreal</li>
+                                            <li>Toronto</li>
+                                            <li>Vancuver</li>
+                                        </ul>
+                                        <h3 class="places-title">Latinoamérica</h3></li>
+                                        <ul class="places-list">
+                                            <li>Bogotá</li>
+                                            <li>Guatemala</li>
+                                            <li>La Habana</li>
+                                            <li>San José</li>
+                                            <li>Lima</li>
+                                        </ul>
+                                    </div>
+                                    <div class="places-col">
+                                        <ul class="places-list">
+                                            <li>Varadero</li>
+                                            <li>Santa Clara</li>
+                                        </ul>
+                                        <h3 class="places-title">En conexión</h3></li>
+                                        <ul class="places-list">
+                                            <li>Singapur</li>
+                                            <li>Malasia</li>
+                                            <li>Japón</li>
+                                            <li>Islandia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-options-item" data-option="passengers">
+                            <!-- Botón Pasajeros -->
+                            <button class="btn-select">
+                                <p class="label-passengers txt-gray">Pasajeros</p>
+                                <p class="select-passengers"></p>
+                            </button>
+                            <!-- Menú Pasajeros -->
+                            <div class="booking-options-menu hidden">
+                                <h2 class="menu-title">Selecciona pasajeros</h2>
+                                <div class="passenger-wrp">
+                                    <div class="passenger-item passenger-adult">
+                                        <div class="box">
+                                            <p class="passenger-title">Adultos</p>
+                                            <p class="passenger-count">
+                                                <button class="btn-less disable">-</button>
+                                                <span class="passenger-num">1</span>
+                                                <button class="btn-add">+</button>
+                                            </p>
+                                        </div>
+                                        <p class="passenger-age">Descuento para mayores de 65 años <a href="#!" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" class="btn-tooltip tooltip-inline" data-original-title="<p><strong>Club Interjet</strong> Con Club Interjet, además de recibir bonificaciones en cada una de tus compras, podrás disfrutar de ofertas exclusivas, beneficios especiales y los mejores descuentos de la temporada. Recibe hasta el 15% en cada vuelo en tu monedero electrónico, acumula el mayor porcentaje e intercambia tu bonificación en tu próximo viaje.</p><p><strong>Payback</strong> Payback te permite acumular hasta un 3% de tu compra en puntos para tu monedero, mismos que podrás intercambiar por viajes, productos y/o servicios de los socios comerciales de la familia Payback.</p>"><img src="/assetsV2/img/ico_tooltip.svg" alt="?"></a></p>
+                                    </div>
+                                    <div class="passenger-item passenger-kids">
+                                        <div class="box">
+                                            <p class="passenger-title">Menores</p>
+                                            <p class="passenger-count">
+                                                <button class="btn-less disable">-</button>
+                                                <span class="passenger-num">1</span>
+                                                <button class="btn-add">+</button>
+                                            </p>
+                                        </div>
+                                        <p class="passenger-age">2 - 11 años</p>
+                                    </div>
+                                    <div class="passenger-item passenger-baby">
+                                        <div class="box">
+                                            <p class="passenger-title">Bebés</p>
+                                            <p class="passenger-count">
+                                                <button class="btn-less disable">-</button>
+                                                <span class="passenger-num">1</span>
+                                                <button class="btn-add">+</button>
+                                            </p>
+                                        </div>
+                                        <p class="passenger-age">0 - 2 años</p>
+                                    </div>
+                                </div>
+                                <div class="btn-update-wrp">
+                                    <button class="btn-green-interjet btn-update btn-update-passengers">Actualizar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-green-interjet btn-search btn-step-calendar">Buscar</button>
+                    </div>
+                </div>
+                <!-- // FIN TAB 1 -->
+                <!-- TAB 2 -->
+                <div class="booking-content booking-content-tab tab-2 hidden">
+                    <div class="cta">
+                        <p class="copy copy-left">
+                            ¿Necesitas un paquete diseñado a la medida de tu viaje?
+                        </p>
+                        <div class="copy copy-right">
+                            <p><span>Encuéntralo en </span><img class="copy-img" src="/assetsV2/img/logo_vacations.svg" alt="Interjet"></p>
+                        </div>
+                    </div>
+                    <button class="btn-green-interjet btn-search btn-step-calendar">Buscar</button>
+                </div>
+                <!-- // FIN TAB 2 -->
+            </div>
+            <!-- // Fin Booking content -->
+            <!-- Booking Calendar -->
+            <div class="booking-calendar" style="display: none;">
+                <!-- calendar top options -->
+                <div class="calendar-top">
+                    <h2 class="calendar-title">Selecciona tu fecha de vuelo</h2>
+                    <div class="calendar-options">
+                        <button class="btn-radio active"><span></span>Sólo ida</button>
+                        <button class="btn-radio"><span></span>Ida y vuelta</button>
+                    </div>
+                </div>
+                <!-- calendar content -->
+                <div class="calendar-content">
+                    <div class="datepicker"></div>
+                    <button class="btn-green-interjet btn-next">Siguiente</button>
+                </div>
+            </div>
+            <!-- // Fin Booking Calendar -->
+        </div>
+        <!-- // Termina insersion de booking -->
+        <!-- VERSION MOBILE PRIMER BLOQUE DE CONTENIDO -->
+        <div class="top-options-mobile">
+            <ul>
+                <li class="checkin"><a href="">Check-in</a></li>
+                <li class="status"><a href="">Estatus de vuelo</a></li>
+                <li class="admin-vuelo gestiona"><a href="">Administra tu vuelo</a></li>
+            </ul>
+            <div class="sub-gst-mb hidden">
+                <ul>
+                    <li>Estatus de vuelo</li>
+                    <li>Cambio de fecha</li>
+                    <li>Cambio de pasajeros</li>
+                    <li>Servicios complementarios</li>
+                    <li>Consulta itinerario</li>
+                </ul>
+            </div>
+        </div>
+        <!-- TERMINA VERSION MOBILE PRIMER BLOQUE DE CONTENIDO -->
+        <!-- Carousel de home -->
+        <div class="booking-carousel">
+            <div class="row banner-home-container" style="background-image: url('images/horas_banamex.png');">
+                <!-- H1 (not visible) -->
+                <h1 class="hide-title">Sitio para compra de boletos de avión</h1>
+                <div class="container">
+                    <div class="booking-item">
+                        <img src="images/horas_banamex.png" class="img-fluid d-none d-block d-md-none" alt="" />
+                        <img src="images/horas_banamex.png" class="img-fluid d-none d-md-block d-lg-none" alt="" />
+                        <div class="slide-info" style="background-color: #6DA6DA;">
+                            <div class="ec-sliderpromo">
+                                 <h3 class="mainpromoTitle"><b>120 horas</b><p>Banamex</p></h3>
+                            <p class="promoFrom top-left">Hasta</p>
+                            <div class="price">30%<span>de<br>descuento</span></div>
+                            <div class="trip-disclaimer">Saliendo desde Vancouver y volando de Octubre 26 a Febrero 28 de 2018.</div>
+                            <p class="promoTycs">Aplican términos y condiciones</p>
+                            <button type="button" class="btn btn-secondary">Comprar</button>
+                                <div class="timer-countdown">
+                                    <div id="timer-content">
+                                    <span>te quedan</span>
+                                        <div id="clock-fix"></div>
+                                        <span>aprovecha</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots-carousel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dots-carousel-mobile"></div>
+        <!-- // carousel de home -->
+        <!-- Destinos sugeridos -->
+        <div class="container salesWrp">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-subtitle">Vuelos desde Ciudad de México</h1> </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 no-gutters sales-container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6"> <img src="/assetsV2/img/cabos.png" class="img-fluid" alt="" />
+                            <div class="saleTag"><span class="big-font">50%</span><span class="small-font font-weight">descuento</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6 destination-wrp">
+                            <h3 class="destination-name">Vuela a Los Cabos</h3>
+                            <p class="gray-line">desde Ciudad de México</p>
+                            <p>vuelo redondo desde</p>
+                            <p> <span class="price">$699</span><span class="currency">USD</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 btnWrp"> <a class="btn btn-block btn-green-interjet test-modal" href="#" role="button">Comprar</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 no-gutters sales-container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6"> <img src="/assetsV2/img/montreal.png" class="img-fluid" alt="" /> </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6 destination-wrp">
+                            <h3 class="destination-name">Vuela a Montreal</h3>
+                            <p class="gray-line">desde Ciudad de México</p>
+                            <p>vuelo redondo desde</p>
+                            <p> <span class="price">$357</span><span class="currency">USD</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 btnWrp"> <a class="btn btn-block btn-green-interjet test-modal" href="#" role="button">Comprar</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 no-gutters sales-container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6"> <img src="/assetsV2/img/bogota.png" class="img-fluid" alt="" />
+                            <div class="saleTag">Nuevo <span class="font-weight">destino</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6 destination-wrp">
+                            <h3 class="destination-name">Vuela a Bogotá</h3>
+                            <p class="gray-line">desde Ciudad de México</p>
+                            <p>vuelo redondo desde</p>
+                            <p> <span class="price">$859</span><span class="currency">USD</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 btnWrp"> <a class="btn btn-block btn-green-interjet test-modal" href="#" role="button">Comprar</a> </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 no-gutters sales-container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6"> <img src="/assetsV2/img/carmen.png" class="img-fluid" alt="" /> </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-6 destination-wrp">
+                            <h3 class="destination-name">Vuela a Playa del Carmen</h3>
+                            <p class="gray-line">desde Ciudad de México</p>
+                            <p>vuelos redondos desde </p>
+                            <p><span class="price">$357</span><span class="currency">USD</span> </p>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 btnWrp"> <a class="btn btn-block btn-green-interjet test-modal" href="#" role="button">Comprar</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mosaico -->
+        <div class="container blue-gridWrp">
+            <!-- H1 (not visible) -->
+            <h1 class="hide-title">Promociones de boletos de avión</h1>
+            <div class="row no-gutters">
+                <!-- mosaico 1 -->
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 grid-item banner-lg">
+                    <div class="back-img-transition">
+                        <img src="/assetsV2/img/bn-montreal.png">
+                        <div class="detail">
+                            <div class="first-block">
+                                <p>Nuevo destino</p>
+                                <h2 class="big-title">Montreal</h2>
+                            </div>
+                            <div class="second-block">
+                                <p>desde</p>
+                                <h2 class="big-title">$390 <span>USD</span></h2>
+                                <p>redondo</p>
+                            </div>
+                            <button type="button" class="btn btn-secondary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <!--termina mosaico 1 -->
+                <!-- mosaico 2 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 grid-item banner-md">
+                    <div class="back-img-transition bck-color">
+                        <div class="detail">
+                            <h2>Web Check-in Internacional</h2>
+                            <p>Hazlo desde tu app o página web</p>
+                            <img class="ico_web" src="/assetsV2/img/ico_web-checkin.png">
+                            <a href="#" class="arrow-next"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- mosaico 2 -->
+                <!-- mosaico 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 grid-item banner-md ">
+                    <div class="back-img-transition showvideo">
+                        <img src="/assetsV2/img/bn-bajio.png">
+                        <div class="detail">
+                            <div class="centerWrp">
+                                <div class="month-destiny">Destino del mes</div>
+                                <p class="two-lines">Hola Bajío</p>
+                            </div>
+                            <a class="play-btn" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina mosaico 3 -->
+                <!-- mosaico 4 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 grid-item banner-sm">
+                    <div class="back-img-transition short">
+                        <img src="/assetsV2/img/bn-honey.png">
+                        <div class="detail">
+                            <h2>Luna de Miel</h2>
+                            <p>Te recomendamos los mejores destinos</p>
+                            <a href="#" class="arrow-next"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina mosaico 4 -->
+                <!-- mosaico 5 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 grid-item banner-sm">
+                    <div class="back-img-transition short bck-color-dark">
+                        <div class="detail">
+                            <h2>Menores sin acompañar</h2>
+                            <p>Vuelan sin costo</p>
+                            <a href="#" class="arrow-next"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina mosaico 5-->
+                <!-- mosaico 6 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 grid-item banner-sm">
+                    <div class="back-img-transition short">
+                        <img src="/assetsV2/img/bn-family.png">
+                        <div class="detail">
+                            <h2>Destinos Familiares</h2>
+                            <p>Te recomendamos los mejores destinos</p>
+                            <a href="#" class="arrow-next"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina mosaico 6 -->
+                <!-- mosaico 7 -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 grid-item banner-sm">
+                    <div class="back-img-transition short">
+                        <img src="/assetsV2/img/bn-magic.png">
+                        <div class="detail">
+                            <h2>Pueblos Mágicos</h2>
+                            <p>Conoce México y sus maravillas</p>
+                            <a href="#" class="arrow-next"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina mosaico 7 -->
+            </div>
+        </div>
+        <!-- Carousel de productos y servicios -->
+        <div class="container productsWrp">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-subtitle">Productos y servicios</h1>
+                </div>
+                <div class="col-md-12 productosyservicios">
+                    <div class="product-wrp">
+                        <h4 class="service-title text-center">Newsletter</h4>
+                        <div class="col-md-12"><img src="/assetsV2/img/news.svg" class="img-fluid item-center" alt="" /></div>
+                        <p class="text-center">Recibe ofertas personalizadas en tu correo electrónico.</p>
+                        <p class="text-center"><a class="btn btn-green-interjet btn-newsletter" href="#" role="button">Ver más</a></p>
+                    </div>
+                    <div class="product-wrp">
+                        <h4 class="service-title text-center">Charters y Grupos</h4>
+                        <div class="col-md-12"><img src="/assetsV2/img/grupos.svg" class="img-fluid item-center" alt="" /></div>
+                        <p class="text-center">Solicita servicio de grupo a partir de 10 personas.</p>
+                        <p class="text-center"><a class="btn  btn-green-interjet" href="https://www.interjet.com/Grupos.aspx?culture=es-mx" target="_blank" role="button">Ver más</a></p>
+                    </div>
+                    <div class="product-wrp">
+                        <h4 class="service-title text-center">Club Interjet</h4>
+                        <div class="col-md-12"><img src="/assetsV2/img/clubinterjet.svg" class="img-fluid item-center" alt="" /></div>
+                        <p class="text-center">Disfruta de beneficios como noticias, preventas y outlets.</p>
+                        <p class="text-center"><a class="btn btn-green-interjet" href="https://www.interjet.com/conoce-club-interjet.aspx?culture=es-mx" target="_blank" role="button">Ver más</a></p>
+                    </div>
+                    <div class="product-wrp">
+                        <h4 class="service-title text-center">Disney</h4>
+                        <div class="col-md-12"><img src="/assetsV2/img/disney.svg" class="img-fluid item-center" alt="" /></div>
+                        <p class="text-center">Disfruta en familia de toda la magia de Disney.</p>
+                        <p class="text-center"><a class="btn btn-green-interjet" href="https://www.interjet.com/tickets-disney.aspx" target="_blank" role="button">Ver más</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog -->
+        <div class="bloginterjet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="section-subtitle">Blog Interjet</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Article -->
+            <div class="blog-articles">
+                <div class="container">
+                    <div class="row">
+                        <!-- col 1 -->
+                        <div class="blog-col col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6 blog-img">
+                                    <div class="img-wrp">
+                                        <img src="/assetsV2/img/blog1.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 blog-txt">
+                                    <p class="blog-title">Los Cabos, Baja California</p>
+                                    <p class="blog-date">Mayo 13, 2017</p>
+                                    <p>Si ya conoces Cancún, sabrás que el cielo se encuentra en México y que el paraíso es algo que se puede alcanzar con sólo sabrás que insertar aquí máximo de 4 líneas (…)</p>
+                                    <p class="txt-right"><a class="blog-link" href="#" role="button">Leer más</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- col 2 -->
+                        <div class="blog-col col-md-6">
+                            <div class="row">
+                                <div class="col-lg-6 blog-img">
+                                    <div class="img-wrp">
+                                        <img src="/assetsV2/img/blog2.png" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 blog-txt">
+                                    <p class="blog-title">El sótano de las golondrinas</p>
+                                    <p class="blog-date">Mayo 13, 2017</p>
+                                    <p>Si ya conoces Cancún, sabrás que el cielo se encuentra en México y que el paraíso es algo que se puede alcanzar con sólo sabrás que insertar aquí máximo de 4 líneas (…)</p>
+                                    <p class="txt-right"><a class="blog-link" href="#" role="button">Leer más</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Blog -->
+    </main>
+    <!-- Modal Alert: error, warning, success -->
+    <div class="modal fade modalalert warning" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title icon">Ups... algo salió mal</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Al deshabilitar la opción tus puntos se eliminarán</p>
+                    <p>¿Deseas continuar?</p>
+                    <p>(idea a redactar)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-outline btn-cancel" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn-green-interjet">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ejemplo de modal de video -->
+    <div class="modal fade modalvideo" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="video-wrp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Login -->
+    <div class="modal fade modallogin" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Inicia sesión</h5>
+                    <form action="" class="form-login">
+                        <div class="input-row">
+                            <div class="input-wrp input-mail">
+                                <p>
+                                    <input type="text" required="required">
+                                    <label for="">Correo electrónico*</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-wrp input-pswd">
+                                <p>
+                                    <input type="password" required="required">
+                                    <label for="">Contraseña*</label>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="forget-pass"><a href="#" class="link-forget-pass">¿Olvidaste tu contraseña?</a>
+                        </p>
+                        <button type="submit" value="Iniciar sesión" class="btn btn-secondary btn-green-interjet btn-login">Iniciar sesión</button>
+                    </form>
+                    <div class="box-create-account">
+                        <h5 class="modal-title">Crear cuenta</h5>
+                        <p>Disfrutar los beneficios que Club Interjet tiene para ti. Regístrate sin costo y obten ofertas exclusivas, preventas y outlets para socios.</p>
+                        <button type="button" class="btn btn-secondary btn-lightblue-interjet">Registrarme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Chat -->
+    <div class="modal fade modalchat" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title-wrp">
+                        <h5 class="modal-title icon-bottom">Chatear con un agente</h5>
+                    </div>
+                    <form action="" class="form-login form-chat">
+                        <div class="input-row">
+                            <div class="input-wrp">
+                                <p>
+                                    <input type="text" required="required">
+                                    <label for="">Correo electrónico</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-wrp">
+                                <p>
+                                    <input type="text" required="required">
+                                    <label for="">Nombre</label>
+                                </p>
+                            </div>
+                        </div>
+                        <button type="submit" form="" value="Iniciar chat" class="btn btn-secondary btn-green-interjet">Iniciar chat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Newsletter -->
+    <div class="modal fade modalnewsletter" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Newsletter</h5>
+                    <p class="modal-copy">Registra sin costo y entérate de nuestras promociones.</p>
+                    <form action="" class="form-login form-newsletter">
+                        <div class="input-row">
+                            <div class="input-wrp correct">
+                                <p>
+                                    <input type="text" required="required" value="Luis González">
+                                    <label for="">Nombre completo*</label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-wrp incorrect">
+                                <p>
+                                    <input type="text" required="required" value="luis@mail.com">
+                                    <label for="">Correo electrónico*</label>
+                                </p>
+                            </div>
+                        </div>
+                        <button type="submit" form="" value="Suscribirme" class="btn btn-secondary btn-green-interjet">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-interjet"></div>
+    <footer class="row no-gutters">
+    </footer>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assetsV2/js/plugins.js"></script>
+    <script src="/assetsV2/js/core.js"></script>
+    <!--<script type="text/javascript " charset="utf-8 " async>
+    $(window).load(function() {
+        setTimeout(function() {
+            $('header').load('header.html');
+            $('footer').load('footer.html');
+        }, 100);
+    });
+    </script>-->
+
+        <!--countdown function plugin-->
+
+    <script type="text/javascript">
+
+    $('#clock-fix').countdown('2018/05/24 00:00').on('update.countdown', function(event) {
+        var totalHours = event.offset.totalDays * 24 + event.offset.hours;
+  var $this = $(this).html(event.strftime(''+'<div clas="countDown"><p>'+totalHours+' hrs</p</div>'));
+  });
+
+</script>
+</body>
+
+</html>

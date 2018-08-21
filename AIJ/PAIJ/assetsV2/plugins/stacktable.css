@@ -1,0 +1,495 @@
+    .stacktable {
+    width: 100%;
+}
+
+.st-head-row {
+    padding-top: 1em;
+}
+
+.st-head-row.st-head-row-main {
+    font-size: 1.5em;
+    padding-top: 0;
+}
+
+.st-key {
+    width: 49%;
+    text-align: right;
+    padding-right: 1%;
+}
+
+.st-val {
+    width: 49%;
+    padding-left: 1%;
+}
+
+
+
+
+/* RESPONSIVE EXAMPLE */
+
+.stacktable.large-only {
+    display: table;
+}
+
+.stacktable.small-only {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .stacktable.large-only {
+        display: none;
+    }
+    .stacktable.small-only {
+        display: table;
+    }
+}
+
+
+
+
+/**CUSTOM STYLES**/
+
+table .faresData td {
+    border: 1px solid #EDEDED;
+    vertical-align: middle;
+}
+
+.faresData td div {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 100%;
+    line-height: normal;
+    margin: 0px auto;
+    vertical-align: middle;
+}
+
+.faresData td.suitcase div {
+    position: relative;
+}
+
+.faresData td.suitcase div i {
+    width: 100%;
+    max-width: 48px;
+    height: 36px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+.faresData td.suitcase div i.singlesuitcase {
+    max-width: 17px!important;
+}
+
+.faresData td div i {
+    max-width: 33px;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.faresData td div i.ccicon {
+    max-width: 55px!important;
+}
+
+.faresData td p {
+    font-size: 12px;
+    max-width: 245px;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.faresData th.rowH {
+    max-width: 285px;
+    padding: 10px;
+    background: #F1F1F1;
+    border-color: #e2e2e2;
+    vertical-align: middle;
+}
+
+.faresData .rowH h5 {
+    color: #1b4298;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faresData .rowH sup {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.faresData .rowH p {
+    color: #4c4c4c;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.faresData .carry_on i {
+    max-width: 90px!important;
+    width: 90px;
+    display: block;
+    clear: both;
+}
+
+.faresData .fullCol p {
+    max-width: 100%!important;
+    width: 100%;
+}
+
+.faresData .def-row td p b {
+    color: #81A9E1;
+    font-size: 12px;
+}
+
+.faresData td.all-fares>div {
+    padding: 10px;
+}
+
+.faresData p small * {
+    font-size: 10px!important;
+    font-weight: normal;
+}
+
+.faresData p small {
+    color: #999;
+    font-size: 10px;
+    clear: both;
+    text-align: center;
+    display: block;
+    line-height: normal;
+}
+
+#TarifasLP .row h3 {
+    color: #6CADDF;
+    font-size: 28px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+td.all-fares h3 {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+tr.def-row.newSection td {
+    border: 0px!important;
+}
+
+.top-title th {
+    text-align: center;
+    padding: 10px 0px;
+    border-color: transparent;
+    border: 0px;
+    font-size: 28px;
+}
+
+.top-title th.fare1 {
+    background: #D2CFCD;
+    color: #fff;
+    border: 0px;
+}
+
+.top-title th.fare2 {
+    background: #6CADDF;
+    border-top: 15px solid #6caddf;
+    color: #fff;
+}
+
+.top-title th.fare3 {
+    background: #1b4298;
+    border-top: 25px solid #1b4298;
+    color: #fff;
+}
+
+td.suitcase div span {
+    font-size: 28px;
+    text-align: center;
+}
+
+td.fare1.suitcase div span {
+    color: #D2CFCD;
+}
+
+td.fare2.suitcase div span {
+    color: #6CADDF;
+}
+
+td.fare3.suitcase div span {
+    color: #1B4298;
+}
+
+
+/**Mobile styles**/
+
+th.st-head-row.rowH {
+    background-color: #F1F1F1;
+}
+
+th.st-head-row.rowH h5 {
+    color: #1b4298;
+    font-size: 16px;
+}
+
+th.st-head-row.rowH p {
+    font-size: 12px;
+}
+
+th.st-head-row.rowH h5 sup {
+    font-size: 10px;
+}
+
+.all-fares span {
+    font-size: 12px;
+    color: #4c4c4c;
+}
+
+
+.top-title th.empty {
+    text-indent: -9999;
+    border: 0px;
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width:800px) {
+
+    .contentTable {
+        display: block;
+        margin: 0px auto;
+    }
+
+
+    #responsysTable {
+        display: block;
+        position: relative;
+    }
+
+    #responsysTable thead {
+        display: block;
+    }
+
+    #responsysTable thead tr {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #responsysTable thead tr th:first-child {
+        display: none;
+    }
+    #responsysTable tbody {
+        display: block;
+    }
+
+    #responsysTable tbody tr {
+        display: block;
+        text-align: center;
+        border-top: 1px solid #ededed;
+    }
+
+    #responsysTable tbody tr th {
+        display: block;
+        text-align: left;
+    }
+
+    #responsysTable tbody tr td {
+        display: inline-table;
+        max-width: 32%;
+        width: 100%;
+        border: 0px;
+    }
+
+
+    #responsysTable .faresData th.rowH {
+        max-width: 100%;
+        border: 0px;
+    }
+
+    #responsysTable .top-title th {
+        width: 33%;
+        line-height: normal;
+        border: 0px!important;
+        padding: 15px 0px;
+        font-size: 16px;
+    }
+
+    #responsysTable .faresData td.suitcase div i {
+        position: static;
+    }
+
+
+
+
+    #responsysTable .faresData td.fullCol {
+        max-width: 100%!important;
+        border: 0px!important;
+    }
+
+    #responsysTable tr.def-row.applyAllFares>td {
+        border: 0px;
+    }
+    #responsysTable td.suitcase div span {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #responsysTable .faresData p,
+    #responsysTable .faresData p b {
+        font-size: 10px;
+        font-weight: normal;
+        line-height: normal;
+    }
+    .faresData .fullCol p {
+        max-width: 80%!important;
+        width: 100%;
+    }
+
+    #theFares {
+        position: relative;
+        padding: 0px;
+    }
+
+    #responsysTable tr.thisFixed#topTable {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        top: 50px;
+        z-index: 999;
+    }
+
+    #responsysTable .all-fares span {
+        font-size: 10px;
+        color: #4c4c4c;
+    }
+
+    .contentTable>h3 {
+        padding: 20px 0.75rem!important;
+    }
+
+
+    .newSection td.all-fares {
+        max-width: 100%!important;
+    }
+
+
+
+    td.st-key {
+        vertical-align: middle;
+        text-align: left;
+        color: #fff;
+    }
+
+
+    th.st-head-row.rowH {
+        border: 0px;
+        display: table-cell;
+        width: 100%;
+        margin-top: 20px;
+        box-shadow: 3px -1px 4px 0px #b5b5b5;
+    }
+
+    
+
+    td.st-val {
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+    }
+    td.st-val * {
+        font-size: 10px;
+    }
+
+    td.st-val div i {
+        width: 28px;
+        height: auto;
+        display: block;
+        margin: 0px auto;
+    }
+    td.st-val.suitcase div i.singlesuitcase {
+        max-width: 17px!important;
+        width: 100%;
+    }
+
+    td.st-val.suitcase div i {
+        width: 40px!important;
+        width: 100%;
+        position: absolute;
+        top: 18px;
+        right: 10px;
+    }
+
+    td.st-val div i.ccicon {
+        width: 50px!important;
+    }
+
+    td.st-val.suitcase {
+        position: relative;
+    }
+
+    td.st-val .carry_on i {
+        max-width: 90px!important;
+        width: 90px;
+        display: block;
+        clear: both;
+    }
+
+    td.st-val.all-fares {
+        background: #fff;
+    }
+
+    tr.applyAllFares td.st-key:after {
+        content: 'Priority';
+        display: block;
+        margin-top: 10px;
+    }
+    tr.applyAllFares td.st-key:before {
+        content: 'Light';
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /*.stacktable.small-only tr.def-row.applyAllFares {
+            background: #1e4aa9;
+        }*/
+    .stacktable.small-only .applyAllFares td.st-key {
+        min-height: 180px;
+        float: left;
+        width: 100%;
+        background: rgba(199, 196, 193, 1);
+        background: -moz-linear-gradient(top, rgba(199, 196, 193, 1) 0%, rgba(199, 196, 193, 1) 31%, rgba(99, 167, 222, 1) 32%, rgba(99, 167, 222, 1) 63%, rgba(24, 60, 144, 1) 65%, rgba(30, 74, 169, 1) 88%, rgba(30, 74, 169, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(199, 196, 193, 1)), color-stop(31%, rgba(199, 196, 193, 1)), color-stop(32%, rgba(99, 167, 222, 1)), color-stop(63%, rgba(99, 167, 222, 1)), color-stop(65%, rgba(24, 60, 144, 1)), color-stop(88%, rgba(30, 74, 169, 1)), color-stop(100%, rgba(30, 74, 169, 1)));
+        background: -webkit-linear-gradient(top, rgba(199, 196, 193, 1) 0%, rgba(199, 196, 193, 1) 31%, rgba(99, 167, 222, 1) 32%, rgba(99, 167, 222, 1) 63%, rgba(24, 60, 144, 1) 65%, rgba(30, 74, 169, 1) 88%, rgba(30, 74, 169, 1) 100%);
+        background: -o-linear-gradient(top, rgba(199, 196, 193, 1) 0%, rgba(199, 196, 193, 1) 31%, rgba(99, 167, 222, 1) 32%, rgba(99, 167, 222, 1) 63%, rgba(24, 60, 144, 1) 65%, rgba(30, 74, 169, 1) 88%, rgba(30, 74, 169, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(199, 196, 193, 1) 0%, rgba(199, 196, 193, 1) 31%, rgba(99, 167, 222, 1) 32%, rgba(99, 167, 222, 1) 63%, rgba(24, 60, 144, 1) 65%, rgba(30, 74, 169, 1) 88%, rgba(30, 74, 169, 1) 100%);
+        background: linear-gradient(to bottom, rgba(199, 196, 193, 1) 0%, rgba(199, 196, 193, 1) 31%, rgba(99, 167, 222, 1) 32%, rgba(99, 167, 222, 1) 63%, rgba(24, 60, 144, 1) 65%, rgba(30, 74, 169, 1) 88%, rgba(30, 74, 169, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c4c1', endColorstr='#1e4aa9', GradientType=0);
+        line-height: 3;
+    }
+    #TarifasLP .row h3 {
+        color: #6CADDF;
+        font-size: 28px;
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+
+    tr.def-row.newSection>th {
+        background: none;
+        padding-top: 50px;
+        box-shadow: none;
+    }
+
+    tr.def-row.newSection {
+        border-top: 1px solid #ededed;
+    }
+
+    .top-title th.st-head-row.st-head-row-main.rowH {
+        display: none;
+    }
+
+
+
+
+    @media screen and (max-width:580px) {}

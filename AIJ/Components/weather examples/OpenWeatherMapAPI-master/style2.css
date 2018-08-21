@@ -1,0 +1,202 @@
+html, body{
+	width:100%;
+	height:auto;
+	background-color:#222222;
+	font-family: 'Cabin', sans-serif;
+	margin:0;
+	overflow-x:hidden;
+	-webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+#searchBar{
+	width:100vw;
+	background-color:#FFE4AA;
+	top:0;
+	left:0;
+	position:relative;
+	padding-top:50px;
+	padding-bottom:20px;
+}
+#userLocation{
+	margin: 0 auto;
+	width:250px;
+	height:50px;
+	text-align: center;
+	justify-content: center;
+	display:flex;
+	background-color: white;
+	border-style: none;
+}
+h1#cityName{
+	z-index:999999;
+	text-align: center;
+	margin:0;
+	font-size:24px;
+	color:white;
+	padding:20px;
+}
+#userLocation:focus {
+	outline:none;
+	}
+.weatherCard{
+	position:relative;
+	width:20%;
+	overflow:auto;
+	background-color:#246068;
+	display:inline-block;
+	margin:0;
+}
+.weatherRow{
+	display:flex;
+	width:100vw;
+	margin:0 auto;
+	justify-content: center;
+	border-bottom:2px solid #FFE4AA;
+}
+.weatherCard1{
+
+}
+.weatherCard2, .weatherCard3, .weatherCard4, .weatherCard5{
+	width:20%;
+	background-color:#246068;
+	display:inline-block;
+	position:relative;
+	border-left:1px solid #FFE4AA;
+	
+}
+.weatherCardImg{
+	background-color:#69969C;
+	width:100%;
+	height:75px;
+	margin-bottom:5px;
+}
+.weatherCardImg2, .weatherCardImg3, .weatherCardImg4, .weatherCardImg5{
+	height:75px;
+}
+.weatherCardImg i, .weatherCardImg1 i, .weatherCardImg2 i, .weatherCardImg3 i, .weatherCardImg4 i, .weatherCardImg5 i{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:20px;
+	display:flex;
+	justify-content: center;
+	height:30px;
+	color:white;
+}
+
+.weatherCard h1, h2{
+	text-align: center;
+	color:white;
+	font-size: 12px;
+	margin:0;
+}
+.weatherCardInfo1{
+	padding-top:0;
+}
+.weatherCardInfo2{
+	background-color: #246068;
+	padding:10px;
+}
+.map {
+    height: 256px;
+    width: 256px;
+    float:left;
+    padding:10px;
+    display:inline-block;
+    margin-top:115px;
+ }
+ #mapWrap{
+	 position:relative;
+	 width:275px;
+	 height:275px;
+	 margin-left:auto;
+	 margin-right:auto;
+ }
+ #mapOverlay{
+	 position: absolute;
+	 
+z-index: 9999;
+height: 256;
+width: 256;
+ }
+ #mapOverlay img{
+	 margin-top:45%;
+ }
+ /*subreddit posts styling*/
+ 
+ .postsHolder{
+	display:inline-block;
+	width:100vw;
+	padding-top:35px;
+	padding-bottom:35px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.postsHolder h1{
+	color:white;
+	text-align: center;
+}
+
+
+.poststemplate img{
+	width:50px;
+	height:50px;
+	float:left;
+	display:inline-block;
+	vertical-align: middle;	
+	padding:5px;
+}
+.poststemplate{
+	
+	background-color:#246068;
+	min-width:35vw;
+	min-height:50px;
+    border-bottom: 2px solid #FFE4AA;
+    float:none;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	padding-top:2vw;
+	padding:2vw;
+}
+
+.poststemplate a{
+	text-decoration: none;
+	color:white;
+	font-size:8px;
+}
+
+@media only screen and (min-width:1028px){
+	#mapWrap{
+		float:right;
+		margin-left:none;
+		margin-right:none;
+		padding-right:8vw;
+	}
+	.postsHolder{
+		overflow:hidden;
+		width:55vw;
+		padding-right:0px;
+		padding-left:5vw;
+		float:left;
+	}
+}
+@media only screen and (min-width:1660px){
+	.postsHolder{
+		width:75vw;
+	}
+}
+@media only screen and (min-width:1660px){
+	.postsHolder{
+		width:60vw;
+		padding-right:0px;
+	}
+}

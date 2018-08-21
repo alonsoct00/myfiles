@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!--META TAGS Social Media & FAVICON's -->
+    <!--Cambiar de acuerdo a descripción/tipo de página-->
+    <meta property="og:title" content="Interjet" />
+    <meta property="og:url" content="http://www.interjet.com.mx" />
+    <meta property="og:image" content="assets/images/logo_interjet_web.png" />
+    <meta property="og:description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación." />
+    <meta property="og:site_name" content="Interjet" />
+    <link rel="canonical" href="https://www.interjet.com.mx/">
+    <meta name="description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <meta name="keywords" content="La mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <!--Cambiar de acuerdo a descripción/tipo de página-->
+    <!--Apple icons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="60×60" href="/assets/favicons/apple-touch-icon-60x60-precomposed.png">
+    <link rel="apple-touch-icon" sizes="76×76" href="/assets/favicons/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon" sizes="120×120" href="/assets/favicons/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="152×152" href="/assets/favicons/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon" sizes="180×180" href="/assets/favicons/apple-touch-icon.png">
+    <!--Android & Generic icons-->
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <link rel="icon" sizes="192×192" href="/assets/favicons/android-icon-192x192.png">
+    <link rel="icon" sizes="96×96" href="/assets/favicons/android-icon-96x96.png">
+    <link rel="icon" sizes="72×72" href="/assets/favicons/android-icon-72x72.png">
+    <link rel="icon" sizes="48×48" href="/assets/favicons/android-icon-48x48.png">
+    <link rel="icon" sizes="36×36" href="/assets/favicons/android-icon-36x36.png">
+    <!--Desktop and browser bookmarks icons-->
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1b248">
+    <meta name="theme-color" content="#ffffff">
+    <!--END META TAGS Social Media & FAVICON's -->
+    <title>Interjet</title>
+    <!-- Bootstrap Default Assets -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="/assets/css/ripples.min.css" rel="stylesheet">
+    <!--Custom CSS Assets-->
+    <link href="/assets/css/core_interjet.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Checkout Interjet NO omitir poner la clase checkout-header-->
+    <header class="checkout-header">
+        <div class="container-fluid mega-menu">
+            <nav class="navbar mash-menu container" role="navigation" id="interjet-menu">
+                <section class="mash-menu-inner-container">
+                    <div class="navbar-header">
+                        <div class="container">
+                            <a class="navbar-brand custom-brand" href="http://qatg.interjet.com.mx:8081">
+                                <div class="interjet-logo"><img src="/assets/images/logo_interjet_web.png" alt="logo" class="image-responsive"></div>
+                            </a>
+                            <div id="right-navigation">
+                                <ul id="help-section" class="nav navbar-nav">
+                                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i><span>Ayuda</span></a></li>
+                                    <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i><span>Chat</span></a></li>
+                                </ul>
+                                <ul class="nav navbar-nav" id="cultures">
+                                    <li class="dropdown separator">
+                                        <a class="flg" href="http://qatg.interjet.com.mx:8081" data-toggle="dropdown">
+                                            <span class="es-mx"><i><img src="/assets/images/icon/flg_mx.png" alt="MX"></i> ES-MX </span><span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081?n=en-us">
+                                                    <span class="en-us"><i><img src="/assets/images/icon/flg_us.png" alt="US"></i> EN-US</span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081/es-co?n=es-co">
+                                                    <span class="es-co"><i><img src="/assets/images/icon/flg_col.png" alt="COL"></i> ES - COL</span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081/es-cr?n=es-cr">
+                                                    <span class="es-cr"><i><img src="/assets/images/icon/flg_cr.png" alt="CR"></i> ES - CR</span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081/es-gt?n=es-gt">
+                                                    <span class="es-gt"><i><img src="/assets/images/icon/flg_gua.png" alt="GUA"></i> ES - GUA</span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="?n=es-pe">
+                                                    <span class="es-pe"><i><img src="/assets/images/icon/flg_pe.png" alt="PE"></i> ES - PE</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div id="club-interjet-menu-1">
+                                    <span><img src="/assets/images/logo_clubinterjet_web.png" alt="Club-Interjet" class="image-responsive"></span>
+                                    <div class="login-register"><span><a href="#">Ingresa</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="mash-mobile-button navbar-toggle offcanvas-toggle pull-left" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+                            <span class="sr-only"></span>
+                            <span>
+                          <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="navbar-offcanvas container" id="js-bootstrap-offcanvas">
+                        <div id="club-interjet-menu" class="mash-menu-club-interjet">
+                            <span><img src="/assets/images/logo_clubinterjet-mobile.png" alt="Club-Interjet" class="image-responsive"></span>
+                            <div class="login-register"><span><a href="#">Ingresa</a></span>
+                            </div>
+                        </div>
+                        <ul class="mash-help-items-mobile">
+                            <div id="bottom-navigation">
+                                <ul id="help-section" class="nav navbar-nav">
+                                    <li>
+                                        <a href="#"></i><span>Ayuda</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"></i><span>Chat</span></a>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav" id="cultures">
+                                    <li class="dropdown separator">
+                                        <a class="flg" href="http://qatg.interjet.com.mx:8081" data-toggle="dropdown">
+                                            <span class="es-mx"><i><img src="/assets/images/icon/flg_mx.png" alt="MX"></i></span><span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081?n=en-us">
+                                                    <span class="en-us"><i><img src="/assets/images/icon/flg_us.png" alt="US"></i></span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081/es-co?n=es-co">
+                                                    <span class="es-co"><i><img src="/assets/images/icon/flg_col.png" alt="COL"></i></span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081/es-cr?n=es-cr">
+                                                    <span class="es-cr"><i><img src="/assets/images/icon/flg_cr.png" alt="CR"></i></span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="http://qatg.interjet.com:8081/es-gt?n=es-gt">
+                                                    <span class="es-gt"><i><img src="/assets/images/icon/flg_gua.png" alt="GUA"></i></span>
+                                                </a>
+                                            </li>
+                                            <li class="country">
+                                                <a class="flg" href="?n=es-pe">
+                                                    <span class="es-pe"><i><img src="/assets/images/icon/flg_pe.png" alt="PE"></i></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div id="club-interjet-menu-1">
+                                    <span><img src="/assets/images/logo_clubinterjet_web.png" alt="Club-Interjet" class="image-responsive"></span>
+                                    <div class="login-register"><span><a href="#">Ingresa</a></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <!--END Header Checkout Interjet-->
+    <!--Main Content Begins-->
+    <div class="container" id="main-content-checkout">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12" id="checkout-steps">
+                <ol class="breadcrumb purchase-status">
+                    <li class="completed"><a href="#"><i class="inter-icon icon-icn_lupa"></i><span>Busca tu ruta</span></a></li>
+                    <li class="completed"><a href="#"><i class="inter-icon icon-icn_plane"></i><span>Elige tu vuelo</span></a></li>
+                    <li class="completed"><a href="#"><i class="inter-icon icon-icn_passenger"></i><span>Ingresa los pasajeros</span></a></li>
+                    <li class="completed"><a href="#"><i class="inter-icon icon-icn_seat"></i><span>Selecciona los asientos</span></a></li>
+                    <li class="active"><a href="#"><i class="inter-icon icon-plus"></i><span>Complementa tu viaje</span></a></li>
+                    <li class="to-complete"><i class="inter-icon icon-icn_card-payment"></i><span>Paga</span></li>
+                    <li class="to-complete"><i class="fa fa-check"></i><span>Viaja</span></li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12" id="checkout-main-container">
+                <div id="upgradefare-maincontainer">
+                    <h3 class="checkout-subsection-title">Resumen de tus vuelos</h3>
+                    <div class="flight-resume-container">
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+                            <div class="upfare-passenger-flight fareLight">
+                                <div class="top-fare-details">
+                                    <span class="flight-type">Tu vuelo de ida...</span>
+                                    <span class="fare-type"><b>Tarifa</b> Light</span>
+                                </div>
+                                <div class="default-bundle-selected">
+                                    <div class="my-trip">
+                                       
+                                        <div class="trip-detail">
+                                            <i class="pin-img"><img src="/assets/images/upgrade_fare/ico_Pin.png" alt="pin"></i>
+                                            <span class="trip-airport">Ciudad de México (MEX)</span>
+                                            <small>Sale: <span>06:25 hrs - 10 NOV 2016</span></small>
+                                        </div>
+                                        <div class="icon-plane"><i class="inter-icon icon-icn_plane"></i></div>
+                                        <div class="trip-detail">
+                                            <i class="pin-img"><img src="/assets/images/upgrade_fare/ico_Pin.png" alt="pin"></i>
+                                            <span class="trip-airport">Los Angeles (LAX)</span>
+                                            <small>Llega: <span>08:45 hrs - 10 NOV 2016</span></small>
+                                        </div>
+                                        <div class="trip-number-passengers">
+                                            <i class="icon-passenger inter-icon icon-icn_pasajeros_"></i>
+                                            <span class="num-pass">3 <b>Pasajeros</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="default-benefits col-3-benefits">
+                                        <p class="legend-txt">Tus tarifa incluye...</p>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font icon-icn_maleta_"></i>
+                                            <p>1 Maleta de 25kg</p>
+                                        </div>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font icon-equipaje-de-mano"></i>
+                                            <p>Equipaje de mano</p>
+                                        </div>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font icon-noun_159"></i>
+                                            <p>Snacks y bebidas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="extras-to-add">
+                                    <p class="extras-topborder">¿Necesitas llevar algo más? Agrega tus extras... <span class="plus-icon"><i class="fa fa-plus"></i></span></p>
+                                    <div class="extra-benefits col-4-benefits">
+                                        <p class="legend-txt">Además de mi maleta quiero transportar:</p>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-icn_maleta_"></i>
+                                            <p>Equipaje extra</p>
+                                            <small>$500 por maleta</small>
+                                        </div>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-dog-1"></i>
+                                            <p>Mascota</p>
+                                            <small>$500 por mascota</small>
+                                        </div>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-bottle"></i>
+                                            <p>Intrumento musical</p>
+                                            <small>$500 por pieza</small>
+                                        </div>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-bike"></i>
+                                            <p>Equipo deportivo</p>
+                                            <small>$500 por pieza</small>
+                                        </div>
+                                    </div>
+                                    <div class="select-your-seat">
+                                        
+                                        <div class="align-left alert-legend">
+                                        <i class="inter-font  icon-sel-asientos"></i>
+                                        <p class="legend-txt">Recuerda que con esta tarifa, <b>tus asientos serán asignados aleatoriamente</b> <br>y podrían quedar separados</p>
+                                        <div class="general-form-component checkbox">
+                                            <label><span class="combo-label">Quiero escoger mis asientos <small>$100 por pasajero</small></span>
+                                                <input type="checkbox" class="selectseats" name="selectseats" value="">
+                                            </label>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="new-total">
+                                        <p class="totalprice-txt">
+                                        <span>Total a pagar por extras</span>
+                                        <small>Costo estimado por pasajero</small>
+                                        </p>
+                                        <p class="totalprice">$600.00<span>MXN</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 upgradeFare-sidebar fareLight">
+                            <div class="uf-sidecontent">
+                                <div class="top-ufsidebar">
+                                    <span>¡Cambiate a</span>
+                                    <div class="conversion-fare">
+                                        <span>Óptima!</span>
+                                    </div>
+
+                                </div>
+                                <div class="extras-offer">
+                                    <p class="legend-txt">Además de los beneficios de <span>la <b class="tl">Tarifa Light</b>, podrás...</span></p>
+                                    <ul class="extras-list">
+                                        <li>Llevar 1 maleta extra de 25kg
+                                            <small>Tendrás un total de 50kg de equipaje</small></li>
+                                        <li>Elegir tu asiento a partir de la fila 3
+                                            <small>¿Pasillo, ventana o en medio? ¡Tú eliges!</small></li>
+                                        <li>Adelantar tu vuelo el mismo día sin costo
+                                            <small>¡Aprovecha el tiempo al máximo!</small></li>
+                                        <li>Realizar cambios con precios preferenciales
+                                            <small>¿Ajustes de fecha, ruta u horario?</small></li>
+                                        <li>Llevar tu mascota, equipo deportivo, instrumento musical sin costo extra
+                                            <small>Utiliza tu segunda maleta como se te de la chingada gana</small></li>
+                                        
+                                    </ul>
+                                    <div class="price-offer">
+                                        <div class="priceTotal">$350.00 <span>mxn</span>
+                                            <small>Adicionales por pasajero</small></div>
+                                    </div>
+                                    <a class="btn btn-submit btn-change-fare btn-lightblue" href="#">Cambiar a Óptima</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight-resume-container">
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+                            <div class="upfare-passenger-flight fareOptima">
+                                <div class="top-fare-details">
+                                    <span class="flight-type">Tu vuelo de regreso</span>
+                                    <span class="fare-type"><b>Tarifa</b> Óptima</span>
+                                </div>
+                                <div class="default-bundle-selected">
+                                    <div class="my-trip">
+                                       
+                                        <div class="trip-detail">
+                                            <i class="pin-img"><img src="/assets/images/upgrade_fare/ico_Pin.png" alt="pin"></i>
+                                            <span class="trip-airport">Los Angeles (LAX)</span>
+                                            <small>Sale: <span>06:25 hrs - 10 NOV 2016</span></small>
+                                        </div>
+                                        <div class="icon-plane"><i class="inter-icon icon-icn_plane"></i></div>
+                                        <div class="trip-detail">
+                                            <i class="pin-img"><img src="/assets/images/upgrade_fare/ico_Pin.png" alt="pin"></i>
+                                            <span class="trip-airport">Ciudad de México (MEX)</span>
+                                            <small>Llega: <span>08:45 hrs - 10 NOV 2016</span></small>
+                                        </div>
+                                        <div class="trip-number-passengers">
+                                            <i class="icon-passenger inter-icon icon-icn_pasajeros_"></i>
+                                            <span class="num-pass">3 <b>Pasajeros</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="default-benefits col-5-benefits">
+                                        <p class="legend-txt">Tu tarifa incluye...</p>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font icon-icn_2_maleta"></i>
+                                            <p>2 Maletas de 25kg</p>
+                                        </div>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font icon-equipaje-de-mano"></i>
+                                            <p>Equipaje de mano</p>
+                                        </div>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font  icon-sel-asientos"></i>
+                                            <p>Elección de asiento</p>
+                                        </div>
+                                        <div class="icon-benef def-benf">
+                                            <i class="benefit inter-font icon-noun_159"></i>
+                                            <p>Snacks y bebidas</p>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="exchange-options">
+                                    
+                                    <div class="general-form-component checkbox">
+                                    <p class="legend-txt">Recuerda que con esta tarifa, puedes <b>intercambiar tu segunda maleta.</b></p>
+                                            <label><span class="combo-label">Cambiaré mi maleta por... <small>Sin costo extra</small></span>
+                                                <input type="checkbox" class="exchangeextra" name="exchangeextra" value="">
+                                            </label>
+                                        </div>
+                                    <div class="exchange-benefits col-3-benefits pull-right">
+                                        
+                                        
+                                        <div class="icon-benef add-benef disabled">
+                                            <i class="benefit inter-icon icon-dog-1"></i>
+                                            <p>Mascota</p>
+                                            <small>$500 por mascota</small>
+                                        </div>
+                                        <div class="icon-benef add-benef disabled">
+                                            <i class="benefit inter-icon icon-bottle"></i>
+                                            <p>Intrumento <br/> musical</p>
+                                            <small>$500 por pieza</small>
+                                        </div>
+                                        <div class="icon-benef add-benef disabled">
+                                            <i class="benefit inter-icon icon-bike"></i>
+                                            <p>Equipo <br/>deportivo</p>
+                                            <small>$500 por pieza</small>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="extras-to-add">
+                                    <p class="extras-topborder">¿Necesitas llevar algo más? Agrega tus extras... <span class="plus-icon"><i class="fa fa-plus"></i></span></p>
+                                    <div class="extra-benefits col-4-benefits">
+                                        <p class="legend-txt">Además de mis 2 maletas necesito transportar:</p>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-icn_maleta_"></i>
+                                            <p>Equipaje extra</p>
+                                            <small>$500 por maleta</small>
+                                        </div>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-dog-1"></i>
+                                            <p>Mascota</p>
+                                            <small>$500 por mascota</small>
+                                        </div>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-bottle"></i>
+                                            <p>Intrumento musical</p>
+                                            <small>$500 por pieza</small>
+                                        </div>
+                                        <div class="icon-benef add-benef">
+                                            <i class="benefit inter-icon icon-bike"></i>
+                                            <p>Equipo deportivo</p>
+                                            <small>$500 por pieza</small>
+                                        </div>
+                                    </div>
+                                    <div class="clear-width"> </div>
+                                    
+                                    <div class="new-total">
+                                        <p class="totalprice-txt">
+                                        <span>Total a pagar por extras</span>
+                                        <small>Costo estimado por pasajero</small>
+                                        </p>
+                                        <p class="totalprice">$600.00<span>MXN</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 upgradeFare-sidebar fareOptima">
+                            <div class="uf-sidecontent">
+                                <div class="top-ufsidebar">
+                                    <span>¡Cambiate a</span>
+                                    <div class="conversion-fare">
+                                        <span>Priority!</span>
+                                    </div>
+
+                                </div>
+                                <div class="extras-offer">
+                                    <p class="legend-txt">Además de los beneficios de <span>la <b class="to">Tarifa Óptima</b>, podrás...</span></p>
+                                    <ul class="extras-list">
+                                        <li>Llevar 1 maleta extra de 25 kg
+                                            <small>Tendrás un total de 75 kg de equipaje</small></li>
+                                        <li>Documentar y abordar antes que nadie
+                                            <small>¡Olvídate de las filas y sé el primero!</small></li>
+                                        <li>Realizar cambios sin costo extra
+                                            <small>Despreocúpate por los imprevistos</small></li>
+                                        <li>Llevar tu mascota, equipo deportivo o instrumento musical
+                                            <small>Distribuye tu equipaje como tú necesites</small></li>
+                                        <li>Solicitar tu reembolso
+                                            <small>No pierdas tu dinero por un evento inesperado</small></li>
+                                        
+                                    </ul>
+                                    <div class="price-offer">
+                                        <div class="priceTotal">$750.00 <span>mxn</span>
+                                            <small>Adicionales por pasajero</small></div>
+                                    </div>
+                                    <a class="btn btn-submit btn-change-fare btn-darkblue" href="#">Cambiar a Priority</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Content ENDS-->
+    <!--FOOTER Checkout Begins ****NO omitir poner la clase checkout-footer**-->
+    <footer class="navbar-fixed-bottom checkout-footer">
+        <div class="container-fluid">
+            <div class="navbar footer">
+                <div class="container" id="footer-interjet">
+                    <div class="row" id="top-columns">
+                        <div id="separator-hor" class="no-mobile"></div>
+                        <div class="col-xs-12 col-md-8 col-lg-8 no-mobile" id="left-side-footer">
+                            <div class="col-xs-4 col-md-4 col-lg-4 no-mobile">
+                                <p class="blue-p title-list">Tu Viaje</p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Destinos</a></li>
+                                    <li><a href="#">Prepara tu viaje</a></li>
+                                    <li><a href="#">Administra tu viaje</a></li>
+                                    <li><a href="#">Preguntas Frecuentes</a></li>
+                                </ul>
+                                <div class="int-magazine">
+                                    <span class="mag-img"><a href="#"><img src="/assets/images/img_revista.png" alt="revista_interjet"></a></span>
+                                    <span class="mag-txt">Accede a nuestra publicación del mes. ¡Conoce la versión en línea!</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-md-4 col-lg-4 no-mobile">
+                                <p class="blue-p title-list">Conócenos</p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Nuestra misión</a></li>
+                                    <li><a href="#">Bolsa de trabajo</a></li>
+                                    <li><a href="#">Sala de prensa</a></li>
+                                    <li><a href="#">Relación con inversionistas</a></li>
+                                </ul>
+                                <div id="apps-container">
+                                    <p class="blue-p title-list">Descarga la App</p>
+                                    <span>Llévanos en tu móvil</span>
+                                    <a href="#"><img src="/assets/images/img_googleplay_footer.png" alt="play-store"></a>
+                                    <a href="#"><img src="/assets/images/img_appstore_footer.png" alt="app-store"></a>
+                                </div>
+                            </div>
+                            <div class="double-sub col-xs-4 col-md-4 col-lg-4 no-mobile">
+                                <p class="blue-p title-list">Experiencia Interjet</p>
+                                <ul class="footer-menu double col-xs-6 col-md-6">
+                                    <li><a href="#">Club Interjet</a></li>
+                                    <li><a href="#">Agencia Jet</a></li>
+                                    <li><a href="#">Empresa Jet</a></li>
+                                    <li><a href="#">Intertours</a></li>
+                                </ul>
+                                <ul class="footer-menu double col-xs-6 col-md-6 no-mobile">
+                                    <li><a href="#">Promociones</a></li>
+                                    <li><a href="#">Viaja con Interjet</a></li>
+                                    <li><a href="#">Oficinas Interjet</a></li>
+                                    <li><a href="#">Charters y Grupos</a></li>
+                                </ul>
+                                <div class="col-xs-12 col-md-12 col-lg-12 no-mobile" id="promos">
+                                    <p class="blue-p title-list">Promociones</p>
+                                    <span>Texto demo para invitación...</span>
+                                    <div id="news-content">
+                                        <input type="text" name="newsletter" id="newsletter" class="no-mobile">
+                                        <input type="submit" value="Enviar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-lg-4" id="right-side-footer">
+                            <div class="col-xs-4 col-md-12 co-lg-12 salesforce">
+                                <p class="light-blue">Ventas, Cambios y Reservaciones</p>
+                                <div class="phone-number local-city">
+                                    <span>CDMX y Área Metropolitana</span>
+                                    <a href="tel:+5215511025555">11 02 55 55</a>
+                                </div>
+                                <div class="phone-number local-country">
+                                    <span>Interior de la República</span>
+                                    <a href="tel:018000112345">01 800 011 2345</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-md-12 co-lg-12 crm-att">
+                                <p class="light-blue">Atención a Clientes <small>(Quejas y Sugerencias)</small></p>
+                                <div class="phone-number local-city">
+                                    <span>CDMX y Área Metropolitana</span>
+                                    <a href="tel:+5215511025511">11 02 55 11</a>
+                                </div>
+                                <div class="phone-number local-country">
+                                    <span>Interior de la República</span>
+                                    <a href="tel:018003225050">01 800 322 5050</a>
+                                </div>
+                                <span class="contact-mail">
+                            <a href="mailto:atencionaclientes@interjet.com.mx">
+                            <i class="icon-f"><img src="/assets/images/icons/icn_mail_footer.png" alt="directorio"></i>atencionaclientes@interjet.com.mx</a></span>
+                            </div>
+                            <div class="col-xs-4 col-md-12 co-lg-12" id="networks">
+                                <p>Encuéntranos en:</p>
+                                <ul class="social-networks">
+                                    <li>
+                                        <a href="#"><img src="/assets/images/icons/icn_facebook.png" alt="fb"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/assets/images/icons/icn_twitter.png" alt="twt"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/assets/images/icons/icn_instagram.png" alt="ins"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/assets/images/icons/icn_snapchat.png" alt="snp"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/assets/images/icons/icn_youtube.png" alt="ytb"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="apps-container-mobile" class="mobile-yes dekstop-no">
+                            <p class="blue-p title-list">Descarga la App</p>
+                            <span>Llévanos en tu móvil</span>
+                            <a href="#"><img src="/assets/images/img_googleplay_footer.png" alt="play-store"></a>
+                            <a href="#"><img src="/assets/images/img_appstore_footer.png" alt="app-store"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="bottom-footer">
+                    <div class="row" id="bottom-columns">
+                        <div class="container">
+                            <ul id="payments">
+                                <li><img src="/assets/images/img_visacheckout_footer.png" alt="visa-checkout" id="visa-checkout"></li>
+                                <li><img src="/assets/images/img_verifiedvisa_footer.png" alt="verified-visa" id="verified-visa"></li>
+                                <li><img src="/assets/images/img_mastercard_footer.png" alt="mastercard-secure" id="mastercard-secure"></li>
+                                <li><img src="/assets/images/img_paypal_footer.png" alt="PayPal" id="PayPal"></li>
+                            </ul>
+                            <ul id="ecommerce-verified">
+                                <li><img src="/assets/images/img_sectur_footer.png" alt="sectur" id="sectur"></li>
+                                <li><img src="/assets/images/img_navitaire_footer.png" alt="navitaire" id="navitaire"></li>
+                                <li><img src="/assets/images/img_award_footer.png" alt="ecommerce-award" id="ecommerce-award"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="blue-bottom-footer">
+                    <div class="container">
+                        <p class="copyright">
+                            <i class="fa fa-copyright" aria-hidden="true"></i>
+                            <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                            </script>, INTERJET - Todos los derechos reservados.</p>
+                        <ul id="interest-links">
+                            <li class="bullet-m"><a href="#">términos y condiciones</a></li>
+                            <li class="bullet-m"><a href="#">aviso de privacidad</a></li>
+                            <li class="no-mobile"><a href="#">legales</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Bootstrap default scripts-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/assets/js/material.min.js"></script>
+    <script src="/assets/js/ripples.min.js"></script>
+    <!--Plugins Scripts-->
+    <script src="/assets/js/main_functions.js"></script>
+    <script src="/assets/js/bootstrap-rating-input.js"></script>
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <!--domentation:https://jqueryvalidation.org/documentation/-->
+    <!-- Include Bootstrap Datepicker -->
+    <!--documentation:https://bootstrap-datepicker.readthedocs.io/en/latest/index.html-->
+    <script src="/assets/js/bootstrap-datepicker.min.js"></script>
+    <!--idioma español-->
+    <script src="/assets/js/datepicker-es.js"></script>
+    <!--Custom Scripts-->
+    <script src="/assets/js/functions.min.js"></script>
+    <script src="/assets/js/main_checkout.js"></script>
+    <script src="/assets/js/validate_rules.js" type="text/javascript" charset="utf-8" async></script>
+    <!--Script-Upgrade-Fare-add-Benefits-function-->
+    <script type="text/javascript">
+
+
+
+
+
+
+
+    $('.icon-benef.add-benef').on('click', function(e) {
+        $(this).toggleClass("selected-extra default"); 
+        e.preventDefault();
+    });
+
+
+    $('.exchange-benefits .add-benef').on('click', function() {
+
+        if($(this).hasClass('disabled')){
+
+            $(this).removeClass("selected-extra").siblings().addClass('default');
+
+        } else{
+
+           $(this).addClass("selected-extra").siblings().removeClass('selected-extra'); 
+        }
+        
+       
+        
+    });
+
+
+    $('input:checkbox[name="exchangeextra"]').change(
+function() {
+            if ($(this).is(':checked')) {
+
+                $(this).closest('.exchange-options').find('.icon-benef.add-benef').addClass('actived');
+                $(this).closest('.exchange-options').find('.icon-benef.add-benef').removeClass('disabled');
+
+            } else {
+
+                $(this).closest('.exchange-options').find('.icon-benef.add-benef').removeClass('actived, selected-extra');
+                $(this).closest('.exchange-options').find('.icon-benef.add-benef').addClass('disabled');
+
+
+            }
+        });
+
+
+    
+
+    
+
+        $('input:checkbox[name="selectseats"]').change(
+        function() {
+            if ($(this).is(':checked')) {
+
+                $(this).closest('.alert-legend').find('.icon-sel-asientos').addClass('selected-extra');
+
+            } else {
+
+                $(this).closest('.alert-legend').find('.icon-sel-asientos').removeClass('selected-extra');
+
+
+            }
+        });
+    </script>
+</body>
+
+</html>

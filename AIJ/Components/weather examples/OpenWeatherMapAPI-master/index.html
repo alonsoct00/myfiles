@@ -1,0 +1,460 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style2.css">
+		<link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+
+
+	</head>
+	<body onload="cookie()">
+		<div id="searchBar">
+			<input id="userLocation" type="text" placeholder="Enter Zip Code">
+			<h1 id="cityName"></h1>
+		</div>
+		
+		<div class="weatherRow">
+		<!--current forecast data-->
+			<div class = "weatherCard">
+				<div class="weatherCardImg">
+					<i id="weatherImg" class=""></i>
+					<div class="weatherCardInfo1">
+						<h2 id="weatherMain"></h2>
+						<h2 id="weatherDescription"></h2>
+						<h2 id="weatherClouds"></h2>
+					</div>
+				</div>
+				<div class="weatherCardInfo2">
+					<h2 id="temp"></h2>
+					<h2 id="tempMin"></h2>
+					<h2 id="tempMax"></h2>
+				</div>
+			</div>
+			
+			<!--5 day forecast->
+
+<!--
+				<div class = "weatherCard1">
+				<div class="weatherCardImg1">
+					<i id="weatherImg1" class=""></i>
+					<div class="weatherCardInfo11">
+						<h2 id="temp1"></h2>
+						<h2 id="weatherMain1"></h2>
+						<h2 id="weatherDescription1"></h2>
+					</div>
+				</div>
+				</div>
+-->
+
+			
+			<div class = "weatherCard2">
+				<div class="weatherCardImg2">
+					<i id="weatherImg2" class=""></i>
+					<div class="weatherCardInfo12">
+						<h2 id="temp2"></h2>
+						<h2 id="weatherMain2"></h2>
+						<h2 id="weatherDescription2"></h2>
+					</div>
+				</div>
+
+			</div>
+			<div class = "weatherCard3">
+				<div class="weatherCardImg3">
+					<i id="weatherImg3" class=""></i>
+					<div class="weatherCardInfo13">
+						<h2 id="temp3"></h2>						
+						<h2 id="weatherMain3"></h2>
+						<h2 id="weatherDescription3"></h2>
+					</div>
+				</div>
+
+			</div>
+			<div class = "weatherCard4">
+				<div class="weatherCardImg4">
+					<i id="weatherImg4" class=""></i>
+					<div class="weatherCardInfo14">
+						<h2 id="temp4"></h2>
+						<h2 id="weatherMain4"></h2>
+						<h2 id="weatherDescription4"></h2>
+					</div>
+				</div>
+			</div>
+			<div class = "weatherCard5">
+				<div class="weatherCardImg5">
+					<i id="weatherImg5" class=""></i>
+					<div class="weatherCardInfo15">
+						<h2 id="temp5"></h2>					
+						<h2 id="weatherMain5"></h2>
+						<h2 id="weatherDescription5"></h2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="mapWrap">
+			<div id="mapOverlay"><img src="#" id="mapImg" height="275px" width="275px"/></div>
+			<div id="map" class="map"></div>
+		</div>
+		<!-- reddit posts -->
+		<div class="postsHolder">
+					<h1>Weather News</h1>
+			<div class="postsTemplate">
+					<img class="thumbnailImg" id="thumbnailImg">
+					<a href="" id="articleLink"><h1 class="titleText" id="titleText"></h1></a>
+			</div>
+			
+			<div class="postsTemplate">
+					<img class="thumbnailImg" id="thumbnailImg2">
+					<a href="" id="articleLink2"><h1 class="titleText" id="titleText2"></h1></a>
+			</div>
+			
+			<div class="postsTemplate">
+					<img class="thumbnailImg" id="thumbnailImg3">
+					<a href="" id="articleLink3"><h1 class="titleText" id="titleText3"></h1></a>
+			</div>
+			
+			<div class="postsTemplate">
+					<img class="thumbnailImg" id="thumbnailImg4">
+					<a href="" id="articleLink4"><h1 class="titleText" id="titleText4"></h1></a>
+			</div>
+			
+			<div class="postsTemplate">
+					<img class="thumbnailImg" id="thumbnailImg5">
+					<a href="" id="articleLink5"><h1 class="titleText" id="titleText5"></h1></a>
+			</div>
+		</div>
+		<!--initialize google maps-->
+		<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 5,
+          maxzoom:5,
+          minzoom:5,
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEafBSS2f9UbuUINvDgUpWXc3u6pIbgv8&callback=initMap"
+    async defer></script>
+		<script type="text/javascript">
+		var overlay;
+		var inputField = document.getElementById('userLocation');
+		
+		//call getWeather when enter key pressed
+		inputField.addEventListener("keydown", function(e){
+			if (e.keyCode === 13) {
+				getWeather();
+			}
+		});
+		var first;
+		function cookie(){
+			if (document.cookie != undefined){
+				first = true;
+				getWeather(first);	
+			}
+		}
+		function getWeather(first){
+			var userLocation;
+			if (document.cookie != undefined && first){
+				userLocation =  document.cookie.replace(/(?:(?:^|.*;\s*)userLocation\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+				console.log(userLocation);
+				first = false;
+			}
+			else {
+				document.cookie = "userLocation=" + document.getElementById('userLocation').value;
+				userLocation = document.getElementById('userLocation').value;
+				
+
+			}
+			if (userLocation != ""){
+				var weatherImg = document.getElementById('weatherImg');
+				var weatherMain = document.getElementById('weatherMain');
+				var weatherDescription = document.getElementById('weatherDescription');
+				var weatherClouds = document.getElementById('weatherClouds');
+				var temp = document.getElementById('temp');
+				var tempMin = document.getElementById('tempMin');
+				var tempMax = document.getElementById('tempMax');
+				var cityName = document.getElementById('cityName');
+				var apiKey = '2b85e37129a6b84187585fbf46ddcb3b';
+			
+				//request and parse JSON data from OpenWeatherMap API for current weather
+				$weatherData = $.getJSON('http://api.openweathermap.org/data/2.5/weather?zip=' + userLocation + '&APPID=' + apiKey + '&units=imperial', function(json){
+					cityName.innerHTML = json.name;
+					var weatherImgCode = json.weather[0].id;
+					var weatherImgIcon = json.weather[0].icon;
+				
+					console.log(weatherImgCode);
+					//determine whether icon is specific to day or night
+				
+					if (weatherImgIcon.includes('d')){
+						weatherImg.className = 'owf owf-' + weatherImgCode + '-d' + ' owf';
+
+					}
+					else if (weatherImgIcon.includes('n')){
+						weatherImg.className = 'owf owf-' + weatherImgCode + '-n' + ' owf';
+					}
+					else{
+						weatherImg.className = 'owf owf-' + weatherImgCode + ' owf';
+						
+					}
+					weatherMain.innerHTML = json.weather[0].main;
+					
+					temp.innerHTML = 'Current: ' + json.main.temp + '&deg;F';
+					tempMin.innerHTML=  'Min: ' + json.main.temp_min + '&deg;F';
+					tempMax.innerHTML = 'Max: ' + json.main.temp_max + '&deg;F';
+					getForecast(userLocation);
+				});
+			}	
+		}
+		
+		function getForecast(userLocation){
+			var apiKey = '2b85e37129a6b84187585fbf46ddcb3b';
+			document.cookie="userLocation="+userLocation;
+			
+			
+			var weatherImg2 = document.getElementById('weatherImg2');
+			var weatherMain2 = document.getElementById('weatherMain2');
+			var weatherDescription2 = document.getElementById('weatherDescription2');
+			var temp2 = document.getElementById('temp2');
+			var tempMin2 = document.getElementById('tempMin2');
+			var tempMax2 = document.getElementById('tempMax2');
+			
+			var weatherImg3 = document.getElementById('weatherImg3');
+			var weatherMain3 = document.getElementById('weatherMain3');
+			var weatherDescription3 = document.getElementById('weatherDescription3');
+			var temp3 = document.getElementById('temp3');
+			var tempMin3 = document.getElementById('tempMin3');
+			var tempMax3 = document.getElementById('tempMax3');
+			
+			var weatherImg4 = document.getElementById('weatherImg4');
+			var weatherMain4 = document.getElementById('weatherMain4');
+			var weatherDescription4 = document.getElementById('weatherDescription4');
+			var temp4 = document.getElementById('temp4');
+			var tempMin4 = document.getElementById('tempMin4');
+			var tempMax4 = document.getElementById('tempMax4');
+			
+			var weatherImg5 = document.getElementById('weatherImg5');
+			var weatherMain5 = document.getElementById('weatherMain5');
+			var weatherDescription5 = document.getElementById('weatherDescription5');
+			var temp5 = document.getElementById('temp5');
+			var tempMin5 = document.getElementById('tempMin5');
+			var tempMax5 = document.getElementById('tempMax5');
+
+			//request and parse JSON data from OpenWeatherMap API for five day forecast
+			$forecastData = $.getJSON('http://api.openweathermap.org/data/2.5/forecast?zip=' + userLocation + '&APPID=' + apiKey + '&units=imperial', function(json1){
+				
+
+				
+				
+				
+				temp2.innerHTML =  json1.list[8].main.temp_max + '&deg;F';
+				weatherMain2.innerHTML = json1.list[8].weather[0].description;
+				weatherDescription2.innerHTML = json1.list[8].dt_txt;
+				
+				var weatherImgCode = json1.list[8].weather[0].id;
+				var weatherImgIcon = json1.list[8].weather[0].icon;
+				console.log(weatherImgCode);
+				if (weatherImgIcon.includes('d')){
+					weatherImg2.className = 'owf owf-' + weatherImgCode + '-d' + ' owf';
+
+				}
+				else if (weatherImgIcon.includes('n')){
+					weatherImg2.className = 'owf owf-' + weatherImgCode + '-n' + ' owf';
+				}
+				else{
+					weatherImg2.className = 'owf owf-' + weatherImgCode + ' owf';
+
+				}
+				
+				
+				
+				
+				
+				temp3.innerHTML = json1.list[0].main.temp_max + '&deg;F';
+				weatherMain3.innerHTML = json1.list[10].weather[0].description;
+				weatherDescription3.innerHTML = json1.list[16].dt_txt;
+				
+				var weatherImgCode = json1.list[10].weather[0].id;
+				var weatherImgIcon = json1.list[10].weather[0].icon;
+				console.log(weatherImgCode);
+				if (weatherImgIcon.includes('d')){
+					weatherImg3.className = 'owf owf-' + weatherImgCode + '-d' + ' owf';
+
+				}
+				else if (weatherImgIcon.includes('n')){
+					weatherImg3.className = 'owf owf-' + weatherImgCode + '-n' + ' owf';
+				}
+				else{
+					weatherImg3.className = 'owf owf-' + weatherImgCode + ' owf';
+
+				}
+				
+				
+				temp4.innerHTML = json1.list[15].main.temp_max+ '&deg;F';
+				weatherMain4.innerHTML = json1.list[15].weather[0].description;
+				weatherDescription4.innerHTML = json1.list[24].dt_txt;
+				
+				var weatherImgCode = json1.list[15].weather[0].id;
+				var weatherImgIcon = json1.list[15].weather[0].icon;
+				console.log(weatherImgCode);
+				if (weatherImgIcon.includes('d')){
+					weatherImg4.className = 'owf owf-' + weatherImgCode + '-d' + ' owf';
+
+				}
+				else if (weatherImgIcon.includes('n')){
+					weatherImg4.className = 'owf owf-' + weatherImgCode + '-n' + ' owf';
+				}
+				else{
+					weatherImg4.className = 'owf owf-' + weatherImgCode + ' owf';
+
+				}
+				
+				
+				temp5.innerHTML = json1.list[20].main.temp_max + '&deg;F';
+				weatherMain5.innerHTML = json1.list[20].weather[0].description;
+				weatherDescription5.innerHTML = json1.list[32].dt_txt;
+				
+				var weatherImgCode = json1.list[20].weather[0].id;
+				var weatherImgIcon = json1.list[20].weather[0].icon;
+				console.log(weatherImgCode);
+				if (weatherImgIcon.includes('d')){
+					weatherImg5.className = 'owf owf-' + weatherImgCode + '-d' + ' owf';
+
+				}
+				else if (weatherImgIcon.includes('n')){
+					weatherImg5.className = 'owf owf-' + weatherImgCode + '-n' + ' owf';
+				}
+				else{
+					weatherImg5.className = 'owf owf-' + weatherImgCode + ' owf';
+
+				}
+				
+				var lon = json1.city.coord.lon;
+				var lat = json1.city.coord.lat;
+				getMap(lon, lat);
+				
+			});
+			
+		}
+		
+		function getMap(lon,lat){
+			var zoom = map.getZoom();
+			//convert latitutde and longitude to x and y map tile coordinates
+			xTile = Math.floor((lon+180)/360*Math.pow(2,zoom));
+			yTile = Math.floor((1-Math.log(Math.tan(lat*Math.PI/180) + 1/Math.cos(lat*Math.PI/180))/Math.PI)/2 *Math.pow(2,zoom));
+			console.log(xTile,yTile);
+			var apiKey = '2b85e37129a6b84187585fbf46ddcb3b';
+			map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
+			
+			//get precipitation weather layer from OpenWeatherMaps API
+			var overlaySource = 'http://tile.openweathermap.org/map/precipitation_new/'+zoom+'/'+xTile+'/'+yTile+'.png?appid='+apiKey;
+			console.log(overlaySource);
+			//overlay weather layer image on map
+			var mapOverLay = document.getElementById('mapImg');
+			mapOverLay.src = overlaySource;
+
+			map.panTo(new google.maps.LatLng(lat,lon));
+			console.log(zoom);
+/*
+			var myMapType = new google.maps.ImageMapType({
+				getTileUrl: function() {
+					return overlaySource;
+      			},
+	  			tileSize: new google.maps.Size(256, 256),
+	  			maxZoom: 9,
+	  			minZoom: 0,
+	  			name: 'mymaptype'
+    		});
+			map.overlayMapTypes.insertAt(0, myMapType);	
+*/
+			
+			
+		}
+		
+		
+		
+		var thumbnailImg = document.getElementById('thumbnailImg');
+		var titleText = document.getElementById('titleText');
+		var articleLink = document.getElementById('articleLink');
+		
+		var thumbnailImg2 = document.getElementById('thumbnailImg2');
+		var titleText2 = document.getElementById('titleText2');
+		var articleLink2 = document.getElementById('articleLink2');
+		
+		var thumbnailImg3 = document.getElementById('thumbnailImg3');
+		var titleText3 = document.getElementById('titleText3');
+		var articleLink3 = document.getElementById('articleLink3');
+		
+		var thumbnailImg4 = document.getElementById('thumbnailImg4');
+		var titleText4 = document.getElementById('titleText4');
+		var articleLink4 = document.getElementById('articleLink4');
+		
+		var thumbnailImg5 = document.getElementById('thumbnailImg5');
+		var titleText5 = document.getElementById('titleText5');
+		var articleLink5 = document.getElementById('articleLink5');
+		//request and parse JSON data from reddit for top posts
+		$topPosts = $.getJSON('https://www.reddit.com/r/weather/top/.json?count=2', function(json){
+			
+			//try catch to prevent error if object is undefined
+			try{
+				thumbnailImg.src = json.data.children[0].data.preview.images[0].source.url;
+			}
+			catch(e){
+				thumbnailImg.src = "images/reddit.png";
+
+			}
+			titleText.innerHTML = json.data.children[0].data.title;
+			articleLink.href = 'http://reddit.com' + json.data.children[0].data.permalink;
+			
+			
+			try{
+				thumbnailImg2.src = json.data.children[1].data.preview.images[0].source.url;
+			}
+			catch(e){
+				thumbnailImg2.src = "images/reddit.png";
+
+			}			
+			titleText2.innerHTML = json.data.children[1].data.title;
+			articleLink2.href = 'http://reddit.com' + json.data.children[1].data.permalink;
+			
+			
+			try{
+				thumbnailImg3.src = json.data.children[2].data.preview.images[0].source.url;
+			}
+			catch(e){
+				thumbnailImg3.src = "images/reddit.png";
+
+			}
+			titleText3.innerHTML = json.data.children[2].data.title;
+			articleLink3.href = 'http://reddit.com' + json.data.children[2].data.permalink;
+			
+			
+			try{
+				thumbnailImg4.src = json.data.children[3].data.preview.images[0].source.url;
+			}
+			catch(e){
+				thumbnailImg4.src = "images/reddit.png";
+
+			}
+			titleText4.innerHTML = json.data.children[3].data.title;
+			articleLink4.href = 'http://reddit.com' + json.data.children[3].data.permalink;
+			
+			
+			try{
+				thumbnailImg5.src = json.data.children[4].data.preview.images[0].source.url;
+			}
+			catch(e){
+				thumbnailImg5.src = "images/reddit.png";
+
+			}
+			titleText5.innerHTML = json.data.children[4].data.title;
+			articleLink5.href = 'http://reddit.com' + json.data.children[4].data.permalink;
+			
+		});
+
+	</script>
+		
+	</body>
+</html>

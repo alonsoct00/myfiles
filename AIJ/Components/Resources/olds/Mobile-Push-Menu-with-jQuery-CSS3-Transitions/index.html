@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mobile Push Menu Demo</title>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<script src="prefixfree.min.js"></script>
+<link rel="stylesheet" href="stewart-framework-css.css">
+
+<style>
+body { background: #333; }
+
+.nav-trigger { display: none; }
+
+header.container {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #3a3a3a;
+  border-bottom: 1px solid #444;
+  box-shadow: 0 3px 7px rgba(0,0,0,.2);
+}
+
+.brand { width: 125px; }
+
+.nav {
+  position: relative;
+  margin-top: 17px;
+}
+
+.nav-list {
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.nav-item {
+  width: 20%;
+  margin-bottom: 0;
+  float: left;
+  list-style: none;
+  border-right: 5px transparent solid;
+}
+
+.nav-item a {
+  display: block;
+  color: #ccc;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile-nav { display: none; }
+
+/* first nav item */
+
+.nav-item:nth-child(1) a { border-color: #FAD089; }
+
+.nav-item:nth-child(1) .fa { color: #FAD089; }
+
+/* second nav item */
+
+.nav-item:nth-child(2) a { border-color: #FF9C5B; }
+
+.nav-item:nth-child(2) .fa { color: #FF9C5B; }
+
+/* third nav item */
+
+.nav-item:nth-child(3) a { border-color: #F5634A; }
+
+.nav-item:nth-child(3) .fa { color: #F5634A; }
+
+/* fourth nav item */
+
+.nav-item:nth-child(4) a { border-color: #ED303C; }
+
+.nav-item:nth-child(4) .fa { color: #ED303C; }
+
+/* fifth nav item */
+
+.nav-item:nth-child(5) a { border-color: #3B8183; }
+
+.nav-item:nth-child(5) .fa { color: #3B8183; }
+ @media (max-width: 600px) {
+
+body { overflow: hidden; }
+
+.brand { width: 75px; }
+
+header {
+  right: 0;
+  transition: right .5s;
+}
+
+.nav-trigger {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  background: transparent;
+  border: none;
+}
+
+.nav-trigger:focus { outline: none; }
+
+.show-nav .nav-trigger { margin-top: 10px; }
+
+.nav-trigger span {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 4px 0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all .2s;
+}
+
+.show-nav .nav-trigger span:nth-child(1) { transform: rotate(405deg); }
+
+.show-nav .nav-trigger span:nth-child(2) { opacity: 0; }
+
+.show-nav .nav-trigger span:nth-child(3) {
+  transform: rotate(-405deg);
+  bottom: 16px;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.nav-list { display: none; }
+
+.mobile-nav .nav-list { display: block; }
+
+.mobile-nav {
+  display: block;
+  background: #2a2a2a;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  top: 0;
+  width: 80%;
+  transition: left .5s;
+}
+
+.show-nav .mobile-nav { left: 20%; }
+
+.nav-item {
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+
+.nav-item a .fa {
+  position: absolute;
+  left: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-item a {
+  display: block;
+  padding: 15px 20px 15px 40px;
+  border: none;
+}
+
+.nav-list a { color: #fff !important; }
+
+.show-nav header { right: 80%; }
+}
+</style>
+</head>
+
+<body>
+<header class="container">
+  <div class="row">
+    <div class="three columns"> <img class="brand" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10851/sabbott-logo.png"> </div>
+    <div class="nine columns">
+      <nav class="nav">
+        <button type="button" class="nav-trigger js-nav-trigger"><span></span><span></span><span></span></button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#"><span class="fa fa-home"></span> Home</a></li>
+          <li class="nav-item"><a href="#"><span class="fa fa-book"></span> Portfolio</a></li>
+          <li class="nav-item"><a href="#"><span class="fa fa-cogs"></span> Settings</a></li>
+          <li class="nav-item"><a href="#"><span class="fa fa-bookmark"></span> Services</a></li>
+          <li class="nav-item"><a href="#"><span class="fa fa-envelope"></span> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end column --> 
+  </div>
+  <!-- end row --> 
+</header>
+<main>
+<h1 style="margin:30px auto; color:#fff; text-align:center">Mobile Push Menu Demo</h1>
+<div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>
+jQuery(function($){
+  
+  
+  $('body').append($('<div class="mobile-nav"></div>').html($('.nav-list').clone()));
+  
+
+  $('.js-nav-trigger').on('click',function(event){
+    event.preventDefault();
+    $('body').toggleClass('show-nav');
+  });
+       
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

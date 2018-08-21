@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Interjet</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assetsV2/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assetsV2/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assetsV2/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assetsV2/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assetsV2/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assetsV2/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assetsV2/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assetsV2/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assetsV2/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assetsV2/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assetsV2/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assetsV2/img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assetsV2/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/assetsV2/img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assetsV2/img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="/assetsV2/img/icon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/assetsV2/img/icon/favicon.ico" rel="icon" type="image/x-icon" />
+    <script type="text/javascript" src="/assetsV2/js/src/gtm.js"></script>
+    <link href="/assetsV2/css/bootstrap.css" rel="stylesheet" />
+    <link href="/assetsV2/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <main>
+        <div class="container-fluid internalLP">
+            <div class="container salesWrp">
+                <p>Ejemplos mensajes en modal box</p>
+                <br/>
+                <div class="row">
+                    <button data-toggle="modal" data-target="#modalError" class="btn btn-primary btn-lg btn-block">Alert error</button>
+                    <button data-toggle="modal" data-target="#modalWarning" class="btn btn-primary btn-lg btn-block">Alert warning</button>
+                    <button data-toggle="modal" data-target="#modalSuccess" class="btn btn-primary btn-lg btn-block">Alert éxitoso</button>
+                </div>
+            </div>
+            <!--Modals-->
+
+             <!-- Modal Alert:error-->
+            <div class="modal fade modalalert error" id="modalError" tabindex="-1" role="dialog" style="display: none;">
+                <div class="modal-dialog center" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title icon">Ups... algo salió mal</h5></div>
+                        <div class="modal-body">
+                            <p>Error</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora amet accusantium officia, totam molestias error, dolor quam voluptatem quas hic, veritatis fuga nulla quasi velit adipisci. Id quisquam, ullam aut.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="validationErrorContainerReadAlongCloseButton" type="button" class="btn btn-secondary btn-outline" data-dismiss="modal">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Alert:warning-->
+    <div class="modal fade modalalert warning" id="modalWarning" tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title icon">Ups... algo salió mal</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus numquam vero perspiciatis perferendis eius a pariatur dolore inventore. Veritatis a quia harum cupiditate distinctio. Eius aperiam libero veniam deleniti necessitatibus.</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-outline btn-cancel" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn-green-interjet">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+               <!-- Modal Alert:sucess-->
+    <div class="modal fade modalalert success" id="modalSuccess"tabindex="-1" role="dialog" style="display: none;">
+        <div class="modal-dialog center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title icon">Mensaje exitoso</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus numquam vero perspiciatis perferendis eius a pariatur dolore inventore. Veritatis a quia harum cupiditate distinctio. Eius aperiam libero veniam deleniti necessitatibus.</p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-green-interjet">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+    </main>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assetsV2/js/plugins.js"></script>
+    <script src="/assetsV2/js/core.js"></script>
+</body>
+
+</html>

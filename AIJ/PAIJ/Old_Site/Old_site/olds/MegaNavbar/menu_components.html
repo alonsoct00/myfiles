@@ -1,0 +1,484 @@
+<!DOCTYPE&nbsp;html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <!--<![endif]-->
+
+
+<!-- BEGIN HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MegaNavbar: advanced Bootstrap navbar plugin</title>
+
+    <meta content="" name="Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers." />
+    <meta content="" name="MegaNavbar.com" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/MegaNavbar.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/skins/navbar-default.css" title="inverse">
+    <link rel="stylesheet" type="text/css" href="assets/css/animation/animation.css" title="inverse">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+
+</head>
+
+
+<body>
+    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <div  id="toc" class="jumbotron" style="color: #fff; background-color: #026881; padding: 0;">
+    	<div class="container">
+    		<h2 class="page-header" style="margin: 25px 0 25px;">
+    			<i class="fa fa-credit-card"></i> MegaNavbar. (v 2.2.0) <small style="color: #ddd;">Advanced Navbar for Bootstrap 3.0+ from Twitter.</small>
+    		</h2>
+    		<p class="text-justify"><small>Lightweight and pure CSS MegaNavbar component, that uses the standard navbar markup, and the fluid grid system classes from Bootstrap 3. Work for fixed and responsive layout, and has the facility to include any Bootstrap component except dropdown. MegaNavbar is compatible with mobile devices and modern web browsers.</small></p>
+    	</div>
+    </div>
+
+    <div class="container">
+        <nav class="navbar navbar-default no-border-radius xs-height75" id="main_navbar" role="navigation">
+        	<div class="container-fluid">
+        		<div class="navbar-header">
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_id">
+        			<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        			</button>
+        			<a class="navbar-brand" href="#">MegaNavbar</a>
+        		</div>
+        		<div class="collapse navbar-collapse" id="navbar_id">
+        			<ul class="nav navbar-nav navbar-left">
+        				<!--Typography-->
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-h-square"></i>&nbsp;<span class="hidden-sm">Typography</span><span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper" role="menu">
+        						<div class="dropdown-menu col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        							<ul class="nav nav-tabs" role="tablist">
+        								<li class="active"><a href="#headers" role="tab" data-toggle="tab">Headers</a></li>
+        								<li class=""><a href="#inline_text" role="tab" data-toggle="tab">Text</a></li>
+        								<li class=""><a href="#blockquotes" role="tab" data-toggle="tab">Blockquotes</a></li>
+        								<li class=""><a href="#code" role="tab" data-toggle="tab">Code</a></li>
+        								<li class=""><a href="#table" role="tab" data-toggle="tab">Tables</a></li>
+        								<li class=""><a href="#panels" role="tab" data-toggle="tab">Panels</a></li>
+        								<li class=""><a href="#other" role="tab" data-toggle="tab">Other</a></li>
+        							</ul>
+        							<div class="tab-content">
+        								<div class="tab-pane fade active in" id="headers">
+        									<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+        									<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+        									<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+        									<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+        									<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+        									<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+        								</div>
+        								<div class="tab-pane fade" id="inline_text">
+        									<br>
+        									<div class="col-sm-12 col-xs-12">
+        										<p class="lead">Inline text.</p>
+        										<hr>
+        									</div>
+        									<div class="col-sm-8 col-xs-8">
+        										<p>You can use the <code>mark</code> tag to <mark>highlight</mark> text.</p>
+        										<p>You can use the <code>del</code> tag to <del>deleted</del> text.</p>
+        										<p>You can use the <code>ins</code> tag to <ins>additions</ins> text.</p>
+        										<p>You can use the <code>u</code> tag to <u>underlined</u> text.</p>
+        										<p>You can use the <code>small</code> tag to <small>small</small> text.</p>
+        										<p>You can use the <code>strong</code> tag to <strong>strong</strong> text.</p>
+        										<p>You can use the <code>em</code> tag to <em>italicized</em> text.</p>
+        									</div>
+        									<div class="col-sm-4 col-xs-4">
+        										<p class="text-muted">text-muted</p>
+        										<p class="text-primary">text-primary</p>
+        										<p class="text-success">text-success</p>
+        										<p class="text-info">text-info</p>
+        										<p class="text-warning">text-warning</p>
+        										<p class="text-danger">text-danger</p>
+        									</div>
+        									<div class="col-sm-12 col-xs-12">
+        										<p class="lead">Aligned text.</p>
+        										<hr>
+        									</div>
+        									<div class="col-sm-8 col-xs-8">
+        										<p class="text-left">Left aligned text.</p>
+        										<p class="text-center">Center aligned text.</p>
+        										<p class="text-right">Right aligned text.</p>
+        										<p class="text-justify">Justified text.</p>
+        										<p class="text-nowrap">No wrap text.</p>
+        									</div>
+        									<div class="col-sm-4 col-xs-4">
+        										<p class="bg-primary">bg-primary</p>
+        										<p class="bg-success">bg-success</p>
+        										<p class="bg-info">bg-info</p>
+        										<p class="bg-warning">bg-warning</p>
+        										<p class="bg-danger">bg-danger</p>
+        									</div>
+        								</div>
+        								<div class="tab-pane fade" id="blockquotes">
+        									<h4>Blockquote</h4>
+        									<blockquote>
+        										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        										<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        									</blockquote>
+        									<blockquote class="blockquote-reverse">
+        										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        										<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        									</blockquote>
+        								</div>
+        								<div class="tab-pane fade" id="code">
+        									<h4>Code</h4>
+        									<p>Wrap inline snippets of code with <code>&lt;code&gt;</code>. <br>For example, <code>&lt;nav&gt; ... &lt;/nav&gt;</code> should be wrapped as inline.</p>
+        									<p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard. <br><kbd>ctrl+F5, indicate input</kbd></p>
+        									<p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.
+        									<pre style="margin-top: 10px;">&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+        									</p>
+        									<p>For indicating variables use the <code>&lt;var&gt;</code> tag.<br> <var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+        									<p>For indicating blocks sample output from a program use the <code>&lt;samp&gt;</code> tag. <br><samp>This text is sample output</samp></p>
+        								</div>
+        								<div class="tab-pane fade" id="table">
+        									<h4>Table</h4>
+        									<table class="table table-hover table-bordered table-striped table-condensed">
+        										<thead>
+        											<tr>
+        												<th>#</th>
+        												<th>First Name</th>
+        												<th>Last Name</th>
+        												<th>Username</th>
+        											</tr>
+        										</thead>
+        										<tbody>
+        											<tr>
+        												<td>1</td>
+        												<td>Mark</td>
+        												<td>Otto</td>
+        												<td>@mdo</td>
+        											</tr>
+        											<tr>
+        												<td>2</td>
+        												<td>Jacob</td>
+        												<td>Thornton</td>
+        												<td>@fat</td>
+        											</tr>
+        											<tr>
+        												<td>3</td>
+        												<td colspan="2">Larry the Bird</td>
+        												<td>@twitter</td>
+        											</tr>
+        										</tbody>
+        									</table>
+        								</div>
+        								<div class="tab-pane fade" id="panels">
+        									<h4>Panel with list groups</h4>
+        									<div class="panel panel-default">
+        										<!-- Default panel contents -->
+        										<div class="panel-heading">Panel heading</div>
+        										<div class="panel-body">
+        											<p>Some default panel content here. </p>
+        										</div>
+        										<!-- List group -->
+        										<ul class="list-group">
+        											<li class="list-group-item">Cras justo odio</li>
+        											<li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+        											<li class="list-group-item">Morbi leo risus</li>
+        											<li class="list-group-item">Porta ac consectetur ac</li>
+        											<li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+        										</ul>
+        									</div>
+        								</div>
+        								<div class="tab-pane fade" id="other">
+        									<h4>Alerts</h4>
+        									<div class="row">
+        										<div class="col-sm-3 col-xs-3">
+        											<div class="alert alert-success" role="alert">success</div>
+        										</div>
+        										<div class="col-sm-3 col-xs-3">
+        											<div class="alert alert-info" role="alert">info</div>
+        										</div>
+        										<div class="col-sm-3 col-xs-3">
+        											<div class="alert alert-warning" role="alert">warning</div>
+        										</div>
+        										<div class="col-sm-3 col-xs-3">
+        											<div class="alert alert-danger" role="alert">danger</div>
+        										</div>
+        									</div>
+        									<h4>Progress</h4>
+        									<div class="progress">
+        										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+        											<span class="sr-only">40% Complete (success)</span>40%
+        										</div>
+        									</div>
+        									<div class="progress">
+        										<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+        											<span class="sr-only">20% Complete</span>
+        										</div>
+        									</div>
+        									<div class="progress">
+        										<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+        											<span class="sr-only">60% Complete (warning)</span>
+        										</div>
+        									</div>
+        									<div class="progress">
+        										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+        											<span class="sr-only">80% Complete</span>
+        										</div>
+        									</div>
+        									<div class="progress">
+        										<div class="progress-bar progress-bar-success" style="width: 35%">
+        											<span class="sr-only">35% Complete (success)</span>35% Complete
+        										</div>
+        										<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+        											<span class="sr-only">20% Complete (warning)</span>
+        										</div>
+        										<div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+        											<span class="sr-only">10% Complete (danger)</span>
+        										</div>
+        									</div>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-columns"></i>&nbsp;<span class="hidden-sm">Tabs</span><span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper" role="menu">
+        						<div class="dropdown-menu col-xs-12 col-sm-7 col-md-7 col-lg-6">
+        							<ul id="myTab" class="nav nav-tabs" role="tablist">
+        								<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+        								<li class=""><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+        							</ul>
+        							<div id="myTabContent" class="tab-content">
+        								<div class="tab-pane fade active in" id="home">
+        									<p style="padding: 10px 10px 0 10px;" class="text-justify">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+        								</div>
+        								<div class="tab-pane fade" id="profile">
+        									<p style="padding: 10px 10px 0 10px;" class="text-justify">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-align-justify"></i>&nbsp;<span class="hidden-sm hidden-md">Accordion</span><span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper" role="menu">
+        						<ul class="dropdown-menu col-xs-12 col-sm-7 col-md-7 col-lg-6">
+        							<li>
+        								<div class="panel-group" id="accordion">
+        									<div class="panel panel-default">
+        										<div class="panel-heading">
+        											<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible #1</a></h4>
+        										</div>
+        										<div id="collapseOne" class="panel-collapse collapse in">
+        											<div class="panel-body">
+        												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+        											</div>
+        										</div>
+        									</div>
+        									<div class="panel panel-default">
+        										<div class="panel-heading">
+        											<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Collapsible #2</a></h4>
+        										</div>
+        										<div id="collapseTwo" class="panel-collapse collapse">
+        											<div class="panel-body">
+        												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+        											</div>
+        										</div>
+        									</div>
+        									<div class="panel panel-default">
+        										<div class="panel-heading">
+        											<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Collapsible #3</a></h4>
+        										</div>
+        										<div id="collapseThree" class="panel-collapse collapse">
+        											<div class="panel-body">
+        												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+        											</div>
+        										</div>
+        									</div>
+        								</div>
+        							</li>
+        						</ul>
+        					</div>
+        				</li>
+        				<!--MODAL-->
+        				<li class="dropdown-short">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-credit-card"></i>&nbsp;<span class="hidden-sm">Modals</span><span class="caret"></span></a>
+        					<ul class="dropdown-menu" role="menu">
+        						<li>
+        							<!-- Button trigger modal -->
+        							<button style="margin: 15px;" class="btn btn-primary" data-toggle="modal" data-target="#myModalMunu">Launch demo modal</button>
+        						</li>
+        					</ul>
+        				</li>
+        			</ul>
+        			<ul class="nav navbar-nav navbar-right">
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-tasks"></i>&nbsp;<span class="hidden-sm">Form</span><span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper" role="menu">
+        						<ul class="dropdown-menu col-xs-12 col-sm-7 col-md-7 col-lg-6">
+        							<li>
+        								<form role="form">
+        									<div class="form-group">
+        										<label for="exampleInputEmail1">Email address</label>
+        										<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        									</div>
+        									<div class="form-group">
+        										<label for="exampleInputPassword1">Password</label>
+        										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        									</div>
+        									<div class="form-group">
+        										<label for="exampleInputFile">File input</label>
+        										<input type="file" id="exampleInputFile">
+        										<p class="help-block">Example block-level help text here.</p>
+        									</div>
+        									<div class="checkbox">
+        										<label>
+        										<input type="checkbox"> Check me out
+        										</label>
+        									</div>
+        									<button type="submit" class="btn btn-default">Submit</button>
+        								</form>
+        							</li>
+        						</ul>
+        					</div>
+        				</li>
+        				<li class="dropdown-grid">
+        					<a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-vimeo-square"></i> <span class="hidden-sm">Vimeo</span><span class="caret"></span></a>
+        					<div class="dropdown-grid-wrapper">
+        						<div class="dropdown-menu col-xs-12 col-sm-6 col-md-6 col-lg-6"  role="menu">
+        							<div class="embed-responsive embed-responsive-16by9">
+        								<iframe class="embed-responsive-item" src='http://player.vimeo.com/video/105329112' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        							</div>
+        						</div>
+        					</div>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        </nav>
+
+    </div>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-3">
+                <div class="list-group">
+                    <span class="list-group-item" style="background-color: #026881; color: #fff;">DEMOS</span>
+                    <a class="list-group-item" href="menu-basic.html" role="button">Demo basic</a>
+                    <a class="list-group-item  active" href="menu_components.html" role="button">Demo components</a>
+                    <a class="list-group-item" href="menu-animation.html" role="button">Demo animation</a>
+                    <a class="list-group-item" href="menu-forms.html" role="button">Demo forms</a>
+                    <a class="list-group-item" href="menu-grid.html" role="button">Demo grid</a>
+                    <a class="list-group-item" href="menu-images.html" role="button">Demo images</a>
+                    <a class="list-group-item" href="menu-maps.html" role="button">Demo maps</a>
+                    <a class="list-group-item" href="menu-search.html" role="button">Demo search</a>
+                    <a class="list-group-item" href="menu-shop.html" role="button">Demo shop</a>
+                    <a class="list-group-item" href="menu-submenus.html" role="button">Demo submenus</a>
+                    <a class="list-group-item" href="menu-tabs.html" role="button">Demo complex tabs (horizontal)</a>
+                    <a class="list-group-item" href="menu-tabs-v.html" role="button">Demo complex tabs (vertical)</a>
+                    <a class="list-group-item" href="menu-video.html" role="button">Demo video</a>
+                    <a class="list-group-item" href="menu_height.html" role="button">Demo change menu height</a>
+                    <a class="list-group-item" href="menu_height_onfix.html" role="button">Demo change menu height on fix</a>
+                    <a class="list-group-item" href="menu_image_logo.html" role="button">Demo image brand</a>
+                    <a class="list-group-item" href="menu_image_logo_centred.html" role="button">Demo image brand (centred)</a>
+                    <a class="list-group-item" href="menu_opacity_onfix.html" role="button">Demo add opacity on fix</a>
+                </div>
+            </div>
+
+    		<div class="col-sm-9">
+                <h2 class="page-header">What is Lorem Ipsum?</h2>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2 class="page-header">Where does it come from?</h2>
+                <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h2 class="page-header">Why do we use it?</h2>
+                <p class="text-justify">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                <h2 class="page-header">Where can I get some?</h2>
+                <p class="text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                <div class="hidden-xs"><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+    </div>
+
+    <style>.nav-tabs>li:not(.active)>a {background-color: transparent!important;} </style>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalMunu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    			</div>
+    			<div class="modal-body">
+    				Modal content here...
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary">Save changes</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <script>
+        //Start navbar toggle fix top bottom
+        $(document).on('click', '.toggle_fixing', function(e) {
+            e.preventDefault();
+            if ($('#main_navbar').hasClass('navbar-fixed-top')) {
+                $('#main_navbar').toggleClass('navbar-fixed-bottom navbar-fixed-top');
+                $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+            } else {
+                $('#main_navbar').toggleClass('navbar-fixed-bottom');
+                $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+                if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+                else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+                FixMegaNavbar(navHeight);
+            }
+            if ($('#main_navbar').hasClass('navbar-fixed-top')) {$('body').css({'margin-top': $('#main_navbar').height()+'px', 'margin-bottom': ''});}
+            else if ($('#main_navbar').hasClass('navbar-fixed-bottom')) {$('body').css({'margin-bottom': $('#main_navbar').height()+'px', 'margin-top': ''});}
+        })
+        //End navbar toggle fix top bottom
+
+    	//Start Fix MegaNavbar on scroll page
+    	var navHeight = $('#main_navbar').offset().top;
+    	FixMegaNavbar(navHeight);
+    	$(window).bind('scroll', function() {FixMegaNavbar(navHeight);});
+
+    	function FixMegaNavbar(navHeight) {
+    	    if (!$('#main_navbar').hasClass('navbar-fixed-bottom')) {
+    	        if ($(window).scrollTop() > navHeight) {
+    	            $('#main_navbar').addClass('navbar-fixed-top')
+    	            $('body').css({'margin-top': $('#main_navbar').height()+'px'});
+    	            if ($('#main_navbar').parent('div').hasClass('container')) $('#main_navbar').children('div').addClass('container').removeClass('container-fluid');
+    	            else if ($('#main_navbar').parent('div').hasClass('container-fluid')) $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	        }
+    	        else {
+    	            $('#main_navbar').removeClass('navbar-fixed-top');
+    	            $('#main_navbar').children('div').addClass('container-fluid').removeClass('container');
+    	            $('body').css({'margin-top': ''});
+    	        }
+    	    }
+    	}
+    	//End Fix MegaNavbar on scroll page
+
+    	//Next code used to prevent unexpected menu close when using some components (like accordion, tabs, forms, etc), please add the next JavaScript to your page
+    	$( window ).load(function() {
+    	    $(document).on('click', '.navbar .dropdown-menu', function(e) {e.stopPropagation();});
+    	});
+    </script>
+</body>
+</html>

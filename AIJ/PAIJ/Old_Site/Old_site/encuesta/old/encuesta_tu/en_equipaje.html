@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="canonical" href="https://www.interjet.com.mx/">
+    <meta name="description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <meta name="keywords" content="La mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <title>Encuesta Interjet</title>
+    <!-- Bootstrap Default Assets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-material-design.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ripples.min.css" rel="stylesheet" type="text/css">
+    <!--Custom CSS Assets-->
+    <link href="assets/css/survey.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--Header Interjet-->
+    <header id="surveyHeader">
+        <div class="toplogo">
+            <h1>Equipaje</h1></div>
+    </header>
+    <!--END Header Interjet-->
+    <!--Main Content Begins-->
+    <div class="container-fluid" id="mainSurveyContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="SurveyWrapper">
+
+                <div class="surveySection surveyswitch">
+                        <p class="CheckSwitch material-switch">
+                            <span>¿Había algún agente de Interjet en la banda de reclamo de equipaje?</span>
+                            <input id="personal_banda" name="personal_banda" type="checkbox" />
+                            <label for="personal_banda"></label>
+                        </p>
+                    </div>
+
+
+                   
+                     <div class="surveySection">
+                        <div class="OptionGroup collectTime text-center" id="collectTimebox">
+                            <p class="text-left">¿Cuánto tiempo tardo en llegar su equipaje?</p>
+                            <input type="hidden" name="OpTime" id="OptTime">
+                            <div class="OptTime" data-time="5_min">
+                                <span>5 <br/>mins</span>
+                            </div>
+                            <div class="OptTime" data-time="10_min">
+                                <span>10 <br/>mins</span>
+                            </div>
+                            <div class="OptTime" data-time="15_min">
+                                <span>15 <br/>mins</span>
+                            </div>
+                            <div class="OptTime" data-time="no_llego">
+                                <span>No llegó</span>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="surveySection surveyswitch">
+                        <p class="CheckSwitch material-switch">
+                            <span>¿Tu equipaje llegó en buen estado?</span>
+                            <input id="estado_equipaje" name="equipaje_estado" type="checkbox" />
+                            <label for="estado_equipaje"></label>
+                        </p>
+                    </div>
+                    
+                    <div class="surveySection textArea">
+                        <label>Escribe tus comentarios:</label>
+                        <textarea name="comments" id="Comments"></textarea>
+                    </div>
+                    <div class="row" id="ControlsContainer">
+                        <button type="button" class="btn App_Btn darkblue_Btn" id="btnFinish" disabled="disabled">Finalizar</button>
+                        <button type="button" class="btn App_Btn transparent_Btn" id="btnBack">Regresar</button>
+                    </div>
+                </div>
+            </div>
+            <!--modal thanks-->
+            <div id="thanksModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">Gracias</h1>
+                        </div>
+                        <div class="modal-body">
+                        <h2>Gracias por ayudarnos a mejorar</h2>
+                            <p>¿Te gustaría calificar algún otro proceso?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" onclick="window.location.href='home.html';">Si</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </div>
+    </div>
+    <!--Main Content ENDS-->
+    <!--FOOTER Begins-->
+    <footer class="navbar-fixed-bottom"></footer>
+    <!--Bootstrap default scripts-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" type="text/javascript"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/material.min.js" type="text/javascript"></script>
+    <script src="assets/js/ripples.min.js" type="text/javascript"></script>
+    <!--Plugins Scripts-->
+    <script src="assets/js/modernizr.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--Custom Scripts-->
+    <script src="assets/js/survey.js" type="text/javascript"></script>
+</body>
+
+</html>

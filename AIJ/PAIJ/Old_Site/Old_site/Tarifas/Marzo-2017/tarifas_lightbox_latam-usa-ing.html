@@ -1,0 +1,804 @@
+<html lang="en" ng-app="interjetApp" class="ng-scope">
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="google-site-verification" content="6xDweRR36a0EdQnAMtTWwKR3nFGgTbOeUdPApXaZT7A">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE; chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Conoce nuestras tarifas - Interjet</title>
+    <meta name="Description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación." />
+    <meta name="Keywords" content="vuelos, vuelo, vuela, viajar, viaja, aerolinea, boletos, viajes baratos, boletos baratos, paquetes de viaje, promociones, grupos, cambio de nombre, precios, ofertas, itinerario, avion, destinos, destinos nacionales, destinos internacionales, informacion de vuelos, lineas aereas, mejor aerolinea, Acapulco, Aguascalientes, Campeche, Cancún, Ciudad Juárez,Ciudad del Carmen, Cozumel, Culiacán, Chetumal, Chihuahua, Guadalajara, Huatulco, Ixtapa Zihuatanejo, La Paz, León (Bajío), Mérida, México DF, Monterrey, Oaxaca, Puerto Escondido, Puerto Vallarta, Tijuana, Toluca, Tuxtla Gutiérrez, Veracruz, Bogotá, Guatemala, La Habana, Las Vegas, Houston, Miami, Nueva York, San Antonio, San José C.R" />
+    <meta name="msvalidate.01" content="A2F534A60EE670B23EA77619780857E2" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+    <link rel="icon" href="/assets/images/Base/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/Base/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+
+    <!--recursos-modal-box-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/tarifas-interjet.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <DOMAIN value="MX"></DOMAIN>
+            <div class="container-fluid">
+                <div class="font-size-11" id="interjet-header-menu">
+                    <div class="navbar-header"></div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown separator" id="DropDownCulture"><a href="index.html#" data-toggle="dropdown">Español - México<span class="caret"></span></a>
+                                <ul class="dropdown-menu  font-size-11 always-above" role="menu">
+                                    <li><a href="javascript:__doPostBack('CultureDrop','en-US')">Inglés - USA</a></li>
+                                    <li><a href="javascript:__doPostBack('CultureDrop','es-GT')">Español - Guatemala</a></li>
+                                    <li><a href="javascript:__doPostBack('CultureDrop','es-CO')">Español - Colombia</a></li>
+                                    <li><a href="javascript:__doPostBack('CultureDrop','es-CR')">Español - Costa Rica</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"><a class="ap" href="centros-de-contacto.aspx.html">Contacto</a></li>
+                            <li class="separator"><a class="ap" href="preguntas-frecuentes.aspx.html">FAQs</a></li>
+                            <li class="separator"><a class="ap" onclick="javascript:abrirchat('http://interjetchat.atento.com.mx:1001/wfClientEN.aspx')" href="javascript:void(0)">Ayuda</a></li>
+                            <li class="separator"><a href="https://factura.interjet.com/" target="_BLANCK">
+                                    facturación
+                                </a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><span><a href="register.aspx.html" class="text-weight800">¿Primera vez? ¡Regístrate!</a></span></li>
+                            <li><b><a data-toggle="modal" style="line-height:15px; padding-top:5px; padding-bottom:5px" data-target="#LoginModal" class="btn btn-primary navbar-btn font-size-11 pull-right text-weight800">Ingresa</a></b></li>
+                        </ul>
+                        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="text-right marg-right-10">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><i class="fa fa-times"></i></span><span class="sr-only">Cerrar</span></button>
+                                </div>
+                                <div id="InputsSectionLogin">
+                                    <div class="bg-white padd-all-15">
+                                        <h3 class="text-center">Ingresa con tu cuenta</h3>
+                                        <div class="marg-top-20 text-dark-gray text-jutify"><span>Empieza a recibir los beneficios de ser Club Interjet</span></div>
+                                        <div class="marg-top-20"><span class="text-dark-gray">¿Aún no eres miembro?</span><span><a href="register.aspx.html" class="text-blue"> ¡Regístrate ahora! </a></span></div>
+                                        <div id="PaymentLoginValidationContainer" class="hidden padd-bottom-15 marg-top-20"><span class="PaymentValidationInfo text-blue font-size-16"></span></div>
+                                        <div class="row marg-top-20" id="loginContainer">
+                                            <div class="col-md-12">
+                                                <input type="text" id="TextBoxUserID" autocomplete="off" class="form-control" placeholder="correo electrónico">
+                                            </div>
+                                            <div class="col-md-12 marg-top-10">
+                                                <input type="password" id="PasswordFieldPassword" autocomplete="off" class="form-control marg-top-10" placeholder="contraseña">
+                                                <div id="ReEnterPassword" class="hidden marg-top-10">
+                                                    <label class="font-size-14 text-dark-blue">Define tu nueva contraseña:</label>
+                                                    <input type="password" id="PasswordFieldNewPassword" autocomplete="off" class="form-control ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 marg-top-10">
+                                                <input type="button" value="Ingresa" id="LoginButton" class="btn btn-primary marg-top-10 with-arrow pull-right" onclick="SKYSALES.memberLoginHandler()">
+                                                <div id="LoginError" class="hidden marg-top-10" style="color:red;font-weight: bold;"></div>
+                                            </div>
+                                            <div id="NodiscountButtonContainer" class="col-md-12 hidden marg-top-10">
+                                                <input type="button" value="Continua sin descuento" id="NodiscountButton" class="btn btn-primary marg-top-10 with-arrow" onclick="__doPostBack('NODiscount','')">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-light-gray padd-all-15">
+                                        <p class="text-center"><a href="index.html#" id="TriggerShowForgotPassword" class="font-size-18">¿Olvidaste tu contraseña?</a></p>
+                                        <div id="ForgotPasswordInput">
+                                            <p class="text-dark-gray text-justify">Proporciona tu correo electrónico asociado con tu cuenta </p>
+                                            <div class="row" id="loginContainer">
+                                                <div class="col-md-12">
+                                                    <input type="text" id="TextBoxForgotPassword" class="form-control" autocomplete="off" placeholder="correo electrónico">
+                                                </div>
+                                            </div>
+                                            <div class="row marg-top-20">
+                                                <div class="col-md-12">
+                                                    <div class="clearfix">
+                                                        <input type="button" value="Continuar" id="LoginButton" class="btn btn-primary with-arrow pull-right" onclick="SKYSALES.forgotPasswordHandler()">
+                                                    </div>
+                                                    <div id="ForgotPasswordError" class="hidden marg-top-10 text-dark-blue font-size-12" style="color:red;font-weight: bold;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="SessionExpiredMessage" class="bg-white padd-all-15 text-center hidden">
+                                    <p class="font-size-14 text-dark-blue">Ha estado inactivo durante algunos minutos. Su sesión ha expirado.</p><a href="javascript:location.reload()" class="btn btn-primary">Iniciar nuevamente</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/json/es-mx_nav_wwwa.js"></script>
+        <div class="navbar-wrapper box-shadow-nav" id="main-menu" ng-controller="menuController" ng-mouseleave="clearBarr()">
+            <div class="container-fixd">
+                <div class="navbar navbar-static-top mainMenu" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-main-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                            <a class="navbar-brand custom-brand" href="index.html">
+                                <div class="interjet-logo"></div>
+                            </a>
+                        </div>
+                        <div id="bs-main-navbar-collapse-1" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li class="dropdown" ng-mouseover="setBarr('d')">
+                                    <a id="d" href="vuela-interjet.aspx.html" class="dropdown-toggle" ng-mouseleave="clearFirstItem()" ng-mouseover="setCurrent('d')">
+                                        <br>Vuela
+                                        <br><span class="arrow-down"></span></a>
+                                </li>
+                                <li class="dropdown" ng-mouseover="setBarr('a')">
+                                    <a id="a" href="experiencia-interjet.aspx.html" class="dropdown-toggle" ng-mouseleave="clearFirstItem()" ng-mouseover="setCurrent('a');">
+                                        <br>Experiencia Interjet
+                                        <br><span class="arrow-down"></span></a>
+                                </li>
+                                <li class="dropdown" ng-mouseover="setBarr('b')">
+                                    <a id="b" href="mapa-destinos-interjet.aspx.html" class="dropdown-toggle" ng-mouseleave="clearFirstItem()" ng-mouseover="setCurrent('b');">
+                                        <br>Destinos
+                                        <br><span class="arrow-down"></span></a>
+                                </li>
+                                <li class="dropdown" ng-mouseover="setBarr('c')">
+                                    <a id="c" href="promociones.aspx.html" class="dropdown-toggle" ng-mouseleave="clearFirstItem()" ng-mouseover="setCurrent('c')">
+                                        <br>Promociones
+                                        <br><span class="arrow-down"></span></a>
+                                </li>
+                                <li class="dropdown" ng-mouseover="setBarr('e')">
+                                    <a id="e" href="conoce-club-interjet.aspx.html" class="dropdown-toggle" ng-mouseleave="clearFirstItem()" ng-mouseover="setCurrent('e')">
+                                        <div class="clubinterjet-logo"></div>
+                                        <br><span class="arrow-down-cint"></span></a>
+                                </li>
+                                <li class="dropdown" ng-mouseover="setBarr('f')"><a id="f" href="viajes-corporativos.aspx.html" class="dropdown-toggle" ng-mouseleave="clearFirstItem()" ng-mouseover="setCurrent('f')">Agencias y<br> Corporativos<br><span class="arrow-down"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-menu-custom box-shadow">
+                <div id="col-menu-1" class="nav-col-custom-1">
+                    <ul class="nav nav-stacked">
+                        <li ng-repeat="item in current" ng-mouseover="setMenuItem(item)">
+                            <a href="404.aspx.html" target="{{ item.target }}">
+                                <p>{{ item.name }}</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="col-menu-2" class="nav-col-custom-2 common-col">
+                    <ul class="nav nav-stacked">
+                        <li ng-repeat="item in currentMenuItem.submenuItems"><a href="404.aspx.html">{{ item.name }}</a></li>
+                    </ul>
+                </div>
+                <div id="col-menu-3" class="nav-col-custom-3 common-col">
+                    <div class="img-wrap"><img ng-src="{{ currentMenuItem.image }}"></div>
+                    <div class="text-dark-blue col-md-12">{{ currentMenuItem.description }}</div>
+                    <div id="ContLoginMember" class="padd-all-5" style="display:none">
+                        <script>
+                        $("#butonBenefits").click(function() {
+                            $('#TermCondBenef').modal("show");
+                        });
+                        </script><a id="butonCorp" class="btn btn-primary with-arrow pull-right navbar-btn" data-toggle="modal" data-target="#LoginModal">Iniciar sesión</a></div>
+                    <div id="ContLoginAgent" class="padd-all-5" style="display:none"><a id="butonCorp" class="btn btn-primary with-arrow pull-right navbar-btn " data-toggle="modal" data-target="#LoginModal">Iniciar sesión</a></div>
+                    <div id="ContClubInterjet" class="padd-all-5" style="display:none"><a id="butonCorp" class="btn btn-primary with-arrow pull-left navbar-btn" href="register.aspx.html">Regístrate a club</a><a id="butonClubCorp" class="btn btn-primary with-arrow pull-left navbar-btn" data-toggle="modal" data-target="#LoginModal">Iniciar sesión</a></div>
+                </div>
+                <div id="InternationalList" class="nav-col-custom-4 unique-col" style="display:none">
+                    <div class="marg-top-10">
+                        <div class="col-sm-6 col-md-12">
+                            <div><a class="text-dark-blue" href="vuelos-Bogota.aspx.html">Bogotá<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Dallas.aspx.html">Dallas Ft. Worth<b class="text-blue"> (nuevo)</b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Guatemala.aspx.html">Guatemala<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Houston.aspx.html">Houston<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-La-Habana.aspx.html">La Habana<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Las-Vegas.aspx.html">Las Vegas<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-lima-peru.aspx.html">Lima Perú<b class="text-blue"> (nuevo)</b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Los-angeles.aspx.html">Los Angeles<b class="text-blue"> (nuevo)</b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Miami.aspx.html">Miami<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Nueva-York.aspx.html">Nueva York<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-Orlando.aspx.html">Orlando<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-San-Antonio.aspx.html">San Antonio<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-San-Jose-Costa-Rica.aspx.html">San José C.R.<b class="text-blue"></b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-santa-clara.aspx.html">Santa Clara<b class="text-blue"> (nuevo)</b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-cayo-santa-maria.aspx.html">Cayo Santa María<b class="text-blue"> (Vía Santa Clara)</b></a></div>
+                            <div><a class="text-dark-blue" href="vuelos-varadero-cuba.aspx.html">Varadero<b class="text-blue"></b></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="NationalList" class="nav-col-custom-4 unique-col" style="display:none">
+                    <div class="marg-top-10">
+                        <div class="col-sm-4">
+                            <div><a class="text-dark-blue" href="vuelos-acapulco.aspx.html">Acapulco</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-aguascalientes.aspx.html">Aguascalientes</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-campeche.aspx.html">Campeche</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-cancun.aspx.html">Cancún</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-ciudad-obregon.aspx.html">Ciudad Obregón</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-ciudad-juarez.aspx.html">Ciudad Juárez</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-ciudad-del-carmen.aspx.html">Ciudad del Carmen</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-cozumel.aspx.html">Cozumel</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-culiacan.aspx.html">Culiacán</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-chetumal.aspx.html">Chetumal</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-chihuahua.aspx.html">Chihuahua</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-guadalajara.aspx.html">Guadalajara</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-hermosillo.aspx.html">Hermosillo</a></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div><a class="text-dark-blue" href="vuelos-huatulco.aspx.html">Huatulco</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-ixtapa-zihuatanejo.aspx.html">Ixtapa Zihuatanejo</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-la-paz.aspx.html">La Paz</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-leon-bajio.aspx.html">León (Bajío)</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-los-cabos.aspx.html">Los Cabos</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-mazatlan.aspx.html">Mazatlán</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-merida.aspx.html">Mérida</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-mexico-df-ciudad.aspx.html">México DF</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-minatitlan.aspx.html">Minatitlán</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-monterrey.aspx.html">Monterrey</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-oaxaca.aspx.html">Oaxaca</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-palenque.aspx.html">Palenque</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-puerto-escondido.aspx.html">Puerto Escondido</a></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div><a class="text-dark-blue" href="vuelos-puerto-vallarta.aspx.html">Puerto Vallarta</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-reynosa.aspx.html">Reynosa</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-riviera-maya.aspx.html">Riviera Maya</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-san-luis-potosi.aspx.html">San Luis Potosí</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-tampico.aspx.html">Tampico</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-tijuana.aspx.html">Tijuana</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-toluca.aspx.html">Toluca</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-torreon.aspx.html">Torreón</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-tuxtla-gutierrez.aspx.html">Tuxtla Gutiérrez</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-veracruz.aspx.html">Veracruz</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-villahermosa.aspx.html">Villahermosa</a></div>
+                            <div><a class="text-dark-blue" href="vuelos-zacatecas.aspx.html">Zacatecas</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-wrapper navbar navbar-default Mobile" role="navig-ation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#MobileMenu"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand custom-brand" href="index.html" style="margin-left:40px">
+                    <div class="interjet-logo"></div>
+                </a>
+            </div>
+            <div id="MobileMenu" ng-controller="setMobileMenuItems" class="navbar-collapse collapse" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li class="menu-item dropdown"><a tabindex="0" data-toggle="dropdown" aria-expanded="false">Vuela<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-class="!item.submenuItems?'menu-item':'dropdown dropdown-submenu'" ng-repeat="item in mobileFly"><a ng-if="!item.submenuItems" href="404.aspx.html" tabindex="0">{{item.name}}</a><a ng-if="item.submenuItems" class="dropdown-toggle" tabindex="0" data-toggle="dropdown" aria-expanded="false">{{item.name}}</a>
+                                <ul ng-if="item.submenuItems" class="dropdown-menu">
+                                    <li class="menu-item" ng-repeat="SubMenuItem in item.submenuItems"><a href="404.aspx.html" tabindex="0">{{SubMenuItem.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown"><a tabindex="0" data-toggle="dropdown" aria-expanded="false">Experiencia Interjet<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-class="!item.submenuItems?'menu-item':'dropdown dropdown-submenu'" ng-repeat="item in mobileExperience"><a ng-if="!item.submenuItems" href="404.aspx.html" tabindex="0">{{item.name}}</a><a ng-if="item.submenuItems" class="dropdown-toggle" tabindex="0" data-toggle="dropdown" aria-expanded="false">{{item.name}}</a>
+                                <ul ng-if="item.submenuItems" class="dropdown-menu">
+                                    <li class="menu-item" ng-repeat="SubMenuItem in item.submenuItems"><a href="404.aspx.html" tabindex="0">{{SubMenuItem.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown"><a tabindex="0" data-toggle="dropdown" aria-expanded="false">Promociones<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-class="!item.submenuItems?'menu-item':'dropdown dropdown-submenu'" ng-repeat="item in mobileDeals"><a ng-if="!item.submenuItems" href="404.aspx.html" tabindex="0">{{item.name}}</a><a ng-if="item.submenuItems" class="dropdown-toggle" tabindex="0" data-toggle="dropdown" aria-expanded="false">{{item.name}}</a>
+                                <ul ng-if="item.submenuItems" class="dropdown-menu">
+                                    <li class="menu-item" ng-repeat="SubMenuItem in item.submenuItems"><a href="404.aspx.html" tabindex="0">{{SubMenuItem.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown"><a tabindex="0" data-toggle="dropdown" aria-expanded="false">Club Interjet<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-class="!item.submenuItems?'menu-item':'dropdown dropdown-submenu'" ng-repeat="item in mobileClub"><a ng-if="!item.submenuItems" href="404.aspx.html" tabindex="0">{{item.name}}</a><a ng-if="item.submenuItems" class="dropdown-toggle" tabindex="0" data-toggle="dropdown" aria-expanded="false">{{item.name}}</a>
+                                <ul ng-if="item.submenuItems" class="dropdown-menu">
+                                    <li class="menu-item" ng-repeat="SubMenuItem in item.submenuItems"><a href="404.aspx.html" tabindex="0">{{SubMenuItem.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown"><a tabindex="0" data-toggle="dropdown" aria-expanded="false">Agencias y Corporativos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-class="!item.submenuItems?'menu-item':'dropdown dropdown-submenu'" ng-repeat="item in mobileCorptravels"><a ng-if="!item.submenuItems" href="404.aspx.html" tabindex="0">{{item.name}}</a><a ng-if="item.submenuItems" class="dropdown-toggle" tabindex="0" data-toggle="dropdown" aria-expanded="false">{{item.name}}</a>
+                                <ul ng-if="item.submenuItems" class="dropdown-menu">
+                                    <li class="menu-item" ng-repeat="SubMenuItem in item.submenuItems"><a href="404.aspx.html" tabindex="0">{{SubMenuItem.name}}</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--landing begins-->
+    <div class="container landing-container" id="mainContent">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#tarifasModal">
+           Modal LATAM-USA Inglés
+        </button>
+        <!-- Modal -->
+        <div class="modal fade modal-interjet" id="tarifasModal" tabindex="-1" role="dialog" aria-labelledby="tarifasModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="/assets/images/icons/Icn_ClosePopUpx2.png" alt="Cerrar"></span></button>
+                        <h4 class="modal-title" id="tarifasModalLabel">Compare our rates</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-fares-main-content">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" id="tarifas-modal-container">
+                                    <div id="main-table-fares" class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="table-container">
+                                            <table class="table table-bordered table-condensed table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="border-less">
+                                                        </th>
+                                                        <th id="tarifa-i">
+                                                            Light
+                                                        </th>
+                                                        <th id="tarifa-op">
+                                                            Optima
+                                                        </th>
+                                                        <th id="tarifa-pr">
+                                                            Priority
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Checked baggage <sup>1</sup></p>
+                                                            
+                                                        </th>
+                                                        <td><span class="weight-detail"><b class="weight-max tl">25kg</b> <span class="suitcaseimg single-suitcase"><img src="/assets/images/tarifas/Light_Maletas-MEX.png" alt="1-maleta"></span></span>
+                                                        </td>
+                                                        <td><span class="weight-detail"><b class="weight-max to">50kg </b><span class="suitcaseimg double-suitcase"><img src="/assets/images/tarifas/Optima_Maletas-MEX.png" alt="2-maletas"></span></span>
+                                                        </td>
+                                                        <td><span class="weight-detail tp"><b class="weight-max tp">75kg </b><span class="suitcaseimg triple-suitcase"><img src="/assets/images/tarifas/Priority_Maletas-MEX.png" alt="3-maletas"></span></span>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Carry-on baggage<sup>1</sup></p>
+                                                            
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <span class="hand-bag">
+                                                                <i class="inter-font icon-backpack"></i>
+                                                                <i class="inter-font icon-equipaje-de-mano"></i>
+                                                            </span>
+                                                            <p class="fare-feature-detail"><b> 2 pieces of carry-on baggage</b> wich together weight maximum<b> 10 kg</b></p>
+                                                        </td>
+                                                    </tr>
+                                                
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Comfort during the trip</p>
+                                                            <p class="fare-feature-detail">30% más espacio entre asientos para tu comodidad </p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Choose your seat <sup>2</sup></p>
+                                                            <p class="fare-feature-detail">¿Pasillo, ventana o en medio? ¡Tú eliges!</p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions">Asignado por el sistema, pero puedes cambiarlo por sólo <b>$100 MXN adicionales</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">A partir de la fila 3</span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Filas 1 y 2</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Hold reservations <sup>3</sup></p>
+                                                            <p class="fare-feature-detail">Asegura el precio de tu vuelo por 24 horas</p>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions"><b>$80 MXN</b> por reservación</span>
+                                                        </td>
+                                                    </tr>
+                                                   
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Check-in and prefential board <sup>4</sup></p>
+                                                            <p class="fare-feature-detail">¡Olvídate de las filas y sé el primero!</p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-times-circle-o"></i>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-times-circle-o"></i>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="4" class="border-less">
+                                                            <h2>special services</h2>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Additional suitcases <sup>5</sup></p>
+                                                            <p class="fare-feature-detail">¡No te limites! Lleva todo lo que necesites para tu viaje</p>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$500 MXN por pieza</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$50 USD por pieza</b></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Sports equipment <sup>6</sup></p>
+                                                            <p class="fare-feature-detail">¡Toda la diversión va contigo! Tu bici, tabla de surf, </br> equipo de buceo, palos de golf, entre otros</p>
+                                                        </th>
+                                                        <td colspan="3" class="triple-col">
+                                                            <div class="triple-col-detail">
+                                                                <i class="fa fa-3x fa-check"></i>
+                                                                <span class="fare-conditions"> Included as part of your baggage</span>
+                                                            </div>
+                                                            <span>or</span>
+                                                            <div class="triple-col-detail">
+                                                                <i class="fa fa-2x fa-usd"></i>
+                                                                <span class="fare-conditions"> 
+                                                    If exceed the pieces 
+of permited baggage. </span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Music Intruments <sup>6</sup></p>
+                                                            <p class="fare-feature-detail">Porque la música no sólo se lleva por dentro</p>
+                                                        </th>
+                                                        <td colspan="3" class="triple-col">
+                                                            <div class="triple-col-detail">
+                                                                <i class="fa fa-3x fa-check"></i>
+                                                                <span class="fare-conditions"> Included as part of your baggage</span>
+                                                            </div>
+                                                            <span>or</span>
+                                                            <div class="triple-col-detail">
+                                                                <i class="fa fa-2x fa-usd"></i>
+                                                                <span class="fare-conditions"> 
+                                                    If exceed the pieces 
+of permited baggage. </span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Pets on board<sup>3</sup></p>
+                                                            <p class="fare-feature-detail">Tu mejor amigo también viaja</p>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions"><b>$500 MXN</b> per pet</span>
+                                                        </td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Pets documented<sup>6</sup></p>
+                                                            <p class="fare-feature-detail">Tu mejor amigo también viaja</p>
+                                                        </th>
+                                                        <td colspan="3" class="triple-col">
+                                                            <div class="triple-col-detail">
+                                                                <i class="fa fa-3x fa-check"></i>
+                                                                <span class="fare-conditions"> Included as part of your baggage</span>
+                                                            </div>
+                                                            <span>or</span>
+                                                            <div class="triple-col-detail">
+                                                                <i class="fa fa-2x fa-usd"></i>
+                                                                <span class="fare-conditions"> 
+                                                    If exceed the pieces 
+of permited baggage. </span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Children without company</p>
+                                                            <p class="fare-feature-detail">¡Despreocúpate! Tus hijos viajan seguros</p>
+                                                        </th>
+                                                        <td colspan="2">
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales: <b>$500 MXN por menor</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales: <b>$50 USD por menor</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-times-circle-o"></i>
+                                                            <span class="fare-conditions">No disponible en esta tarifa</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Universal assistance </p>
+                                                            <p class="fare-feature-detail">Ayuda a pasajeros en silla de ruedas, con debilidad visual parcial o total y/o que requieran apoyos respiratorios.</p>
+                                                        </th>
+                                                        <td colspan="3">
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Sin cargo</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="4" class="border-less">
+                                                            <h2>changes & adjustments</h2>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Advance your flight the same day <sup>7</sup></p>
+                                                            <p class="fare-feature-detail">¡Aprovecha el tiempo al máximo!</p>
+                                                        </th>
+                                                        <td>
+                                                <i class="fa fa-3x fa-times-circle-o"></i>
+                                            </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Sin cargo en la misma tarifa</span>
+                                                            <p class="feature-ex">Sujeto a disponibilidad</p>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Sin cargo en la misma tarifa</span>
+                                                            <p class="feature-ex">Sujeto a disponibilidad</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Passenger changes</p>
+                                                            <p class="fare-feature-detail">¿No puedes viajar? Cede tu lugar a alguien más</p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$499 MXN por tramo</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$49 USD por tramo</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$350 MXN por tramo</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$35 USD por tramo</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Ilimitados y sin cargo</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Itinerary changes
+                                                                <small>(Between 4 and 24 hrs before your flight)</small> <sup>8</sup></p>
+                                                            <p class="fare-feature-detail">¿Cambios de último momento?</p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$850 MXN por tramo</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$85 USD por tramo</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$350 MXN por tramo</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$35 USD por tramo</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Ilimitados y sin cargo en la misma tarifa</span>
+                                                            <p class="feature-ex">Sujeto a disponibilidad</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Itinerary changes
+                                                                <small>(more than 24 hrs before your flight)</small> <sup>8</sup></p>
+                                                            <p class="fare-feature-detail">¿Cambios de fecha, ruta u horario?</p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-2x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$580 MXN por tramo</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$58 USD por tramo</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-usd"></i>
+                                                            <span class="fare-conditions">Rutas nacionales:<b>$350 MXN por tramo</b></span>
+                                                            <span class="fare-conditions">Rutas internacionales:<b>$35 USD por tramo</b></span>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                            <span class="fare-conditions">Ilimitados y sin cargo en la misma tarifa</span>
+                                                            <p class="feature-ex">Sujeto a disponibilidad</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="horizontal-title">
+                                                            <p class="fare-feature">Refunds <sup>9</sup></p>
+                                                            <p class="fare-feature-detail">No pierdas tu dinero por un evento inesperado</p>
+                                                        </th>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-times-circle-o"></i>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-times-circle-o"></i>
+                                                        </td>
+                                                        <td>
+                                                            <i class="fa fa-3x fa-check"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="termsandcond" class="col-lg-12 col-md-12 col-sm-12">
+                                            <a href="#" target="_blank">See complete terms and conditions</a>
+                                            <ul id="icon-def">
+                                                <li><i class="fa fa-check"></i></i><span>Included</span></li>
+                                                <li><i class="fa fa-usd"></i><span>With additional cost</span></li>
+                                                <li><i class="fa fa-times-circle-o"></i><span>Not available</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--landing ends-->
+    <div id="footer">
+        <footer>
+            <div id="divFooterPX" class="bg-lightgray-footer">
+                <div class="container">
+                    <div class="back-footer clearfix">
+                        <div class="col-md-4 col-sm-4 col-xm-12 bg-lightgray-footer">
+                            <div class="row">
+                                <div class="col-md-6  text-center">
+                                    <div class="marg-top-10">
+                                        <a title="revista interjet" href="https://issuu.com/interjet2014/docs/revista_interjet_julio_2016" target="_blank"><img src="/assets/images/static-content/revista_julio.png"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 marg-top-60 font-size-13">Accede a nuestra publicación del mes de la Revista Interjet. ¡Conoce nuestra versión en línea!</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xm-12 back-footer padd-top-20">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 col-xm-12">
+                                    <h3 class="marg-bottom-20">Tus Viajes</h3>
+                                    <p><a href="mapa-destinos-interjet.aspx.html">Destinos</a></p>
+                                    <p><a href="tu-equipaje.aspx.html">Prepara tu equipaje</a></p>
+                                    <p><a href="vuela-interjet.aspx.html">Administra tu viaje</a></p>
+                                    <p><a href="preguntas-frecuentes.aspx.html">Preguntas frecuentes</a></p>
+                                    <p><a href="https://assistive.interjet.com/h5/assistive/es-MX/index">Accesibiliad de la web</a></p>
+                                    <p>
+                                        <a href="https://assistive.interjet.com/h5/assistive/es-MX/index"></a>
+                                    </p>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xm-12">
+                                    <h3 class="marg-bottom-20">Conócenos</h3>
+                                    <p><a href="mision-interjet.aspx.html">Nuestra misión</a></p>
+                                    <p><a href="bolsa-de-trabajo.aspx.html">Bolsa de trabajo</a></p>
+                                    <p><a href="sala-de-prensa.aspx.html">Sala de prensa</a></p>
+                                    <p><a href="relacionconinversionistas.aspx.html">Relación con Inversionistas</a></p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xm-12">
+                                    <h3 class="marg-bottom-20">Experiencia Interjet</h3>
+                                    <div class="col-md-6 padd-left-0">
+                                        <p><a href="conoce-club-interjet.aspx.html">Club Interjet</a></p>
+                                        <p><a href="RegistrarAgencia.aspx.html">Agencia Jet</a></p>
+                                        <p><a href="LoginAgent.aspx.html">Empresa Jet</a></p>
+                                        <p><a href="http://www.intertours.com.mx">Intertours</a></p>
+                                    </div>
+                                    <div class="col-md-6 padd-left-0">
+                                        <p><a href="promociones.aspx.html">Promociones</a></p>
+                                        <p><a href="experiencia-interjet.aspx.html">Viajando con Interjet</a></p>
+                                        <p><a href="oficinas-interjet.aspx.html">Oficinas Interjet</a></p>
+                                        <p><a href="Grupos.aspx.html">Charters y Grupos</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container marg-top-20 blue-links" style="margin-bottom: 15px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="icon-soc-med row">
+                            <div class="col-md-7">
+                                <h4 class="marg-top-0">Síguenos<a class="marg-left-10" href="https://twitter.com/interjet" target="_blank"><span class="tw"></span></a><a href="https://www.facebook.com/interjet.mx" target="_blank"><span class="fb"></span></a><a href="https://plus.google.com/113103155116737606534" target="_blank"><span class="gp"></span></a><a href="https://www.instagram.com/interjet" target="_blank"><span class="ig"></span></a><a href="https://www.youtube.com/user/InterjetOficial" target="_blank"><span class="yt"></span></a></h4>
+                            </div>
+                            <div class="col-md-5">
+                                <h4 class="marg-top-0"><a href="javascript:abrirchat('http://interjetchat.atento.com.mx:1001/wfClient.aspx')"><span class="chat"></span>Chat en vivo</a></h4>
+                            </div>
+                        </div>
+                        <div class="marg-top-30 row">
+                            <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 text-center">
+                                <label class="brand1"></label>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 text-center padd-left-0">
+                                <label class="brand2"></label>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 text-center">
+                                <label class="brand3"></label>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6 col-lg-3 text-center">
+                                <label class="brand4"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="icon-soc-med marg-top-0"><span class="tel"></span>Contáctanos</h4>
+                        <div class="row">
+                            <div class="col-md-6"><b class="text-blue">Ventas, Cambios y Reservaciones</b>
+                                <div>1102 55 55</div>
+                                <div><b>Int. de la república sin costo:</b></div>
+                                <div>01800 01 12345</div><b>Servicio de Interjet por tierra</b>
+                                <div>01800 00 66466</div>
+                                <div>Llama desde el D.F.:1102 5532</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div><b>Atención a Clientes (Quejas y Sugerencias) </b>
+                                    <div>D.F. 1102 55 11</div>
+                                    <div><b>Int. de la república sin costo:</b></div>
+                                    <div>01800 322 5050 </div>
+                                    <div><a href="mailto:atencionaclientes@interjet.com.mx">atencionaclientes@interjet.com.mx</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center padd-all-0">
+                    <div align="center"><img src="/assets/images/home/Sectur_logo.jpg">
+                        <a href="premios-2014.aspx.html"><img src="/assets/images/eCommerce.png"></a>
+                    </div>
+                    © 2016, Interjet. Derechos Reservados. <span class="marg-left-20"><a href="index.html">Página de inicio</a> | <a href="mapa-de-sitio.aspx.html">Mapa del sitio</a> | <a href="Legales.aspx.html">Legales</a> | <a href="compatibilidad.aspx.html">Compatibilidad</a></span></div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/angular.js"></script>
+    <script type="text/javascript" src="/assets/js/controllers.js"></script>
+    <script type="text/javascript" src="/assets/js/ij-common.js"></script>
+    <script type="text/javascript" src="/assets/js/lib.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/alerts.js"></script>
+    <div>
+        <h1 class="hidden">Interjet.com en México. Los Mejores Precios en vuelos de Interjet</h1>
+    </div>
+</body>
+
+</html>

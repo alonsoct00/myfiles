@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="canonical" href="https://www.interjet.com.mx/">
+    <meta name="description" content="Interjet, la mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <meta name="keywords" content="La mejor aerolínea en México con más de 47 destinos, mayor espacio entre asientos, las mejores promociones y aviones de última generación.">
+    <title>Encuesta Interjet</title>
+    <!-- Bootstrap Default Assets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-material-design.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ripples.min.css" rel="stylesheet" type="text/css">
+    <!--Custom CSS Assets-->
+    <link href="assets/css/survey.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--Header Interjet-->
+    <header id="surveyHeader">
+        <div class="toplogo"><img src="assets/images/logo_Interjet.png" alt="Interjet"></div>
+    </header>
+    <!--END Header Interjet-->
+    <!--Main Content Begins-->
+    <div class="container-fluid" id="mainSurveyContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="SurveyWrapper">
+                    <h2>¿Qué tan satisfecho estas con el servicio de Interjet?</h2>
+                    <div id="rateServiceBox" class="text-center">
+                        <input type="hidden" name="OpService" id="opService">
+                        <div class="col-sm-3 rateServiceOp rate-good" id="servicio_bueno">
+                            <i class="inter-icon icon-app-good"></i>
+                            <p class="fontbold">Bueno</p>
+                        </div>
+                        <div class="col-sm-3 rateServiceOp rate-regular" id="servicio_regular">
+                            <i class="inter-icon icon-app-moreless"></i>
+                            <p class="fontbold">Regular</p>
+                        </div>
+                        <div class="col-sm-3 rateServiceOp rate-bad" id="servicio_malo">
+                            <i class="inter-icon icon-app-bad"></i>
+                            <p class="fontbold">Malo</p>
+                        </div>
+                    </div>
+                    <p>Nos gustaría saber lo que piensas sobre tu experiencia
+                        <br/>en tu vuelo con Interjet</p>
+                    <div class="row" id="ControlsContainer">
+                        <button type="button" class="btn App_Btn darkblue_Btn" id="btnContinue" onclick="window.location.href='/';" disabled="disabled">Continuar</button>
+                    </div>
+                </div>
+            </div>
+             <!--modal thanks-->
+            <div id="thanksModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">Gracias</h1>
+                        </div>
+                        <div class="modal-body">
+                        <h2>Gracias por ayudarnos a mejorar</h2>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </div>
+    </div>
+    <!--Main Content ENDS-->
+    <!--FOOTER Begins-->
+    <footer class="navbar-fixed-bottom"></footer>
+    <!--Bootstrap default scripts-->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" type="text/javascript"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/material.min.js" type="text/javascript"></script>
+    <script src="assets/js/ripples.min.js" type="text/javascript"></script>
+    <!--Plugins Scripts-->
+    <script src="assets/js/modernizr.js" type="text/javascript"></script>
+    <!--Custom Scripts-->
+    <script src="assets/js/survey.js" type="text/javascript"></script>
+</body>
+
+</html>

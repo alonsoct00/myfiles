@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="34.2722986 10 18.7605449 30.0429631 9.38961276 21.8010093 8 24.2595092 18.2159734 33.2507315 19.0610147 34 19.7746305 33.0634143 36 12.0839106 34.2722986 10.0000075"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="check-on" transform="translate(1.000000, 1.000000)">
+                <rect id="Rectangle-3-Copy" fill="#53B847" x="0" y="0" width="44" height="44" rx="1"></rect>
+                <g id="ico_ok" fill-rule="nonzero">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#FFFFFF" stroke-width="1" d="M18.6909827,29.3159059 L34.2588734,9.20040745 L36.6404863,12.0730499 L36.3955154,12.3897988 L20.1723409,33.3664431 L19.1323001,34.7314455 L18.7292978,34.3741175 L17.8856353,33.626067 L7.36504333,24.3667456 L9.2573784,21.0188304 L18.6909827,29.3159059 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

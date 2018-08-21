@@ -1,0 +1,6241 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+ #main-content, #mainContent{
+    display: block;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+    height: auto;
+    min-height: -webkit-calc(100% - 400px);
+    min-height: -moz-calc(100% - 400px);
+    min-height: calc(100% - 400px);
+}
+ 
+.inline {display:inline-block}
+
+ .popover.no-bordered{
+	border:0;
+	padding:0;
+ }
+ 
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+.container.seo-tags a{	
+	color:#0A67B0;
+}
+
+/* ui front*/
+
+.ui-front{z-index:100}
+ .ui-state-disabled{cursor:default!important}
+ .ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}
+ .ui-widget-overlay{position:fixed;top:0;left:0;width:100%;height:100%}
+ .ui-autocomplete{position:absolute;top:0;left:0;cursor:default}
+ .ui-menu{list-style:none;padding:0;margin:0;display:block;outline:none}
+ .ui-menu .ui-menu{position:absolute}
+ .ui-menu .ui-menu-item{position:relative;margin:0;padding:3px 1em 3px .4em;cursor:pointer;min-height:0;list-style-image:url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")}
+ .ui-menu .ui-menu-divider{margin:5px 0;height:0;font-size:0;line-height:0;border-width:1px 0 0 0}
+ .ui-menu .ui-state-focus,.ui-menu .ui-state-active{margin:-1px}
+ .ui-menu-icons{position:relative}
+ .ui-menu-icons .ui-menu-item{padding-left:2em}
+ .ui-menu .ui-icon{position:absolute;top:0;bottom:0;left:.2em;margin:auto 0}
+ .ui-menu .ui-menu-icon{left:auto;right:0}
+ .ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:1.1em}
+ .ui-widget .ui-widget{font-size:1em}
+ .ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:1em}
+ .ui-widget-content{border:1px solid #ddd;background:#eee;color:#333}
+ .ui-widget-content a{color:#333}
+ .ui-widget-header{border:1px solid #e78f08;background:#f6a828;color:#fff;font-weight:bold}
+ .ui-widget-header a{color:#fff}.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #ccc;font-weight:bold;color:#1c94c4}
+ .ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited{color:#1c94c4;text-decoration:none}
+ .ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #fbcb09;background:#fdf5ce;color:#c77405}
+
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com) 
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ 
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=87630950984001432616) 
+ *  Config saved to config.json and https://gist.github.com/87630950984001432616
+ */
+.enumeration span{
+	background:#6CAEDF;
+	padding:1px 5px;
+	color:#FFF;
+	margin-right:10px;
+	border-radius:8px;
+	-ms-border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+
+}
+
+
+
+
+.Open-Sans-normal-300 {
+  font-family: 'Open Sans' !important;
+  font-style:  normal;
+  font-weight: 300;  
+}
+
+.blue-links a{color:#6CADDF }
+.blue-links a:hover{color:#0A67B0 } 
+ 
+.arrow{
+	background:url(//static.interjet.com/assets/images/icon/sprite-arrows.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+.arrow.small{
+	width:20px;
+	height:20px;
+}
+.arrow.medium{
+	width:20px;
+	height:25px;
+}
+.arrow.white-right{
+	background-position: left -591px;
+}
+.arrow.blue-right{
+	background-position: 0 -490px;
+}
+.arrow.blue-right:hover{
+	background-position: left -492px;
+}
+.arrow.mini-blue-right{
+	background-position: left -562px;
+}
+
+.arrow.itinerary-log{
+	background-position: left -75px;
+	width: 80px;
+	height: 53px;
+	left: -1px;
+	position: relative;
+}
+.arrow.itinerary-log:hover{
+	background-position: left -149px;
+	width: 80px;
+	height: 53px;
+	left: -1px;
+	position: relative;
+}
+
+.arrowCircleDown{
+	background:url(//static.interjet.com/assets/images/icon/flecha-abajo.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	width:24px;
+	height:24px;
+}
+.arrowCircleOn{
+	background:url(//static.interjet.com/assets/images/icon/flecha-arriba.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	width:24px;
+	height:24px;
+}
+
+
+.logo{
+	background:url(//static.interjet.com/assets/images/icon/sprite-large-icons.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.logo.cij{
+	background-position: left -133px;
+	width:170px;
+	height:43px;
+}
+
+.logo.avis{
+	background-position: left -569px;
+	width:72px;
+	height:28px;
+}
+
+.small-icons{
+	background:url(//static.interjet.com/assets/images/icon/sprite-small-icons.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+.small-icons.person{
+	background-position: left -523px;
+	width:16px;
+	height:17px;
+}
+.small-icons.tip{
+	width:15px;
+	height:15px;
+	background-position:0 -605px;
+}
+.small-icons.tip.right{
+	margin-left:10px;
+}
+
+.small-icons.seguro{
+	background-position: left -201px;
+	width:25px;
+	height:25px;
+}
+
+.small-icons.info{
+	background-position: left -606px;
+	width:12px;
+	height:12px;
+}
+
+.small-icons.stt{
+	background-position: left -246px;
+	width:26px;
+	height:26px;
+}
+
+.small-icons.car{
+	background-position: left -152px;
+	width:27px;
+	height:26px;
+}
+
+.bank-icons{
+	background:url(//static.interjet.com/assets/images/icon/banks.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.bank-icons.banorte{
+	background-position: left 0px;
+	width:112px;
+	height:20px;
+}
+
+.bank-icons.banamex{
+	background-position: left -35px;
+	width:86px;
+	height:19px;
+}
+
+.bank-icons.hsbc{
+	background-position: left -72px;
+	width:78px;
+	height:13px;
+}
+
+.bank-icons.santander{
+	background-position: left -104px;
+	width:80px;
+	height:30px;
+}
+
+.bank-icons.paypal{
+	background-position: left -146px;
+	width:108px;
+	height:25px;
+}
+
+.bank-icons.ixe{
+	background-position: left -193px;
+	width:51px;
+	height:22px;
+}
+
+.bank-icons.uatp{
+	background-position: left -237px;
+	width:45px;
+	height:14px;
+}
+
+.bank-icons.amex{
+	background-position: left -277px;
+	width:36px;
+	height:31px;
+}
+
+.bank-icons.visa{
+	background-position: left -328px;
+	width:34px;
+	height:21px;
+}
+
+.bank-icons.bancomer{
+	background-position: left -393px;
+	width:112px;
+	height:31px;
+}
+
+.bank-icons.liverpool{
+	background-position: left -438px;
+	width:115px;
+	height:40px;
+}
+
+.bank-icons.ScotiaBank{
+	background-position: left -488px;
+	width:80px;
+	height:28px;
+}
+.bank-icons.credomatic{
+	background-position: left -523px;
+	width:80px;
+	height:28px;
+}
+
+.bank-icons.inbursa{
+	background-position: left -561px;
+	width:89px;
+	height:32px;
+}
+
+.bank-icons.mc{
+	background-position: left -361px;
+	width:37px;
+	height:22px;
+}
+.visa-icon{
+	background:url(//static.interjet.com/assets/images/web/VisaCheckbutton.jpg);
+	display:inline-block;
+	vertical-align:middle;
+}
+.visa-icon.visaCheck{
+	background-position: left 0px;
+	width:100px;
+	height:22px;
+}
+
+
+.MiaToHav-icons{
+	background:url(//static.interjet.com/assets/images/icon/sprite-formatoEUA.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.MiaToHav-icons.info{
+    background-position: left 0px;
+	width:30px;
+	height:20px;
+}
+
+.MiaToHav-icons.pdf{
+    background-position: left -30px;
+	width:30px;
+	height:25px;
+}
+
+.Membership-icons{
+	background:url(//static.interjet.com/assets/images/icon/sprite-membresia.png) no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.Membership-icons.login{
+    background-position: left 0px;
+	width:56px;
+	height:40px;
+}
+
+.Membership-icons.guitar{
+   background-position: left -47px;
+	width:45px;
+	height:45px;
+}
+
+.Membership-icons.baggage{
+    background-position: left -97px;
+    width:55px;
+	height:30px;
+}
+
+.Membership-icons.animals{
+    background-position: left -130px;
+	width:55px;
+	height:38px;
+}
+
+.Membership-icons.golf{
+    background-position: left -168px;
+	width:55px;
+	height:51px;
+}
+
+
+
+
+.font-size-10{font-size:10px;}
+.font-size-10_5{font-size:10.5px;}
+.font-size-11{font-size:11px;}
+.font-size-12{font-size:12px;}
+.font-size-13{font-size:13px;}
+.font-size-14{font-size:14px;} 
+.font-size-15{font-size:15px;}
+.font-size-16{font-size:16px;}
+.font-size-17{font-size:17px;}
+.font-size-18{font-size:18px;}
+.font-size-20{font-size:20px;}
+.font-size-22{font-size:22px;}
+.font-size-25{font-size:25px;}
+
+.font-italic{
+    font-style:italic;
+}
+
+.font-weight-bold{font-weight: bold;}
+
+.lateral-shadow{ 
+	 box-shadow:10px 0px 10px -7px rgba(0, 0, 0, 0.5),  -10px 0px 10px -7px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .shadow-lateral{ 
+	box-shadow : 0 -40px 0px 0px #FFF, 0 37px 0px 0px #FFF, 4px 0 64px 2px rgba(0, 0, 0, 0.1), -4px 0 64px 2px rgba(0, 0, 0, 0.1);
+ }
+ 
+.sub-container{
+	margin:15px; padding:15px 0;
+}
+ 
+.main-content{
+	margin-left:15px; 
+	margin-right:15px
+}
+
+.ajax-loading{
+	display:inline-block;
+	width:60px; 
+	height:60px;
+	background:url(//static.interjet.com/assets/images/icon/ajax-loader.gif) no-repeat center center;
+	background-size:100%;
+}
+
+.bg-transparent, .bg-transparent *{background-color:transparent !important}
+.bg-light-blue{background-color:#EAF3FA;}
+.bg-blue{background-color:#6CADDF;}
+.bg-medium-blue{background-color:#0A67B0;}
+.bg-dark-blue{background-color:#1B4298;}
+.bg-dark-blue2{background-color:#1C4297;}
+.bg-dark-blue3{background-color:#133787;}
+.bg-air-blue{background-color:#003F9C;}
+.bg-dark-blue-outlet{background-color:#5F5E5E;}
+.bg-white{background-color:#fff;}
+.bg-white-smoke{background-color:#F8F7F7;}
+.bg-light-gray{background-color:#F0EFEE;}
+.bg-gray{background-color:#9D9B9C;}
+.bg-dark-gray{background-color:#5F5E5E;}
+.bg-medium-gray{background-color:#DDDEDF;}
+.bg-strong-gray{background-color:#EEEEEE;}
+.bg-lightgray-footer{background: #F2F1EF;}
+
+.text-white, .text-white *{color: #f2f2f0; !important}
+.text-light-blue{color:#EAF3FA; !important}
+.text-blue{color:#6CADDF; !important}
+.text-medium-blue{color:#0A67B0; !important}
+.text-dark-blue, .text-dark-blue a{color:#1B4298; !important}
+.text-dark-blue-outlet, .text-dark-blue-outlet a{color:#5F5E5E; !important}
+.text-gray, .text-gray *{color: #9D9B9C; !important}
+.text-dark-gray {color:#5F5E5E;}
+.text-violet {color:#351A71;}
+.text-weight600{font-weight: 600 !important;}
+.text-weight800{font-weight: 800 !important;}
+
+.text-no-wrap{
+	white-space: nowrap;
+}
+
+.OnSelect:hover{
+background-color:#EEEEEE;
+}
+
+
+.border-top-white{border-top:1px solid #FFFFFF;}
+.border-top-gray{border-top:1px solid #CCCCCC;}
+.border-bottom-white{border-bottom:1px solid #FFFFFF;}
+.border-bottom-gray{border-bottom:1px solid #335296;}
+.border-bottom-gray2{border-bottom:1px solid #CDCBCB;}
+.border-left-gray2{border-left:1px solid #CDCBCB;}
+.border-bottom-blue{border-bottom:1px solid #335296;}
+.border-bottom-blue2{border-bottom:1px solid #335296;}
+.border-right-white{border-right:1px solid #FFFFFF;}
+.border-white{border:1px solid #FFFFFF;}
+.border-white{border:1px solid #FFFFFF;}
+
+
+
+.section-container{p adding:15px 100px;}
+
+
+.neg-marg-left-20{margin-left:-20px;}
+.neg-marg-top-10{margin-top:-10px;}
+.neg-marg-top-5{margin-top:-5px;}
+.marg-top-10{margin-top:10px;}
+.marg-top-15{margin-top:15px;}
+.marg-top-20{margin-top:20px;}
+.marg-top-30{margin-top:30px;}
+.marg-top-40{margin-top:40px;}
+.marg-top-50{margin-top:50px;}
+.marg-top-60{margin-top:60px;}
+.marg-top-70{margin-top:70px;}
+.marg-left-0{margin-left:0px;}
+.marg-left-10{margin-left:10px;}
+.marg-left-15{margin-left:15px;}
+.marg-left-20{margin-left:20px;}
+.marg-bottom-0{margin-bottom: 0px;}
+.marg-bottom-5{margin-bottom: 5px;}
+.marg-bottom-10{margin-bottom: 10px;}
+.marg-bottom-15{margin-bottom: 15px;}
+.marg-bottom-20{margin-bottom: 20px;}
+.marg-bottom-30{margin-bottom: 30px;}
+.marg-bottom-40{margin-bottom: 40px;}
+.marg-bottom-60{margin-bottom:60px;}
+.marg-bottom-70{margin-bottom:70px;}
+.marg-right-0{margin-right:0;}
+.marg-right-4{margin-right:4px;}
+.marg-right-10{margin-right:10px;}
+.marg-right-15{margin-right:15px;}
+.marg-right-20{margin-right:20px;}
+.marg-right-30{margin-right:30px;}
+.marg-all-20{margin:20px;}
+.marg-all-15{margin:15px;}
+.marg-all-10{margin:10px;}
+
+.marg-top-0{margin-top: 0px;}
+.marg-top-2{margin-top: 2px;}
+.marg-top-5{margin-top: 5px;}
+.marg-top-10{margin-top: 10px;}
+.marg-top-15{margin-top: 15px;}
+
+.padd-right-0{padding-right:0}
+.padd-right-10{padding-right:10px}
+.padd-right-4{padding-right:4px}
+.padd-right-7{padding-right:7px}
+.padd-right-20{padding-right:20px}
+.padd-right-15{padding-right:15px}
+.padd-right-35{padding-right:35px}
+.padd-left-0{padding-left:0}
+.padd-left-10{padding-left:10px}
+.padd-left-15{padding-left:15px}
+.padd-left-20{padding-left:20px}
+.padd-left-35{padding-left:35px}
+.padd-all-0{padding:0px;}
+.padd-all-5{padding:5px;}
+.padd-all-10{padding:10px;}
+.padd-all-15{padding:15px;}
+.padd-all-20{padding:20px;}
+.padd-all-30{padding:30px;}
+
+
+.width-65-per{width:65%}
+.width-35-per{width:35%}
+
+.float-left{float:left}
+.float-right{float:right}
+
+.division-bordered-right{border-right: 1px solid #e0e0df;}
+.division-bordered-right-2{border-right: 2px solid #7f7d7e;}
+
+.padd-top-5{padding-top:5px;}
+.padd-top-10{padding-top:10px;}
+.padd-top-15{padding-top:15px;}
+.padd-top-20{padding-top:20px;}
+.padd-top-30 {padding-top: 30px;}
+.padd-top-40 {padding-top: 40px;}
+.padd-top-50 {padding-top: 50px;}
+.padd-bottom-5{padding-bottom: 5px;}
+.padd-bottom-10{padding-bottom: 10px;}
+.padd-bottom-15{padding-bottom: 15px;}
+.padd-bottom-20{padding-bottom:20px;}
+.padd-bottom-25{padding-bottom:25px;}
+.padd-20
+{
+	padding: 20px;
+}
+
+.padd-top-bott-5{
+	padding-top:5px; 
+	padding-bottom:5px
+}
+.padd-top-bott-10{
+	padding-top:10px; 
+	padding-bottom:10px
+}
+.padd-top-bott-15{
+	padding-top:15px; 
+	padding-bottom:15px
+}
+
+.padd-top-bott-20{
+	padding-top:20px; 
+	padding-bottom:20px
+}
+
+.padd-left-right-0{
+	padding-left:0px; 
+	padding-right:0px
+}
+
+.padd-left-right-5{
+	padding-left:5px; 
+	padding-right:5px
+}
+.padd-left-right-10{
+	padding-left:10px; 
+	padding-right:10px
+}
+.padd-left-right-15{
+	padding-left:15px; 
+	padding-right:15px
+}
+
+.custom-padd-94-10{
+	padding-top:94px; 
+	padding-bottom:10px
+}
+
+.w50{
+	width:50px;
+}
+.w60{
+	width:60px;
+}
+.w70{
+	width:70px;
+}
+.w100{
+	width:100px;
+}
+.w200
+{
+	width:200px;
+}
+.w400
+{
+	width:400px;
+}
+.no-resize{
+	resize: none;
+}
+.w100percent
+{
+	width: 100%;
+}
+.search-container{
+	position:relative;
+	width:500px;
+	min-height:300px; 
+	margin-top:-400px;
+}
+#divCenterTable table
+{
+	margin: 0 auto;
+}
+.search-home-cont{
+	position:relative;	
+	min-height:300px; 
+	margin-top:-400px;	
+	float:left; 
+}
+
+#searchHome{
+	box-shadow: 5px 5px 15px #333;
+	background:lightgray;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+#searchHome label{
+	margin-left:5px;
+	font-size:13px;
+}
+.flightSearchContainer label{
+	margin-left:5px;
+}
+.control-cont{	
+	text-align:left;
+	padding:0;
+}
+.control-cont input{	
+	width:85%;
+	padding:6px 3px;
+	border:0;
+	border:1px solid #cccccc;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	float:left;
+	
+}
+
+.control-cont .flight-icon{
+	float:left;
+	display:block;
+	width:20px;
+	height:31px; 
+	border:1px solid #cccccc;
+	border-left:0;	
+	background:url(//static.interjet.com/assets/images/icon/icon-dropdown.png) no-repeat center center;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	cursor : pointer;
+}	
+
+#tabs-search{
+	border-bottom:1px solid #8c8a88;	
+	clear:both;
+	overflow:hidden;	
+}
+
+#tabs-search  li{
+	width:33.3%;
+	padding:0;
+	background:transparent;
+	float:left;
+}
+
+#tabs-search  li a{
+	border-bottom:none !important;	
+	border-right:none;
+	background:url(//static.interjet.com/assets/images/icon/sprite-tabs-search.png) center 20px #eae8e6 no-repeat;
+	padding:40px 0 10px 0;		
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+}
+#tabs-search  li.active a{
+	background-color:#5c9cd8;
+}
+
+#tabs-search  li.flights-tab a{background-position:center 20px;}
+#tabs-search  li.intertours-tab a{background-position:center -150px;}
+#tabs-search  li.my-bookings-tab a{background-position:center -320px;}
+
+#tabs-search  li.active.flights-tab a{background-position:center -60px;}
+#tabs-search  li.active.intertours-tab a{background-position:center -225px;}
+#tabs-search  li.active.my-bookings-tab a{background-position:center -395px;}
+
+#tabs-search  li.flights-tab a:hover{background-position:center -60px;}
+#tabs-search  li.intertours-tab a:hover{background-position:center -225px;}
+#tabs-search  li.my-bookings-tab a:hover{background-position:center -395px;}
+
+#tabs-search  li.active a{color:#FFF}
+
+.pane-booking div.icon-check-in > div, .pane-booking div.icon-my-booking > div{	
+	height:25px;
+	background:url(//static.interjet.com/assets/images/icon/icon-my-booking.png) no-repeat center top;
+}
+.pane-booking div.icon-check-in div{
+	background-position:center -40px;
+}
+
+.pane-booking div.icon-check-in > span, .pane-booking div.icon-my-booking  > span{
+	color:#1B4298;
+	font-size:12px;
+}
+
+.large-search{
+	display:none;
+}
+.search-data{
+	padding:0 0 0 15px;
+	background:-webkit-linear-gradient( 90deg, #D6D5D4 0%, rgba(214, 213, 212, 0) 100%);
+}
+.show-hide-search{
+	background: #428BCA;
+	color:#FFF;
+	line-height:38px;
+	padding:0 0 0 10px;
+	cursor:pointer;
+
+}
+.show-hide-search span, .show-hide-search span.close{
+	display:inline-block;
+	width:35px;	
+	height:35px;	
+	float:right;
+	margin-left:10px;
+	background:url(//static.interjet.com/assets/images/icon/icon-vert-arrow.png) no-repeat center top;		
+}
+
+.show-hide-search span.closed{
+	background-position:center -35px;
+}
+
+
+.close.blue-circle{
+	background-color:#3AB0E2;	
+	color:white;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	margin-top:-25px;
+	margin-right:-25px;
+	width:35px;
+	height:35px;
+	text-shadow:none;
+	opacity:1;
+	line-height:1.5;
+	text-align:center;
+}
+.blue-circle:hover span{
+	color:#1B4298;
+	text-shadow:0;
+}
+.close.blue-circle span{
+	margin:0;
+	padding:0;
+	line-height:0;
+}
+.region-header{
+	padding:10px;
+	background-color:#EEE;
+	color:#1B4298;
+	font-size:16px;
+	text-align:center;
+}
+.region-header span{
+	display:block;
+	border-right:1px solid #E5E3E3;
+	margin-right:-10px;
+}
+
+.stations-list{
+	margin-top: 10px;	
+	padding: 0 0 0 15px;	
+}
+.stations-list li{
+	color:#000;
+	padding:0 3px;
+	font-size:12px;
+	padding:3px 0;
+	list-style-image:url(//static.interjet.com/assets/images/icon/bull-blue.png);
+	list-style-position: inside;
+}
+.stations-list li.indented{
+	list-style:disc;
+	list-style-type:none;
+	padding-left:10px;
+}
+.stations-list li.indented span:before{
+	content:"- ";
+	color:#6CADDF;
+}
+
+.stations-list li span{
+	cursor:pointer;
+}
+.stations-list li span i{
+	font-size:10px;
+	color:#6CADDF;
+}
+.stations-list li.highlighted{
+	color:#1B4298;
+	font-weight:bold;
+	font-size:14px;
+}
+.stations-list li a{
+	color:#000;
+}
+
+.stations-list li span:hover{
+	color:#6CADDF;
+	text-decoration:underline;
+}
+#ModalDestinationsStations .stations-list li{
+	color:lightgray;
+}
+#ModalDestinationsStations .stations-list li span{
+	 color:#000;
+}
+#ModalDestinationsStations .stations-list li span:hover{
+	color:#6CADDF;
+}
+
+
+.side-bar h4{
+	background:#428BCA;
+	margin:0;
+	padding:10px 15px;
+	color:#FFF;
+}
+
+
+/*Pagination*/
+.pagination>li>a, .pagination>li>span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #428bca;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pagination .active a
+{
+	color: white !important;
+}
+/*Pagination*/
+
+
+.market-header, .calendar-head{ 
+	background:url(//static.interjet.com/assets/images/icon/plane-headers.png) #FFF no-repeat;
+	text-align:center;
+	padding:15px 0;
+	font-size:14px;
+	font-weight:bold;
+}
+.market-header span{
+	font-size:12px;
+}
+.market-header .route{
+font-size:15px;
+}
+
+#SummaryPrice{	
+	background:#F0EFEE;
+}
+/*calendar select*/
+.calendar-head{
+	padding:15px;
+	margin:0 -13px 10px -13px;
+}
+
+.calendar-head.comming-back{
+	background-position:right -149px;
+}
+.tabs-months{
+	padding:0; 
+	margin:25px 0 0 0;
+	border-bottom:2px solid #6caddf;
+}
+
+.tabs-months li{
+	float:left;
+	width:12%;
+	list-style-type:none;
+	b order-right:1px solid lightgray;
+	text-align:center;
+	font-size:12px;
+	margin-right:1px;
+
+}
+.tabs-months.total-7 li{width:13.85%;}
+.tabs-months.total-8 li{width:12.06%;}
+.tabs-months.total-9 li{width:10.8%;}
+.tabs-months.total-10 li{width:9.65%;}
+.tabs-months.total-11 li{width:8.65%;}
+
+@media (max-width:768px){
+	.tabs-months.total-11 li {
+		width:16%;
+	}	
+	div.schedule-container.lay-v2 {
+		font-size:12px;				
+	}
+	.Font-Size {
+		font-size:12px;
+	}
+	#padd-btn{
+		padding-bottom:10px;
+	}
+	#PaymentMethodTabs > ul > li.bg-white {
+		width:100%;
+	}
+	#PaymentMethodTabs > ul > li.bg-white>a {
+		border-right: none;
+	}
+	#PaymentInputContainer > div > ul > li.bg-white {
+		width:100%;
+	}
+	#PaymentInputContainer > div > ul > li.bg-white > a {
+		border-right:none;
+	}
+	#LogoContainer {
+		position: absolute;
+		bottom: 10px;
+	}
+	#FontItinerary {
+		font-size:12px;
+	}
+	
+}
+
+.tabs-months.total-12 li{width:8%;}
+.tabs-months.total-13 li{width:7.35%;}
+
+
+.tabs-months li:hover{
+	background:#EAF3FA;
+	
+}
+.tabs-months li a{
+	font-size:11px;
+	display:block;
+	background:#F1F1F1;
+	border-radius:3px;
+	cursor:pointer;	
+}
+
+.tabs-months li  span.year{
+	display:block;
+	background:#DCDCDC;
+	padding:4px 0;	
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;	
+}
+
+.tabs-months li  strong{
+	font-size:13px;
+	display:block;
+	padding:5px 0;
+	
+}
+.tabs-months li:last-child{
+	border-right:none;
+}
+.tabs-months li.active{
+	b order-bottom:5px solid #1B4298;
+	background:white;
+}
+.tabs-months li.active a{
+	background:#6caddf;
+	color:#FFF;
+	padding-top:2px;
+}	
+.tabs-months li.active span.year{
+	background:#6caddf;
+	margin: 0 2px;
+	color:#FFF;
+}
+.tabs-months li.active a strong{
+	background:#FFF;
+	color:#1B4298;
+	border-bottom:2px solid #FFF;	
+	margin: 0 2px -2px 2px;
+}
+
+.calendar-container, .tabs-calendar-container{
+	margin:0;
+	background:#FFF;
+}
+.availability-calendar{
+	background:#FFF;
+	padding-bottom:15px;
+}
+.availability-calendar div.day, .calendar-header span{
+	float:left;
+	width:14.2%;	
+	border-bottom:1px solid #D3D3D3;
+	border-right:1px solid #D3D3D3;
+	text-align:center;	
+}
+.availability-calendar div.day{
+	font-size:14px;
+	font-weight:bold;
+	height:70px;
+	position:relative;
+}
+.availability-calendar div.day.selected{
+	background-color:#6CADDF;
+	color:#FFF;
+}
+.availability-calendar span.month-day{
+	font-size:11px;
+	display:block;	
+	text-align:left;
+	font-weight:normal;	
+}
+
+.availability-calendar div.day:hover{
+	background:#6CADDF;
+	color:#FFF;
+	cursor:pointer;
+}
+
+.calendar-header{
+	margin-bottom:10px;	
+}
+.calendar-header span{
+	line-height:20px;
+	font-weight:bold;
+	border-bottom:0;
+	color:#1B4298;	
+}
+.calendar-header span:last-child{
+	border-right:0;
+}
+
+.availability-calendar .discount-percent{
+	font-size:13px;
+	padding:2px;	
+	color:#EA4621;
+	display:block;
+}
+.availability-calendar div.day.selected .discount-percent{	
+	color:#FFF;
+}
+
+.availability-calendar div.day .special-promo{	
+	display:block;
+	font-size:11px;		
+	color:#CB3333;
+}
+.availability-calendar div.day .valentins-day{	
+	display:block;
+	height:20px;
+	background:url(//static.interjet.com/assets/images/heart.png) transparent no-repeat center center;
+}
+
+ .sold-out{
+	display: block;	
+	font-size: 11px;
+	font-weight:bold;
+	color: #152F87;
+	margin: 2px 2px 0 2px;	
+	padding: 3px 2px;	
+	text-align:center;
+	overflow:hidden;
+}
+
+.availability-calendar div.day.selected .special-promo{	
+	color:whitesmoke;
+}
+
+.availability-calendar .special-fare{	
+	display:block;
+	height:20px;
+	background:url(//static.interjet.com/assets/images/icon/icono-i.gif) transparent no-repeat center center;
+}
+.availability-calendar .special-far{	
+	display:block;
+	height:20px;
+	background:url(//static.interjet.com/assets/images/icon/aniversario-interjet-10.png) transparent no-repeat center center;
+}
+#SummaryPrice input{
+	border:1px solid transparent;
+	padding:0;
+	margin:0;
+	background:transparent;
+	text-align:right;
+}
+.left-detail .total{
+	background:#EAF3FA;
+	color:#1B4298;
+	padding:10px;
+
+	text-align:center;
+}
+.left-detail .total span{
+	font-size:20px;
+	font-weight:bold;
+}
+.left-section-detail .section-title {
+	text-align:left;
+	border-bottom:1px solid #FFF;
+	padding:5px 0;
+	color:#1B4298;
+	font-size:16px;
+
+}
+.left-section-detail .section-title  span{
+	margin-right:5px;
+	display:inline-block;
+	background:url(//static.interjet.com/assets/images/icon/toggle-up.png) no-repeat center center;
+	width:16px;
+	height:16px;	
+	vertical-align:middle;
+}
+
+.left-section-detail .section-title  span.closed{
+	background:url(//static.interjet.com/assets/images/icon/toggle-under.png) no-repeat center center;
+}
+.left-section-detail .section-content{
+    padding:5px 0;	
+	border-top:1px solid #E3E2E2
+}
+
+h4.icon-expand span  {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	margin-right:5px;	
+	background:url(//static.interjet.com/assets/images/icon/toggle-up.png) no-repeat left center;
+	vertical-align:middle;
+	margin-left:10px;
+}
+
+h4.icon-expand span.closed{
+	background:url(//static.interjet.com/assets/images/icon/toggle-under_01.png) no-repeat left center;
+}
+
+
+
+
+#SummaryPrice .total-market{
+	text-align:right;	
+	padding-bottom:5px;
+	font-size:13px;
+	color:#5F5E5E;
+}
+.total-market span{
+	font-weight:bold;
+}
+
+
+table.summary-price{
+	font-size:11px;
+	margin-bottom:0;
+}
+table.summary-price th, table.summary-price td{
+	padding:3px !important;
+}
+ table.summary-price td{
+	text-align:right;
+ }
+
+
+/*sechedule select*/
+
+#allUpPricing{
+	position:absolute;
+	padding:10px;
+	background:#FFF;
+	z-index:999;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.booking-detail h3.total{
+	background:#EAF3FA;
+	padding:10px;
+	margin:0;
+	color:#0a68b2;
+	text-align:center;
+	font-size:21px;
+}
+
+.market-header.market-2{
+   background-position:right -149px;
+}
+
+.tabs-header-select{
+	margin-bottom:20px;
+	border-bottom: 2px solid #6caddf;
+}
+
+.tabs-header-select > div{
+	float:left;
+	width:12.8%;
+	border-left:0;
+	min-height:60px;
+	text-align:center;
+	margin-right:1px;
+	background:#F1F1F1;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.tabs-header-select  div span{
+	display:block;
+	font-size:12px;
+}
+.tabs-header-select  .month-name{
+	font-size:10px;		
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	padding:3px 0;
+	background:#DCDCDC;
+}
+
+
+.tabs-header-select > div.current{
+	background:#6caddf;	
+	margin-bottom:0;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.tabs-header-select > div.current a{
+	display:block;
+	background:#FFF;
+	margin:2px 2px -2px 2px;
+	border-bottom:5px solid #FFF;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+}
+
+.tabs-header-select  div.current .month-name{
+	font-size:10px;
+	background:#6caddf;
+	color:#FFF;
+
+}
+
+.tabs-header-select  span.price{
+	font-size:13px;
+	m in-height:20px;
+	m argin-top:10px;
+	font-weight:bold;
+}
+
+.tabs-header-select > div.arrow{	
+	width:3.8%;
+	border:none;
+	background: url(//static.interjet.com/assets/images/icon/icon-cal-picker.png) no-repeat 0 -100px;
+}
+.tabs-header-select > div.arrow.right{	
+	background-position:center -60px;
+}
+.tabs-header-select > div.arrow.left{		
+}
+
+.tabs-header-select > div.arrow a{
+	width:100%;
+	display:block;
+	min-height:55px;
+}
+
+
+.btn-sort-dropdown{
+	background: white;
+    border: 1px solid #cccccc;
+    padding: 0;
+    border-radius: 0;
+	text-indent:5px;
+	line-height:25px;
+	width: 100%;
+	text-align: left;
+}
+
+.btn-sort-dropdown span{
+	margin-left:5px;
+	display:inline-block;
+	width:20px;
+	height:25px;
+	background:url(//static.interjet.com/assets/images/icon/icon-dropdown.png) gray no-repeat center center;
+	float:right;
+	
+}
+
+@-moz-document url-prefix() {
+	.btn-sort-dropdown span{
+		margin-top: -25px;
+	}
+}
+
+.tabs-header-selectv2 > div{
+	float:left;
+	width:10.8%;		
+	border:1px solid lightgray;
+	min-height:60px;
+	text-align:center;
+	margin-right:1.8%;	
+	border-radius:8px;	
+}
+
+.tabs-header-selectv2  div span{
+	display:block;
+	font-size:12px;
+}
+.tabs-header-selectv2  .month-name{
+	font-size:10px;		
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	padding:5px 0;
+	background:#F3F2F0;
+	font-size:12px;
+	font-weight:bold;
+}
+.tabs-header-selectv2  .day-name{
+	padding:5px 0;
+	font-weight:bold;
+	font-size:11px;
+}
+
+.tabs-header-selectv2  .price{
+	padding:0 0 5px 0;
+}
+
+
+.tabs-header-selectv2 > div.current{
+	margin-bottom:0;
+	border-top-left-radius:13px;
+	border-top-right-radius:13px;
+	border-bottom:2px solid white;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	min-height:82px;
+	border-left:2px solid #6CADDF;
+	border-right:2px solid #6CADDF;
+}
+.tabs-header-selectv2 > div.current a{
+	display:block;
+	background:#D8EBFA;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.tabs-header-selectv2 > div.current a .price{
+	font-size:14px;
+	font-weight:bold;
+}
+
+.tabs-header-selectv2  div.current .month-name{
+	background:#6CADDF;
+	color:#FFF;
+
+}
+
+.tabs-header-selectv2 > div.arrow{	
+	width:3.8%;
+	border:none;
+	background: url(//static.interjet.com/assets/images/icon/icon-cal-picker.png) no-repeat 0 -100px;
+}
+.tabs-header-selectv2 > div.arrow.right{	
+	background-position:center -60px;
+}
+.tabs-header-selectv2 > div.arrow.left{		
+}
+
+.tabs-header-selectv2 > div.arrow a{
+	width:100%;
+	display:block;
+	min-height:55px;
+}
+.desc-container{
+	background:red;
+	width:200px;
+	height:300px;
+}
+.dropdown-menu.sort-by .glyphicon{
+	margin-right:3px;
+}
+.sort-by li a.selected{
+	background:#152F87;
+	color:#FFF;
+	cursor:not-allowed;
+}
+
+.fares-features {	
+	margin:0 15px;
+	padding:15px 0;
+}
+.fares-features li{	
+	list-style:none;	
+	border-bottom:1px solid #6CADDF;
+	min-height:50px;
+	font-size:12px;
+	padding-left:0;
+	color:#152F87;
+	
+}
+.fares-features li div{
+	padding:5px;
+}
+.fares-features li div span{display:block;float:left; width:40px;}
+.fares-features li div span img{margin-right:5px;}
+.fares-features li.bordered{
+	border-right:1px solid #6CADDF;
+}
+
+.fare-data{	
+	text-align:center;
+	margin-top:10px;
+}
+
+.available-seats span,.available-seats strong{
+	color:#BE1515;
+	font-size:12px;
+}
+
+.main-fare-title{
+	padding-left:3px;
+	padding-right:3px;
+	/*margin-left:-4px;*/
+	/*margin-right:-4px;*/
+}
+.fare-title{
+	display:inline-block;	
+	width:100%;
+	border-radius: 7px 7px 0 0;
+	
+}
+
+
+
+.fare-title.text-i-fare, .fare-title.text-i-fare .en {
+	height:52px;	
+	/*background-image:url(//static.interjet.com/assets/images/fares-columns/text-ifares-ES.png);*/
+	margin-bottom:5px;
+	background-size:80%;
+	margin-top:5px;
+}
+.fare-title.text-i-fare.en{
+	background-image:url(//static.interjet.com/assets/images/fares-columns/text-ifares-EN.png);
+}
+.fare-title.i-fare{
+	height:53px;
+	background: url(//static.interjet.com/assets/images/fares-columns/icn_light-1m.png) no-repeat 7px 13px #b2b2b2;
+	background-size:44%;
+	/*border-top: 1px solid #EBEBEB;
+    border-left: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;	*/
+	}
+
+	.fare-title.i-fare.usa{
+	height:53px;
+	background: url(/images/fares-columns/icn_light-0m.png) no-repeat 7px 8px #b2b2b2;
+	background-size:50%;
+	}
+
+
+.fare-title.optimum {
+	height:30px;
+	background-color:#6CADDF
+}
+.fare-title.text-optimum {
+	height:25px;
+/*	background-image:url(//static.interjet.com/assets/images/fares-columns/text-optimum-ES.png); */
+	margin-bottom:5px;
+	background-size:80%;
+	margin-top:20px;
+}
+.fare-title.text-optimum.en{
+	background-image:url(//static.interjet.com/assets/images/fares-columns/text-optimum-EN.png); 
+}
+.fare-title.optimum {
+	height:60px;	
+	background: url(//static.interjet.com/assets/images/fares-columns/icn_optima-2m.png) no-repeat 10px 20px #6CADDF;
+	background-size:80%;
+	margin-top:5px;
+	/*margin-bottom:35px;*/
+}
+.fare-title.optimum.usa{
+	height:60px;	
+	background: url(/assets/images/fares-columns/icn_optima-1m.png) no-repeat 10px 16px #6CADDF;
+	background-size:70%;
+	margin-top:5px;	
+}
+
+.fare-title.negocios {
+	height:30px;
+	background-color:#6CADDF
+}
+.fare-title.text-negocios {
+	height:45px;
+	background-image:url(//static.interjet.com/assets/images/fares-columns/text-negocios-ES.png); 
+	margin-bottom:5px;
+	background-size:80%;
+	margin-top:20px;
+}
+.fare-title.text-privada {
+	height:45px;
+	background-image:url(//static.interjet.com/assets/images/fares-columns/text-negocios-ES.png); 
+	margin-bottom:5px;
+	background-size:80%;
+	margin-top:20px;
+}
+.fare-title.text-negocios.en{
+	background-image:url(//static.interjet.com/assets/images/fares-columns/text-optimum-EN.png); 
+}
+.fare-title.negocios {
+	height:40px;
+	background-image:url(//static.interjet.com/assets/images/fares-columns/icon-optimum-ES.png);
+	background-size:100%;
+}
+
+
+.fare-title.priority {height:68px;background-color:#1b4298}
+.fare-title.text-priority {
+	height:30px;
+	/*background-image:url(//static.interjet.com/assets/images/fares-columns/text-priority-ES.png); */
+	background-size:80%;
+	margin-bottom:5px;
+}
+.fare-title.priority {
+	margin-top:12px;
+	background:url(//static.interjet.com/assets/images/fares-columns/icn_priority-3m.png) no-repeat 3px 32px #3154A2; 
+	background-size:96%;
+}
+.fare-title.priority.usa{
+	margin-top:12px;
+	background:url(//static.interjet.com/assets/images/fares-columns/icn_priority-2m.png) no-repeat 7px 28px #3154A2; 
+	background-size:90%;
+}
+
+.icon-checkout{
+	display:inline-block;
+	width:40px;
+	height:35px;
+	background:url(//static.interjet.com/assets/images/icon/sprite-checkout.png) no-repeat left top;
+}
+
+.icon-checkout.sports-equip{
+	background-position:0 -135px;
+	height:50px;
+}
+.icon-checkout.instrument{
+	background-position:0 -35px;
+	height:50px;
+}
+.icon-checkout.pets{
+	background-position:0 -84px;
+	height:50px;
+	width:50px;
+}
+.icon-checkout.small{
+	background-position: -75px -83px;
+	height: 15px;
+	width: 45px;
+}
+.icon-checkout.small.i-fare{background-position: -74px -83px;}
+.icon-checkout.small.i-fare.en{background-position: -170px -83px;}
+
+.icon-checkout.small.reg-fare{background-position: -77px -185px;}
+
+
+.schedule-container{
+	margin:0 9px 15px 15px;
+	border:1px solid lightgray;
+	position:relative;
+	padding:0;
+	font-size:12px;
+}
+.schedule-container:hover{
+	cursor:pointer;
+}
+
+.booking-detail{
+	background:#F0EFEE;
+	
+}
+.detail-booking-body{
+	padding:0;
+}
+.items-detail{
+	padding:3px 10px;
+	border-bottom:1px solid #9D9B9C;	
+}
+.segment-flight{
+	padding:5px 0;
+}
+.radio-container{
+	position:absolute;
+	left:-10px;
+	z-index:555;
+	top:42%;
+	margin-right:10px;
+}
+	.radio-container input{
+		width: 18px;
+		height: 18px;
+		margin:0;
+   display: inline-block;
+   font-size: 15px;
+   line-height: 1em;
+   margin: 0 0.25em 0 0;
+   padding: 0;
+   width: 1.25em;
+   height: 1.25em;
+   -webkit-border-radius: 0.25em;
+   vertical-align: text-top;
+     background: url(//static.interjet.com/assets/images/icon/plane.png) no-repeat left center;
+   -webkit-background-size: 28px 28px; /* shrink high resolution background */
+	}
+
+.schedule-container:hover div.route-times{
+	background:#eff8fe;
+}
+
+.segments-separator{
+	border-bottom:1px solid lightgray;
+
+}
+
+
+.schedule-container div.price{
+	vertical-align:middle;
+	padding-right:0;
+	padding-left:0;
+}
+.schedule-container.lay-v2 .price{
+	vertical-align:middle;
+	padding-right:0;
+	padding-left:0;
+	margin-left:-4px;
+	margin-right:4px;
+}
+.schedule-container div.journey-price{		
+	text-align:right;
+	padding:5px;
+	font-size:18px;
+
+}
+
+.schedule-container div.price .stops{
+	font-size: 12px;
+	margin-left: 10px;
+	font-style: italic;
+	text-align: center;
+	color:#7cab43;
+}	
+.schedule-container div.price .extras{
+	font-size:13px;	
+	text-align:right;
+}
+.schedule-container div.price .extras .discount{
+	color:#1B4298;
+	margin-right:10px;
+	font-weight:bold;
+}
+.schedule-container div.price .extras .promo{
+	color:#6caddf;
+	font-size:11px;
+	margin-right:5px;
+}
+.schedule-container div.price .extras .special-promo{
+	color:#CB3333;
+	margin-right:5px;
+	font-size:13px;
+}
+
+.schedule-container div.price .extras .special-fare{
+	color:#CB3333;
+	margin-right:5px;
+	display:block;
+	height:20px;
+	background:url(//static.interjet.com/assets/images/icon/ifares-es.gif) transparent no-repeat center center;	
+	font-size:13px;
+}
+
+.schedule-container div.price .extras .special-far{
+	color:#CB3333;
+	margin-right:5px;
+	display:block;
+	height:20px;
+	background:url(//static.interjet.com/assets/images/icon/aniversario-interjet-10.png) transparent no-repeat right center;
+	
+	font-size:13px;
+}
+
+.schedule-container div.price .extras .special-fare.en{
+	background:url(//static.interjet.com/assets/images/icon/ifares-en.gif) transparent no-repeat center center;	
+}
+
+.schedule-container div.price .extras .valentins-day{
+	color:#CB3333;
+	margin-right:5px;
+	display:block;
+	height:20px;
+	background:url(//static.interjet.com/assets/images/heart.png) transparent no-repeat center center;	
+	font-size:13px;
+}
+
+.schedule-container:hover ,
+.schedule-container.active{
+	border:1px solid #6caedf;
+	box-shadow:0px 0px 5px 1px #6CAEDF;
+	-webkit-box-shadow:0px 0px 5px 1px #6CAEDF;
+	-moz-box-shadow:0px 0px 5px 1px #6CAEDF;
+}
+.schedule-container.active .route-times{
+	background:#eff8fe;
+}
+.schedule-container.active .bg-white-smoke{background-color:#FFF}
+
+.schedule-container.lay-v2{
+	border:none;
+	font-size:14px;
+	margin-bottom:2px;
+}
+
+.schedule-container.lay-v2 .route-times{	
+	padding:10px 0;
+	border-radius:5px;
+	border:1px solid #E8E7E5;
+}
+
+.schedule-container.lay-v2 .journey-price{		
+	 margin:0 0 0 5px;
+	 min-height:72px;
+	 border-radius:5px;
+	 font-size:14px;
+}
+.schedule-container.lay-v2 .journey-price.segments-2{		
+	 min-height:110px;
+}
+
+.schedule-container.lay-v2 .journey-price.segments-3{		
+	 min-height:160px;
+}
+
+.schedule-container.lay-v2 .journey-price .discount{	
+	color: #6CADDF;    
+    font-size: 12px;
+    font-weight: bold;
+	padding:2px;		
+}
+.schedule-container.lay-v2 .journey-price.promo{		
+	border:1px solid #E8E7E5;
+}
+.schedule-container.lay-v2 .journey-price.promo2{		
+	border:1px solid #E8E7E5;
+}
+.schedule-container.lay-v2 .journey-price.promo3{		
+	border:1px solid #E8E7E5;
+}
+.schedule-container.lay-v2 .journey-price.regular{		
+	border:1px solid #E8E7E5;
+	
+}
+
+.schedule-container.lay-v2:hover ,
+.schedule-container.lay-v2.active{
+	border:0;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+}
+
+.schedule-container.lay-v2.active .route-times,
+.schedule-container.lay-v2.active .journey-price.promo,
+.schedule-container.lay-v2:hover .route-times,
+.schedule-container.lay-v2:hover .journey-price.promo{
+	background:#f9f9f9;
+	border:1px solid white;
+	box-shadow:0px 0px 5px 1px #6CAEDF;
+}
+.schedule-container.lay-v2.active .journey-price.promo2,
+.schedule-container.lay-v2:hover .journey-price.promo2{
+	background:#F0F6FB;
+	border:1px solid white;
+	box-shadow:0px 0px 5px 1px #6CAEDF;
+}
+.schedule-container.lay-v2.active .journey-price.promo3,
+.schedule-container.lay-v2:hover .journey-price.promo3{
+	background:#E8ECF4;
+	border:1px solid white;
+	box-shadow:0px 0px 5px 1px #6CAEDF;
+}
+.schedule-container.lay-v2.active .journey-price.regular,
+.schedule-container.lay-v2:hover .journey-price.regular{
+	background:#F3F2F0;
+	border:1px solid #A3A3A3;
+	box-shadow:0px 0px 5px 1px #BCBCBC;
+}
+
+.schedule-container.lay-v2 .green-radio{
+	position:absolute; 
+	left:-12px;
+	top:35%; 
+	display:none; 
+	width:22px; 
+	height:22px; 
+}
+.schedule-container.lay-v2.active .green-radio{
+	background:url(//static.interjet.com/assets/images/icon/radio-green-on.png) no-repeat center 0; 
+	display:block; 
+}
+
+
+.features-flight{
+	padding-right:0;
+	font-size:11px;
+}
+	.features-flight span.equipment{
+		display:inline-block;
+		height:17px;
+		background:url(//static.interjet.com/assets/images/icon/plane.png) no-repeat left center;
+		padding-left:18px;
+		vertical-align:middle;
+		margin-right:3px;
+		color:#152F87;
+	}
+	
+
+	
+.wsp105
+{
+	width: 105%;
+}
+
+.list-style-none
+{
+	list-style: none;
+}
+
+
+.breadcrumb.purchase-status{ 
+	padding:5px 0;
+	overflow: hidden;
+	clear:both;
+	margin:15px 0;
+	font-size:14px;
+} 
+.breadcrumb.purchase-status li {
+	list-style-type:decimal;
+	display:list-item;
+	float:left;
+	list-style-position:inside;
+	margin-right:10px;
+	padding-right:15px;
+	background:url(//static.interjet.com/assets/images/icon/arrow-right-small.png) no-repeat right center;
+}
+.breadcrumb.purchase-status li + li:before {
+  content: "";
+  padding:0;
+}
+.breadcrumb.purchase-status .active {border-bottom:3px solid #1B4298;}
+
+.title-bordered{border-bottom:1px solid #e0e0df;}
+
+.items-padd-right-0 > div{padding-right:0;}
+.items-padd-left-0 > div{padding-left:0;}
+.items-padd-right-0 > div:last-child{padding-right:0px}
+
+.call-to-actions{ margin-top:-40px;}
+.call-to-actions { margin-bottom: 0px;}
+.call-to-actions .arrow-expand{ cursor: pointer;}
+.call-to-actions.arrow-expand:hover .js-animate{ height: 5px; background: #5c9cd8;}
+.call-to-actions ul { 
+	cursor:default;
+	background:#fff; 
+	width:95%;	
+	position:absolute; 
+	top:120px;
+	z-index:999; 
+	padding: 10px 0; 		
+}
+
+.call-to-actions .panels .first-layer{
+	padding:10px;	
+}
+.call-to-actions .panels ul li a{
+	font-size:13px;
+	color:#6CADDF;
+}
+
+.call-to-actions  h3{
+	font-size:20px; 
+	margin-top:0
+}
+.call-to-actions  .panel-bodys{
+	display:none;
+}
+.call-to-actions  .panel-bodys .text-image > div{
+	position:absolute;
+	top:10px;
+}
+.call-to-actions  .panel-bodys .items-menu li{
+	list-style-position:inside;
+	color:#6CADDF;
+	padding-left:10px;
+	margin-bottom:2px;
+}
+
+.call-to-actions .panels > div{
+	background:#1C4199;
+	clear:both;
+	overflow:hidden;
+	min-height:120px;
+}
+.call-to-actions .panels  div.description{
+	margin-top:10px;
+}
+.call-to-actions .panels  div.description > div{
+	padding:0;
+}
+.call-to-actions img{
+	width:100%;
+	height:auto;
+}
+.route-data h2,.route-data h3{margin:0}
+.route-data h2.destination-name a{
+	font-size:20px;
+	color:#000000;
+}
+.route-data h2.destination-name a:hover{text-decoration:none}
+.route-data div.labels span{
+	display:block;
+	color:#333;
+}
+.route-data h2.price, .route-data h2.price a{
+	color:#6CADDF;
+	font-size:25px;
+}
+.route-data h2 i{
+	font-size:14px; 
+	font-style:normal
+}
+
+
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter: Alpha(Opacity=0) }
+ 
+.ui-state-disabled { cursor: default!important }
+ 
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat }
+ 
+.ui-widget-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100% }
+ 
+ 
+ui-datepicker
+{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.ui-widget
+{
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button
+{
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content
+{
+	
+	border: 1px solid #a6c9e2;
+	color: #222;
+}
+.ui-widget-content a
+{
+	color: #222;
+}
+.ui-widget-header
+{	
+	background:#2A70A6;
+	border: 1px solid  transparent;
+	color: #FFF;
+	font-weight: bold;
+}
+.ui-widget-header a
+{
+	color: #fff;
+}
+.ui-state-default,.ui-widget-content .ui-state-default
+{
+	border: 1px solid transparent;
+	color: #2e6e9e;
+	f ont-weight: bold;
+	outline: 0;
+}
+.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited
+{
+	color: #2e6e9e;
+	outline: 0;
+	text-decoration: none;
+}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus
+{
+	border: 1px solid #79b7e7;
+	color: #1d5987;
+	f ont-weight: bold;
+	outline: 0;
+}
+.ui-state-hover a,.ui-state-hover a:hover
+{
+	color: #1d5987;
+	outline: 0;
+	text-decoration: none;
+}
+.ui-state-active,.ui-widget-content .ui-state-active
+{
+	border: 1px solid #79b7e7;
+	color: #FFF;
+	font-weight: bold;
+	outline: 0;
+	background:#509BD4;
+}
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited
+{
+	color: #e17009;
+	outline: 0;
+	text-decoration: none;
+}
+.ui-state-highlight,.ui-widget-content .ui-state-highlight
+{	
+	c olor: #CBCBCB;
+}
+.ui-state-highlight a,.ui-widget-content .ui-state-highlight a
+{
+	color: #363636;
+}
+.ui-state-error,.ui-widget-content .ui-state-error
+{
+	border: 1px solid #cd0a0a;
+	color: #cd0a0a;
+}
+.ui-state-error a,.ui-widget-content .ui-state-error a
+{
+	color: #cd0a0a;
+}
+.ui-state-error-text,.ui-widget-content .ui-state-error-text
+{
+	color: #cd0a0a;
+}
+.ui-state-disabled,.ui-widget-content .ui-state-disabled
+{
+	background-image: none;
+	filter: Alpha(Opacity=35);
+	opacity: .35;
+}
+.ui-priority-primary,.ui-widget-content .ui-priority-primary
+{
+	font-weight: bold;
+}
+.ui-priority-secondary,.ui-widget-content .ui-priority-secondary
+{
+	filter: Alpha(Opacity=70);
+	font-weight: normal;
+	opacity: .7;
+}
+.ui-icon
+{
+	height: 16px;
+	width: 16px;
+}
+
+.ui-widget-overlay
+{
+	filter: Alpha(Opacity=30);
+	opacity: .30;
+}
+.ui-widget-shadow
+{
+	filter: Alpha(Opacity=30);
+	margin: -8px 0 0 -8px;
+	moz-border-radius: 8px;
+	opacity: .30;
+	padding: 8px;
+	webkit-border-radius: 8px;
+}
+.ui-datepicker
+{
+	padding: .3em;
+	width: 17em;
+	border:none;
+}
+.ui-datepicker .ui-datepicker-header
+{
+	padding: .2em 0;
+	position: relative;
+	margin:0 0.4em;
+}
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next{
+	height: 1.8em;
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	background:url(//static.interjet.com/assets/images/icon/icon-cal-picker.png) no-repeat center -23px;
+}
+.ui-datepicker .ui-datepicker-next{
+	background-position:center 3px;
+}
+.ui-datepicker .ui-datepicker-prev-hover,.ui-datepicker .ui-datepicker-next-hover
+{
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev{left: 2px;}
+.ui-datepicker .ui-datepicker-next{right: 2px;}
+.ui-datepicker .ui-datepicker-prev-hover{left: 1px;}
+.ui-datepicker .ui-datepicker-next-hover{right: 1px;}
+.ui-datepicker .ui-datepicker-prev span,.ui-datepicker .ui-datepicker-next span{
+	
+	display: block;
+	left: 50%;
+	margin-left: 8px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+}
+.ui-datepicker .ui-datepicker-title{
+	line-height: 1.8em;
+	margin: 0 2.3em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select{
+	float: left;
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year{width: 100%;}
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{width: 49%;}
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year{float: right;}
+.ui-datepicker table{
+	border-collapse: collapse;
+	font-size: .9em;
+	margin: 0 0 .4em;
+	width: 100%;
+}
+.ui-datepicker th{
+	border: 0;
+	font-weight: normal;
+	padding: .7em .3em;
+	text-align: center;
+	background-color:#F3F2F0;
+}
+.ui-datepicker td
+{
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,.ui-datepicker td a
+{
+	display: block;
+	padding: .2em;
+	text-align: center;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane
+{
+	background-image: none;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+}
+.ui-datepicker .ui-datepicker-buttonpane button
+{
+	cursor: pointer;
+	float: right;
+	margin: .5em .2em .4em;
+	overflow: visible;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{
+	float: left;
+}
+.ui-datepicker.ui-datepicker-multi{
+	width: auto;
+	box-shadow:0px 0px 6px 2px #9A9797;
+	border:none;
+	background:#FFF;
+	z-index:1100;
+}
+.ui-datepicker-multi .ui-datepicker-group{
+	float: left;
+	background:#FFF;
+}
+.ui-datepicker-multi .ui-datepicker-group table{
+	margin: 0 auto .4em;
+	width: 95%;
+	background:#FFF;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group
+{
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group
+{
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group
+{
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header
+{
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header
+{
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane
+{
+	clear: left;
+}
+.ui-datepicker-row-break
+{
+	clear: both;
+	width: 100%;
+}
+.ui-datepicker-rtl
+{
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev
+{
+	left: auto;
+	right: 2px;
+}
+.ui-datepicker-rtl .ui-datepicker-next
+{
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover
+{
+	left: auto;
+	right: 1px;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover
+{
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane
+{
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button
+{
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current
+{
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group
+{
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header
+{
+	border-left-width: 1px;
+	border-right-width: 0;
+}
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header
+{
+	border-left-width: 1px;
+	border-right-width: 0;
+}
+.ui-datepicker-cover
+{
+	display: block;
+	display: none;
+	filter: mask();
+	height: 200px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 200px;
+	z-index: -1;
+}
+
+/*Itinerario*/
+.back-containers-it{background: #F3F2F1;}
+/*Itinerario*/
+
+/*Footer*/
+.back-footer{background-color: #E6E5E3;}
+
+.icon-soc-med span{
+	display:inline-block;
+    width: 25px;
+    height: 25px;
+	background: url(//static.interjet.com/assets/images/icon/Contactos.png) 0 0;
+	margin-right:10px;
+	vertical-align:middle;
+}
+.icon-soc-med span.tw{background-position:-13px -1px;}
+.icon-soc-med span.fb{background-position:-13px -38px;}
+.icon-soc-med span.gp{background-position: -13px -75px;}
+.icon-soc-med span.ig{background-position: -13px -112px;}
+.icon-soc-med span.yt{background-position: -13px -148px;}
+
+span.chat{
+    width: 46px;
+    height: 33px;
+	display:inline-block;
+    background-position:0 -187px;
+}
+span.tel{
+    width: 19px;
+    height: 19px;
+	display:inline-block;
+    background-position:  -16px -229px;
+}
+
+.brand0, .brand1, .brand2, .brand3, .brand4
+{
+	background:url(//static.interjet.com/assets/images/icon/Brands.png) no-repeat;
+    width: 89px;
+    height: 38px;
+}
+.brand0{ background-position:0 -143px;}
+.brand1{ background-position:0 -110px;}
+.brand2{ background-position:0 -77px;}
+.brand3{background-position: 0 -39px;}
+.brand4{background-position: 0 0;}
+
+/*Footer*/
+
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+ul.ul-square > li {	
+	list-style: square;
+	margin-bottom: 3px;	
+}
+ul.ul-disc > li {	
+	list-style: disc;
+	margin-bottom: 3px;	
+}
+
+ol.ol-lower-alpha{
+	list-style: lower-alpha;
+}
+ol.ol-numeric{
+	list-style: decimal !important;
+}
+ol.ol-numeric li{
+	margin-bottom:0px !important;
+}
+
+ul.item-padd-bottom-10 li{
+	padding-bottom:10px;
+}
+ ul.blue-vignette{
+	padding-left:0;
+}
+ul.blue-vignette li{
+	padding:5px 0 5px 10px;
+	border-bottom: 1px solid #335296;
+	list-style-type: none;
+	list-style-image: none;
+	background: url(//static.interjet.com/assets/images/icon/bull-blue.png) no-repeat left 10px;
+}
+ul.blue-vignette li:last-child{ border-bottom: 0}
+
+ul.blue-vignette.gray-bordered li{ border-bottom: 1px solid #CDCBCB;}
+ul.blue-vignette.gray-bordered li:last-child{ border-bottom:0}
+
+ul.cleared li{
+	clear:both;
+	overflow:hidden;
+} 
+ul.ul-plane{
+	padding-left:35;
+}
+ul.ul-plane li{
+	/*list-style:none;
+	background: url(http://static.interjet.com/assets/images/icons/avion.png) no-repeat 0 20px  ;*/
+	padding:15px 0 0px 15px;
+	text-align:justify;
+} 
+.inline{
+	display:inline-block;
+}
+ span.select-container{
+	background:url(//static.interjet.com/assets/images/icon/arrow-select.png) no-repeat right top #FFF;
+	display:inline-block;
+	border-radius:4px;
+	}
+span.select-container select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+	background:transparent !important;
+	margin-right:10px;
+}
+
+span.select-container select::-ms-expand {
+    display: none;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+ 
+ 
+.tabs-content{ 
+	background:#FFF;
+	padding:15px
+}
+  
+ .mg-image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+        max-width: 100%;
+}
+.mg-image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+/* just apply some height and width to the wrapper.
+.mg-image {
+  width:400px;
+  height:400px;
+  overflow: auto;
+}
+***********************************/ 
+
+.btn.read-more, .btn.read-more:hover{
+	width:150px;
+	height:30px;
+}
+ .btn.read-more{
+	background:url(http://static.interjet.com/assets/images/buttons/boton_leermas.jpg) no-repeat center center;
+ }
+ .btn.read-more:hover{
+	background:url(http://static.interjet.com/assets/images/buttons/boton_leermas_relleno.jpg) no-repeat center center;
+ }
+ 
+.btn.with-arrow{
+	background-image:url(//static.interjet.com/assets/images/icon/arrow-standar-button.png);
+	padding-right: 30px;
+} 
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-delayed,
+.btn-danger,
+.btn-ambar {
+  t ext-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -w ebkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  b ox-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.btn-default:active,
+.btn-primary:active,
+.btn-success:active,
+.btn-info:active,
+.btn-warning:active,
+.btn-delayed:active,
+.btn-danger:active,
+.btn-ambar:active,
+.btn-default.active,
+.btn-primary.active,
+.btn-success.active,
+.btn-info.active,
+.btn-warning.active,
+.btn-delayed.active,
+.btn-danger.active,
+.btn-ambar.active {
+  -w ebkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  b ox-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+}
+.btn-default {
+  ba ckground-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
+  ba ckground-image: -o-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
+  ba ckground-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+  fi lter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  fi lter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  ba ckground-repeat: repeat-x;
+  te xt-shadow: 0 1px 0 #fff;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #e0e0e0;
+  background-position: 0 -15px;
+}
+.btn-default:active,
+.btn-default.active {
+  background-color: #e0e0e0;
+  border-color: #dbdbdb;
+}
+.btn-default:disabled,
+.btn-default[disabled] {
+  background-color: #e0e0e0;
+  background-image: none;
+}
+.btn-primary {
+  ba ckground-image: -webkit-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
+  ba ckground-image: -o-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
+  ba ckground-image: linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);
+  fi lter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
+  fi lter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  b ackground-image:url(//static.interjet.com/assets/images/icon/arrow-right-small-white.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-color: transparent;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #99ccff	 ;
+  b ackground-position: 0 -15px;
+  border:1px solid transparent;
+}
+.btn-primary:active,
+.btn-primary.active {
+  b ackground-color: #2d6ca2;
+  b order-color: #2b669a;
+}
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background-color: #2d6ca2;
+  background-image: none;
+}
+.btn-success {
+  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+  background-image: -o-linear-gradient(top, #5cb85c 0%, #419641 100%);
+  background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #3e8f3e;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #419641;
+  background-position: 0 -15px;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #419641;
+  border-color: #3e8f3e;
+}
+.btn-success:disabled,
+.btn-success[disabled] {
+  background-color: #419641;
+  background-image: none;
+}
+.btn-info {
+ /*  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
+  background-image: -o-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
+  background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2aabd2', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);  
+  background-repeat: repeat-x;
+  border-color: #28a4c9; */
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.btn-info:hover,
+.btn-info:focus {  
+  background-color: #99ccff;
+  background-position: 0 -15px; 
+}
+.btn-info:active,
+.btn-info.active {  
+  background-color: #99ccff;
+  border-color: #28a4c9; 
+}
+.btn-info:disabled,
+.btn-info[disabled] {  
+  background-color: #99ccff;
+  background-image: none;
+  background:#357ebd;
+}
+.btn-warning {
+  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+  background-image: -o-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+  background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #e38d13;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: #eb9316;
+  background-position: 0 -15px;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #eb9316;
+  border-color: #e38d13;
+}
+.btn-warning:disabled,
+.btn-warning[disabled] {
+  background-color: #eb9316;
+  background-image: none;
+}
+
+.btn-delayed{	
+	background-image: linear-gradient(to bottom, #bf7d02 0%, #bf7d02 100%);	
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+.btn-delayed:hover,
+.btn-delayed:focus {
+  background-color: #a77317;
+  background-position: 0 -15px;
+}
+.btn-delayed:active,
+.btn-delayed.active {
+  background-color: #b5900f;
+  border-color: #b92c28;
+}
+.btn-delayed:disabled,
+.btn-delayed[disabled] {
+  background-color: #c12e2a;
+  background-image: none;
+  }
+
+.btn-danger {
+  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
+  background-image: -o-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
+  background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #b92c28;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #c12e2a;
+  background-position: 0 -15px;
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #c12e2a;
+  border-color: #b92c28;
+}
+.btn-danger:disabled,
+.btn-danger[disabled] {
+  background-color: #c12e2a;
+  background-image: none;
+}
+.thumbnail,
+.img-thumbnail {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+  background-color: #e8e8e8;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);
+  background-image: -o-linear-gradient(top, #428bca 0%, #357ebd 100%);
+  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
+  background-color: #357ebd;
+}
+.navbar-default {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #f8f8f8 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+}
+.navbar-default .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
+  background-image: -o-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
+  background-image: linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
+}
+.navbar-brand,
+.navbar-nav > li > a {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.navbar-inverse {
+  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+  background-image: -o-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+  background-image: linear-gradient(to bottom, #3c3c3c 0%, #222222 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background-image: -webkit-linear-gradient(top, #222222 0%, #282828 100%);
+  background-image: -o-linear-gradient(top, #222222 0%, #282828 100%);
+  background-image: linear-gradient(to bottom, #222222 0%, #282828 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff282828', GradientType=0);
+  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-static-top,
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  border-radius: 0;
+}
+.alert {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#alertContent{
+	margin-top:20px;
+}
+.alert-success {
+  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+  background-image: -o-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
+  background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
+  border-color: #b2dba1;
+}
+.alert-info {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+  background-image: -o-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+  background-image: linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
+  border-color: #9acfea;
+}
+.alert-warning {
+  /*background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
+  background-image: -o-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
+  background-image: linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);*/
+  background-color: rgba(245,166,35,0.10);
+  border: 2px solid rgba(245,166,35,0.50);
+  border-radius: 10px;
+  color: #7f7f7f;
+}
+.alert-danger {
+  background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+  background-image: -o-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
+  background-image: linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
+  border-color: #dca7a7;
+}
+
+
+.alert-message
+{    
+    padding: 20px;
+    border-left: 3px solid #F3F2F1;
+}
+.alert-message-default
+{
+    background-color: #F3F2F1;
+    border-color: #B4B4B4;
+}
+.message-inner {
+	background: #fff;
+	border: 1px solid #ddd;	
+	padding: 10px;
+	position: relative;
+}
+.message-inner:before {
+	border-right: 10px solid #ddd;
+	border-style: solid;
+	border-width: 10px;
+	color: rgba(0,0,0,0);
+	content: "";
+	display: block;
+	height: 0;
+	position: absolute;
+	left: -20px;
+	top: 6px;
+	width: 0;
+}
+
+.message-inner:after {
+	border-right: 10px solid #fff;
+	border-style: solid;
+	border-width: 10px;
+	color: rgba(0,0,0,0);
+	content: "";
+	display: block;
+	height: 0;
+	position: absolute;
+	left: -18px;
+	top: 6px;
+	width: 0;
+}
+
+
+.progress {
+  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
+  background-image: -o-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
+  background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0);
+}
+.progress-bar {
+  background-image: -webkit-linear-gradient(top, #428bca 0%, #3071a9 100%);
+  background-image: -o-linear-gradient(top, #428bca 0%, #3071a9 100%);
+  background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
+}
+.progress-bar-success {
+  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
+  background-image: -o-linear-gradient(top, #5cb85c 0%, #449d44 100%);
+  background-image: linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);
+}
+.progress-bar-info {
+  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
+  background-image: -o-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
+  background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff31b0d5', GradientType=0);
+}
+.progress-bar-warning {
+  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
+  background-image: -o-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
+  background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);
+}
+.progress-bar-danger {
+  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);
+  background-image: -o-linear-gradient(top, #d9534f 0%, #c9302c 100%);
+  background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);
+}
+.progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.list-group {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  text-shadow: 0 -1px 0 #3071a9;
+  background-image: -webkit-linear-gradient(top, #428bca 0%, #3278b3 100%);
+  background-image: -o-linear-gradient(top, #428bca 0%, #3278b3 100%);
+  background-image: linear-gradient(to bottom, #428bca 0%, #3278b3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3278b3', GradientType=0);
+  border-color: #3278b3;
+}
+.panel {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.panel-default > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: -o-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+}
+.panel-primary > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);
+  background-image: -o-linear-gradient(top, #428bca 0%, #357ebd 100%);
+  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
+}
+.panel-success > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
+  background-image: -o-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
+  background-image: linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);
+}
+.panel-info > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image: -o-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
+  background-image: linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+}
+.panel-warning > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
+  background-image: -o-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
+  background-image: linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);
+}
+.panel-danger > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image: -o-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
+  background-image: linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
+}
+.well {
+  background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+  background-image: -o-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
+  background-image: linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
+  border-color: #dcdcdc;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/*##########################################################   INICIA SCROLL-BAR ####################################################################################################*/
+.ps-container .ps-scrollbar-x-rail {
+    position: absolute; /* please don't change 'position' */
+    bottom: 3px; /* there must be 'bottom' for ps-scrollbar-x-rail */
+    height: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -o-transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color .2s linear, opacity .2s linear;
+    -moz-transition: background-color .2s linear, opacity .2s linear;
+    transition: background-color .2s linear, opacity .2s linear;
+	display:none !important;
+}
+
+.ps-container:hover .ps-scrollbar-x-rail,
+.ps-container.hover .ps-scrollbar-x-rail {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.ps-container .ps-scrollbar-x-rail:hover,
+.ps-container .ps-scrollbar-x-rail.hover {
+    background-color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-x-rail.in-scrolling {
+    background-color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-y-rail {
+    position: absolute; /* please don't change 'position' */
+    right: 3px; /* there must be 'right' for ps-scrollbar-y-rail */
+    width: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -o-transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color .2s linear, opacity .2s linear;
+    -moz-transition: background-color .2s linear, opacity .2s linear;
+    transition: background-color .2s linear, opacity .2s linear;
+}
+
+.ps-container:hover .ps-scrollbar-y-rail,
+.ps-container.hover .ps-scrollbar-y-rail {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.ps-container .ps-scrollbar-y-rail:hover,
+.ps-container .ps-scrollbar-y-rail.hover {
+    background-color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-y-rail.in-scrolling {
+    background-color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-x {
+    position: absolute; /* please don't change 'position' */
+    bottom: 0; /* there must be 'bottom' for ps-scrollbar-x */
+    height: 8px;
+    background-color: #aaa;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -o-transition: background-color .2s linear;
+    -webkit-transition: background-color.2s linear;
+    -moz-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.ps-container.ie6 .ps-scrollbar-x {
+    font-size: 0; /* fixed scrollbar height in xp sp3 ie6 */
+}
+
+.ps-container .ps-scrollbar-x-rail:hover .ps-scrollbar-x,
+.ps-container .ps-scrollbar-x-rail.hover .ps-scrollbar-x {
+    background-color: #3071a9;
+}
+
+.ps-container .ps-scrollbar-y {
+    position: absolute; /* please don't change 'position' */
+    right: 0; /* there must be 'right' for ps-scrollbar-y */
+    width: 8px;
+    background-color: #3071a9;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -o-transition: background-color .2s linear;
+    -webkit-transition: background-color.2s linear;
+    -moz-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.ps-container.ie6 .ps-scrollbar-y {
+    font-size: 0; /* fixed scrollbar height in xp sp3 ie6 */
+}
+
+.ps-container .ps-scrollbar-y-rail:hover .ps-scrollbar-y,
+.ps-container .ps-scrollbar-y-rail.hover .ps-scrollbar-y {
+    background-color: #3071a9;
+}
+
+.ps-container.ie .ps-scrollbar-x,
+.ps-container.ie .ps-scrollbar-y {
+    visibility: hidden;
+}
+
+.ps-container.ie:hover .ps-scrollbar-x,
+.ps-container.ie:hover .ps-scrollbar-y,
+.ps-container.ie.hover .ps-scrollbar-x,
+.ps-container.ie.hover .ps-scrollbar-y {
+    visibility: visible;
+}
+/*##########################################################   FIN SCROLL-BAR ####################################################################################################*/
+
+
+/*Color Textos*/
+.ij-blue{color: #1b4298;}
+/*Color Textos*/
+
+/*Borde 1px*/
+.border-gray-1px{border:1px solid #D6D5D4;}
+/*Borde 1px*//*Custom Navegador Interjet*/
+.navbar-interjet
+{
+color: #1b4298;
+height:20px;
+min-height:45px;
+margin-bottom:0;
+}
+.interjet-header
+{
+color: #1b4298;
+padding: 0 85px;
+}
+.interjet-header > ul > li > a{
+color: #1b4298;
+font-size: 10px;
+}
+.separator + li::before
+{
+content: "|";
+display: block;
+padding-top: 18px;
+position: absolute;
+}
+.navbar-nav > li > span
+{
+padding-top: 15px;
+padding-bottom: 15px;
+line-height: 20px;
+}
+.navbar-nav > li > span
+{
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.nav > li > span
+{
+position: relative;
+display: block;
+padding: 10px 15px;
+}
+@font-face {
+font-family: 'Glyphicons Halflings';
+src: url('../fonts/glyphicons-halflings-regular.eot');
+src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+.glyphicon {
+position: relative;
+top: 1px;
+display: inline-block;
+font-family: 'Glyphicons Halflings';
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.container-fixd{
+	margin: 0 auto;
+}
+.container-fixd-abs
+{
+margin: 0 auto;
+width: 1200px;
+}
+span.text-arrow
+{
+display: inline-block;
+height: 24px;
+width: 25px;
+background: url("//static.interjet.com/assets/images/recortes/flecha_texto_elider.png") no-repeat;
+}
+span.arrow-dropdown
+{
+height: 30px;
+width: 20px;
+background: url("//static.interjet.com/assets/images/recortes/flecha_dropdown.png") no-repeat 0px 5px;
+}
+.box-shadow-nav{
+	-moz-box-shadow: 0 1px 10px #000;
+	-webkit-box-shadow: 0 1px 10px #000;
+	box-shadow: 0 1px 3px #000;
+}
+.box-shadow{
+	-moz-box-shadow: 5px 5px 5px #333;
+	-webkit-box-shadow: 5px 5px 5px #333;
+	box-shadow: 5px 5px 5px #333;
+}
+.box-shadows {
+	-moz-box-shadow : 5px 5px 5px rgba(0,0,0,0.1), 2px 2px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow : 5px 5px 5px rgba(0,0,0,0.1), 2px 2px 2px rgba(0,0,0,0.1);
+	box-shadow : 5px 5px 5px rgba(0,0,0,0.1), 2px 2px 2px rgba(0,0,0,0.1);
+
+}
+.box-shadow-menu{
+	-moz-box-shadow: 0px 10px 0px #333;
+	-webkit-box-shadow: 0px 10px 0px #333;
+	box-shadow: 0px 10px 0px #333;
+}
+div.navbar-wrapper{
+	background: url("//static.interjet.com/assets/images/icon/gradiente_topnav.png") repeat-x;
+}
+div.navbar-wrapper div.navbar{
+	border: none;
+}
+div.navbar-wrapper a.navbar-brand.custom-brand{
+	height: 84px;
+	width: 225px;
+	m argin-left: 40px;
+}
+div.navbar-wrapper ul.nav.navbar-nav.pull-right{
+	m argin-right: 100px;
+}
+div.navbar-wrapper ul.nav.navbar-nav.pull-right a.dropdown-toggle{
+	color: #152f87;
+	height: 84px;
+	min-width: 89px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	background: url("//static.interjet.com/assets/images/icon/nav-right-border.png") no-repeat right;
+}
+div.navbar-wrapper ul.nav.navbar-nav.pull-right a.dropdown-toggle1{
+	color: #152f87;
+	height: 84px;
+	min-width: 89px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: right;
+	background: url("//static.interjet.com/assets/images/icon/nav-right-border.png") no-repeat right;
+}
+div.navbar-wrapper ul.nav.navbar-nav.pull-right span.arrow-down{
+position: absolute;
+right: 12px;
+display: block;
+height: 11px;
+width: 11px;
+background: url('//static.interjet.com/assets/images/icon/sprite-arrows-1.png') no-repeat 0 -646px;
+width: 9px;
+height: 9px;
+}
+div.navbar-wrapper ul.nav.navbar-nav.pull-right li > a:hover, div.navbar-wrapper ul.nav.navbar-nav.pull-right .nav > li > a:focus
+{
+border-bottom: 5px solid #5c9cd8;
+}
+div.navbar-wrapper div.dropdown-menu-custom{
+	position: absolute;
+	display: none;
+	width: 690px;
+	min-height: 312px;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0px;
+	left: 380px;
+	z-index: 99;
+	background-color: #fff;
+	border-top: 3px solid #5c9cd8;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-1, div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-2, div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-3,  div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-4
+{
+float: left;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-1
+{
+width: 210px;
+height: 340px;
+background-color: #8c8a88;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-1 p
+{
+font-size: 16px;
+letter-spacing: 0.1;
+margin-bottom: 0px;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-1 a, div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-1 a:visited
+{
+color: #fff;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-1 a:hover
+{
+color: #152f87;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-2
+{
+width: 210px;
+height: 310px;
+border-right: 1px solid #eae8e6;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-2 p
+{
+margin-left: 22px;
+font-size: 16px;
+letter-spacing: 0.1;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-2 a, div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-2 a:visited
+{
+color: #152f87;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-3{
+	height: 330px;
+	width: 270px;
+	padding: 5px;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-3 p
+{
+color: #393939;
+margin-top: 16px;
+margin-left: auto;
+margin-right: auto;
+max-width: 220px;
+font-size: 20px;
+text-align: left;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-3 p:nth-child(2)
+{
+font-size: 16px;
+}
+.navbar.navbar-static-top
+{
+margin-bottom: 0px;
+}
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-3 div.img-wrap img
+{
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+div.navbar-wrapper div.dropdown-menu-custom div.nav-col-custom-4{
+	height: 340px;
+	width: 460px;	
+}
+
+div.navbar-wrapper div.dropdown-menu-custom li > a:hover, div.navbar-wrapper div.dropdown-menu-custom .nav > li > a:focus
+{
+background-color: #fff;
+}
+
+.always-above
+{
+position: absolute;
+z-index: 9999;
+}
+div.navbar-wrapper ul.nav.navbar-nav.pull-right span.arrow-down-cint
+{
+position: absolute;
+right: 12px;
+display: block;
+height: 11px;
+width: 11px;
+background: url('//static.interjet.com/assets/images/icon/sprite-arrows-1.png') no-repeat 0 -646px;
+width: 9px;
+height: 9px;
+bottom: 22px;
+}
+.interjet-logo{
+	margin-left: 0px;
+	background: url('//static.interjet.com/assets/images/icon/sprite-large-icons.png') no-repeat 0 5px;
+	width: 207px;
+	height: 45px;
+}
+.aniversario{
+	margin-left: 185px;
+	margin-top: 5px;
+	background: url('//static.interjet.com/assets/images/icon/aniversario.png') no-repeat 0 5px;
+	width: 90px;
+	height: 75px;
+}
+.clubinterjet-logo
+{
+background: url('//static.interjet.com/assets/images/logo/club-interjet-nav.png') no-repeat center center;
+width: 61px;
+height: 40px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+
+/*Custom Navegador Interjet*/
+
+/*static content pages*/
+.left-bar-content div > ul{
+	background:#F8F7F7;
+	padding:15px;	
+}
+.left-bar-content div > ul > li{
+	margin-top:15px;
+}
+.left-bar-content  div > ul > li:first-child{margin-top:0}
+.left-bar-content  div > ul > li > a{	
+	display:block;
+	border-bottom:1px solid #0A67B0;
+	color:#0A67B0;
+}
+.left-bar-content  div > ul > li > div > a, .left-bar-content  ul  li  div  span{	
+	display:block;
+	border-bottom:1px solid #0A67B0;
+	color:#0A67B0;
+}
+.left-bar-content  div  > ul > li > ul{
+	padding:0 
+}
+.left-bar-content div > ul > li > ul > li{
+	padding:5px 0;
+	border-bottom:1px dotted #DCDCDB ;
+	list-style-position:inside;
+}
+.left-bar-content div  h4{
+	background: #428bca;
+	color: white;
+	padding: 10px 15px;
+	margin-bottom: 0
+}
+#rightContent
+{
+	padding-top:15px;
+}
+
+#rightContent h3.title-content, #rightContent h4.title-paragraph{
+	color:#1B4298;
+}
+.title-paragraph
+{
+	color:#1B4298;
+}
+
+/*Custom Navegador Interjet*/
+
+/*Contact SSRs*/
+.SSRButtonList{
+	padding-top:10px;
+	display:inline-block;
+	list-style-type: none;
+}
+.SSRButtonList li{
+	float: left;
+}
+
+.SSRButtonList li.center{
+padding-left:7px;
+padding-right:7px;
+margin-left:7px;
+margin-right:7px;
+border-left:1px gray solid;
+border-right:1px gray solid;
+}
+.SSRButtonList li a{
+	color:#1b4298;
+	
+	}
+
+.Clickeable{
+	cursor:pointer;
+}
+
+
+.static-title
+{
+	color:#756F6F;
+}
+
+/*Contact SSRs*/
+
+/*PriceDisplay*/
+.separator-pd {
+	margin-top:15px;
+	margin-bottom:15px;
+	border-top:1px solid #C8C8C8;
+}
+
+.separator-flights {
+	margin-top:6px;
+	margin-bottom:6px;
+	border-top:1px dashed #C8C8C8;
+}
+/*PriceDisplay*/
+
+/*Payment*/
+.PaybackPaymentContainer {
+background-image: url(//static.interjet.com/assets/images/payback/pago-payback.jpg);
+background-repeat: no-repeat;
+width: 710px;
+height: 180px;
+}
+
+#boxes .dialogbox {
+position: absolute;
+left: 0;
+top: 0;
+width: 320px;
+height: 150px;
+display: none;
+z-index: 9999;
+background-color: #909090;
+opacity: .8;
+}
+.ModalConfirmacionPAYBACK {
+background: url(//static.interjet.com/assets/images/payback/banner-deseo-utilizar-puntos.jpg) no-repeat;
+width: 100%;
+height: 154px;
+}
+.image{height:70px;text-align: center;}
+.text{height:75px;}
+.text > label{width:100%;}
+.input-radio-p{height:15px;}
+.input-radio-p > input {float: right;}
+.activeHold{background-color:#ECF3F8;}
+.inactive{background:#FFF;}
+.panel-fee-hold{width:80%; margin-left: 10%;padding: 10px;border: 1px solid #f3f2f1;-moz-box-shadow: 5px 5px 5px #CCC;
+-webkit-box-shadow: 5px 5px 5px #CCC;
+box-shadow: 5px 5px 5px #CCC;min-width: 80%;}
+.btn-msin{background-color: #F6F6F5;}
+.btn-msin:hover,
+.btn-msin:focus,
+.btn-msin:active,
+.btn-msin.active,
+.btn-msin,
+.open > .dropdown-toggle.btn-msin {
+ color: #333333;
+ background-color: #E6E5E3;
+}
+.btn-msin:active,
+.btn-msin.active,
+.open > .dropdown-toggle.btn-msin {
+background-image: none;
+background-color: #428bca;
+color: #ffffff;
+}
+.btn-msin.disabled,
+.btn-msin[disabled],
+fieldset[disabled] .btn-msin,
+.btn-msin.disabled:hover,
+.btn-msin[disabled]:hover,
+fieldset[disabled] .btn-msin:hover,
+.btn-msin.disabled:focus,
+.btn-msin[disabled]:focus,
+fieldset[disabled] .btn-msin:focus,
+.btn-msin.disabled:active,
+.btn-msin[disabled]:active,
+fieldset[disabled] .btn-msin:active,
+.btn-msin.disabled.active,
+.btn-msin[disabled].active,
+fieldset[disabled] .btn-msin.active {
+background-color:#E6E5E3;
+color: ffffff;
+}
+.btn-msin .badge {background-color: #ffffff;}
+.colour{ background-color: #428bca; color: #ffffff;}
+.btn-msin:hover,
+.btn-msin:focus {background-color: #428bca;color: #ffffff;}
+
+/*Payment*/
+
+/*Avis*/
+.pax-av-icon {
+background: url('//static.interjet.com/assets/images/icon/sprite-avis-icon.png') no-repeat 0px -76px;
+	width: 25px;
+	height: 25px;
+	display:block;
+}
+
+
+.air-av-icon {
+	background: url('//static.interjet.com/assets/images/icon/sprite-avis-icon.png') no-repeat 0px -1px;
+	width: 25px;
+	height: 25px;
+	display:block;
+}
+
+.trasmission-av-icon{
+	background: url('//static.interjet.com/assets/images/icon/sprite-avis-icon.png') no-repeat 0px -50px;
+	width: 25px;
+	height: 25px;
+	display:block;
+}
+
+.doors-av-icon {
+	background: url('//static.interjet.com/assets/images/icon/sprite-avis-icon.png') no-repeat 0px -25px;
+	width: 25px;
+	height: 25px;
+	display:block;
+}
+/*Avis*/
+
+.departure-1-row {
+	background: url('//static.interjet.com/assets/images/icon/airplane_izquierdo.png') no-repeat 0 0;
+	width: 69px;
+	height: 51px;
+	display:block;
+}
+
+	
+
+.departure-2-row {
+	background: url('//static.interjet.com/assets/images/icon/airplane_regreso (1).png') no-repeat 0 0;
+	width: 77px;
+	height: 58px;
+	display:block;
+}
+
+
+.padd-right-0 {
+	padding-right: 0px;
+}
+
+
+.col-md-1_5{
+	width:12%;
+	padding-left:15px;	
+	float:left;
+}
+.col-md-2_5{
+	width:22%;
+	padding-left:15px;	
+	float:left;
+}
+.col-md-3_5{
+	width:29%;
+	padding-left:15px;	
+	float:left;
+}
+
+.pax-types-4 label{
+	margin-left:5px;			
+	font-size:11px;		
+}
+	
+
+@media(max-width: 420px) {
+	.stations-list li span{
+		font-size:18px;
+	}
+.route-data h2.price, .route-data h2.price a{
+	color:#6CADDF;
+	font-size:18px;
+}	
+.arrow.blue-right {
+    background-position: 0 -496px;
+}
+}
+
+/**/
+@media(min-width: 320px) {
+  .popover.big{
+	min-width:220px;
+  }
+
+  
+.popover.bottom > .arrow.dark-blue, .popover.bottom > .arrow.dark-blue:after, .popover.bottom > .arrow.dark-gray, .popover.bottom > .arrow.dark-gray:after{
+  border: 1px solid red !important;
+  border-left-color:red !important;
+}
+  .popover.left>.arrow.dark-blue{
+	 border-left-color:#6CADDF;
+  }
+
+	#searchHome  .pax-types label{
+		margin-left:2px;			
+		font-size:12px;
+	}
+	#searchHome  .pax-types .small-icons.tip{
+		width:12px;
+	}
+
+	.NoXSDevices .container{
+		/*min-width:480px;*/
+	}
+	.NoXSDevices .navbar-default.Mobile{
+		/*min-width:480px;*/
+	}
+	.carousel.home{
+		min-height:150px;
+	}
+
+  .search-home-cont{
+	margin-top:0px;
+  }
+  
+  .features-flight  > div{
+	padding-left:15px;
+  }
+	
+  #searchHome{width:100%;}
+  .availability-calendar div.day, .calendar-header span{	
+		/*width:55px;*/
+	}
+	.availability-calendar div.day{
+		font-size:9px;
+		height:50px;
+	}
+	
+	.availability-calendar .discount-percent {
+		font-size:9px;
+	}
+	.availability-calendar span.month-day{
+		font-size:10px;
+	}
+	
+	.nav-tabs.responsive{
+		float:none;
+		width:100%;
+	}
+	.nav-tabs.responsive li{
+		float:none;
+		padding:5px 0;
+	}
+	.nav-tabs.responsive li:first-child{
+		padding-left:0;
+	}
+	.nav-tabs.responsive li:last-child{
+		padding-right:0;
+	}
+		#ContainerCountDown{
+		position:fixed; 
+		right:0; 
+		bottom:20%;
+		width:250px; 
+		height:120px;
+		opacity: 0.9;
+		box-shadow: 1px 3px 5px #CCC;
+	}
+	#Widget-CountDown{		
+		min-height:72px;
+		border:1px solid #EFEFEF;		
+	}
+	#Widget-CountDown .title-outlet span{
+		
+    border-radius: 50%;
+    color: #FFF;
+    background-color: #428bca;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    float: left;
+    margin-left: -10px;
+    margin-top: -23px;
+    line-height: 25px;
+	}
+	#Widget-CountDown #Stage_jbeeb_3{
+		width:180px;
+		height:50px;
+		margin-right:auto !important;		
+		margin-left:auto !important;
+		
+	}
+	
+	#Stage_jbeeb_3 * ,#Widget-CountDown #Stage_jbeeb_3 *, #TextBox_jbeeb_90 *{
+		color:#152f87 !important;
+	}
+
+	#Widget-CountDown .title-outlet{
+		color:#000;		
+		text-align:center;
+	}
+	
+}
+.carousel-control{
+display:none;
+}
+.sort-and-connectings{
+	margin-top:95px;
+}
+.stops{
+	color:#6CADDF;
+	font-size:12px;
+}
+@media (max-width:480px)  {
+	.sort-and-connectings{
+		margin-top:10px;
+	}
+    #search-home-cont{
+		width:100%;
+	}
+	.marg-btn{
+		margin-bottom:15px;
+		background: #f8f7f7;
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+	#Widget-CountDown{
+		min-height:64px;		
+	}	
+	#ui-datepicker-div{		
+		width:90% !important;
+		left:20px !important;
+	}
+	
+	.ui-datepicker-group{
+		width:100% !important;
+	}
+	.ui-datepicker-group.ui-datepicker-group-last{
+		clear:left;
+	}
+	.dates-pickers{
+		margin-top:10px;
+	}
+	.carousel-indicators li {
+		display:none;
+    }
+	.carousel-control{
+		display:block;
+    }
+	.breadcrumb.purchase-status{
+		display:none;
+	}
+	
+	.tabs-header-selectv2 > div{
+		width:15%;
+	}
+	
+  .fares-features li{	
+	min-height:auto;
+	border:0 !important;
+	border-bottom:1px solid #6CADDF !important;		
+}	
+
+	.available-seats span, .available-seats strong {
+				font-size:9px;
+	}	
+	
+	.schedule-container.lay-v2{
+		margin-bottom:15px;
+		border:1px solid #6CADDF;
+		box-shadow: 1px 6px 10px #d8d6d6;
+		margin:0 0 15px 0;
+		border-radius: 6px;
+	}
+	.schedule-container.lay-v2 .route-times{
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.schedule-container.lay-v2 .price{
+		margin:0;
+	}
+	.schedule-container.lay-v2 .journey-price{
+		margin:0;
+		min-height:90px;
+		border-top-left-radius:0;
+		border-top-right-radius:0;
+		border-top:0 !important;
+	}
+	.segment-flight{
+		font-size:12px;
+	}
+	.features-flight{
+		margin-left:-20px;
+	}
+	.features-flight span.equipment{
+		display:block;
+	}
+	
+	.icons-bank-cont{
+		background:whitesmoke;
+		text-align:center;
+		padding:10px;
+	}
+	.icons-bank-cont.bank-icons{
+		margin-bottom:5px;
+	}
+	
+	#RequestForInputsPayback input{
+		margin-bottom:10px;
+		margin-top:5px;
+	}
+	#STT img{width:auto !important}
+	
+}
+@media(max-width:640px) and (orientation:landscape){
+.carousel-indicators li {
+     display:none;
+    }
+	.carousel-control{
+     display:block;
+    }
+	.breadcrumb.purchase-status{
+		display:none;
+	}
+}
+@media(min-width: 320px){
+    .carousel.home {
+    min-height: 110px;
+	margin-bottom: 15px;
+    }
+
+	
+	#WithTeaser{
+		bottom: -10px;
+		margin-left:-20px;
+		b ackground:r ebeccapurple;
+	}	
+	
+	#tabs-searchs li a{
+		height:80px;
+	}
+	#tabs-searchsus li a{
+		height:80px;
+	}
+	.search-home-cont{
+		width:100%;
+	}
+		
+}
+
+@media(min-width: 360px){
+	.availability-calendar div.day{
+		font-size:11px;
+		height:55px;
+	}
+	.availability-calendar .discount-percent {
+		font-size:11px;
+	}
+}
+
+
+
+@media (min-width: 365px) and (max-device-width: 667px){
+	#Widget-CountDown{
+		min-height:75px;		
+	}	
+
+}
+
+/* Extra Small Devices, Phones */ 
+
+
+@media (min-width: 480px) {
+
+
+
+
+  .popover.big{
+	min-width:480px;
+  }
+
+  .search-home-cont{
+	margin-top:15px;	
+  }
+
+
+  
+  	#searchHome  .pax-types label{
+		margin-left:5px;			
+		font-size:13px;
+	}
+	#searchHome  .pax-types .small-icons.tip{
+		width:13px;
+		
+	}
+	
+  	.availability-calendar div.day, .calendar-header span{
+		w idth:55px;
+		font-size:12px;
+	}
+ 
+	.one-way.col-md-10{
+		margin-left:0;
+	}  
+	#searchHome{
+		margin-left:0;
+	}	
+
+	#WithTeaser{
+		bottom: 20px;
+		margin-left:20px;
+		b ackground:purple;
+	}
+	.search-home-cont{
+		width:auto;
+	}
+	
+
+#tabs-searchs li.flights-tab a {
+    background-position: 35px 0px;
+}
+
+#tabs-searchs li.flights-tab a:hover {
+    background-position: 35px -140px;
+}
+
+#tabs-searchs li.active.flights-tab a {
+    background-position: 35px -70px;
+}
+
+
+
+#tabs-searchs li.my-bookings-tab a {
+    background-position: -62x 0px;
+}
+
+#tabs-searchs li.my-bookings-tab a:hover {
+    background-position: -62px -70px;
+}
+
+#tabs-searchs li.active.my-bookings-tab a {
+    background-position: -62px -140px;
+}
+
+
+
+#tabs-searchs li.flightsStatus-tab a {
+    background-position: -190px 0px;
+    width: 98px;
+}
+
+#tabs-searchs li.flightsStatus-tab a:hover {
+    background-position: -190x -70px;
+    width: 98px;
+}
+
+#tabs-searchs li.active.flightsStatus-tab a {
+    background-position: -190px -140px;
+    width: 98px;
+}
+
+
+
+#tabs-searchs li.intertours-tab a {
+    background-position: -250px 0px;
+}
+
+#tabs-searchs li.intertours-tab a:hover {
+    background-position: -250px -70px;
+}
+
+#tabs-searchs li.active.intertours-tab a {
+    background-position: -250px -140px;
+}
+
+
+}
+
+
+@media (min-width: 768px) {
+	
+	.carousel.home{
+		min-height:260px;
+	}
+	
+    .search-home-cont{
+	margin-top:-240px;
+  }
+  
+  .availability-calendar div.day, .calendar-header span{	
+		w idth:46px;
+	}  
+	.one-way.col-md-10{
+		margin-left:0;
+	}  	
+   #searchHome{width:380px}
+	.nav-tabs.responsive li{
+		float:left;
+		padding:10px 0;
+	}   
+	.nav-tabs.responsive li:first-child{
+		padding-left:15px;
+	}
+	.nav-tabs.responsive li:last-child{
+		padding-right:15px;
+	}	
+	  	#searchHome{
+		margin-left:0px;
+	}	
+	#Widget-CountDown{
+		m in-height:105px;
+		text-align:center;
+	}
+
+	#Widget-CountDown #Stage_jbeeb_3{
+		width:220px !important;
+		height:60px !important;
+		margin-right:auto !important;		
+		margin-left:auto !important;
+		
+	}
+	
+	#Widget-CountDown #Stage_jbeeb_3 *{
+		color:#5B5C5C !important;
+	}
+	
+	#Widget-CountDown .title-outlet{
+		margin-top:10px;
+		margin-bottom:10px;
+		font-weight:bold;
+	}
+	
+	#WithTeaser{
+		bottom: 100px;
+		margin-left:120px;
+		b ackground:yellow;
+	}
+	
+}
+@media (min-width: 768px) {	
+	#WithTeaser{
+		bottom: 60px;
+		margin-left:100px;
+		b ackground:lightgray;
+	}
+}
+@media (min-width: 992px) {
+	.carousel.home{
+		min-height:330px;
+	}
+    .search-home-cont{
+		margin-top:-310px;
+    }
+  	.availability-calendar div.day, .calendar-header span{
+		w idth:48px;
+	}
+	.one-way.col-md-10{
+	margin-left:10%;
+	}
+	.availability-calendar .one-way.col-md-10 div.day, .one-way.col-md-10 .calendar-header span{
+		width:77px;
+	}
+
+	.col-market.col-md-10{
+		margin-left:10%;
+	}
+	.col-market.col-md-10 .price{
+		font-size:16px;
+	}
+	
+	.col-md-10 .market-header .route{
+		font-size:18px;
+	}
+	.features-flight  > div{
+		padding-left:0px;
+	}
+	
+	#Widget-CountDown{
+		min-height:120px;
+		text-align:center;	
+	}
+	
+	#WithTeaser{
+		bottom: 115px;
+		margin-left:80px;
+		b ackground:yellow;
+	}
+	
+}
+
+@media (min-width: 1100px) {
+	.carousel.home{
+		min-height:410px;
+	}
+
+	.search-home-cont{
+		margin-top:-330px;
+	}	
+
+	.availability-calendar div.day, .calendar-header span{
+		w idth:55px;			
+	}    
+	.availability-calendar div.day{
+		font-size:14px;
+		font-weight:bold;		
+		height: 60px;
+	}
+	.availability-calendar .discount-percent {
+		font-size:13px;
+	}
+	
+	.availability-calendar .one-way.col-md-10 div.day, .one-way.col-md-10 .calendar-header span{
+		width:86px;
+	}
+
+	.availability-calendar .one-way.col-md-10 div.day{
+		font-size:18px;
+		font-weight:bold;		
+	}
+		
+	.one-way.col-md-10{
+		margin-left:10%;
+	}	
+  
+  	#searchHome{
+		margin-left:0px;
+	}
+	
+		
+}
+@media (min-width: 1200px) {
+	#WithTeaser{
+		bottom: 130px;
+		margin-left:80px;
+		b ackground:violet;
+	}
+}
+@media (min-width: 1600px) {
+	#WithTeaser{
+		bottom: 160px;
+		margin-left:80px;
+		b ackground:pink;
+	}
+}
+@media (min-width: 1024px) and (max-device-width: 1140px){
+	#Widget-CountDown{
+		min-height:110px;
+		text-align:center;	
+	}	
+	
+}
+@media (min-width: 1140px) {
+
+	.availability-calendar div.day, .calendar-header span{
+		w idth:55px;
+	}  
+	
+    .search-home-cont{
+		margin-top:-400px;
+    } 	
+	
+	
+}
+
+}
+
+
+
+/* Social Boostrap */
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding:0}.btn-social-icon>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
+.btn-adn{color:#fff;background-color:#d87a68;border-color:rgba(0,0,0,0.2)}.btn-adn:hover,.btn-adn:focus,.btn-adn:active,.btn-adn.active,.open>.dropdown-toggle.btn-adn{color:#fff;background-color:#ce563f;border-color:rgba(0,0,0,0.2)}
+.btn-adn:active,.btn-adn.active,.open>.dropdown-toggle.btn-adn{background-image:none}
+.btn-adn.disabled,.btn-adn[disabled],fieldset[disabled] .btn-adn,.btn-adn.disabled:hover,.btn-adn[disabled]:hover,fieldset[disabled] .btn-adn:hover,.btn-adn.disabled:focus,.btn-adn[disabled]:focus,fieldset[disabled] .btn-adn:focus,.btn-adn.disabled:active,.btn-adn[disabled]:active,fieldset[disabled] .btn-adn:active,.btn-adn.disabled.active,.btn-adn[disabled].active,fieldset[disabled] .btn-adn.active{background-color:#d87a68;border-color:rgba(0,0,0,0.2)}
+.btn-adn .badge{color:#d87a68;background-color:#fff}
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open>.dropdown-toggle.btn-facebook{color:#fff;background-color:#2d4373;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open>.dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+.btn-facebook .badge{color:#3b5998;background-color:#fff}
+.btn-twitter{color:#fff;background-color:#55acee;border-color:rgba(0,0,0,0.2)}.btn-twitter:hover,.btn-twitter:focus,.btn-twitter:active,.btn-twitter.active,.open>.dropdown-toggle.btn-twitter{color:#fff;background-color:#2795e9;border-color:rgba(0,0,0,0.2)}
+.btn-twitter:active,.btn-twitter.active,.open>.dropdown-toggle.btn-twitter{background-image:none}
+.btn-twitter.disabled,.btn-twitter[disabled],fieldset[disabled] .btn-twitter,.btn-twitter.disabled:hover,.btn-twitter[disabled]:hover,fieldset[disabled] .btn-twitter:hover,.btn-twitter.disabled:focus,.btn-twitter[disabled]:focus,fieldset[disabled] .btn-twitter:focus,.btn-twitter.disabled:active,.btn-twitter[disabled]:active,fieldset[disabled] .btn-twitter:active,.btn-twitter.disabled.active,.btn-twitter[disabled].active,fieldset[disabled] .btn-twitter.active{background-color:#55acee;border-color:rgba(0,0,0,0.2)}
+.btn-twitter .badge{color:#55acee;background-color:#fff}
+
+/* Background Images Register Pages */
+/* Register */
+
+.logo.cir {
+	width : 159px;
+	height : 59px;
+	background : url(//static.interjet.com/assets/images/logo/club-interjet-register.jpg) no-repeat;
+}
+/* Register Club Interjet Premium */
+.logo.cipr {
+	width : 150px;
+	height : 59px;
+	background : url(//static.interjet.com/assets/images/logo/club-interjet-premium.jpg) no-repeat;
+}
+/* Register Club Interjet Payback */
+.logo.cipayr{
+	width : 190px;
+	height : 102px;
+	background : url(//static.interjet.com/assets/images/navigation/deals/payback.jpg) no-repeat;
+}
+.logo.cifam{
+	width : 150px;
+	height : 59px;
+	background : url(//static.interjet.com/assets/images/logo/logo-club-interjet-familiar.jpg) no-repeat;
+}
+/* Styles bottom  welcome page */
+.footer-text { 
+	border-top: 1px solid #6CADDF;
+    padding: 5px;
+    background: rgba(0,0,0,0);
+}
+.options:hover {
+    background-color: #EAF3FA;
+}
+.options { background-color: #fff; transition: all 0.5s; }
+.center-objetc { width : 10%; margin: 0 auto; }
+.custom-border { padding: 2px; border :1px solid #EAF3FA; box-shadow: #EAF3FA 0px 1px 1px 1px; }
+
+
+/* CUSTOM PAYMENT INPUT INSTALLMENTS*/
+.BankMenuItem:hover{
+	background-color: #F0EFEE;
+}
+
+/* CUSTOM PAYMENT INPUT INSTALLMENTS*/
+
+a.arrow-collapse {
+background: url('//static.interjet.com/assets/images/icon/flecha_texto_down.png') no-repeat 0 0;
+width: 14px;
+height: 14px;
+padding-left: 20px;
+}
+
+.custom-border { padding: 2px; border :1px solid #EAF3FA; box-shadow: #EAF3FA 0px 1px 1px 1px; }
+
+ul.list-items-register {
+    margin: 0;
+    padding-left: 2px;
+    list-style-type: none;
+}
+
+ul.list-items-register .list-item {
+	text-align: left;
+	margin-bottom: 10px;
+	line-height: 16px;
+}
+ul.list-items-register .list-item span {
+	color:#93c0e2; font-size:40px; position:relative; bottom:-8px; left:-2px;
+}
+
+/* Style List FamiliaClubInterjet */
+ol.familiar-items {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 4em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol.familiar-items > li{
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 0.2em;
+    padding-top : 1em;
+    min-height: 3em;
+}
+ol.familiar-items > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.33em;
+    width: 1.2em;
+    height: 1.2em;
+     
+    font-size: 2.5em;
+    line-height: 1.0;
+    text-align: center;
+    color: #f5f5f5;
+ 
+    border: 3px solid #6CADFF;
+    border-radius: 50%;
+    background-color: #0A67B0;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+.form-error {  
+	border-color: #E98966;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(224, 45, 113, 0.6);;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(224, 45, 113, 0.6);;
+ }
+
+.tablesorter  th.header { 
+    background: url(http://tablesorter.com/themes/blue/bg.gif) no-repeat left center; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+.tablesorter  th.headerSortUp { 
+    background: url(http://tablesorter.com/themes/blue/asc.gif) no-repeat left center; 
+} 
+
+.tablesorter th.headerSortDown { 
+    background: url(http://tablesorter.com/themes/blue/desc.gif) no-repeat left center; 
+}
+
+table.table-blue, table.table-blue tr, table.table-blue td{
+	border:1px solid #C1D5E9 !important;
+}
+
+.row.no-margs-padd {
+	margin:0
+}
+.row.no-margs-padd  > .col-md-2, .row.no-margs-padd  > .col-md-8, .row.no-margs-padd  > .col-md-4{
+	padding-left:0;
+	padding-right:0;
+}
+
+
+.col-md-8.register-fields div.row div.col-md-3{ padding-right:1px;margin-top:20px;} 
+.col-md-2.float-right { text-align: right; padding: 0; }
+
+.validationError{
+	border:1px solid #CC0000;
+}
+.center-full-page {
+	position : fixed;
+	top : 50%;
+	left : 50%;
+	transform : translate(-50%, -50%);
+	transition : all 0.2s;
+}
+
+.bkgnd-error {
+	background-image : url('//static.interjet.com/assets/images/base/error-background-image.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position : top;
+}
+@media (max-width: 767px) {
+    .center-full-page {
+		position : absolute !Important;
+		transform : none;
+		margin : 10% 5px;
+		top : 0;
+		left : 0;
+	}
+	
+	/* Register */
+	.shadow-lateral .text-justify  { width : 100% !Important; }
+	.col-md-8.register-fields div.row div.col-md-3{ padding:10px;margin-top:5px;} 
+	.shadow-lateral { box-shadow: none; }
+
+	.scroll-x{
+		overflow-y:hidden;
+		overflow-x:scroll;
+	}
+	
+}
+
+ol.condiciones {
+    padding: 20px;
+    padding-top: 0px;
+}
+ol.condiciones > li > ul {
+    list-style-type: none;
+    padding : 0px;
+}
+ol.condiciones > li > ol > li > ul {
+    list-style-type : circle;
+}
+ol.condiciones > li > ul > li > ul {
+    list-style-type : none;
+    padding : 0;
+}
+
+
+
+		* b{
+		  font-weight:bold; 
+		}
+		
+		#cardStructure{
+			width:541px;
+			height:173px;
+			margin:0 auto;
+			position:relative;
+		}
+		.cardMex{
+		 background-image:url('images/InterJet/es-MX/Payback/Register/ClubInterjet/tarjeta-electronica.jpg');
+		 background-repeat:no-repeat;
+		}
+
+		#subContent{
+		Padding:30px;
+		}
+		#betweens{
+		padding:10px 0;
+		}
+		#subContent ol, #subContent ol li{
+			list-style-type:lower-alpha
+        }
+
+		#cardBack, #cardDatas{
+			position:absolute;
+			width:100%;
+		}
+        #name, #barCode{
+			width:49.5%;
+			float:left;
+		} 
+		#name{
+			padding-top:21px;
+		}
+		#name div{
+			text-align:center;
+			font-size:12px;
+			line-height:14px;
+		}
+		#barCode{
+			padding-top:68px;
+		}
+		#barCode img{
+			margin-left:14px;
+			height : 50px;
+		}
+		#barCodePB{
+			padding-top:53px;
+		}
+		
+		#namePB{
+			padding-top:16px;
+			margin-left:275px;
+		}
+					.numberOne 
+					{
+						background:url(//static.interjet.com/assets/images/icon/1.png);
+						width: 30px;
+						height: 30px;
+					}
+					.numberTwo 
+					{
+						background:url(//static.interjet.com/assets/images/icon/2.png);
+						width: 30px;
+						height: 30px;
+					}
+					.numberThree
+					{
+						background:url(//static.interjet.com/assets/images/icon/3.png);
+						width: 30px;
+						height: 30px;
+					}
+					.numberFour 
+					{
+						background:url(//static.interjet.com/assets/images/icon/4.png);
+						width: 30px;
+						height: 30px;
+					}
+					.numberFive
+					{
+						background:url(//static.interjet.com/assets/images/icon/5.png);
+						width: 30px;
+						height: 30px;
+					}
+
+
+#loadingLeftMenu, #LoadingContent{
+	min-height:70px;
+	background:url(//static.interjet.com/assets/images/Base/loadingAnimation.gif) no-repeat center center;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.boxpaybacktools {
+	margin : -4px;
+	-webkit-border-radius : 3px 3px 0 0;
+	-moz-border-radius : 3px 3px 0 0;
+	-o-border-radius : 3px 3px 0 0;
+	border-radius : 3px 3px 0 0;
+}
+
+.ui-datepicker.only-calendar{
+	width: auto;
+	box-shadow:0px 0px 6px 2px #9A9797;
+	border:none;
+	background:#FFF;
+	z-index:999;
+}
+.culture-mobile{
+	background: whitesmoke;
+    display: block;
+    padding: 5px 15px;
+}
+
+			@media only screen and (min-width: 767px) {
+				.Mobile{
+				display:none;
+				}
+			}
+
+			@media only screen and (max-width: 767px) {
+				.mainMenu{
+				display:none;
+				}
+				#menuleft{
+					display: none;
+				}
+			}
+
+			#MobileMenu > ul > li > ul >li > ul{
+				padding-left: 25px;
+				/*height: 27px;*/
+			}
+
+			.dropdown-submenu{
+				position:relative;
+			}
+
+			.dropdown-submenu>.dropdown-menu{
+				top:0;left:100%;
+				margin-top:-6px;
+				margin-left:-1px;
+				-webkit-border-radius:0 6px 6px 6px;
+				-moz-border-radius:0 6px 6px 6px;
+				border-radius:0 6px 6px 6px;
+			}
+			.dropdown-submenu>a:after{
+				display:block;
+				content:" ";
+				float:right;
+				width:0;
+				height:0;
+				border-color:transparent;
+				border-style:solid;
+				border-width:5px 0 5px 5px;
+				border-left-color:#cccccc;
+				margin-top:5px;
+				margin-right:-10px;
+			}
+
+			.dropdown-submenu:hover>a:after{
+				border-left-color:#555;
+			}
+
+			.dropdown-submenu.pull-left{
+				float:none;
+			}
+
+			.dropdown-submenu.pull-left>.dropdown-menu{
+				left:-100%;margin-left:10px;
+				-webkit-border-radius:6px 0 6px 6px;
+				-moz-border-radius:6px 0 6px 6px;
+				border-radius:6px 0 6px 6px;
+			}
+
+			.arrowDownToggle {
+				display: none;
+				float: right;
+				top: -35px;
+				padding: 10px 13px;
+			}
+	
+#contentNO li img { 
+	-webkit-transition : all 1s;
+	   -moz-transition : all 1s;
+	     -o-transition : all 1s;
+			transition : all 1s;
+			
+	-webkit-animation : translateform 2s;
+			animation : translateform 2s;
+}
+
+#contentNO li img:hover{
+	-webkit-transform : rotate(360deg);
+	   -moz-transform : rotate(360deg);
+		 -o-transform : rotate(360deg);
+			transform : rotate(360deg);
+			
+	-webkit-border-radius : 50%;
+	   -moz-border-radius : 50%;
+		 -o-border-radius : 50%;
+			border-radius : 50%;
+}
+.img-responsives{ max-width : 100%; height : auto; }
+.img-responsives-map{ max-width : 100%; height : 482px; }
+
+.img-responsive-aero{
+ display: block;
+  width: 100% \9;
+  width: 100%;
+  height: auto;
+}
+
+
+.liverpool-logo{
+	background: url('http://www.liverpool.com.mx/assets/web/logos/liverpool_logo.gif') no-repeat 0 5px;
+	width: 193px;
+	height: 60px;
+}
+/*!
+ * Datetimepicker for Bootstrap 3
+ * version : 4.14.30
+ * https://github.com/Eonasdan/bootstrap-datetimepicker/
+ */
+.bootstrap-datetimepicker-widget {
+  list-style: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  margin: 2px 0;
+  padding: 4px;
+  width: 19em;
+}
+@media (min-width: 768px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+@media (min-width: 992px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+@media (min-width: 1200px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+.bootstrap-datetimepicker-widget.dropdown-menu:before,
+.bootstrap-datetimepicker-widget.dropdown-menu:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #cccccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: -7px;
+  left: 7px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  top: -6px;
+  left: 8px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #cccccc;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  bottom: -7px;
+  left: 6px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  bottom: -6px;
+  left: 7px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before {
+  left: auto;
+  right: 6px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after {
+  left: auto;
+  right: 7px;
+}
+.bootstrap-datetimepicker-widget .list-unstyled {
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget a[data-action] {
+  padding: 6px 0;
+}
+.bootstrap-datetimepicker-widget a[data-action]:active {
+  box-shadow: none;
+}
+.bootstrap-datetimepicker-widget .timepicker-hour,
+.bootstrap-datetimepicker-widget .timepicker-minute,
+.bootstrap-datetimepicker-widget .timepicker-second {
+  width: 54px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget button[data-action] {
+  padding: 6px;
+}
+.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Increment Hours";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Increment Minutes";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Decrement Hours";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Decrement Minutes";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Show Hours";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Show Minutes";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Toggle AM/PM";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="clear"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Clear the picker";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="today"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Set the date to today";
+}
+.bootstrap-datetimepicker-widget .picker-switch {
+  text-align: center;
+}
+.bootstrap-datetimepicker-widget .picker-switch::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Toggle Date and Time Screens";
+}
+.bootstrap-datetimepicker-widget .picker-switch td {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  line-height: inherit;
+}
+.bootstrap-datetimepicker-widget .picker-switch td span {
+  line-height: 2.5;
+  height: 2.5em;
+  width: 100%;
+}
+.bootstrap-datetimepicker-widget table {
+  width: 100%;
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget table td,
+.bootstrap-datetimepicker-widget table th {
+  text-align: center;
+  border-radius: 4px;
+}
+.bootstrap-datetimepicker-widget table th {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: 145px;
+}
+.bootstrap-datetimepicker-widget table th.disabled,
+.bootstrap-datetimepicker-widget table th.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget table th.prev::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Previous Month";
+}
+.bootstrap-datetimepicker-widget table th.next::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Next Month";
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+  background: #eeeeee;
+}
+.bootstrap-datetimepicker-widget table td {
+  height: 54px;
+  line-height: 54px;
+  width: 54px;
+}
+.bootstrap-datetimepicker-widget table td.cw {
+  font-size: .8em;
+  height: 20px;
+  line-height: 20px;
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td.day {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+.bootstrap-datetimepicker-widget table td.day:hover,
+.bootstrap-datetimepicker-widget table td.hour:hover,
+.bootstrap-datetimepicker-widget table td.minute:hover,
+.bootstrap-datetimepicker-widget table td.second:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td.today {
+  position: relative;
+}
+.bootstrap-datetimepicker-widget table td.today:before {
+  content: '';
+  display: inline-block;
+  border: 0 0 7px 7px solid transparent;
+  border-bottom-color: #337ab7;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #337ab7;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget table td.active.today:before {
+  border-bottom-color: #fff;
+}
+.bootstrap-datetimepicker-widget table td.disabled,
+.bootstrap-datetimepicker-widget table td.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget table td span {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin: 2px 1.5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+  background: #eeeeee;
+}
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #337ab7;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget table td span.old {
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td span.disabled,
+.bootstrap-datetimepicker-widget table td span.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget.usetwentyfour td.hour {
+  height: 27px;
+  line-height: 27px;
+}
+.bootstrap-datetimepicker-widget.wider {
+  width: 21em;
+}
+.bootstrap-datetimepicker-widget .datepicker-decades .decade {
+  line-height: 1.8em !important;
+}
+.input-group.date .input-group-addon {
+  cursor: pointer;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*Click To Call CSS*/
+
+.ClickToCallBackGround{
+    background-color: #7cab43;
+}
+
+.ClickToCallButton {
+            position: fixed;
+            top: 72%; 
+            left: 95.5%;
+            width: 66px;
+            height: 60px;
+            cursor :pointer;
+			z-index: 500;
+        }
+		
+.CallIcon {
+            width: 66px;
+            height: 60px;
+            top: 0;
+            background-image: url(//static.interjet.com/assets/images/chat/Call.png);
+            background-repeat: no-repeat;
+            display: block;
+            float: left;
+        }
+
+.ClickToCalllabelContainer {
+            display: block;
+            float: left;
+            width: 110px;
+            color: white;
+        }
+
+.ClickToCalllabel {
+            padding-top:12px;
+        }
+
+.ClickToCallForm{  	
+    display: block;
+	border: 0.2em solid #d6d6d6;
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 0 0 1.6em 0.3em rgba(0,0,0,0.2);
+	direction: ltr;
+    text-align: left;
+	width: 22em;
+    z-index: 99999999;
+    position: fixed;
+    right: 5em;
+    bottom: 10%;
+	margin: 0;
+	vertical-align: baseline;
+    background-color: white;
+    height: auto;
+    text-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: initial;
+    line-height: normal;
+}
+.headCTC
+{
+	background-color: #2791e2;
+	border-radius: 0.3em 0.3em 0 0;
+	color: #fff;
+	width: 100%;
+	height: 2em;
+	padding: 0.5em;
+}
+.padding_0_5_em
+{
+	padding: 0.5em !important;
+}
+
+/*Click To Call CSS*/
+
+/** CSS Divider FlightStatus **/
+.or-spacer {
+	margin-top: 26px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 10px;
+}
+.or-spacer .mask {
+  overflow: hidden;
+  height: 20px;
+}
+.or-spacer .mask:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px black;
+}
+.or-spacer span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+.or-spacer span i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  color: #999;
+}
+#flightSearchContainer > h4 {
+    font-size: 14px;
+    font-weight: normal;
+}
+ 
+
+
+#tabs-searchs{
+	border-bottom:1px solid #8c8a88;	
+	clear:both;
+	overflow:hidden;
+	background-color: #eae8e6;
+}
+
+#tabs-searchs  li{
+	width:25%;
+	padding:0;
+	background:transparent;
+	float:left;
+}
+
+
+#tabs-searchsus{
+	border-bottom:1px solid #8c8a88;	
+	clear:both;
+	overflow:hidden;
+	background-color: #eae8e6;
+}
+
+#tabs-searchsus  li{
+	width:25%;
+	padding:0;
+	background:transparent;
+	float:left;
+}
+
+#tabs-searchs  li a{
+	border-bottom:none !important;	
+	border-right:none;
+	/*background:url(//static.interjet.com/assets/images/icon/sprite-tabs-search.png) center 20px #eae8e6 no-repeat;*/
+	background:url(//static.interjet.com/assets/images/icon/sprite-booking-home-intertours.png) center 20px #eae8e6 no-repeat;
+	padding:40px 0 10px 0;		
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	font-size:11px;
+	height: 70px;
+}
+
+#tabs-searchsus  li a{
+	border-bottom:none !important;	
+	border-right:none;
+	/*background:url(//static.interjet.com/assets/images/icon/sprite-tabs-search.png) center 20px #eae8e6 no-repeat;*/
+	background:url(//static.interjet.com/assets/images/icon/sprite-booking-home-intertours-us.png) center 20px #eae8e6 no-repeat;
+	padding:40px 0 10px 0;		
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	font-size:11px;
+	    height: 70px;
+}
+
+#tabs-searchs > li.active > a:hover,#tabs-searchsus > li.active > a:hover  {
+    background-color: #5c9cd8;
+}
+
+
+
+#flightSearchContainer .or-spacer .mask:after {
+    content: '';
+    display: block;
+    margin: -23px auto 0;
+    width: 100%;
+    height: 24px;
+    box-shadow: none;
+    border-bottom: 1px solid #afafaf;
+    border-radius: 0px;
+}
+
+
+#tabs-searchs  li.active a{
+	background-color:#5c9cd8;
+	color:#ffffff
+}
+#tabs-searchsus  li.active a{
+	background-color:#5c9cd8;
+	color:#ffffff
+}
+
+#tabs-searchs li a:hover {
+    background-color: #d7d7d7;
+	color:#ffffff
+}
+
+#tabs-searchsus li a:hover {
+    background-color: #d7d7d7;
+	color:#ffffff
+}
+
+#tabs-searchs li.flights-tab a { background-position: 0px 0px;}
+#tabs-searchs  li.intertours-tab a{background-position: -291px 0px;}
+#tabs-searchs  li.my-bookings-tab a{background-position: -95px 0px;}
+#tabs-searchs  li.flightsStatus-tab a{background-position: -190px 0px;}
+
+#tabs-searchs  li.active.flights-tab a{background-position: 0px -70px;}
+#tabs-searchs  li.active.intertours-tab a{background-position: -285px -140px;}
+#tabs-searchs  li.active.my-bookings-tab a{background-position: -95px -140px;}
+#tabs-searchs  li.active.flightsStatus-tab a{ background-position: -190px -140px;}
+
+#tabs-searchs li.flights-tab a:hover{background-position: 0px -140px;}
+#tabs-searchs li.intertours-tab a:hover{background-position: -285px -70px;}
+#tabs-searchs  li.my-bookings-tab a:hover{background-position: -95px -70px;}
+#tabs-searchs li.flightsStatus-tab a:hover{background-position: -190px -70px;}
+
+#tabs-searchs li.active  a span{
+    display: block;
+    background:url(//static.interjet.com/assets/images/icon/triangle-tabs.png) center center;
+    width: 17px;
+    height: 8px;
+    bottom: 0;
+    left: 40%;
+    position: absolute;
+}
+
+#tabs-searchsus li.flights-tab a { background-position: 0px 0px;}
+#tabs-searchsus  li.intertours-tab a{background-position: -285px 0px;}
+#tabs-searchsus  li.my-bookings-tab a{background-position: -95px 0px;}
+#tabs-searchsus  li.flightsStatus-tab a{background-position: -190px 0px;}
+
+#tabs-searchsus  li.active.flights-tab a{background-position: 0px -70px;}
+#tabs-searchsus  li.active.intertours-tab a{background-position: -285px -140px;}
+#tabs-searchsus  li.active.my-bookings-tab a{background-position: -95px -140px;}
+#tabs-searchsus  li.active.flightsStatus-tab a{ background-position: -190px -140px;}
+
+#tabs-searchsus li.flights-tab a:hover{background-position: 0px -140px;}
+#tabs-searchsus li.intertours-tab a:hover{background-position: -285px -70px;}
+#tabs-searchsus  li.my-bookings-tab a:hover{background-position: -95px -70px;}
+#tabs-searchsus li.flightsStatus-tab a:hover{background-position: -190px -70px;}
+
+#tabs-searchsus li.active  a span{
+    display: block;
+    background:url(//static.interjet.com/assets/images/icon/triangle-tabs.png) center center;
+    width: 17px;
+    height: 8px;
+    bottom: 0;
+    left: 40%;
+    position: absolute;
+}
+/*======================================================TABS-SEARCH-V2==================================================*/
+#tabs-searchs-v2{
+	border-bottom:1px solid #8c8a88;	
+	clear:both;
+	overflow:hidden;
+	background-color: #eae8e6;
+}
+
+#tabs-searchs-v2  li{
+	width:25%;
+	padding:0;
+	background:transparent;
+	float:left;
+}
+
+
+#tabs-searchs-v2us{
+	border-bottom:1px solid #8c8a88;	
+	clear:both;
+	overflow:hidden;
+	background-color: #eae8e6;
+}
+
+#tabs-searchs-v2us  li{
+	width:25%;
+	padding:0;
+	background:transparent;
+	float:left;
+}
+
+#tabs-searchs-v2  li a{
+	border-bottom:none !important;	
+	border-right:none;	
+	background:url(//static.interjet.com/assets/images/icon/sprite-booking-engine-v2.png) center 20px #FAFAFA no-repeat;
+	padding:47px 0 10px 0;		
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	font-size:11px;
+	height: 70px;
+}
+
+#tabs-searchs-v2us  li a{
+	border-bottom:none !important;	
+	border-right:none;	
+	background:url(//static.interjet.com/assets/images/icon/sprite-booking-home-intertours-us.png) center 20px #EDEDED no-repeat;
+	padding:40px 0 10px 0;		
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	font-size:11px;
+	    height: 70px;
+}
+
+#flightSearchContainer .or-spacer .mask:after {
+    content: '';
+    display: block;
+    margin: -23px auto 0;
+    width: 100%;
+    height: 24px;
+    box-shadow: none;
+    border-bottom: 1px solid #afafaf;
+    border-radius: 0px;
+}
+
+#tabs-searchs-v2  li.active a{	
+	color:#ffffff
+}
+#tabs-searchs-v2us  li.active a{
+	background-color:#5c9cd8;
+	color:#ffffff
+}
+
+#tabs-searchs-v2 li a:hover {
+    background-color: #eaeaea !important;
+	color:#6caddf;
+}
+
+#tabs-searchs-v2us li a:hover {
+    background-color: #d7d7d7;
+	color:#ffffff
+}
+
+#tabs-searchs-v2 li.flights-tab a { background-position: 0px 0px;}
+#tabs-searchs-v2  li.intertours-tab a{background-position: -95px 0px;}
+#tabs-searchs-v2  li.my-bookings-tab a{background-position: -280px 0px;}
+#tabs-searchs-v2  li.flightsStatus-tab a{background-position: -190px 0px;}
+
+#tabs-searchs-v2  li.active.flights-tab a{background-position: 0px -139px;}
+#tabs-searchs-v2  li.active.intertours-tab a{background-position: -285px -142px;}
+#tabs-searchs-v2  li.active.my-bookings-tab a{background-position: -280px -140px;}
+#tabs-searchs-v2  li.active.flightsStatus-tab a{ background-position: -190px -138px;}
+
+#tabs-searchs-v2 li.flights-tab a:hover{background-position: 0px -70px;}
+#tabs-searchs-v2 li.intertours-tab a:hover{background-position: -95px -70px;}
+#tabs-searchs-v2  li.my-bookings-tab a:hover{background-position: -280px -70px;}
+#tabs-searchs-v2 li.flightsStatus-tab a:hover{background-position: -190px -70px;}
+
+#tabs-searchs-v2 li.active  a span{
+    display: block;
+    background:url(//static.interjet.com/assets/images/icon/triangle-tabs.png) center center;
+    width: 17px;
+    height: 8px;
+    bottom: 0;
+    left: 40%;
+    position: absolute;
+}
+#tabs-searchs-v2 li.active a{
+	background-color:#1B4298;
+}					
+#tabs-searchs-v2us li.flights-tab a { background-position: 0px 0px;}
+#tabs-searchs-v2us  li.intertours-tab a{background-position: -285px 0px;}
+#tabs-searchs-v2us  li.my-bookings-tab a{background-position: -95px 0px;}
+#tabs-searchs-v2us  li.flightsStatus-tab a{background-position: -190px 0px;}
+
+#tabs-searchs-v2us  li.active.flights-tab a{background-position: 0px -70px;}
+#tabs-searchs-v2us  li.active.intertours-tab a{background-position: -285px -140px;}
+#tabs-searchs-v2us  li.active.my-bookings-tab a{background-position: -95px -140px;}
+#tabs-searchs-v2us  li.active.flightsStatus-tab a{ background-position: -190px -140px;}
+
+#tabs-searchs-v2us li.flights-tab a:hover{background-position: 0px -140px;}
+#tabs-searchs-v2us li.intertours-tab a:hover{background-position: -285px -70px;}
+#tabs-searchs-v2us  li.my-bookings-tab a:hover{background-position: -95px -70px;}
+#tabs-searchs-v2us li.flightsStatus-tab a:hover{background-position: -190px -70px;}
+
+#tabs-searchs-v2us li.active  a span{
+    display: block;
+    background:url(//static.interjet.com/assets/images/icon/triangle-tabs.png) center center;
+    width: 17px;
+    height: 8px;
+    bottom: 0;
+    left: 40%;
+    position: absolute;
+}
+
+/*======================================================================================================================*/
+
+
+
+.btn-ambar {
+  background-image: -webkit-linear-gradient(top, #ffc200   0%, #ffc250   100%);
+  background-image: -o-linear-gradient(top, #ffc200   0%, #ffc250  100%);
+  background-image: linear-gradient(to bottom, #ffc200   0%, #ffc250  100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc200  ', endColorstr='#ffc250', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #CCCC33;
+  color : #fff;
+}
+.btn-ambar:hover,
+.btn-ambar:focus {
+  background-color: #ffc200;
+  background-position: 0 -15px;
+}
+.btn-ambar:active,
+.btn-ambar.active {
+  background-color: #2aabd2;
+  border-color: #28a4c9;
+}
+.btn-ambar:disabled,
+.btn-ambar[disabled] {
+  background-color: #2aabd2;
+  background-image: none;
+}
+.btn-ambar {
+  color: #ffffff;
+  background-color: #ffc200;
+  border-color: #ffc200;
+}
+.btn-onfly{
+    border: 2px solid #5cb85c;
+    background-color: rgba(200, 251, 227, 0.83);
+    font-weight: bolder;
+}
+.btn-dmcec{
+    background-color: #EE5086;
+}
+.btn-dmcec:hover,
+.btn-dmcec:focus {
+  background-color: #E8A2B5;
+}
+
+.wrapper_arrow {
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    text-align: center;
+}
+
+.header_arrow {
+    position: relative;
+    font: 600 1.3em/16px verdana,sans-serif;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px 25px;
+    text-align: center;
+    -webkit-box-shadow: 0 3px 10px -3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 3px 10px -3px rgba(0,0,0,.3);
+    box-shadow: 0 3px 10px -3px rgba(0,0,0,.3);
+}
+
+#tabs-deals li a{
+	text-transform: uppercase;
+}
+
+
+/* JEMV (landing - 22072016) >>>>>>	*/
+.mainForm 
+{
+    opacity: 0.8;
+	border-color:blue;
+    border-style:none;
+	width:100%;
+	height:491pt;
+	/*overflow-y: auto;*/
+	margin-top: 1pt;
+}
+.topLandingSpan
+{
+	height:20pt;
+	display:block;
+}
+.bodyLandingSpan
+{
+	height:1.1pt;
+	display:block;
+}
+
+.frmContacto
+{
+	opacity:0.85;
+	background-color:white;
+	margin: auto;
+	/*width: 360pt;*/
+	width: 27.6em;
+	/*height: 61%;*/
+}
+.frmContactoMobile
+{
+	opacity:0.85;
+	background-color:white;
+	margin: auto;
+	/*width: 505pt;*/
+	width: 95%;
+	height: 61%;
+	background-size: 100% 100%;
+}
+
+.roundEdge
+{
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-style: double;
+	border-color: #F2F2F2;
+	border-width: 4pt;
+	padding: 14pt;
+	padding-bottom: 1pt !important;
+}
+#LandingClickToCallView_TextBoxLADA
+{
+	disabled:disabled;
+	cursor: not-allowed;
+    background-color: #eeeeee;
+    opacity: 1;
+	
+	display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.32857143;
+    color: #555555;
+	
+	background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#LandingClickToCallView_DropDownListCountries
+{
+	width: 100% !important;
+}
+.dvTopSpace
+{
+	height: 27pt;
+	display: inline-block;
+}
+.dvCenter
+{
+	text-align:center;
+}
+.dvRbtnSpace
+{
+	width: 10%;
+	display: inline-block;
+}
+.dvTopSpaceFooter
+{
+	height: 9%;
+	display: inline-block;
+}
+.dvImagesFooter
+{
+	margin-right:50%;
+	margin-bottom:5pt;
+	color: white;
+	font-size: 9pt;
+}
+.imgLink
+{
+	cursor: pointer;
+	width: 30pt;
+	-webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.imgLink:hover
+{
+	-webkit-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
+}
+
+a.title-content:hover
+{
+	color: blue !important;
+}
+
+.lblMessage
+{
+	font-size: 10pt;
+}
+
+.lblMessage h3
+{
+	font-size: 10pt !important;
+	opacity:0.85;
+	background-color:white;
+	margin: auto;
+}
+.dvBottom
+{
+	/*position: absolute;*/
+	bottom: 5pt;
+	width: 100%;
+}
+.dvPadding
+{
+	padding-right: 60pt;
+}
+.h7Big
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 45pt !important;
+	margin-bottom: 10pt;
+	margin-top: 10pt;
+}
+.marginLeft269
+{
+	margin-left: 269pt;
+}
+.marginLeft269 a
+{
+	text-decoration: underline;
+}
+/* JEMV (landing - 22072016) <<<<<<	*/
+.breadcrumb{
+	background-color: #fff;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  visibility: visible;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  min-width:150px;  
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #69C;
+  border-radius: 4px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+	margin:0 auto;
+}
+.form-control {
+	height: 31px;
+}
+label {
+	font-weight: normal;
+	font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+@media (min-width: 992px) {
+	.modal-lg {
+		width: 1012px;
+	}
+}
+
+.list-group-item{
+	min-height: 117px;
+}
+
+#PriceDisplay{
+
+	background-color: #fff;
+	border: 1px Solid #E5E5E5;
+}
+
+#SummaryPrice{
+
+	background-color: #fff;
+	border: 1px Solid #E5E5E5;
+}
+
+.price-display{
+
+	background-color: #fff;
+	border: 1px Solid #E5E5E5;
+}
+
+.btn-fare-rules{
+	color: #999999;
+	border: 2px Solid #CCC;
+	border-radius: 18px;
+}
+
+#passengerInputContentSSR .border-top-gray{
+	/*margin: 10px 5px 0px;*/
+	/*padding-top: 10px;*/
+}
+
+#passengerInputContentSSR h4{
+	margin-bottom: 0px;
+}
+form {
+    margin-bottom: 0px;
+}
+
+

@@ -1,0 +1,37 @@
+
+@font-face {
+  font-family: 'VAGRoundedStd-Thin';
+  src: url('VAGRoundedStd-Thin.eot?#iefix') format('embedded-opentype'),  url('VAGRoundedStd-Thin.otf')  format('opentype'),
+	     url('VAGRoundedStd-Thin.woff') format('woff'), url('VAGRoundedStd-Thin.ttf')  format('truetype'), url('VAGRoundedStd-Thin.svg#VAGRoundedStd-Thin') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'VAGRoundedStd-Black';
+  src: url('VAGRoundedStd-Black.eot') format('embedded-opentype');
+  font-weight: bolder;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'VAGRoundedStd-Bold';
+  src: url('VAGRoundedStd-Bold.eot?#iefix') format('embedded-opentype'),  url('VAGRoundedStd-Bold.otf')  format('opentype'),
+	     url('VAGRoundedStd-Bold.woff') format('woff'), url('VAGRoundedStd-Bold.ttf')  format('truetype'), url('VAGRoundedStd-Bold.svg#VAGRoundedStd-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+
+@font-face {
+  font-family: 'VAGRoundedStd-Light';
+  src: url('VAGRoundedStd-Light.eot?#iefix') format('embedded-opentype'),  url('VAGRoundedStd-Light.otf')  format('opentype'),
+	     url('VAGRoundedStd-Light.woff') format('woff'), url('VAGRoundedStd-Light.ttf')  format('truetype'), url('VAGRoundedStd-Light.svg#VAGRoundedStd-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+

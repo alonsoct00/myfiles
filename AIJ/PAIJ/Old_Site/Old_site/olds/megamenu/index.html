@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.offcanvas.css" />
+    <link rel="stylesheet" href="css/meganav.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default dropdown-onhover" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Demo</a>
+                    <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span>
+                          <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="js-bootstrap-offcanvas">
+                    <ul class="nav navbar-nav dropdown-onhover">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Static Link</a></li>
+                        <li class="dropdown-full dropdown">
+                            <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-align-justify"></i>Vuela</a>
+                            <div class="dropdown-menu" role="menu">
+                                <ul class="nav nav-tabs responsive-tabs col-lg-3 col-md-3 col-sm-4 col-xs-12" role="tablist">
+                                    <li role="presentation" class=""><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Buscar</a></li>
+                                    <li role="presentation" class=""><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Administra tu viaje</a></li>
+                                    <li role="presentation" class=""><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Prepara tu viaje<i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">Imagen tu Viaje</span></a></li>
+                                    <li role="presentation" class=""><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">4 columns<i class="hidden-xs fa fa-angle-right pull-right"></i><span class="desc">4 columns description</span></a></li>
+                                </ul>
+                                <div class="tab-content col-lg-9 col-md-9  col-sm-8 col-xs-12 no-padding">
+                                    <!-- First item -->
+                                    <div role="tabpanel" class="tab-pane" id="tab1">
+                                        <div class="tab-content col-lg-8 col-md-8 col-sm-6 col-xs-12">Vuelos por fecha</div>
+                                    </div>
+                                    <!--Second item-->
+                                    <div role="tabpanel" class="tab-pane" id="tab2">
+                                        <div class="tab-content col-lg-6 col-md-6 col-sm-6 col-xs-12">Tab2</div>
+                                    </div>
+                                    <!--Third item-->
+                                    <div role="tabpanel" class="tab-pane" id="tab3">
+                                        <div class="tab-content col-lg-8 col-md-8 col-sm-6 col-xs-12">Tab3</div>
+                                    </div>
+                                    <!--Fourth item-->
+                                    <div role="tabpanel" class="tab-pane" id="tab4">
+                                        <div class="tab-content col-lg-8 col-md-8 col-sm-6 col-xs-12">Tab4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.offcanvas.js"></script>
+        <script src="js/megamenu.js"></script>
+        <script src="js/tabs.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+    // Tabs on hover
+      $(function() {
+          $('.dropdown, .dropdown-wide, .dropdown-full, .dropdown-short, .dropdown-grid')
+              .mouseenter(function(){if (!('ontouchstart' in window)) $(this).addClass('open');})
+              .mouseleave(function(){if (!('ontouchstart' in window)) $(this).removeClass('open');})
+              .click(function(e){if (!('ontouchstart' in window)) e.stopPropagation();});
+
+          $('[data-toggle=tab]').mouseenter(function(e){
+                e.preventDefault();
+                $(this).tab('show');
+                $(this).closest('.dropdown-menu').css({right:0});
+          })
+          $('[data-toggle=tab]').click(function(e){e.preventDefault();})
+
+      });
+
+        //Next code used to prevent unexpected menu close when using some components (like accordion, tabs, forms, etc), please add the next JavaScript to your page
+        $( window ).load(function() {
+            $(document).on('click', '.navbar .dropdown-menu', function(e) {e.stopPropagation();});
+
+        });
+
+        $('.responsive-tabs').responsiveTabs({ accordionOn: ['xs', 'sm'] });
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1678 @@
+/* CUSTOM FONT */
+
+@import url('../fonts/VAGRounded/font-styles.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700');
+
+/* FONT AWESOME ICONS CSS */
+
+@import url('font-awesome.min.css');
+
+/*Interjet Icon Font*/
+
+@import url('../fonts/Interfont/css/interfont.css');
+@import url('../fonts/Interfont/css/animation.css');
+.inter-icon {
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    font: normal normal normal 14px/1 interfont;
+    transform: translate(0, 0);
+    margin: 0px auto;
+}
+
+/*RESET*/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+
+/*Main Colors*/
+
+:root {
+    --soft-grey-color: #333;
+    --deep-grey-color: #666;
+    --green-color: #8dc85a;
+    --green-light-color: #cbe6ac;
+    --button-soft-blue-color: #6caddf;
+    --button-dark-blue-color: #1b4298;
+    --button-hover-soft-blue-color: #368bce;
+    --button-hover-dark-blue-color: #2154c3;
+    --buton-white-color: #fff;
+    --button-white-hover-color: #368bcd;
+    --text-soft-blue-color: #6caddf;
+    --text-light-blue-color: #89bde5;
+    --text-dark-blue-color: #1b4298;
+    --text-dark-grey-color: #333;
+    --text-grey-color: #4c4c4c;
+    --text-soft-grey-color: #999;
+    --text-title-soft-blue: #6caddf;
+    --text-title-dark-blue: #1b4298;
+    --text-hover-soft-blue-color: #6caddf;
+    --text-hover-dark-blue-color: #1b4298;
+    --anchor-soft-blue-color: #6caddf;
+    --anchor-soft-blue-hover-color: #6caddf;
+    --anchor-dark-blue-color: #1b4298;
+    --anchor-dark-blue-hover-color: #1b4298;
+    --anchor-soft-grey-color: #999;
+    --anchor-dark-grey-color: #666;
+    --anchor-soft-grey-hover-color: #7d7d7d;
+    --anchor-dark-grey-hover-color: #999;
+    --border-soft-grey-color: #ededed;
+    --fare-light-color: #b2b2b2;
+    --fare-optima-color: #6caddf;
+    --fare-priority-color: #1b4298;
+    --fare-light-transp-color: #e5e5e5;
+    --fare-optima-transp-color: #98c5e8;
+    --fare-priority-transp-color: #5f7ab6;
+}
+
+.soft-blue {
+    color: var(--text-soft-blue-color);
+}
+
+.dark-blue {
+    color: var(--text-dark-blue-color);
+}
+
+.tl {
+    color: var(--fare-light-color);
+}
+
+.to {
+    color: var(--fare-optima-color);
+}
+
+.tp {
+    color: var(--fare-priority-color);
+}
+
+.white-btn {
+    background: transparent;
+    border: 1px solid var(--button-soft-blue-color);
+    border-radius: 100px;
+}
+
+
+/*End Reset*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Landing Comparación Tarifas Interjet + Tarifas Modal Box ********************/
+
+.mainContent {
+    min-height: 100%;
+}
+
+.landing-container {
+    display: block;
+    height: 100%;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    min-height: 100%;
+}
+
+#fares-main-content .row {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+div p b,
+b {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.promo-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.promo-container {
+    display: block;
+    float: left;
+    padding: 0px 15px;
+    width: 100%;
+}
+
+.promo-dest {
+    display: block;
+    clear: both;
+}
+
+h1.promo-title {
+    font-size: 28px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+h2.promo-subtitle {
+    font-size: 25px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.subprimary-promo-title {
+    font-size: 23px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    clear: both;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #1b4298;
+}
+
+.subsecondary-promo-title {
+    font-size: 20px;
+    color: var(--text-soft-blue-color);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    clear: both;
+}
+
+th.border-less,
+tr.border-less {
+    border: none!important;
+}
+
+
+/***custom**/
+
+#tarifas-interjet-container {
+    display: block;
+    background: #fafafa;
+    padding: 0px;
+}
+
+#tarifas-interjet-container .row {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#top-fare-content {
+    float: left;
+    background: #fff;
+    padding: 20px 0px;
+}
+
+#main-table-fares {
+    float: left;
+    display: block;
+    min-height: 100%;
+    padding: 20px;
+}
+
+#main-table-fares .table-bordered > thead > tr > th,
+#main-table-fares .table-bordered > thead > tr > td {
+    border-bottom-width: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center
+}
+
+#main-table-fares .table-bordered > thead > tr > th {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    padding: 0px 10px;
+}
+
+#main-table-fares table {
+    border: 0px;
+}
+
+#main-table-fares table tr td {
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    padding: 8px 10px;
+}
+
+th#tarifa-i {
+    background-color: var(--fare-light-color);
+    border-top: 0px solid var(--fare-light-color);
+}
+
+th#tarifa-op {
+    background-color: var(--fare-optima-color);
+    border-top: 10px solid var(--fare-optima-color);
+    line-height: 47px;
+}
+
+th#tarifa-pr {
+    background-color: var(--fare-priority-color);
+    border-top: 20px solid var(--fare-priority-color);
+    line-height: 44px;
+}
+
+#main-table-fares table tr th.horizontal-title {
+    text-align: left;
+    vertical-align: middle;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 14px!important;
+    background: #fff;
+    padding: 12px 0px 12px 20px
+}
+
+#main-table-fares span.fare-conditions {
+    display: block;
+    clear: both;
+    max-width: 230px;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto 0px;
+    float: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #666;
+}
+
+#main-table-fares .double-conds {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+}
+
+#main-table-fares .double-conds small {
+    clear: both;
+    display: block;
+}
+
+#main-table-fares .double-conds .fare-conditions {
+    clear: none;
+    display: inline-block;
+    float: none;
+    width: auto;
+    margin: 0px 5px;
+}
+
+#main-table-fares > div.table-container > table > tbody:nth-child(4) > tr:nth-child(6) > td > span {
+    max-width: 100%;
+}
+
+#main-table-fares .feature-ex {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #999;
+    font-size: 8px;
+    display: block;
+    clear: both;
+    margin: 0px auto;
+    text-align: center;
+}
+
+#main-table-fares td.double-col {
+    display: table-cell;
+}
+
+#main-table-fares td.double-col div.double-col-detail {
+    float: left;
+    display: block;
+    min-width: 45%;
+    margin: 0px 14px;
+}
+
+#main-table-fares td.double-col .feature-ex span {
+    display: inline-block;
+    float: none;
+    line-height: normal;
+    margin: 0px 2px;
+}
+
+#main-table-fares td.double-col .feature-ex span b {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: var(--text-light-blue-color);
+}
+
+.double-col > span {
+    margin-top: 5%;
+    color: #999;
+    font-size: 13px;
+}
+
+#main-table-fares td.double-col span {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    max-width: 100%!important;
+}
+
+.fare-conditions b {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--text-light-blue-color);
+    margin: 0px 3px;
+}
+
+#main-table-fares > div > table > thead > tr > th > h2 {
+    display: block;
+    margin: 35px auto 5px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+h2 sup {
+    font-size: 8px;
+    font-weight: lighter;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    top: -1.8em;
+}
+
+#main-table-fares .fare-feature {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#main-table-fares .fare-feature sup {
+    font-size: 8px;
+    top: -0.8em;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+#main-table-fares .fare-feature-detail {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0px;
+    color: #666;
+    display: block;
+    clear: both;
+    margin-top: 0px;
+    max-width: 280px;
+}
+
+.fare-feature-detail .strong {
+    font-weight: bold;
+    color: #666;
+}
+
+#fares-headimg {
+    display: block;
+    position: relative;
+}
+
+#fares-headimg > img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 40px;
+    right: 10px;
+}
+
+#fares-maintxt {
+    display: block;
+    clear: both;
+    margin-top: 25px;
+}
+
+#fares-maintxt p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: var(--text-grey-color);
+    font-size: 14px;
+}
+
+#fares-maintxt > p > span {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+#fares-maintxt .subsecondary-promo-title {
+    font-size: 20px;
+    color: var(--text-light-blue-color);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+#main-table-fares table tr td i.fa.fa-check {
+    border: 4px solid;
+    border-color: var(--green-light-color);
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    line-height: 23px;
+    font-size: 15px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--green-color);
+}
+
+#main-table-fares table tr td i.fa.fa-usd {
+    border: 4px solid;
+    border-color: var(--border-soft-grey-color);
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    line-height: 22px;
+    font-size: 17px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--text-light-blue-color);
+}
+
+#main-table-fares .fa-dollar:before,
+#main-table-fares .fa-usd:before {
+    left: 0px;
+    position: relative;
+}
+
+#main-table-fares table tr td i.fa.fa-times-circle-o {
+    color: var(--border-soft-grey-color);
+    font-weight: normal;
+    font-size: 2.3em;
+}
+
+#main-table-fares .weight-detail {
+    display: block;
+    position: relative;
+}
+
+#main-table-fares .weight-detail .weight-max {
+    float: none;
+    display: inline-table;
+    font-size: 30px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+
+#main-table-fares .weight-detail .suitcaseimg {
+    right: 0px;
+    top: 0px;
+    display: inline-table;
+    position: relative;
+}
+
+.suitcaseimg img {
+    width: 100%;
+    height: auto;
+}
+
+#main-table-fares .hand-bag {
+    display: block;
+    text-align: center;
+    width: 30px;
+    margin: 0px auto;
+}
+
+#main-table-fares .hand-bag > img {
+    width: 100%;
+    height: auto;
+}
+
+.weight-detail .suitcaseimg.single-suitcase {
+    max-height: 50px;
+    width: 20px;
+}
+
+.weight-detail .suitcaseimg.double-suitcase {
+    max-height: 50px;
+    width: 43px;
+}
+
+.weight-detail .suitcaseimg.triple-suitcase {
+    max-height: 50px;
+    width: 66px;
+}
+
+#more-benefits {
+    display: block;
+    padding: 0px;
+}
+
+#benfits-table {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 1px 2px 2px 1px #ededed;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+#more-benefits h2 {
+    display: block;
+    margin: 35px auto 5px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#termsandcond {
+    display: block;
+    clear: both;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+#termsandcond h4 {
+    display: block;
+    margin: 3px 0px;
+    font-weight: bold;
+    color: #666;
+    font-size: 11px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#cond-list {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 10px;
+    margin: 5px 0px;
+}
+
+#cond-list li {
+    clear: both;
+    font-size: 10px;
+    color: #666;
+    margin: 2px 0px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+#termsandcond p {
+    display: block;
+    clear: both;
+    font-size: 10px;
+    color: #666;
+    margin: 3px 0px;
+}
+
+#termsandcond a {
+    display: block;
+    clear: both;
+    font-size: 10px;
+    color: var(--text-light-blue-color);
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+#termsandcond li a {
+    display: inline-block;
+    margin: 0px;
+}
+
+img.img-benefit {
+    width: 100%;
+    height: auto;
+    display: block;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+}
+
+.ameximg img {
+    width: 151px;
+    height: 85px;
+}
+
+.inbursaimg img {
+    width: 203px;
+    height: 85px;
+}
+
+.santanderimg img {
+    width: 223px;
+    height: 85px;
+}
+
+.clubimg img {
+    width: 200px;
+    height: 73px;
+}
+
+a.btn.find-more {
+    clear: both;
+    display: block;
+    margin: 0px auto;
+    color: var(--text-soft-blue-color);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    width: 110px;
+    text-align: center;
+    padding: 0px;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+a.btn.white-btn:hover {
+    color: #fff;
+    border: 1px solid #6caddf;
+    background: #6caddf;
+}
+
+.onebenefit {
+    display: inline-table;
+    float: left;
+    height: 135px;
+    position: relative;
+    border-right: 2px solid #ededed;
+    padding: 0px 0px;
+}
+
+.onebenefit:last-child {
+    border-right: 0px;
+}
+
+.fare-bonification {
+    float: none;
+    display: inline-table;
+    font-size: 30px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.cbi-light-bon {
+    color: var(--fare-light-transp-color);
+}
+
+.cbi-optima-bon {
+    color: var(--fare-optima-transp-color);
+}
+
+.cbi-priority-bon {
+    color: var(--fare-priority-transp-color);
+}
+
+.cbi-latam-light-bon {
+    color: var(--fare-light-color);
+}
+
+.cbi-latam-optima-bon {
+    color: var(--fare-optima-color);
+}
+
+.cbi-latam-priority-bon {
+    color: var(--fare-priority-color)
+}
+
+p.fare-bonification.cbi-img {
+    display: block;
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+p.fare-bonification.cbi-latam-imgs {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+p.fare-bonification.cbi-latam-imgs img {
+    float: left;
+    display: block;
+    width: 135px;
+}
+
+#main-table-fares tr th p.cbi-latam-imgs > span {
+    float: left;
+    margin: 0px 10px;
+    line-height: 53px;
+    font-size: 22px;
+    color: var(--deep-grey-color);
+}
+
+
+}
+
+/*media Queries*/
+@media only screen and (min-width:1100px) {
+    #main-table-fares table tr td {
+        min-width: 220px!important;
+    }
+    
+    #main-table-fares th.horizontal-title .fare-feature small {
+        display: inline-block;
+        clear: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1099px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 480px) and (max-width: 767px) {}
+@media screen and (max-width: 480px) {
+    #main-table-fares table tr th.horizontal-title {
+        padding: 15px 10px 15px 10px;
+        background-color: white;
+    }
+    
+    #main-table-fares table tr td {
+        text-align: center;
+        vertical-align: middle;
+        background: #fff;
+        padding: 5px 5px;
+    }
+    
+    #main-table-fares .table-bordered > thead > tr > th {
+        color: #fff;
+        font-size: 23px;
+    }
+    
+    .weight-max {
+        float: none;
+        clear: both;
+        display: block!important;
+        width: 100%;
+        text-align: center;
+        margin: 0px auto;
+        position: static!important;
+        right: 0px;
+        left: 0px;
+        font-size: 20px!important;
+    }
+    
+    .weight-detail .suitcaseimg.single-suitcase {
+        max-height: 50px;
+        width: 15px;
+    }
+    
+    .weight-detail .suitcaseimg.double-suitcase {
+        max-height: 50px;
+        width: 35px;
+    }
+    
+    .weight-detail .suitcaseimg.triple-suitcase {
+        max-height: 50px;
+        width: 55px;
+    }
+    
+    #benfits-table {
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .onebenefit {
+        display: block;
+        min-height: 140px;
+        position: relative;
+        border-bottom: 2px solid #ededed;
+        border-right: 0px;
+        margin-bottom: 10px;
+        padding: 0px;
+        width: 100%;
+        clear: both;
+    }
+    
+    .onebenefit:last-child {
+        border-bottom: 0px;
+    }
+    
+    a.btn.find-more {
+        clear: both;
+        display: block;
+        position: absolute;
+        bottom: 15px;
+    }
+    
+    img.img-benefit {
+        width: 100%;
+        height: auto;
+        display: block;
+        display: block;
+        margin: 0px auto;
+        position: relative;
+    }
+    
+    .ameximg img {
+        width: 151px;
+        height: 85px;
+    }
+    
+    .inbursaimg img {
+        width: 203px;
+        height: 85px;
+    }
+    
+    .santanderimg img {
+        width: 223px;
+        height: 85px;
+    }
+    
+    .clubimg img {
+        width: 200px;
+        height: 73px;
+    }
+}
+
+/********Tarifas Modal*************/
+#tarifas-modal-container {
+    display: block;
+    background: #fafafa;
+    padding: 0px;
+}
+#tarifas-modal-container .row {
+    padding: 0px;
+    margin: 0px auto;
+}
+#top-fare-content {
+    float: left;
+    background: #fff;
+    padding: 20px 0px;
+}
+#tarifas-modal-container #main-table-fares {
+    float: left;
+    display: block;
+    min-height: 100%;
+    padding: 20px;
+}
+#tarifas-modal-container #main-table-fares .table-bordered > thead > tr > th,
+#tarifas-modal-container #main-table-fares .table-bordered > thead > tr > td {
+    border-bottom-width: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center
+}
+#tarifas-modal-container #main-table-fares .table-bordered > thead > tr > th {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    padding: 10px 0px 0px 0px;
+    vertical-align: middle;
+    line-height: normal;
+}
+#tarifas-modal-container #main-table-fares table {
+    border: 0px;
+}
+#tarifas-modal-container #main-table-fares table tr td {
+    text-align: center;
+    vertical-align: middle;
+    background: #fff;
+    padding: 8px 10px;
+}
+#tarifas-modal-container th#tarifa-i {
+    background-color: var(--fare-light-color);
+    border-top: 0px solid var(--fare-light-color);
+}
+#tarifas-modal-container th#tarifa-op {
+    background-color: var(--fare-optima-color);
+    border-top: 10px solid var(--fare-optima-color);
+    margin-top: 0px;
+    padding-top: 0px!important;
+}
+#tarifas-modal-container th#tarifa-pr {
+    background-color: var(--fare-priority-color);
+    border-top: 20px solid var(--fare-priority-color);
+    margin-top: 0px;
+    padding-top: 0px!important;
+}
+#tarifas-modal-container #main-table-fares table tr th.horizontal-title {
+    text-align: left;
+    vertical-align: middle;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 14px!important;
+    background: #fff;
+    padding: 8px 0px 5px 15px
+}
+#tarifas-modal-container #main-table-fares span.fare-conditions {
+    display: block;
+    clear: both;
+    max-width: 230px;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto 0px;
+    float: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #666;
+}
+#tarifas-modal-container #main-table-fares .feature-ex {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #999;
+    font-size: 8px;
+    display: block;
+    clear: both;
+    margin: 0px auto;
+}
+#tarifas-modal-container .fare-conditions b {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--text-light-blue-color);
+    margin-left: 5px;
+}
+#tarifas-modal-container #main-table-fares > div > table > thead > tr > th > h2 {
+    display: block;
+    margin: 10px auto 3px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#tarifas-modal-container #main-table-fares .fare-feature {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 16px;
+}
+#tarifas-modal-container th.horizontal-title .fare-feature small {
+    display: block;
+    clear: both;
+}
+#tarifas-modal-container #main-table-fares td.double-col {
+    display: table-cell;
+}
+#tarifas-modal-container #main-table-fares td.double-col div.double-col-detail {
+    float: left;
+    display: block;
+    min-width: 45%;
+    margin: 0px 10px;
+}
+#tarifas-modal-container #main-table-fares td.double-col .feature-ex span {
+    display: inline-block;
+    float: none;
+    line-height: normal;
+    margin: 0px 2px;
+}
+#tarifas-modal-container #main-table-fares td.double-col .feature-ex span b {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: var(--text-light-blue-color);
+}
+#tarifas-modal-container .double-col > span {
+    margin-top: 10px;
+    color: #999;
+    font-size: 13px;
+}
+#tarifas-modal-container #main-table-fares td.double-col span {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    max-width: 100%!important;
+}
+#tarifas-modal-container #main-table-fares .double-col-detail span.fare-conditions {
+    display: block!important;
+}
+#tarifas-modal-container .fare-conditions b {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: var(--text-light-blue-color);
+    margin-left: 5px;
+}
+#tarifas-modal-container #main-table-fares .fare-feature sup {
+    font-size: 7px;
+    top: -1em;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    display: none!important;
+}
+#tarifas-modal-container #main-table-fares .fare-feature-detail {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0px;
+    color: #666;
+    display: inline-block;
+    margin-top: 0px;
+    line-height: 24px;
+    float: none;
+    clear: none;
+}
+#tarifas-modal-container .fare-feature-detail .strong {
+    font-weight: bold;
+    color: #666;
+}
+#tarifas-modal-container #main-table-fares > div.table-container > table th > .fare-feature-detail {
+    display: none!important;
+}
+#tarifas-modal-container #main-table-fares > div.table-container > table span.fare-conditions {
+    display: none!important;
+}
+#tarifas-modal-container #main-table-fares > div.table-container > table p.feature-ex {
+    display: none!important;
+}
+#tarifas-modal-container #fares-headimg {
+    display: block;
+    position: relative;
+}
+#tarifas-modal-container #fares-headimg > img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 40px;
+    right: 10px;
+}
+#tarifas-modal-container #fares-maintxt {
+    display: block;
+    clear: both;
+    margin-top: 25px;
+}
+#tarifas-modal-container #fares-maintxt p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: var(--text-grey-color);
+    font-size: 14px;
+}
+#tarifas-modal-container #fares-maintxt > p > span {
+    font-weight: bold;
+    margin-right: 3px;
+}
+#tarifas-modal-container #fares-maintxt .subsecondary-promo-title {
+    font-size: 20px;
+    color: var(--text-light-blue-color);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+#tarifas-modal-container #main-table-fares table tr td i.fa.fa-check {
+    border: 3px solid;
+    border-color: var(--green-light-color);
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    line-height: 14px;
+    font-size: 10px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--green-color);
+}
+#tarifas-modal-container #main-table-fares table tr td .fa-check:before {
+    position: relative;
+    left: 0.5px;
+}
+#tarifas-modal-container #main-table-fares table tr td i.fa.fa-usd {
+    border: 3px solid;
+    border-color: var(--border-soft-grey-color);
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--text-light-blue-color);
+}
+#tarifas-modal-container #main-table-fares .fa-dollar:before,
+#tarifas-modal-container #main-table-fares .fa-usd:before {
+    left: 0.4px;
+    position: relative;
+    top: -0.4px;
+}
+#tarifas-modal-container #main-table-fares table tr td i.fa.fa-times-circle-o {
+    color: var(--border-soft-grey-color);
+    font-weight: normal;
+    font-size: 1.59em;
+}
+#tarifas-modal-container ul#icon-def {
+    display: block;
+    clear: none;
+    float: right;
+    padding: 0px;
+    list-style-type: none;
+}
+#tarifas-modal-container ul#icon-def li {
+    float: left;
+    display: inline-flex;
+    line-height: 21px;
+    font-size: 11px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+#tarifas-modal-container #icon-def > li > span {
+    display: inline-block;
+    margin-left: 5px;
+}
+#tarifas-modal-container #icon-def i.fa.fa-check {
+    border: 3px solid;
+    border-color: var(--green-light-color);
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    line-height: 16px;
+    font-size: 11px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--green-color);
+}
+#tarifas-modal-container #icon-def i.fa-check:before {
+    position: relative;
+    left: 0.5px;
+    top: 0px;
+}
+#tarifas-modal-container #icon-def i.fa.fa-usd {
+    border: 3px solid;
+    border-color: var(--border-soft-grey-color);
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    line-height: 16px;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--text-light-blue-color);
+}
+#tarifas-modal-container #icon-def .fa-dollar:before,
+#tarifas-modal-container #icon-def .fa-usd:before {
+    left: -0.3px!important;
+    position: relative;
+    font-size: 12px;
+    top: 0px;
+}
+#tarifas-modal-container #icon-def i.fa.fa-times-circle-o {
+    color: var(--border-soft-grey-color);
+    font-weight: normal;
+    font-size: 22px;
+}
+#tarifas-modal-container #main-table-fares .weight-detail {
+    display: block;
+    position: relative;
+}
+#tarifas-modal-container #main-table-fares .weight-detail .weight-max {
+    float: none;
+    display: inline-table;
+    font-size: 25px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+#tarifas-modal-container #main-table-fares .weight-detail .suitcaseimg {
+    right: 0px;
+    top: 0px;
+    display: inline-table;
+    position: relative;
+}
+#tarifas-modal-container .suitcaseimg img {
+    width: 100%;
+    height: auto;
+}
+#tarifas-modal-container #main-table-fares .hand-bag {
+    display: block;
+    text-align: center;
+    width: 20px;
+    margin: 0px 0px 0px 20px;
+    float: left;
+}
+#tarifas-modal-container #main-table-fares .hand-bag > img {
+    width: 100%;
+    height: auto;
+}
+#tarifas-modal-container .weight-detail .suitcaseimg.single-suitcase {
+    max-height: 50px;
+    width: 15px;
+}
+#tarifas-modal-container .weight-detail .suitcaseimg.double-suitcase {
+    max-height: 50px;
+    width: 33px;
+}
+#tarifas-modal-container .weight-detail .suitcaseimg.triple-suitcase {
+    max-height: 50px;
+    width: 43px;
+}
+#tarifas-modal-container #more-benefits {
+    display: none;
+    padding: 0px;
+}
+#tarifas-modal-container #benfits-table {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 1px 2px 2px 1px #ededed;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+#tarifas-modal-container #more-benefits h2 {
+    display: block;
+    margin: 35px auto 5px auto;
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px;
+    color: var(--text-title-dark-blue);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#tarifas-modal-container #termsandcond {
+    display: block;
+    clear: both;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 0px;
+}
+#tarifas-modal-container #termsandcond h4 {
+    display: block;
+    margin: 3px 0px;
+    font-weight: bold;
+    color: #666;
+    font-size: 11px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+#tarifas-modal-container #cond-list {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 10px;
+}
+#tarifas-modal-container #cond-list li {
+    clear: both;
+    font-size: 10px;
+    color: #666;
+    margin: 2px 0px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+#tarifas-modal-container #termsandcond p {
+    display: block;
+    clear: both;
+    font-size: 10px;
+    color: #666;
+    margin: 3px 0px;
+}
+#tarifas-modal-container #termsandcond a {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--text-light-blue-color);
+    margin: 4px 0px;
+    float: left;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#tarifas-modal-container img.img-benefit {
+    width: 100%;
+    height: auto;
+    display: block;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+}
+#tarifas-modal-container .ameximg img {
+    width: 151px;
+    height: 85px;
+}
+#tarifas-modal-container .inbursaimg img {
+    width: 203px;
+    height: 85px;
+}
+#tarifas-modal-container .santanderimg img {
+    width: 223px;
+    height: 85px;
+}
+#tarifas-modal-container .clubimg img {
+    width: 200px;
+    height: 73px;
+}
+#tarifas-modal-container a.btn.find-more {
+    clear: both;
+    display: block;
+    margin: 0px auto;
+    color: var(--text-soft-blue-color);
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    width: 110px;
+    text-align: center;
+    padding: 0px;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+#tarifas-modal-container a.btn.white-btn:hover {
+    color: #fff;
+    border: 1px solid #6caddf;
+    background: #6caddf;
+}
+#tarifas-modal-container .onebenefit {
+    display: inline-table;
+    float: left;
+    height: 135px;
+    position: relative;
+    border-right: 2px solid #ededed;
+    padding: 0px 0px;
+}
+#tarifas-modal-container .onebenefit:last-child {
+    border-right: 0px;
+}
+
+/*custom modal interjet*/
+#tarifasModal.modal-interjet .modal-header {
+    padding: 20px 10px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #1b4298;
+    box-shadow: 0 -3px 0 0 #6caddf;
+}
+#tarifasModal.modal-interjet .modal-dialog {
+    max-width: 920px;
+    margin: 30px auto;
+}
+#tarifasModal.modal-interjet .modal.in .modal-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0px 3px 10px 0px #666;
+    -webkit-box-shadow: 0px 3px 10px 0px #666;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+#tarifasModal.modal-interjet .modal-content {
+    text-align: center;
+}
+#tarifasModal.modal-interjet .modal-body {
+    position: relative;
+    padding: 0px;
+    height: 100%;
+    max-height: 620px;
+    overflow-y: auto;
+}
+#tarifasModal.modal-interjet .modal-header button.close {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    margin: 0px!important;
+    background: none;
+    width: 20px;
+    w height: 20px;
+}
+#tarifasModal.modal-interjet .modal-header button.close img {
+    width: 100%;
+    height: auto;
+}
+#tarifasModal.modal-interjet .modal-title {
+    margin: 0;
+    font-size: 26px;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-align: center;
+}
+
+/*media Queries*/
+@media (min-width: 992px) and (max-width: 1099px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 480px) and (max-width: 767px) {}
+@media screen and (max-width: 480px) {
+    #tarifas-modal-container #main-table-fares table tr th.horizontal-title {
+        padding: 15px 10px 15px 10px;
+        background-color: white;
+    }
+    
+    #tarifas-modal-container #main-table-fares table tr td {
+        text-align: center;
+        vertical-align: middle;
+        background: #fff;
+        padding: 5px 5px;
+    }
+    
+    #tarifas-modal-container #main-table-fares .table-bordered > thead > tr > th {
+        color: #fff;
+        font-size: 23px;
+    }
+    
+    #tarifas-modal-container .weight-max {
+        float: none;
+        clear: both;
+        display: block!important;
+        width: 100%;
+        text-align: center;
+        margin: 0px auto;
+        position: static!important;
+        right: 0px;
+        left: 0px;
+        font-size: 20px!important;
+    }
+    
+    #tarifas-modal-container .weight-detail .suitcaseimg.single-suitcase {
+        max-height: 50px;
+        width: 15px;
+    }
+    
+    #tarifas-modal-container .weight-detail .suitcaseimg.double-suitcase {
+        max-height: 50px;
+        width: 35px;
+    }
+    
+    #tarifas-modal-container .weight-detail .suitcaseimg.triple-suitcase {
+        max-height: 50px;
+        width: 55px;
+    }
+    
+    #tarifas-modal-container #benfits-table {
+        padding: 20px 0px 0px 0px;
+    }
+    
+    #tarifas-modal-container .onebenefit {
+        display: block;
+        min-height: 140px;
+        position: relative;
+        border-bottom: 2px solid #ededed;
+        border-right: 0px;
+        margin-bottom: 10px;
+        padding: 0px;
+        width: 100%;
+        clear: both;
+    }
+    
+    #tarifas-modal-container .onebenefit:last-child {
+        border-bottom: 0px;
+    }
+    
+    #tarifas-modal-container a.btn.find-more {
+        clear: both;
+        display: block;
+        position: absolute;
+        bottom: 15px;
+    }
+    
+    #tarifas-modal-container img.img-benefit {
+        width: 100%;
+        height: auto;
+        display: block;
+        display: block;
+        margin: 0px auto;
+        position: relative;
+    }
+    
+    #tarifas-modal-container .ameximg img {
+        width: 151px;
+        height: 85px;
+    }
+    
+    #tarifas-modal-container .inbursaimg img {
+        width: 203px;
+        height: 85px;
+    }
+    
+    #tarifas-modal-container .santanderimg img {
+        width: 223px;
+        height: 85px;
+    }
+    
+    #tarifas-modal-container .clubimg img {
+        width: 200px;
+        height: 73px;
+    }
+}
+
+
+/*************** END Landing Comparación Tarifas Interjet + Tarifas Modal Box ********************/
+
+
+/*================================================ HACKS Styles  ================================================ */
+
+
+/*================================================ RETINA HD 5K Styles  ================================================ */
+
+
+/***============================ Retina Display ============================***/
+
+@media (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/***============================ END Retina Display ============================***/
+
+
+/*================================================END RETINA HD 5K Styles  ================================================ */
+
+
+/***============================Safari Hacks ============================***/
+
+_::-webkit-:host:not(:root:root),
+.selector {}
+
+_::-webkit-:host:not(:root:root),
+.selector {}
+
+_::-webkit-:not(:root:root),
+.selector {}
+
+,
+_::-webkit-:not(:root:root),
+.selector {}
+
+
+/***============================ END Safari Hacks ============================***/
+
+
+/***============================Firefox Hacks ============================***/
+
+@-moz-document url-prefix() {
+    #fares-view {
+        padding: 10px 7px;
+    }
+}
+
+
+/***============================ END Firefox Hacks ============================***/
+
+
+/**================================================ IE 10-11 + EDGE hacks ================================================ **/
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    /* IE10 */
+    a.btn-lightblue,
+    a.btn-lightblue:hover,
+    a.btn-lightblue:focus {
+        background: #6caddf!important;
+    }
+    a.btn-darkblue,
+    a.btn-darkblue:hover,
+    a.btn-darkblue:focus {
+        background: #1b4298!important;
+    }
+    i.fa.fa-check {
+        border-color: #cbe6ac;
+        color: #8dc85a;
+    }
+    i.fa.fa-usd {
+        border: 3px solid #ededed;
+        color: #89bde5;
+    }
+    i.fa.fa-times-circle-o {
+        color: #ededed;
+    }
+
+    .icon-plane i.inter-icon.icon-icn_plane{color:#1b4298}
+    /* IE11 */
+    *::-ms-backdrop,
+    a.btn-lightblue,
+    a.btn-lightblue:hover,
+    a.btn-lightblue:focus {
+        background: #6caddf!important;
+    }
+    a.btn-darkblue,
+    a.btn-darkblue:hover,
+    a.btn-darkblue:focus {
+        background: #1b4298!important;
+    }
+    i.fa.fa-check {
+        border:#cbe6ac;
+        color: #8dc85a;
+    }
+    i.fa.fa-usd {
+        border: #ededed;
+        color: #89bde5;
+    }
+    i.fa.fa-times-circle-o {
+        color: #ededed;
+    }
+    .icon-plane i.inter-icon.icon-icn_plane{color:#1b4298}
+}
+
+
+/* Microsoft EDGE */
+
+@supports (-ms-ime-align:auto) {
+  a.btn-lightblue,
+    a.btn-lightblue:hover,
+    a.btn-lightblue:focus {
+        background: #6caddf!important;
+    }
+    a.btn-darkblue,
+    a.btn-darkblue:hover,
+    a.btn-darkblue:focus {
+        background: #1b4298!important;
+    }
+    i.fa.fa-check {
+        border:#cbe6ac;
+        color: #8dc85a;
+    }
+    i.fa.fa-usd {
+        border: #ededed;
+        color: #89bde5;
+    }
+    i.fa.fa-times-circle-o {
+        color: #ededed;
+    }
+    .icon-plane i.inter-icon.icon-icn_plane{color:#1b4298}
+}
+
+
+
+/**================================================END IE 10-11 hacks ================================================ **/
+

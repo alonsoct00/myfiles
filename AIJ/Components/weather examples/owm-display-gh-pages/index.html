@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+	<title>Brombachsee Wetter</title>
+	<meta charset="utf-8" />
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet" />
+
+	<meta name="theme-color" content="#161616">
+	<meta http-equiv="refresh" content="1800" />
+	<meta name="viewport" content="width=1000px" />
+	<link rel="manifest" href="manifest.json">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-256x256.png" sizes="256x256">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-384x384.png" sizes="384x384">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-512x512.png" sizes="512x512">
+
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+<body>
+	<div class="row">
+		<div class="span4">
+			<div id="dial-wind" class="widget"></div>
+		</div>
+
+		<div class="span4 map pos-rel">
+			<div id="map-rain">
+				<div class="map-widget">
+					<!-- <img src="http://www.dwd.de/wundk/radar/Radarfilm_WEB_SE.gif" class="map-image" /> <!-- 4 Stunden, 3 MB -->
+					<img src="http://images.wetterdienst.de/maps/radar/Radarfilm_Suedost.gif" class="map-image" /> <!-- 2,5 Std, 300KB -->
+					<img src="img/map-pin.png" class="pin" />
+					<img src="img/map-mask.png" class="mask" />
+				</div>
+				<h2>Niederschlagsradar</h2>
+				<h3>der letzten 2,5 Stunden</h3>
+			</div>
+			<div id="suntimes"></div>
+			<div id="icon-weather"></div>
+			<div id="dial-temperature"></div>
+		</div>
+
+		<div class="span4 map pos-rel">
+			<div id="map-lightning">
+				<div class="map-widget">
+					<!-- <img src="http://www.dwd.de/wundk/radar/Radarfilm_WEB_SE.gif" class="map-image" /> <!-- 4 Stunden, 3 MB -->
+					<img src="http://images.blitzortung.org/Images/image_b_de.png" class="map-image" /> <!-- 2,5 Std, 300KB -->
+					<img src="img/map-pin.png" class="pin" />
+					<img src="img/map-mask.png" class="mask" />
+				</div>
+				<h2>Blitzradar</h2>
+				<h3>der letzten 2,5 Stunden</h3>
+			</div>
+		</div>
+
+		<!--
+		<div class="span4">
+			<div id="dial-pressure" class="widget" ></div>
+		</div>
+		-->
+	</div>
+
+	<div class="row">
+		<div class="span12">
+			<div id="chart-pressure" class="widget"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span12">
+			<div id="chart-temp" class="widget"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span12">
+			<div id="chart-wind" class="widget"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span12">
+			<div id="chart-rain" class="widget"></div>
+		</div>
+	</div>
+
+	<div class="row footer">
+		<div class="span12">
+			<div id="license">
+				Vorhersagen: <a href="https://darksky.net/poweredby/">Dark Sky</a><br />
+				Niederschlagsradar: <a href="http://dwd.de/">Deutscher Wetterdienst</a><br />
+				Blitzradar: <a href="http://blitzortung.org/">blitzortung.org</a>
+			</div>
+			<div id="date">
+			</div>
+		</div>
+	</div>
+
+	<div id="loading" class="row">
+		<div class="span12">Lade Daten&hellip;</div>
+	</div>
+
+	<div id="apimissing" class="row">
+		<div class="span12">
+			It seems the API key is missing.<br />
+			Please append it to the URL like <code>index.html#!abcdef</code>
+		</div>
+	</div>
+
+<script src="js/jquery-1.9.1.min.js" ></script>
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+<script src="js/dark-unica.js"></script>
+
+<script src="js/charts.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/screensaver.js"></script>
+
+</body>
+
+</html>

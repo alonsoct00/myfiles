@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Material Mega Menu - Responsive</title>
+    <!-- Menu Stylesheet -->
+    <link href="css/mashable-menu.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/mashable-menu.js"></script>
+    <!-- menu initialize -->
+    <script>
+    jQuery(document).ready(function($) {
+        $('.mash-menu').mashableMenu({
+            separator: true, //-- Options (true) or (false). This option is used to show the vertical line between menu list items
+            ripple_effect: true, //-- Options (true) or (false). This option is used to on - off the google ripple effect on menu items. Which is shown on mouse click
+            search_bar_hide: false, //-- Options (true) or (false). This option is used to hide the search bar
+            top_fixed: false, //-- Options (true) or (false). This option is used to fixed the menu top of the screen. Note: If this option becomes true then the sticky_header option will not work
+            full_width: false, //-- Options (true) or (false). This option is used to make the menu full with
+            trigger: 'hover', //-- Options (click) or (hover). This option is used to showing the drop down on mouse click or mouse hover
+            /* VERTICAL TABS */
+            vertical_tabs_trigger: 'hover', // Options (click) or (hover). This option is used to showing the vertical tabs on mouse click or mouse hover
+            vertical_tabs_effect_speed: 500, // Value in milliseconds. This option is used to change the vertical tabs showing or hiding speed
+            /* RESPONSIVE TABS */
+            //responsive_tabs_effect_speed   : 200,       // Value in milliseconds. This option is used to change the responsive tabs showing or hiding speed
+            /* DROP DOWN */
+            drop_down_effect_in_speed: 280, // Value in milliseconds. This options is used to change the drop downs showing speed
+            drop_down_effect_out_speed: 200, // Value in milliseconds. This option is used for change the drop downs hiding speed
+            drop_down_effect_in_delay: 250, // Value in milliseconds. This option is used to change the drop downs showing delay speed. It means drop down shows after some time
+            drop_down_effect_out_delay: 200, // Value in milliseconds. This option is used to change the drop downs hiding delay speed. It means drop down hides after some time
+            outside_close_dropDown: true, // Options (true) or (false). This option is used to hide the showing drop downs when user click outside the menu
+            /* STICKY HEADER */
+            sticky_header: true, //-- Options (true) or (false). This option is used to make the menu sticky on top of the screen on desktop mode. When user scroll down or reach the specific height
+            sticky_header_height: 200, //-- Value in px. This option is used to define the sticky header height on desktop mode.
+            sticky_header_animation_speed: 400, //-- Value in milliseconds. This option is used to change the sticky header animation effect speed on desktop mode
+            /* INTERNAL LINKS */
+            internal_links_enable: true, // Options (true) or (false). This option is used to enable the internal links target buttons to show the drop downs
+            internal_links_toggle_drop_down: true, // Options (true) or (false). This option is used for toggle. Means show or hide the drop down with same button. If this option is not true. The drop down is not hide with click on same button
+            internal_links_target_speed: 400, // Value set in milliseconds. This option is used to internal links target animation speed.
+            /* MOBILE SETTINGS */
+            mobile_search_bar_hide: false, //-- Options (true) or (false). This option is used to hide the search bar on mobile mode
+            mobile_sticky_header: false, //-- Options (true) or (false). This options is used to make the menu sticky on top of the screen on mobile mode
+            mobile_sticky_header_height: 100, //-- Value in milliseconds. This option is used to change the sticky header animation effect speed on mobile mode
+            /* MEDIA QUERY WIDTH */
+            media_query_max_width: 420 //-- This is media query max width in px unit. Which is Used for mobile screen. Don't change if you don't know about media query
+        });
+    });
+    </script>
+
+    <!-- This style for demo purpose. remove this code block -->
+    <style>
+    .demo {
+        padding: 0 20px;
+        margin: 50px 0 0;
+        background: #eee url("images/bg.png");
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mega-menu">
+        <!-- container -->
+        <nav class="mash-menu container">
+            <section class="mash-menu-inner-container">
+                <!-- brand -->
+                <ul class="mash-brand">
+                    <li>
+                        <!-- mobile button -->
+                        <button class="mash-mobile-button"><span></span></button>
+                    </li>
+                </ul>
+                <!-- list menu items -->
+                <ul class="mash-list-items">
+                    <li><a href="#">VUELA<i class="fa fa-caret-down fa-indicator"></i> </a>
+                        <!-- full size drop down -->
+                        <div class="drop-down-medium">
+                            <!-- vertical tabs container -->
+                            <div class="vertical-tabs-container">
+                                <!-- bootstrap start -->
+                                <div class="container space-0">
+                                    <!-- bootstrap fluid container -->
+                                    <!-- bootstrap columns -->
+                                    <div class="col-sm-3 col-md-2 clearfix space-0">
+                                        <!-- vertical tab -->
+                                        <div class="vertical-tabs">
+                                            <!-- active -->
+                                            <!-- hidden-xs,sm,md-lg id bootstrap classes -->
+                                            <a class="active" href="#content-1">Buscar <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-2">Administra tu viaje<i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-3">Prepara tu viaje<i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-4">Compras en grupo <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-5">Complementa tu viaje <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-6">Facturación<i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-7">Después del vuelo <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 space-0">
+                                        <!-- vertical tabs content container -->
+                                        <div class="vertical-tabs-content-container">
+                                            <!-- this is vertical tabs content 1 -->
+                                            <div id="content-1" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 2 -->
+                                            <div id="content-2" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 3 -->
+                                            <div id="content-3" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 4 -->
+                                            <div id="content-4" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 5 -->
+                                            <div id="content-5" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 6 -->
+                                            <div id="content-6" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 7 -->
+                                            <div id="content-7" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bootstrap end -->
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">EXPERIENCIA INTERJET<i class="fa fa-caret-down fa-indicator"></i> </a>
+                        <!-- full size drop down -->
+                        <div class="drop-down-medium">
+                            <!-- vertical tabs container -->
+                            <div class="vertical-tabs-container">
+                                <!-- bootstrap start -->
+                                <div class="container space-0">
+                                    <!-- bootstrap fluid container -->
+                                    <!-- bootstrap columns -->
+                                    <div class="col-sm-3 col-md-2 clearfix space-0">
+                                        <!-- vertical tab -->
+                                        <div class="vertical-tabs">
+                                            <!-- active -->
+                                            <!-- hidden-xs,sm,md-lg id bootstrap classes -->
+                                            <a href="#content-8">Buscar <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-9">Administra tu viaje<i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-10">Prepara tu viaje<i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-11">Compras en grupo <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-12">Complementa tu viaje <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-13">Facturación<i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                            <a href="#content-14">Después del vuelo <i class="fa fa-angle-right hidden-xs"></i> <i class="fa fa-angle-down hidden-sm hidden-md hidden-lg"></i> </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 space-0">
+                                        <!-- vertical tabs content container -->
+                                        <div class="vertical-tabs-content-container">
+                                            <!-- this is vertical tabs content 1 -->
+                                            <div id="content-8" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 2 -->
+                                            <div id="content-9" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 3 -->
+                                            <div id="content-10" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 4 -->
+                                            <div id="content-11" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 5 -->
+                                            <div id="content-12" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 6 -->
+                                            <div id="content-13" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                            <!-- this is vertical tabs content 7 -->
+                                            <div id="content-14" class="vertical-tabs-content">
+                                                <!-- tab content start -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-md-3">
+                                                            <ul>
+                                                                <li><a href="#">Vuelos por fecha</a></li>
+                                                                <li><a href="#">Vuelos por calendario</a></li>
+                                                                <li><a href="#">Promociones</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-sm-3 col-md-3 img-content-1">
+                                                            <!-- image content-1 -->
+                                                            <a href="#">
+                                                                <img src="images/img.jpg" alt="img" class="thumbnail">
+                                                                <p>
+                                                                    <h2>Mensaje de promoción</h2> Lorem ipsum dolor sit amet, adipiscing elit. Praesent dapibus velit non facilisis. Mauhghris congue metus sebnvjd predltium lacbjfioinia.
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- tab content end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bootstrap end -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- search bar -->
+                <ul class="mash-search-bar">
+                    <li>
+                        <form method="post" action="#">
+                            <label>
+                                <input type="search" name="Search_Bar" placeholder="Search">
+                                <span class="mash-search-bar-border"></span>
+                            </label>
+                        </form>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+</body>
+
+</html>

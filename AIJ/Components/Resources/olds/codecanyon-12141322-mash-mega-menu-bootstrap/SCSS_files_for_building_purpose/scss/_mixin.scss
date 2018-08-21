@@ -1,0 +1,41 @@
+@mixin mediaQuery_max() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mediaQuery_min() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaQuery_medium() {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin custom_max($value) {
+  @media screen and (max-width: #{$value}px) {
+    @content;
+  }
+}
+
+// Convert pixels to em
+$em-base: 16px !default;
+
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+

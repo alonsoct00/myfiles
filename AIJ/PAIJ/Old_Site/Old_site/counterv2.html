@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+
+    <div id="countdown"></div>
+</head>
+<body>
+	
+</body>
+
+
+<script type="text/javascript" charset="utf-8" async defer>
+	
+// fecha establecida
+var target_date = new Date('April, 14, 2018').getTime();
+ 
+// variables
+var days, hours, minutes, seconds;
+ 
+// target
+var countdown = document.getElementById('countdown');
+ 
+// function
+setInterval(function () {
+ 
+  
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+
+    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
+    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';  
+
+
+
+ 
+}, 1000);
+
+
+</script>
+</html>

@@ -1,0 +1,4277 @@
+/* CUSTOM FONT */
+
+@import url('../fonts/VAGRounded/font-styles.css');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
+
+/* FONT AWESOME ICONS CSS */
+
+@import url('font-awesome.min.css');
+
+/*Interjet Icon Font*/
+
+@import url('../fonts/Interfont/css/interfont.css');
+@import url('../fonts/Interfont/css/animation.css');
+.inter-icon {
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    font: normal normal normal 14px/1 interfont;
+    transform: translate(0, 0);
+    margin: 0px auto;
+}
+
+i.inter-icon.icon-icn_card-payment:before,
+i.inter-icon.icon-icn_passenger:before {
+    margin-right: 7px!important;
+}
+
+
+/*Interjet Icon Font*/
+
+
+/*RESET*/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+:root {
+    --menu-bar-background-color: #1b4298;
+    --menu-bottom-border-color: #6caddf;
+    --menu-item-color: #fff;
+    --menu-item-hover-color: #6caddf;
+    --submenu-item-color: #666;
+    --submenu-item-active-color: #6caddf;
+    --submenu-item-hover-color: #6caddf;
+    --subsubmenu-item-color: #7f7f7f;
+    --subsubmenu-item-hover-color: #1b4298;
+    --soft-grey-color: #333;
+    --deep-grey-color: #666;
+    --green-color: #8dc85a;
+    --green-light-color: #cbe6ac;
+    --button-soft-blue-color: #6caddf;
+    --button-dark-blue-color: #1b4298;
+    --button-hover-soft-blue-color: #368bce;
+    --button-hover-dark-blue-color: #2154c3;
+    --buton-white-color: #fff;
+    --button-white-hover-color: #368bcd;
+    --text-soft-blue-color: #6caddf;
+    --text-light-blue-color: #89bde5;
+    --text-dark-blue-color: #1b4298;
+    --text-title-soft-blue: #6caddf;
+    --text-title-dark-blue: #1b4298;
+    --text-hover-soft-blue-color: #6caddf;
+    --text-hover-dark-blue-color: #1b4298;
+    --anchor-soft-blue-color: #6caddf;
+    --anchor-soft-blue-hover-color: #6caddf;
+    --anchor-dark-blue-color: #1b4298;
+    --anchor-dark-blue-hover-color: #1b4298;
+    --anchor-soft-grey-color: #999;
+    --anchor-dark-grey-color: #666;
+    --anchor-soft-grey-hover-color: #7d7d7d;
+    --anchor-dark-grey-hover-color: #999;
+    --step-default-color: #98c5e8;
+    --step-active-color: #1b4298;
+    --step-hover-color: #98c5e8;
+    --step-completed-color: #98c5e8;
+    --border-soft-blue-color: #6caddf;
+    --border-dark-blue-color: #1b4298;
+    --border-grey-color: #ededed;
+    --border-soft-grey-color: #ededed;
+    --form-focused-soft-blue: #6caddf;
+    --form-focused-dark-blue: #1b4298;
+    --tags-color: #98c5e8;
+    --tags-hover-color: #6caddf;
+    --fare-light-color: #b2b2b2;
+    --fare-optima-color: #6caddf;
+    --fare-priority-color: #1b4298;
+    --fare-light-transp-color: #e5e5e5;
+    --fare-optima-transp-color: #98c5e8;
+    --fare-priority-transp-color: #5f7ab6;
+}
+
+.soft-blue {
+    color: #6caddf;
+}
+
+.dark-blue {
+    color: #1b4298;
+}
+
+.tl {
+    color: #b2b2b2;
+}
+
+.to {
+    color: #6caddf;
+}
+
+.tp {
+    color: #1b4298;
+}
+
+.white-btn {
+    background: transparent;
+    border: 1px solid #6caddf;
+    border-radius: 100px;
+}
+
+.btn-white {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    color: #999!important;
+    line-height: normal;
+}
+
+.btn.btn-submit.btn-white:hover,
+.btn.btn-submit.btn-white:focus {
+    background: #fff!important;
+    border: 1px solid #ccc!important;
+    border-radius: 100px;
+    color: #999!important;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    outline: 0!important;
+}
+
+small.red-txt{color:#D95D6C; font-size: 9px;}
+
+
+/*END RESET*/
+
+
+/*================================================ CHECKOUT Main Styles  ================================================ */
+
+#main-content-checkout {
+    display: block;
+    clear: both;
+    float: none;
+    margin: 10px auto;
+    min-height: 100%;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    /*VAGRoundedStd-Bold, Arial, sans-serif;*/
+    font-size: 100%;
+    color: #333;
+}
+
+#checkout-main-container a,
+#checkout-main-container a:hover,
+#checkout-main-container a:focus {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 11px;
+}
+
+#inter-fares a.pop-over {
+    float: left;
+    width: 100%;
+}
+
+h3.form-title,
+.checkout-subsection-title {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 22px;
+    color: #1b4298;
+    display: block;
+    width: 100%;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+
+/*==========================Checkout flow==========================*/
+
+#checkout-steps ol.breadcrumb.purchase-status {
+    padding: 5px 0;
+    overflow: hidden;
+    clear: both;
+    margin: 15px 0;
+    font-size: 14px;
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#checkout-steps .breadcrumb > li a {
+    color: #4b4a4a;
+    text-decoration: none;
+}
+
+#checkout-steps .breadcrumb > li a:hover {
+    color: #4b4a4a;
+    text-decoration: none;
+}
+
+#checkout-steps .breadcrumb.purchase-status li {
+    position: relative;
+    min-width: 120px;
+    display: inline-table;
+    list-style-type: none;
+    background: none;
+    z-index: 1;
+    margin: 0px auto;
+    padding: 0px 5px;
+    float: none;
+    text-align: center;
+}
+
+#checkout-steps .breadcrumb.purchase-status li span {
+    clear: both;
+    max-width: 100px;
+    display: inline-table;
+    margin: 5px auto;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #666;
+    max-height: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#checkout-steps .breadcrumb.purchase-status li i {
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px auto;
+    border-radius: 100px;
+    background: #1b4298;
+    color: #fff;
+    line-height: 40px;
+    z-index: 5;
+    font-size: 22px;
+    padding: 0px;
+}
+
+#checkout-steps .breadcrumb.purchase-status li i:after {
+    content: "";
+    border-top: 2px solid #6caddf;
+    position: absolute;
+    float: left;
+    top: 20px;
+    left: 30px;
+    display: inline-block;
+    width: 100px;
+    margin: 0px 90px 0px 10px;
+    padding: 0px 15px;
+    right: 0px;
+    z-index: 0;
+}
+
+#checkout-steps .breadcrumb.purchase-status li.active i:after,
+#checkout-steps .breadcrumb.purchase-status li.to-complete i:after {
+    border-top-color: #ededed;
+    border-top-style: dashed;
+}
+
+#checkout-steps .breadcrumb.purchase-status li:last-child i:after {
+    border-top: none;
+}
+
+#checkout-steps .breadcrumb.purchase-status .active {
+    border-bottom: none;
+}
+
+#checkout-steps .breadcrumb.purchase-status li.completed i {
+    background: #98c5e8;
+}
+
+#checkout-steps .breadcrumb.purchase-status li.to-complete i {
+    background: #ededed;
+}
+
+#checkout-data {
+    float: left;
+    float: left;
+    display: inline-block;
+    /*width: 770px;*/
+    width: 73%;
+    padding: 15px;
+}
+
+#checkout-resume {
+    float: left;
+    display: inline-block;
+    min-height: 200px;
+    background: #fff;
+    padding: 0px;
+}
+
+#checkout-resume.fixedresume {
+    position: fixed!important;
+    top: 10px!important;
+    width: 10.3%!important;
+}
+
+#aside-buy {
+    clear: both;
+    width: 100%;
+    background: #fff;
+    padding: 0px;
+}
+
+.hidden-payment {
+    display: none;
+}
+
+/*/==========================END Checkout Flow==========================>*/
+
+/*/==========================Checkout STEP 1==========================>*/
+
+.form-element.select-element.fare-filter {
+    float: left;
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    left: 10px;
+    top: 50px;
+}
+
+.fare-compare {
+    display: block;
+    float: right;
+    width: 100%;
+    text-align: right;
+    clear: both;
+    padding-right: 5px;
+}
+
+.fare-compare a i {
+    background-color: #cccccc;
+    border-radius: 2px;
+    padding: 2px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.fare-compare span {
+    color: #ccc;
+}
+
+.depflight,
+.retflight {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 16px;
+    color: #1b4298;
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+
+.view-full-month,
+.view-full-month a {
+    display: inline-block;
+    float: right;
+    clear: both;
+    width: 100%;
+    text-align: right;
+    margin: 0px 0px 5px 0px;
+    padding-right: 11px;
+    color: #ccc;
+}
+
+.view-full-month a i {
+    margin-left: 5px;
+    font-size: 11px;
+    color: #999;
+}
+
+.wrap_availability {
+    float: left;
+    width: 100%;
+}
+
+.depflight>span,
+.retflight>span {
+    color: #89bde5;
+    font-size: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.depflight .depdetails,
+.retflight .retdetails {
+    display: inline-block;
+    float: left;
+}
+
+.depdetails i,
+.retdetails i {
+    margin: 0px 5px;
+}
+
+#checkout-data .col-full.eyelash {
+    padding: 0px 10px;
+    border-bottom: 2px solid #6caddf;
+    position: relative;
+    z-index: 1;
+}
+
+.fare-filter .form-group {
+    float: left;
+    display: inline-block;
+}
+
+.fare-filter label {
+    float: left;
+    position: relative;
+}
+
+#checkout-data .tabs-header-selectv2 > div.flight-detail {
+    float: none;
+    width: 100px;
+    min-height: auto;
+    text-align: center;
+    margin-right: 0px;
+    border-radius: 0px;
+    border: 0px;
+    border-right: 0.5px solid #ededed;
+    border-left: 0.5px solid #ededed;
+    display: inline-block;
+    background: #F3F2F0;
+}
+
+.flight-detail a {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase!important;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+#avalaibility-dates > div > div.tabs-header-selectv2.clearfix.days > div > a {
+    color: #b2b2b2;
+}
+
+#checkout-data .tabs-header-selectv2 span {
+    text-transform: uppercase!important;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+#checkout-data .tabs-header-selectv2 span.month-name {
+    width: 100%;
+    border-radius: 0px!important;
+    padding: 0px;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #b2b2b2;
+}
+
+#checkout-data .tabs-header-selectv2 span.day-name {
+    width: 100%;
+    border-radius: 0px!important;
+    padding: 0px;
+    padding: 10px 0px 0px 0px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 14px;
+}
+
+#checkout-data .tabs-header-selectv2 span.price {
+    padding: 0px;
+    line-height: 28px;
+    background: #fff;
+    width: 100%;
+}
+
+#checkout-data .tabs-header-selectv2 > div,
+.tabs-header-selectv2 > div.arrow a {
+    min-height: 60px!important;
+}
+
+#checkout-data .arrow {
+    display: inline-table;
+    width: auto!important;
+    border: 0px;
+    margin: 0px;
+    background: none;
+}
+
+#checkout-data .arrow.left {
+    float: left;
+}
+
+#checkout-data .arrow.right {
+    float: right;
+}
+
+.arrow.left i.fa,
+.arrow.right i.fa {
+    line-height: 60px;
+}
+
+.select-element.fare-filter > label:after {
+    font-family: FontAwesome;
+    content: "\f107";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -150px;
+}
+
+#checkout-data .schedule-container.lay-v2 {
+    display: block;
+    clear: both;
+}
+
+#checkout-data .tabs-header-selectv2 .flight-detail.current a {
+    display: block;
+    background: #fff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #1b4298!important;
+}
+
+#checkout-data .tabs-header-selectv2 > div.flight-detail:hover {
+    z-index: 99999;
+    border-top: 2px solid #6CADDF!important;
+    border-radius: 0px;
+    position: relative;
+    top: 3px;
+}
+
+#checkout-data .tabs-header-selectv2 > div.flight-detail:hover a * {
+    background: #fff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: #1b4298!important;
+}
+
+#checkout-data .tabs-header-selectv2 .flight-detail.current .month-name {
+    background: #fff;
+    color: inherit;
+}
+
+#checkout-data .tabs-header-selectv2 .flight-detail.current .price {
+    background: #fff;
+    color: inherit;
+    font-size: 15px;
+}
+
+select#flightsarray-by {
+    box-shadow: 0px 2px 0px #dfdfdf;
+    -webkit-box-shadow: 0px 2px 0px #dfdfdf;
+    -moz-box-shadow: 0px 2px 0px #dfdfdf;
+    border-radius: 3px;
+    width: 170px;
+    border: 1px solid #f1f1f1;
+    padding: 6px 5px 0px 10px;
+    font-size: 14px;
+    height: 32px;
+    top: 0px;
+}
+
+#avalaibility-dates {
+    /*border-bottom: 1px solid #333;*/
+    padding: 0px;
+    text-align: center;
+}
+
+.flight-detail.current {
+    z-index: 99999;
+    border-top: 2px solid #6CADDF!important;
+    border-radius: 0px;
+    position: relative;
+    top: 3px;
+}
+
+#fares-view {
+    display: block;
+    background: #fbfbfb;
+    border-left: 0.3px solid #EDEDF4;
+    border-right: 0.3px solid #ededf4;
+    padding: 10px 10px;
+    position: relative;
+}
+
+#checkout-data .main-fare-title {
+    min-width: 150px;
+    float: left;
+}
+
+#checkout-data .main-fare-title .fare-title {
+    border-radius: 0px!important;
+    min-height: 30px;
+    display: inline-block;
+    float: left;
+    border: 0px;
+    background: #fff;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.fare-title p {
+    margin: 0px;
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+}
+
+#checkout-data .main-fare-title .fare-title.f-ifare {
+    margin-top: 0px;
+    min-height: 57px;
+    background: url(../images/tarifas/icn_light-1m.png) no-repeat 10px 15px #b2b2b2;
+    background-size: 40%;
+}
+
+#checkout-data .main-fare-title .fare-title.f-optima {
+    margin-top: -10px;
+    min-height: 67px;
+    background: url(../images/tarifas/icn_optima-2m.png) no-repeat 10px 22px #6caddf;
+    background-size: 80%;
+}
+
+#checkout-data .main-fare-title .fare-title.f-priority {
+    margin-top: -20px;
+    min-height: 77px;
+    background: url(../images/tarifas/icn_priority-3m.png) no-repeat 5px 38px #1b4298;
+    background-size: 93%;
+}
+
+
+
+#checkout-data .main-fare-title .fare-title.f-ifare.fare-usa {
+    margin-top: 0px;
+    min-height: 57px;
+    background: url(../images/tarifas/icn_light-0m.png) no-repeat 10px 12px #b2b2b2;
+    background-size: 45%;
+}
+
+#checkout-data .main-fare-title .fare-title.f-optima.fare-usa {
+    margin-top: -10px;
+    min-height: 67px;
+    background: url(../images/tarifas/icn_optima-1m.png) no-repeat 10px 24px #6caddf;
+    background-size: 60%;
+}
+
+#checkout-data .main-fare-title .fare-title.f-priority.fare-usa {
+    margin-top: -20px;
+    min-height: 77px;
+        background: url(../images/tarifas/icn_priority-2m.png) no-repeat 11px 33px #1b4298;
+    background-size: 85%;
+}
+
+
+
+
+/*** PopOver Tooltip custom styles ***/
+
+.popover {
+    line-height: normal;
+    position: relative;
+    color: #4c4c4c;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    border:1px solid #ccc;
+    padding: 0px;
+}
+
+.tooltip-inner {
+    line-height: normal;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+
+.popover-arrow {
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 20px 20px 20px;
+border-color: transparent transparent #fff transparent;
+line-height: 0px;
+_border-color: #000000 #000000 #007bff #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    z-index: 10;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    left: 0px;
+    margin: 0px auto;
+    bottom: 0px;
+    float: none;
+}
+
+
+.popover-content {
+    background: #fafafa;
+    color:#4c4c4c;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.fareIncludes {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 0px auto;
+}
+
+.fareLight .popover-title {
+    background: #b2b2b2;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.fareLight.popover{border:1px solid #b2b2b2;}
+
+.fareLight .popover-arrow {
+    border-color: transparent transparent #b2b2b2 transparent;
+
+}
+
+
+.fareOptima .popover-title {
+    background: #6caddf;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.fareOptima.popover{border:1px solid #6caddf;}
+
+.fareOptima .popover-arrow {
+    border-color: transparent transparent #6caddf; transparent;
+
+}
+
+
+.farePriority .popover-title {
+    background: #1b4298;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.farePriority.popover{border:1px solid #1b4298;}
+
+.farePriority .popover-arrow {
+    border-color: transparent transparent #1b4298 transparent;
+
+}
+
+.fareIncludes ul {    
+    display: inline-block;
+    padding: 0px;
+    list-style-type: none;
+    float: left;}
+
+.fareIncludes ul li{    
+    display: block;
+    clear: both;
+    margin: 5px 0px;
+    float: left;
+    line-height: 18px;
+font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+font-size: 13px;}
+
+.fareIncludes ul li i{float: left; display: inline-block; margin-right: 5px;}
+
+.fareIncludes ul li span {display: inline-table; float: left; max-width: 265px;}
+
+.fareIncludes ul li span b {
+    margin: 0px 3px 0px 3px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.fareIncludes ul li span small {
+    display: inline-block;
+    margin: 0px 2px 0px 2px;
+    font-size: 10px;
+        color: #999;
+}
+
+
+.fareIncludes ul li i.fa.fa-check {
+       border: 3px solid #cbe6ac;
+    color: #8dc85a;
+    font-size: 10px;
+    border-radius: 100px;
+    line-height: 9px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    }
+
+
+
+    .upgrade_txt {
+    clear: both;
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 11px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal
+}
+
+/*** END PopOver Tooltip custom styles ***/
+
+#inter-fares {
+    display: inline-block;
+    float: right;
+    clear: both;
+}
+
+#top-fares-content {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+#departure-flight {
+    display: block;
+    margin-top: 0px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+#return-flight {
+    display: block;
+    margin-top: 60px;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.panel-heading .chevron:after {
+    content: "\f078";
+}
+
+.panel-heading.collapsed .chevron:after {
+    content: "\f054";
+}
+
+#checkout-data .clearfix-schedules {
+    clear: both;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+#checkout-data .clearfix-schedules > div {
+    min-height: 80px;
+    height: 80px;
+    max-height: 80px;
+}
+
+#checkout-data .schedule-container.lay-v2 .route-times {
+    padding: 0px 0px;
+    border-radius: 0px;
+    border: 1px solid #E8E7E5;
+    width: 43.9%;
+    margin-right: 1px;
+}
+
+#checkout-data .schedule-container.lay-v2 .price {
+    min-height: 80px;
+    max-height: 100px;
+    overflow-y: hidden;
+    width: 18.5%;
+    margin-left: 0px;
+    margin-right: 1.2px!important;
+    float: left;
+    overflow: hidden;
+}
+
+#checkout-data .schedule-container.lay-v2 .price:last-child {
+    margin-right: 0px;
+}
+
+#checkout-data .schedule-container.lay-v2 .journey-price {
+    margin: 0px;
+    min-height: auto;
+    max-height: 100%;
+    height: 100%;
+    border-radius: 0px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#checkout-data .schedule-container.lay-v2 .journey-price {
+    border: 1px solid #E8E7E5;
+}
+
+.fare-data input[type="radio"] {
+    float: left;
+    margin-right: 10px;
+}
+
+.fare-data.radio label,
+.fare-data label.radio-inline {
+    padding-left: 30px;
+}
+
+.info-schedule {
+    position: absolute;
+    top: 3px;
+    left: 85%;
+    right: 0px;
+    background: #f1f0f0;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    color: #666666;
+    font-size: 11px;
+    line-height: 15px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.info-schedule:hover {
+    background: #fff;
+    color: #333;
+}
+
+.fare-data .tooltip.fade.in {
+    z-index: 9999!important;
+    position: fixed;
+    padding: 20px!important;
+    font-size: 15px!important;
+}
+
+.schedule-container:hover,
+.schedule-container.active {
+    border: 0px;
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: 0px!important;
+}
+
+.schedule-container.lay-v2:hover .route-times,
+.schedule-container.lay-v2:hover {
+    background: none!important;
+    box-shadow: none!important;
+}
+
+.schedule-container.lay-v2.active .journey-price,
+.schedule-container.lay-v2.active .route-times,
+.schedule-container.lay-v2:hover .journey-price,
+.schedule-container.lay-v2:hover .route-times {
+    border: 0px;
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -moz-box-shadow: 0px!important;
+}
+
+.schedule-container.lay-v2.active .journey-price.promo,
+.schedule-container.lay-v2.active .route-times,
+.schedule-container.lay-v2:hover .journey-price.promo,
+.schedule-container.lay-v2:hover .route-times {
+    background: #fff;
+    border: inherit;
+    box-shadow: none;
+}
+
+.schedule-container:hover div.route-times {
+    background: #fff;
+}
+
+.schedule-container.lay-v2.active .journey-price.regular,
+.schedule-container.lay-v2:hover .journey-price.regular {
+    background: #fff;
+    border: inherit;
+    box-shadow: 0px;
+}
+
+.fare-data.radio .check,
+label.radio-inline .check {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    top: -6px;
+    left: 3px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#checkout-data .journey-price.fare-default.promo.Tarifai.Single:hover {
+    background: #f9f9f9;
+}
+
+#checkout-data .journey-price.fare-default.promo.Optima.Single:hover {
+    background: #e6f4ff;
+}
+
+#checkout-data .journey-price.fare-default.regular.Priority.Single:hover {
+    background: rgba(27, 66, 152, 0.18);
+}
+
+.disabled-journey {
+    cursor: not-allowed;
+}
+
+#checkout-data .route-times:hover,
+.route-times.route-selected {
+    border: 0.5px solid #afd61d!important;
+}
+
+.route-selected-clicked {
+    border: 2px solid #afd61d!important;
+}
+
+.fare-data.radio input[type=radio]:checked~.check,
+label.radio-inline input[type=radio]:checked~.check {
+    background-color: #afd61d;
+}
+
+.fare-data.radio input[type=radio]:checked~.check:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    line-height: 30px;
+}
+
+.fare-data.radio input[type=radio]:checked~.circle,
+label.radio-inline input[type=radio]:checked~.circle {
+    border-color: #afd61d;
+}
+
+.journey-price.fare-default {
+    background-color: #fff;
+}
+
+.journey-price.fare-selected {
+    background-color: #4caf50!important;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.segment-flight {
+    padding: 10px 10px;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.flight-schedule-details {
+    display: inline-table;
+    height: 100%;
+    float: none;
+    min-height: 100%;
+    margin-right: 10px;
+}
+
+.flight-schedule-details span {
+    display: block;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.fare-data .disctount {
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.fare-data .available-seats {
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+.fare-data .available-seats span {
+    display: block;
+    position: static;
+}
+
+#flightDetail.booking-detail.booking-panel {
+    background: none;
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0px;
+    padding: 0px 15px;
+    float: left;
+    min-height: 100%;
+    width: 100%;
+}
+
+#flightDetail.booking-detail.booking-panel .panel-heading {
+    background-color: transparent!important;
+    padding: 0px;
+    border-bottom: 1px solid #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 14px;
+    color: #1b4298;
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+#flightDetail.booking-detail.booking-panel > div:first-child.panel-heading {
+    margin-top: 0px!important;
+}
+
+#flightDetail .panel-heading i.chevron.fa.fa-fw {
+    float: right;
+    cursor: pointer;
+}
+
+#booking-departure-flight,
+#booking-return-flight {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#booking-departure-flight > div > p,
+#booking-return-flight > div > p {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.direct-flight {
+    padding-left: 19px;
+    background: url(../images/flight-conection.png) no-repeat 0px 0px transparent;
+}
+
+.booking-schedule-flight p {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 14px;
+    color: #6caddf;
+    margin-bottom: 11px;
+}
+
+.booking-schedule-flight span {
+    color: #4c4c4c;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+span.booking-departure-time {
+    display: block;
+    clear: both;
+    color: #666;
+    font-weight: normal;
+    padding-bottom: 12px;
+}
+
+span.booking-arrive-city {
+    margin-top: 15px;
+}
+
+@media (min-width: 720px) and (max-width: 892px) {
+    #checkout-steps .breadcrumb.purchase-status li {
+        position: relative;
+        min-width: auto;
+        margin: 0px 15px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li span {
+        font-size: 13px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li.completed a span,
+    #checkout-steps .breadcrumb.purchase-status li.to-complete span {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i:after {
+        content: "";
+        display: inline-block;
+        width: 80px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 720px) {
+    #checkout-steps .breadcrumb.purchase-status li.completed a span,
+    #checkout-steps .breadcrumb.purchase-status li.to-complete span {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status li {
+        min-width: auto!important;
+        margin: 0px 5px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li span {
+        clear: both;
+        max-width: 0px;
+        font-size: 12px;
+        line-height: normal;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i {
+        display: block;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 23px;
+        padding: 0px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i:after {
+        content: "";
+        border-top: 2px solid #6caddf;
+        width: 40px;
+        margin: 0px 90px 0px 10px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i:after {
+        content: "";
+        border-top: 2px solid #6caddf;
+        width: 55px;
+        margin: 0px 0px 0px 10px;
+        left: 25px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #checkout-steps .breadcrumb.purchase-status li.completed a span,
+    #checkout-steps .breadcrumb.purchase-status li.to-complete span {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status li {
+        min-width: auto!important;
+    }
+    #checkout-steps .breadcrumb.purchase-status li span {
+        clear: both;
+        max-width: 0px;
+        font-size: 11px;
+        line-height: normal;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i {
+        display: block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 0px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i:after {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status .active {
+        border-bottom: none;
+        position: relative;
+        min-width: auto;
+    }
+    #checkout-steps .breadcrumb > li a {
+        color: #4b4a4a;
+        text-decoration: none;
+        position: relative;
+        min-height: 60px;
+        display: block;
+    }
+    #checkout-steps .breadcrumb.purchase-status li.active a span {
+        clear: both;
+        font-size: 11px;
+        line-height: normal;
+        position: absolute;
+        left: -75%;
+        max-width: 80px;
+        display: block;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #checkout-steps .breadcrumb.purchase-status li.completed a span,
+    #checkout-steps .breadcrumb.purchase-status li.to-complete span {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status li {
+        min-width: auto!important;
+        margin: 0px 15px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li span {
+        clear: both;
+        max-width: 0px;
+        font-size: 11px;
+        line-height: normal;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i {
+        display: block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 0px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i:after {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status .active {
+        border-bottom: none;
+        position: relative;
+        min-width: auto;
+    }
+    #checkout-steps .breadcrumb > li a {
+        color: #4b4a4a;
+        text-decoration: none;
+        position: relative;
+        min-height: 60px;
+        display: block;
+    }
+    #checkout-steps .breadcrumb.purchase-status li.active a span {
+        clear: both;
+        font-size: 11px;
+        line-height: normal;
+        position: absolute;
+        left: -75%;
+        max-width: 80px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #checkout-steps .breadcrumb.purchase-status li.completed a span,
+    #checkout-steps .breadcrumb.purchase-status li.to-complete span {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status li {
+        min-width: auto!important;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i {
+        display: block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        padding: 0px;
+    }
+    #checkout-steps .breadcrumb.purchase-status li i:after {
+        display: none;
+    }
+    #checkout-steps .breadcrumb.purchase-status .active {
+        border-bottom: none;
+        position: relative;
+        min-width: auto;
+    }
+    #checkout-steps .breadcrumb > li a {
+        color: #4b4a4a;
+        text-decoration: none;
+        position: relative;
+        min-height: 60px;
+        display: block;
+    }
+    #checkout-steps .breadcrumb.purchase-status li.active a span {
+        clear: both;
+        font-size: 11px;
+        line-height: normal;
+        position: absolute;
+        left: -60%;
+        max-width: 80px;
+        display: block;
+    }
+}
+
+/*/**==========================END Checkout STEP 1============================================= **/
+/*/**==========================Checkout STEP 2============================================ **/
+#panel-passengers,
+#panel-payments {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#booking-passengers-list {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#booking-passengers-list > p {
+    display: block;
+    clear: both;
+    margin: 5px 0px 0px 0px;
+    float: left;
+    width: 100%;
+}
+
+#booking-payment-details {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#booking-payment-details > p {
+    display: block;
+    clear: both;
+    margin: 5px 0px 0px 0px;
+    float: left;
+    width: 100%;
+}
+
+#full-total-fare > p {
+    display: block;
+    clear: both;
+    margin: 0px 0px;
+}
+
+#checkout-main-container a.btn.btn-submit:focus {
+    background: inherit;
+}
+
+#checkout-main-container a.btn.btn-submit {
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+#checkout-main-container a.btn-lightblue {
+    background-color: #6caddf;
+    color: #fafafa
+}
+
+#checkout-main-container a.btn-lightblue:hover,
+#checkout-main-container a.btn-lightblue:focus {
+    background-color: #6caddf!important;
+    color: #fafafa
+}
+
+#checkout-main-container a.btn-darkblue {
+    background-color: #1b4298;
+    color: #fafafa
+}
+
+#checkout-main-container a.btn-darkblue:hover,
+#checkout-main-container a.btn-darkblue:focus {
+    background-color: #1b4298!important;
+    color: #fafafa
+}
+
+.btn.btn-submit.btn-buy {
+    color: #fafafa!important;
+    background: #6caddf;
+    border-radius: 100px;
+    padding: 12px 40px 10px 40px;
+    margin: 10px auto;
+    font-size: 20px;
+    float: none!important;
+    text-transform: none;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    display: block;
+    width: 80%;
+}
+
+a.btn.btn-submit.btn-buy:focus {
+    background: #6caddf;
+}
+
+div#full-total-fare {
+    display: block;
+    clear: both;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    padding-top: 35px;
+}
+
+p.full-total-fare-txt {
+    text-align: center;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+p.full-total-fare-currency {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #1b4298;
+}
+
+.total-fare-n > i {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.total-fare-currency {
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+p.fare-rules {
+    display: block;
+    margin: 10px auto 0px auto;
+    text-align: center;
+    padding: 0px 0px 0px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: underline;
+}
+
+.fare-rules a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: underline;
+}
+
+.top-loyalty {
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 20px;
+}
+
+.loyaltymember span {
+    position: absolute;
+    top: 105%;
+    right: 0px;
+    bottom: 0px;
+}
+
+.loyaltymember i {
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    font-size: 25px;
+    z-index: 999;
+    cursor: pointer;
+    font-family: FontAwesome;
+}
+
+.loyaltymember i.disabled {
+    color: #ededed
+}
+
+.loyaltymember i.validated {
+    color: green;
+}
+
+.top-loyalty > div.radio > label {
+    padding-left: 30px;
+    line-height: 1.2;
+    color: #666;
+    font-size: 13px;
+}
+
+.passenger > div.spservices-content {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+.special-services {
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.contact-data .general-form-component {
+    width: 32%;
+    float: left;
+}
+
+.child-migration-form {
+    display: block;
+    clear: both;
+}
+
+
+/**=============================================== Checkout STEP 2============================================== **/
+
+
+/**=============================================== Checkout STEP 5============================================== **/
+
+#extras-section {
+    display: block;
+}
+
+#extras-section .row {
+    clear: both;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+.options-extra .general-form-component.select-element {
+    width: 100%!important;
+}
+
+.options-extra .general-form-component.checkbox {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.options-extra .general-form-component.select-element.disabled-component > * {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.options-extra .general-form-component.checkbox.disabled-component > * {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/**=============================================== Checkout STEP 5============================================== **/
+
+
+/**=============================================== Checkout STEP 6=============================================== **/
+
+#payment-section {
+    display: block;
+    float: left;
+}
+
+.card-wrapper {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.card-wrapper .jp-card-container {
+    margin: 10px 0px;
+    float: left;
+}
+
+.card-wrapper .jp-card {
+    float: left;
+}
+
+.jp-card.jp-card-identified .jp-card-front .jp-card-logo,
+.jp-card.jp-card-identified .jp-card-back .jp-card-logo {
+    box-shadow: none!important;
+}
+
+.jp-card.jp-card-identified {
+    box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.jp-card .jp-card-front .jp-card-shiny,
+.jp-card .jp-card-back .jp-card-shiny {
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    background: url(../images/card-chip_img.png) no-repeat 0px 0px!important;
+    position: relative;
+    background-size: 70%!important;
+}
+
+.jp-card .jp-card-front .jp-card-shiny:before,
+.jp-card .jp-card-back .jp-card-shiny:before {
+    background: none!important;
+    display: none!important;
+}
+
+.jp-card-logo {
+    height: 80px!important;
+    width: 80px!important;
+    font-style: italic;
+}
+
+.jp-card .jp-card-back .jp-card-shiny:after {
+    content: "Interjet no guarda los datos de tu tarjeta únicamente los utiliza para procesar el pago por un medio seguro. Verifica que en tu navegador nuestra url comience con https://"!important;
+    position: absolute;
+    left: 120%;
+    top: 5%;
+    color: white;
+    font-size: 7px;
+    width: 230px;
+    opacity: .5;
+}
+
+.jp-card.jp-card-visa.jp-card-identified .jp-card-logo.jp-card-visa {
+    opacity: 1;
+    background: url(../images/img_visa-card.png) no-repeat 0px -10px;
+    background-size: 100%;
+    text-indent: 100%;
+}
+
+.jp-card-logo.jp-card-visa:before,
+.jp-card-logo.jp-card-visa:after,
+.jp-card-logo.jp-card-mastercard:before,
+.jp-card-logo.jp-card-mastercard:after,
+.jp-card-logo.jp-card-amex:before,
+.jp-card-logo.jp-card-amex:after {
+    display: none!important;
+    background: none!important;
+}
+
+.jp-card.jp-card-visa.jp-card-identified .jp-card-front:before,
+.jp-card.jp-card-visa.jp-card-identified .jp-card-back:before {
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.jp-card.jp-card-mastercard.jp-card-identified .jp-card-logo.jp-card-mastercard {
+    opacity: 1;
+    background: url(../images/img_mc-card.png) no-repeat 0px 0px;
+    background-size: 100%;
+    text-indent: 100%;
+}
+
+.disc-mask {
+    -webkit-text-security: disc;
+}
+
+.jp-card.jp-card-amex.jp-card-identified .jp-card-logo.jp-card-amex {
+    opacity: 1;
+    background: url(../images/img_amex-card.png) no-repeat 0px -10px;
+    background-size: 100%;
+    text-indent: 100%;
+    border: 0;
+}
+
+
+/**=============================================== END Checkout STEP 6=============================================== **/
+
+
+/**=============================================== Form Gneric Elements Checkout=/**=============================================== **/
+
+.general-form-component {
+    display: block;
+    float: left;
+    width: 48%;
+    position: relative;
+    background: #fff;
+    padding: 8px 8px 0px;
+    margin: 5px 10px 5px 0px;
+    box-shadow: 0px 2px 0px #dfdfdf;
+    -webkit-box-shadow: 0px 2px 0px #dfdfdf;
+    -moz-box-shadow: 0px 2px 0px #dfdfdf;
+    border-radius: 3px;
+    min-height: 60px;
+}
+
+.general-form-component label {
+    font-size: 12px;
+    color: #000;
+}
+
+
+
+.general-form-component input {
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    font-size: 19px;
+    color: #6caddf;
+}
+
+.general-form-component input.form-control.textfield {
+    height: 30px;
+}
+
+.gender.radio label:first-child {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.general-form-component.inputdate {
+    background: #fff;
+    padding: 8px 8px 0px;
+    margin: 5px 10px 5px 0px;
+    box-shadow: 0px 2px 0px #dfdfdf;
+    -webkit-box-shadow: 0px 2px 0px #dfdfdf;
+    -moz-box-shadow: 0px 2px 0px #dfdfdf;
+    border-radius: 3px;
+    min-height: 60px;
+    width: 48%;
+    clear: both;
+    float: left;
+}
+
+.general-form-component.radio,
+.general-form-component.checkbox {
+    box-shadow: none;
+    border: 0px;
+    background: none;
+    display: block;
+    float: left;
+}
+
+#checkout-data fieldset {
+    border: 0px;
+    margin: 0 2px;
+    padding: 10px 20px;
+    background: #fbfbfb;
+    border-top: 2px solid #6caddf;
+    position: relative;
+}
+
+.if-buy-contact.radio {
+    float: right;
+    right: 0px;
+    display: inline-block;
+    height: auto;
+    min-height: 10px;
+    width: auto;
+}
+
+.contact-data {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.hidden-component,
+.hidden-component.loyaltymember {
+    display: none;
+}
+
+.contact-data.disabled-component p div input {
+    opacity: 0.5;
+}
+
+label.disabled-component,
+input.disabled-component,
+.disabled *,
+input:disabled,
+select:disabled {
+    cursor: not-allowed;
+    //color: #ededed;
+    height: auto;
+}
+
+.contact-data > .general-form-component.disabled-component {
+    opacity: 0.5;
+}
+
+.contact-data.activecontact {
+    color: initial;
+}
+
+label.error {
+    position: relative;
+    color:#D95D6C;
+    top: 15px;
+    float: left;
+    clear: both;
+    //background: #ececec;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #c5c5c5;
+    overflow: hidden;
+}
+
+.radio label.error {
+    display: block;
+    width: 100%;
+    min-width: 265px;
+    right: 0px;
+}
+
+.form-gender label.error {
+    padding: 10px;
+    width: 500px;
+    float: right!important;
+    position: absolute;
+    z-index: 10;
+    min-width: 210px!important;
+    top: 19px;
+    left: 0px;
+}
+
+.passengerbirth label.error,
+.oldadultbirth label.error,
+.childbirth label.error,
+.infantbirth label.error {
+    position: relative;
+}
+
+.form-group.is-focused label,
+.form-group.is-focused label.control-label {
+    color: red;
+}
+
+.general-form-component.radio input[type=radio]:checked~.check,
+label.radio-inline input[type=radio]:checked~.check {
+    background-color: #afd61d;
+}
+
+.general-form-component.radio input[type=radio]:checked~.circle,
+label.radio-inline input[type=radio]:checked~.circle {
+    border-color: #afd61d;
+}
+
+.general-form-component.checkbox .checkbox-material .check,
+label.checkbox-inline .checkbox-material .check {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, .54);
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.general-form-component.checkbox .checkbox-material .check:before,
+label.checkbox-inline .checkbox-material .check:before {
+    position: absolute;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    margin-top: -6px;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    -webkit-box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+    font-size: 10px;
+}
+
+.general-form-component.radio .check,
+label.radio-inline .check {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    top: -6px;
+    left: 3px;
+    right: 0px;
+    bottom: 0px;
+}
+
+legend.form-title {
+    clear: both;
+    float: left;
+    display: block;
+}
+
+.general-form-component.radio input[type=radio]:checked~.check:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    line-height: 30px;
+    text-align: center;
+}
+
+.general-form-component.form-gender.radio label:first-child {
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.form-gender.radio label {
+    padding-left: 35px;
+}
+
+.general-form-component.checkbox {
+    //width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.general-form-component.checkbox span.checkbox-material {
+    float: left;
+}
+
+.general-form-component.checkbox input[type=checkbox]:checked+.checkbox-material .check,
+label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check {
+    color: #afd61d;
+    border-color: #afd61d;
+}
+
+.general-form-component.checkbox input[type=checkbox]:checked+.checkbox-material .check:before,
+label.checkbox-inline input[type=checkbox]:checked+.checkbox-material .check:before {
+    color: #afd61d;
+    -webkit-box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+}
+
+
+/**=============================================== Form Elements Checkout=============================================== **/
+
+
+/*================================================ BEGIN UPGRADE FARE  Main Styles ============================***/
+
+
+/********************** Update Fare CSS Styles ***************************/
+
+#upgradefare-maincontainer {
+    display: inline-block;
+    min-height: 100%;
+    height: 100%;
+    float: none;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#upgradefare-maincontainer h3.checkout-subsection-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.upfare-passenger-flight {
+    display: block;
+    float: left;
+    z-index: 99;
+    position: relative;
+}
+
+.fareLight.upfare-passenger-flight {
+    background: #fafafa;
+    border: solid 1px #ccc;
+}
+
+.fareOptima.upfare-passenger-flight {
+    background: #f0f6fb;
+    border: solid 1px #6caddf;
+}
+
+#upgradefare-maincontainer .top-fare-details {
+    clear: both;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    position: relative;
+    z-index: 99;
+}
+
+.flight-resume-container {
+    display: block;
+    clear: both;
+    margin-bottom: 40px;
+    float: left;
+}
+
+.flight-resume-container > div.single-element-trip {
+    float: none;
+    margin: 0px auto;
+}
+
+div.top-fare-details > span.flight-type {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.fareLight .top-fare-details {
+    background-color: #b2b2b2;
+}
+
+.fareOptima .top-fare-details {
+    background-color: #6caddf;
+}
+
+.fareLight > div.top-fare-details > span.flight-type {
+    color: #fff;
+}
+
+.fareOptima > div.top-fare-details > span.flight-type {
+    color: #fafafa;
+}
+
+span.fare-type {
+    float: right;
+    margin-right: 15px;
+    font-size: 40px;
+    text-shadow: 0px 2px 3px rgba(25, 25, 25, 0.50);
+}
+
+.fareLight > div.top-fare-details > span.fare-type {
+    color: #fff;
+}
+
+.fareOptima > div.top-fare-details > span.fare-type {
+    color: #fff;
+}
+
+div.top-fare-details > span.fare-type > b {
+    font-size: 20px;
+    text-shadow: none;
+}
+
+.fareLight > div.top-fare-details > span.fare-type > b {
+    color: #fff;
+}
+
+.fareOptima > div.top-fare-details > span.fare-type > b {
+    color: #fafafa;
+}
+
+.default-bundle-selected {
+    display: inline-table;
+    border-left: 1px solid #f7f7f7;
+    margin: 0px 10px;
+    box-shadow: -1px 2px 4px 0 #e8e7e6;
+    text-align: center;
+    border-right: 1px solid #f7f7f7;
+    background-color: #fff;
+    position: relative;
+    bottom: 10px;
+}
+
+.my-trip {
+    display: inline-block;
+    padding: 10px 0px;
+    float: none;
+    width: 95%;
+    border-bottom: 1px solid #ededed;
+    margin: 10px auto 5px auto;
+}
+
+.my-trip > span {
+    display: block;
+    margin: 0px 0px 10px 0px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 13px;
+    color: #4c4c4c;
+}
+
+p.legend-txt {
+    display: block;
+    margin: 4px 0px 1px 0px;
+    font-family: 'VAGRoundedStd-Bold', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #4c4c4c;
+    clear: both;
+}
+
+.extras-offer p.legend-txt {
+    display: inline-block;
+    width: auto;
+    margin: 0px auto;
+    white-space: pre;
+    font-size: 14px;
+    color: #4c4c4c;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    padding-bottom: 15px;
+}
+
+.extras-offer p.legend-txt span {
+    display: block;
+}
+
+.select-your-seat p.legend-txt {
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+.select-your-seat > div > .general-form-component {
+    margin-left: 50px;
+    position: relative;
+    bottom: 12px;
+    min-height: 0px;
+}
+
+.select-your-seat p.legend-txt > b {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.select-your-seat i.inter-font.icon-sel-asientos.selected-extra {
+    color: #333;
+    border: 1px solid #1b4298;
+    line-height: 50px;
+    background-color: #fafafa;
+}
+
+.select-your-seat i.inter-font.icon-sel-asientos {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 114px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid;
+    line-height: 50px;
+    background-color: #fafafa;
+    color: #b9b9b9;
+}
+
+.select-your-seat i.inter-font.icon-sel-asientos:before {
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    left: 2px;
+}
+
+.select-your-seat .alert-legend {
+    float: left;
+    padding: 0px 35px;
+    text-align: left;
+}
+
+.trip-detail {
+    float: left;
+    display: inline-block;
+    text-align: left;
+}
+
+.trip-detail > i.pin-img {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+i.pin-img > img {
+    height: 100%;
+    width: auto;
+}
+
+.trip-detail span.trip-airport {
+    float: left;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #1b4298;
+    font-size: 16px;
+}
+
+.trip-detail > small {
+    display: block;
+    clear: both;
+    font-size: 13px;
+    color: #7f7f7f;
+    margin: 0px 0px 0px 20px;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.my-trip .icon-plane {
+    float: left;
+    margin: 0px 25px;
+}
+
+.icon-plane i.inter-icon.icon-icn_plane {
+    font-size: 30px;
+    color:#1b4298;
+}
+
+.my-trip .icon-plane img {
+    width: 100%;
+    height: auto;
+}
+
+.trip-number-passengers {
+    float: left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.my-trip .icon-passenger {
+    float: left;
+    margin: 0px 10px;
+    font-size: 35px;
+    text-align: center;
+    color: #1b4298;
+}
+
+.trip-number-passengers > span {
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    position: relative;
+    top: 17px;
+}
+
+.trip-number-passengers > span > b {
+    font-size: 16px;
+}
+
+.my-trip .icon-passenger:before {
+    margin: 0px;
+}
+
+.my-trip .icon-passenger img {
+    width: auto;
+    height: 100%;
+}
+
+.default-benefits {
+    display: inline-table;
+    padding: 0px 20px;
+    float: none;
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 10px
+}
+
+.fareOptima .clear-width {
+    display: block;
+    min-width: 100%;
+    float: left;
+}
+
+.fareOptima .default-benefits {
+    border-bottom: 1px solid #ededed;
+}
+
+.icon-benef {
+    display: inline-block;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.col-3-benefits .icon-benef {
+    margin: 10px 30px;
+}
+
+.col-4-benefits .icon-benef {
+    margin: 10px 32px;
+}
+
+.col-5-benefits .icon-benef {
+    margin: 10px 17px;
+}
+
+.icon-benef.def-benf i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    float: none;
+    line-height: 50px;
+}
+
+.icon-benef.def-benf i.benefit {
+    font-size: 32px;
+    color: #4c4c4c;
+    border: 1px solid #1b4298;
+    border-radius: 100px;
+    background: #fafafa;
+}
+
+.icon-benef.def-benf i.benefit:before {
+    margin: 0px;
+    width: 100%;
+}
+
+.icon-icn_2_maleta:before {
+    font-size: 28px;
+    position: relative;
+    top: -3px;
+}
+
+.def-benf i.benefit.inter-font.icon-equipaje-de-mano {
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.def-benf i.benefit.inter-font.icon-equipaje-de-mano:before {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    left: 1px;
+    position: relative;
+}
+
+.def-benf i.benefit.inter-font.icon-noun_705935_cc {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.def-benf i.benefit.inter-font.icon-noun_705935_cc:before {
+    width: 100%;
+    position: relative;
+    left: 1px;
+}
+
+.def-benf i.benefit.inter-font.icon-noun_159 {
+    font-size: 26px;
+    line-height: 43px;
+}
+
+.def-benf i.benefit.inter-font.icon-noun_159:before {
+    width: 100%;
+}
+
+.col-4-benefits .add-benef {
+    margin: 10px 22px;
+}
+
+.col-5-benefits .add-benef {
+    margin: 10px 17px;
+}
+
+.add-benef i.benefit {
+    display: block;
+    margin: 0px auto;
+    float: none;
+    font-size: 32px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.add-benef i.benefit.inter-icon:before {
+    margin: 0px;
+    width: 100%;
+}
+
+i.benefit.inter-icon {
+    text-align: center;
+    float: none;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    border: 1px solid;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #b9b9b9;
+}
+
+.exchange-options .add-benef.disabled i,
+.exchange-options .add-benef.disabled i:hover,
+.exchange-options .add-benef.disabled i:focus {
+    color: #ededed!important;
+    cursor: not-allowed!important;
+    border: 1px solid #ededed!important;
+}
+
+.exchange-options .add-benef i.actived {
+    color: #b9b9b9;
+}
+
+.exchange-benefits .add-benef.disabled > p {
+    color: #ededed;
+}
+
+.icon-benef i img {
+    width: 100%;
+    height: 100%;
+}
+
+div.icon-benef > p {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    color: #4c4c4c;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+i.benefit.inter-icon.icon-bike {
+    font-size: 25px;
+}
+
+.exchange-options {
+    clear: both;
+    display: block;
+    float: left;
+}
+
+.exchange-options .exchange-benefits.col-3-benefits.pull-right {
+    max-width: 53%;
+    float: right;
+    display: inline-block;
+    padding: 0px;
+    margin-right: 20px;
+    line-height: normal;
+}
+
+.exchange-options > div.exchange-benefits.col-3-benefits.pull-right > div {
+    margin: 10px 20px;
+    float: none;
+    display: inline-table;
+    text-align: center;
+}
+
+.exchange-options .general-form-component.checkbox {
+    margin-left: 20px;
+    padding: 0px;
+    margin-right: 0px;
+    max-width: 40%;
+}
+
+.exchange-options p.legend-txt {
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.exchange-options p.legend-txt b {
+    clear: both;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.extras-to-add {
+    clear: both;
+    display: inline-table;
+    border: 1px solid #f7f7f7;
+    margin: 10px;
+    box-shadow: -1px 2px 4px 0 #e8e7e6;
+    text-align: center;
+    background-color: #fff;
+    padding: 0px;
+    max-width: 97%;
+    width: 100%;
+    float: none;
+}
+
+p.extras-topborder {
+    padding: 0px 10px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.fareLight .extras-topborder {
+    background-color: #dfdfdf;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+    color: #666;
+    text-align: left;
+}
+
+.fareOptima .extras-topborder {
+    background-color: #dfdfdf;
+    color: #666;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: left;
+}
+
+span.plus-icon {
+    position: absolute;
+    color: #fff;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 2px 3px 0px rgba(43, 43, 43, 0.41);
+    line-height: 30px;
+    text-align: center;
+    right: 10px;
+    bottom: 0px;
+    top: 10px;
+}
+
+.fareLight .plus-icon {
+    background-color: #666;
+}
+
+.fareOptima .plus-icon {
+    background-color: #6caddf;
+}
+
+p > span.plus-icon > i {
+    position: relative;
+    line-height: 32px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    left: 0.5px;
+    right: 0px;
+    margin: 0px auto;
+}
+
+.exchange-benefits {
+    display: block;
+    padding: 0px 20px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.exchange-benefits .add-benef > p {
+    margin: 5px auto 0px;
+    color: #666;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.exchange-benefits .add-benef.selected-extra > p {
+    color: #4c4c4c;
+}
+
+.extra-benefits {
+    padding: 5px 0px;
+    display: block;
+    float: none;
+    width: 95%;
+    text-align: center;
+    margin: 0px auto 15px auto;
+    border-bottom: 1px solid #ededed;
+}
+
+.extra-benefits .add-benef > p {
+    margin: 5px auto 0px;
+    color: #666;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.fareLight .extra-benefits .add-benef.selected-extra > p {
+    color: #333;
+    border-color: #1b4298;
+}
+
+.fareLight .add-benef.selected-extra > i.benefit {
+    color: #333;
+    border-color: #1b4298;
+}
+
+.fareOptima .extra-benefits .add-benef.selected-extra > p {
+    color: #333;
+    border-color: #1b4298;
+}
+
+.fareOptima .add-benef.selected-extra > i.benefit {
+    color: #333;
+    border-color: #1b4298;
+}
+
+.fareLight .selected-extra i.benefit.inter-icon {
+    position: relative!important;
+}
+
+.fareLight .selected-extra i.benefit.inter-icon:after {
+    content: "";
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    background: url(../images/upgrade_fare/ico_On3.png) no-repeat 0px 0px;
+    background-size: 16px;
+    display: inline-block;
+    z-index: 10;
+    right: 0px;
+    top: -5px;
+}
+
+.fareLight .add-benef:hover > i.benefit {
+    color: #666;
+    cursor: pointer;
+    border-color: #1b4298;
+}
+
+.fareOptima.selected-extra i.benefit.inter-icon {
+    position: relative!important;
+}
+
+.fareOptima .selected-extra i.benefit.inter-icon:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: url(../images/upgrade_fare/ico_On3.png) no-repeat 0px 0px;
+    background-size: 15px;
+    display: inline-block;
+    z-index: 10;
+    right: 0px;
+    top: -5px;
+}
+
+.fareOptima .add-benef:hover > i.benefit {
+    color: #666;
+    cursor: pointer;
+    border-color: #1b4298;
+}
+
+.add-benef small {
+    position: relative;
+    bottom: 5px;
+    color: #999;
+}
+
+.fareOptima .exchange-options .add-benef small {
+    display: none;
+}
+
+.select-your-seat {
+    display: inline-block;
+    clear: both;
+    float: none;
+    width: 95%;
+    padding: 0px 0px;
+    margin: 0px auto;
+    border-bottom: 1px solid #ededed;
+}
+
+.combo-label {
+    display: inline-block;
+    margin-left: 10px;
+    color: #666;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.combo-label small {
+    display: block;
+    clear: both;
+    color: #999;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+.new-total {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0px auto 15px auto;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    float: right;
+}
+
+p.totalprice-txt {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+    line-height: normal;
+    margin-top: 5px;
+    color: #7f7f7f;
+}
+
+.new-total .totalprice {
+    font-size: 31px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #666;
+    margin: 0px 15px 0px 0px;
+    display: inline-block;
+}
+
+.totalprice-txt > small {
+    clear: both;
+    display: block;
+    color: #999;
+    font-size: 10px;
+    text-align: right;
+}
+
+.totalprice span {
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.new-total > small {
+    color: #999;
+    clear: both;
+    margin: 0px;
+    position: relative;
+    bottom: 8px;
+}
+
+.upgradeFare-sidebar {
+    float: left;
+    padding: 0px;
+    position: relative;
+    right: 25px;
+    top: 10px;
+    z-index: 10;
+}
+
+.uf-sidecontent {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 1px solid #ededed;
+}
+
+.fareLight .uf-sidecontent {
+    border: 1px solid #98c5e8;
+    background-color: #e2eff9;
+    box-shadow: 0 2px 5px 0 rgba(25, 25, 25, 0.30);
+}
+
+.fareOptima .uf-sidecontent {
+    border: 1px solid #8da0cd;
+    background-color: #e8ecf4;
+    box-shadow: 0 2px 5px 0 rgba(25, 25, 25, 0.30);
+}
+
+.top-ufsidebar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.fareLight .top-ufsidebar > span {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #6caddf;
+}
+
+.fareOptima .top-ufsidebar > span {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #4968ad;
+}
+
+.top-ufsidebar > span {
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.conversion-fare {
+    clear: both;
+    display: block;
+    margin: 0px auto;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.fareLight .top-ufsidebar .conversion-fare span {
+    text-align: center;
+    margin: 0px auto;
+    color: #358bcd;
+    position: relative;
+    bottom: 10px;
+}
+
+.fareOptima .top-ufsidebar .conversion-fare span {
+    text-align: center;
+    margin: 0px auto;
+    color: #1b4298;
+    position: relative;
+    bottom: 10px;
+}
+
+.conversion-fare > i {
+    margin: 0px 10px;
+    line-height: normal;
+}
+
+.extras-offer {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding: 0px 0px 5px 0px;
+}
+
+ul.extras-list {
+    padding: 0px 45px;
+    margin: 5px 0px 0px 0px;
+    text-align: left;
+    list-style-type: none;
+}
+
+ul.extras-list li {
+    display: list-item;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin: 5px 0px 18px 0px;
+    background: url(../images/upgrade_fare/ico_palomita.png) no-repeat;
+    background-size: 20px 20px;
+    padding-left: 35px;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+
+ul.extras-list li small {
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #666;
+    clear: both;
+    display: block;
+}
+
+.price-offer {
+    clear: both;
+}
+
+.priceTotal {
+    display: inline-block;
+    margin: 0px auto 0px auto;
+    clear: both;
+    text-align: center;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 30px;
+}
+
+.fareLight .priceTotal {
+    color: #6caddf;
+}
+
+.fareOptima .priceTotal {
+    color: #1b4298;
+}
+
+.priceTotal > span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.priceTotal > small {
+    display: block;
+    clear: both;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #999;
+    font-size: 10px;
+    position: relative;
+    bottom: 8px;
+}
+
+.btn-change-fare {
+    text-transform: none;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #fafafa;
+    font-size: 20px!important;
+    letter-spacing: normal;
+    padding: 10px 30px;
+}
+
+.btn-change-fare:focus {
+    background-color: #6caddf;!important;
+}
+
+
+/*********************** Media Queries ***********************/
+
+@media (min-width: 992px) and (max-width: 1099px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .upgradeFare-sidebar {
+        float: none;
+        padding: 0px;
+        clear: both;
+        margin: 10px auto;
+        width: 100%;
+        display: inline-table;
+        padding: 0px 15px;
+        position: static;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+    .upgradeFare-sidebar {
+        float: none;
+        padding: 0px;
+        clear: both;
+        margin: 10px auto;
+        width: 100%;
+        display: inline-table;
+        padding: 0px 15px;
+        position: static;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 460px) {
+    .upgradeFare-sidebar {
+        float: none;
+        padding: 0px;
+        clear: both;
+        margin: 10px auto;
+        width: 100%;
+        display: inline-table;
+        padding: 0px 15px;
+        position: static;
+    }
+    .trip-detail {
+        float: left;
+        display: inline-block;
+        width: 100%;
+    }
+    .trip-detail > small {
+        text-align: left;
+    }
+    .my-trip .icon-plane {
+        float: left;
+        margin: 5px 25px;
+    }
+    .trip-number-passengers {
+        float: left;
+        display: inline-block;
+        margin-left: 10px;
+        width: 100%;
+        text-align: left;
+        margin: 10px 0px;
+    }
+    .default-benefits {
+        display: inline-table;
+        padding: 0px 0px;
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+    .col-3-benefits .icon-benef {
+        float: none;
+        display: inline-block;
+        margin: 10px 5px;
+    }
+    .icon-benef.def-benf i.benefit {
+        font-size: 22px;
+        color: #4c4c4c;
+        border: 1px solid #1b4298;
+        border-radius: 100px;
+        background: #fafafa;
+    }
+    .icon-benef.def-benf i {
+        display: block;
+        width: 33px;
+        height: 33px;
+        margin: 0px auto;
+        float: none;
+        line-height: 33px;
+    }
+    .def-benf i.benefit.inter-font.icon-equipaje-de-mano {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .def-benf i.benefit.inter-font.icon-noun_159 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .icon-benef > p {
+        font-size: 11px!important;
+    }
+    .extras-topborder {
+        font-size: 11px!important;
+    }
+    p.legend-txt {
+        font-size: 13px;
+    }
+    .select-your-seat .alert-legend {
+        float: left;
+        padding: 0px 10px;
+        text-align: left;
+    }
+    .select-your-seat p.legend-txt {
+        font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+        text-align: justify;
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 12px;
+        font-size: 12px;
+        max-width: 78%;
+    }
+    span.plus-icon {
+        position: absolute;
+        color: #fff;
+        border-radius: 30px;
+        width: 25px;
+        height: 25px;
+        box-shadow: 0px 2px 3px 0px rgba(43, 43, 43, 0.41);
+        line-height: 30px;
+        text-align: center;
+        right: 0px;
+        bottom: 0px;
+        top: 23px;
+        left: 0px;
+        margin: 0px auto;
+        line-height: 25px;
+    }
+    p > span.plus-icon > i {
+        position: relative;
+        line-height: 27px;
+        font-weight: normal;
+        font-size: 15px;
+        text-align: center;
+        left: 0.5px;
+        right: 0px;
+        margin: 0px auto;
+    }
+    .select-your-seat i.inter-font.icon-sel-asientos:before {
+        font-size: 32px;
+    }
+    .select-your-seat > div > .general-form-component {
+        width: 100%;
+    }
+    .icon-icn_2_maleta:before {
+        font-size: 20px;
+        position: relative;
+        top: -3px;
+        left: 1px;
+    }
+    .icon-sel-asientos:before {
+        font-size: 22px;
+        position: relative;
+        bottom: 0px;
+    }
+    .exchange-options .general-form-component.checkbox {
+        margin-left: 20px;
+        padding: 0px 10px;
+        margin-right: 0px;
+        width: auto!important;
+        max-width: 100%;
+    }
+    .exchange-options .exchange-benefits.col-3-benefits.pull-right {
+        max-width: 100%;
+        float: none!important;
+        display: inline-block;
+        padding: 0px;
+        margin-right: 20px;
+        line-height: normal;
+    }
+}
+
+/*//////////////////////================== PopUP UpgradeFre Styles ====================///////////////////*/
+
+#upgradefare-maincontainer.pop-up_UF {
+    display: block;
+}
+
+#upgradefare-maincontainer.pop-up_UF .flight-resume-container {
+    width: 100%;
+}
+
+#upgradefare-maincontainer.pop-up_UF .checkout-subsection-title {
+    text-transform: none;
+}
+
+#upgradefare-maincontainer.pop-up_UF .top-fare-details {
+    clear: both;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    text-align: center;
+}
+
+#upgradefare-maincontainer.pop-up_UF .upfare-passenger-flight {
+    display: block;
+    float: left;
+    position: static;
+    width: 100%;
+}
+
+#upgradefare-maincontainer.pop-up_UF .my-trip {
+    display: inline-block;
+    padding: 10px 0px;
+    float: none;
+    width: auto;
+    border-bottom: none;
+    margin: 10px auto 5px auto;
+}
+
+#upgradefare-maincontainer.pop-up_UF.bundle-buttons {
+    display: inline-table;
+    float: right;
+}
+
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-submit {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 38px;
+    height: 38px;
+    margin: 0px 10px;
+}
+
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-submit.btn-white {
+    background: transparent;
+    border: 1px solid #ccc!important;
+    width: 250px;
+}
+
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-submit.btn-white:hover,
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-submit.btn-white:focus {
+    background: transparent!important;
+}
+
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-disabled,
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-disabled:hover,
+#upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-disabled:focus {
+    cursor: not-allowed;
+    background: #d2e6f5!important;
+    color: #fff;
+}
+
+.back a.btn-white {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    width: 200px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+    text-transform: none;
+    height: 35px;
+    line-height: 35px;
+    background: transparent;
+}
+
+.back a.btn.btn-submit.btn-white.flipbtn:hover,
+.back a.btn.btn-submit.btn-white.flipbtn:focus {
+    background: transparent!important;
+}
+
+.fare-compare-table {
+    display: block;
+    clear: both;
+    padding: 0px;
+}
+
+.fare-compare-table .tablefare {
+    text-align: left;
+    padding: 0px!important;
+}
+
+.pop-up_UF .default-bundle-selected {
+    margin: 0px;
+    background: #fff;
+    bottom: 0px;
+    position: static;
+    box-shadow: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.tablefare table > tbody > tr:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.tablefare table.fareLight > tbody > tr td:nth-child(2) {
+    background-color: #f0f6fb;
+}
+
+.tablefare table.fareOptima > tbody > tr td:nth-child(2) {
+    background-color: #e8ecf4;
+}
+
+th.fare-Top {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #fff;
+    border: 0px!important;
+    vertical-align: middle!important;
+}
+
+th.second-tab.optimaFare {
+    border-top: 15px solid #6caddf!important;
+}
+
+th.second-tab.priorityFare {
+    border-top: 15px solid #1b4298!important;
+}
+
+.fare-Top.lightFare {
+    background-color: #b2b2b2;
+        z-index: 10;
+    position: relative
+}
+
+.fare-Top.optimaFare {
+    background-color: #6caddf;
+        z-index: 10;
+    position: relative
+}
+
+.fare-Top.priorityFare {
+    background-color: #1b4298;
+        z-index: 10;
+    position: relative
+}
+
+th.fare-Top {
+    padding: 1px;
+}
+
+th.fare-Top > span {
+    font-size: 15px;
+    margin-left: 10px;
+    float: left;
+    max-width: 100px
+}
+
+
+th.fare-Top:first-child span:first-child {
+    margin-top: 20px;
+}
+
+
+th.fare-Top > span.fareTitle {
+    font-size: 38px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 0px;
+    text-shadow: 0 2px 2px rgba(25, 25, 25, 0.40);
+}
+
+.ft-price b {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.fare-Details-list > tr > td {
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    vertical-align: middle!important;
+    padding: 8px!important;
+    width: 50%;
+    border-top: 1px solid #dfdfdf!important;
+}
+
+.fare-Details-list > tr td span {
+    display: inline-table;
+    max-width: 195px;
+}
+
+.fare-Details-list > tr:first-child td span {
+    width: 100%;
+    max-width: 85%;
+}
+
+tr > td> span > b > span {
+    display: inline-block;
+    font-size: 14px;
+    width: auto!important;
+}
+
+.fare-Details-list > tr td span > span {
+    font-size: 13px;
+    color: #999;
+    margin: 0px 5px;
+}
+
+.fare-Details-list tr:first-child td span small {
+    float: none;
+    display: block;
+    clear: none;
+}
+
+.fare-Details-list small {
+    display: block;
+    clear: both;
+    font-size: 11px;
+    color: #4c4c4c;
+}
+
+.fare-Details-list small.inline {
+    display: inline-block;
+    clear: none;
+    font-size: 10px;
+    color: #999;
+}
+
+.fare-Details-list {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    list-style-type: none;
+    background: #fff;
+}
+
+.fare-Details-list tr td b {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #4c4c4c;
+}
+
+.fare-Details-list tr:first-child td b {
+    font-size: 20px;
+}
+
+.fare-Details-list tr td b.strong {
+    color: #6caddf;
+    font-size: 16px;
+}
+
+.fare-Details-list tr td span i.light img {
+    width: 20px;
+    height: auto;
+    float: left;
+}
+
+.fare-Details-list tr td span i.optima img {
+    width: 45px;
+    height: auto;
+    float: left;
+}
+
+.fare-Details-list tr td span i.priority img {
+    width: 55px;
+    height: auto;
+    float: left;
+}
+
+.fare-Details-list tr td span small {
+    float: none;
+    display: block;
+}
+
+b.strong > span {
+    font-size: 12px;
+}
+
+/**promo maleta gratis**/
+
+.fare-Details-list i.promo-img img {
+       width: 50px;
+    height: auto;
+    float: left;
+    position: relative;
+    top: -10px;
+    z-index: 5;
+    left: -5px;
+}
+
+.fare-Details-list .promo-text {
+    float: left;
+}
+
+.fare-Details-list .promo-text span {
+    color: #F99B1C;
+   
+     font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+td.suitecase-promo {
+    background: #FEF6E9;
+}
+.fare-Details-list .promo-text span {
+    color: #F99B1C;
+    font-size: 10px;
+    float: left;
+}
+
+.fare-Details-list .promo-text b {
+    display: block;
+    clear: both;
+    float: left;
+}
+
+.fare-Details-list tr td small.red-txt{color:#D95D6C; font-size: 9px;}
+.fare-Details-list tr td i {
+    text-align: center;
+    line-height: normal;
+    margin-right: 5px;
+    float: left;
+}
+
+.fare-Details-list tr td i.fa.fa-check {
+    border: 3px solid;
+    border-color: #cbe6ac;
+    border-radius: 100px;
+    height: 24px;
+    width: 24px;
+    line-height: 19px;
+    font-size: 13px;
+    padding: 0px;
+    font-weight: bold;
+    color:#8dc85a;
+    top: 3px;
+}
+
+.fare-Details-list tr td i.fa.fa-usd {
+    border: 4px solid;
+    border-color: #E2EFF9;
+    border-radius: 100px;
+    height: 24px;
+    width: 24px;
+    line-height: 17px;
+    font-size: 14px;
+    padding: 0px;
+    font-weight: bold;
+    color: #89bde5;
+    position: relative;
+}
+
+.fare-Details-list tr td i.fa.fa-times-circle-o {
+    color: #DFDFDF;
+    font-weight: normal;
+    font-size: 1.85em;
+        top: -4px;
+    position: relative;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options {
+    clear: both;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options p.legend-txt {
+    font-family: 'VAGRoundedStd-Bold', 'Open Sans', Helvetica, Arial, sans-serif;
+    margin: 30px 0px 1px 0px;
+    color: #666;
+    font-size: 16px;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .general-form-component.checkbox {
+    padding: 0px;
+    max-width: 100%!important;
+    width: auto;
+    float: none;
+    display: inline-table;
+    line-height: normal;
+    margin: 10px 20px;
+    vertical-align: middle;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .single .combo-label small {
+    max-width: 400px;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .general-form-component label {
+    font-size: 12px;
+    color: #000;
+    float: left;
+    display: block;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .combo-label {
+    display: inline-block;
+    margin-left: 10px;
+    color: #4c4c4c;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .combo-label small {
+    max-width: 200px;
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+#upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .single .combo-label small {
+    max-width: 400px;
+}
+
+.upfare-passenger-flight a.btn.btn-submit.btn-change-fare {
+    width: 280px;
+    margin-top: 0px;
+    height: 60px;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+        padding: 6px 0px 6px 0px;
+}
+
+.panel-flip .flipbtn {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+span.ft-txt {
+    font-size: 16px;
+    color: #999;
+}
+
+.btn-change-fare span.ft-txt {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    float: none;
+    text-align: center;
+        line-height: normal;
+        font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.btn-change-fare span.ft-price {
+    display: block;
+    font-size: 26px;
+        line-height: normal;
+}
+
+.btn-change-fare span.ft-price b{font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;}
+
+
+
+#compare-foot {
+    display: block;
+    clear: both;
+    padding: 0px;
+}
+
+#compare-foot > div.footContent {
+    width: 100%;
+    display: block;
+    background: #f1f2f2;
+    padding: 20px 20px;
+    float: left;
+}
+
+.bundle-buttons {
+    display: block;
+    float: right;
+}
+
+#compare-foot p {
+    float: left;
+    width: 50%;
+    color: #999;
+    font-size: 11px;
+        text-align: left;
+}
+
+.congrats-txt {
+    display: block;
+    text-align: center;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.fareLight .congrats-txt {
+    color: #6caddf;
+}
+
+.fareOptima .congrats-txt {
+    color: #1b4298;
+}
+
+.back.fareLight {
+    background: #F0F6FB;
+    padding-top: 30px;
+}
+
+.back.fareOptima {
+    background: #e8ecf4;
+    padding-top: 30px;
+}
+
+.congrats-txt p {
+    margin: 0px auto;
+    display: block;
+    line-height: normal;
+    font-size: 20px;
+}
+
+p.newFare {
+    font-size: 60px;
+    margin: 5px 0px 30px 0px;
+}
+
+.newBenefits {
+    clear: both;
+    text-align: center;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.newBenefits p {
+    display: block;
+    font-size: 15px;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.listBenefits {
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+    float: none;
+    margin: 0px 80px;
+}
+
+.listBenefits > li {
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    vertical-align: middle!important;
+    padding: 10px 8px!important;
+    width: 100%;
+    display: block;
+    text-align: left;
+    clear: both;
+    float: left;
+}
+
+.listBenefits > li > span {
+    display: inline-table;
+    float: left;
+    max-width: 90%;
+    font-size: 14px;
+}
+
+.listBenefits > ul li span > span {
+    font-size: 13px;
+    color: #999;
+    margin: 0px 5px;
+}
+
+.listBenefitst small {
+    display: block;
+    clear: both;
+    font-size: 12px;
+    color: #999;
+}
+
+.listBenefits small.inline {
+    display: inline-block;
+    clear: none;
+    font-size: 10px;
+    color: #999;
+    margin: 0px 2px 0px 3px;
+}
+
+.listBenefits li b {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    color: #4c4c4c;
+    margin: 0px 3px 0px 3px;
+}
+
+.listBenefits li b.strong {
+    color: #6caddf;
+}
+
+.listBenefits li i {
+    text-align: center;
+    line-height: normal;
+    margin-right: 5px;
+    float: left;
+}
+
+.listBenefits li i.fa.fa-check {
+    border: 3px solid;
+    border-color: #cbe6ac;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    line-height: 14px;
+    font-size: 10px;
+    padding: 0px;
+    font-weight: bold;
+    color: #8dc85a;
+}
+
+.listBenefits li i.fa.fa-usd {
+    border: 3px solid;
+    border-color: #ededed;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0px;
+    font-weight: bold;
+    color: #89bde5;
+}
+
+.listBenefits li i.fa.fa-times-circle-o {
+    color: #ededed;
+    font-weight: normal;
+    font-size: 1.59em;
+}
+
+.footer-newBenef {
+    display: block;
+    clear: both;
+    background: #fff;
+    float: left;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    bottom: 0px;
+}
+
+
+/***FLIP****/
+
+.panel-flip {
+    position: relative;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100%;
+    min-height: 725px;
+    background: none!important;
+}
+
+.panel-flip .front,
+.panel-flip .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.panel-flip .front {
+    z-index: 900;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    background: #fafafa;
+}
+
+.panel-flip .back {
+    z-index: 800;
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.panel-flip.flip .back {
+    z-index: 1000;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.panel-flip.flip .front {
+    z-index: 900;
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.no-csstransforms3d .panel-flip .back {
+    opacity: 0;
+}
+
+.no-csstransforms3d .panel-flip.flip .front,
+.no-csstransforms3d .panel.flip .back {
+    box-shadow: 0;
+    opacity: 1;
+}
+
+@media (min-width:1100px){
+
+
+
+
+.listBenefits {
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+    float: none;
+    margin: 0px auto;
+}
+
+.listBenefits > li > span {
+    max-width: 95%;
+}
+
+.newBenefits {
+    clear: both;
+    margin: 0px auto;
+    font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+    float: none;
+    display: inline-table;
+    text-align: center;
+}
+
+
+}
+
+
+
+@media (min-width:860px) and (max-width: 1100px) {
+    .col-md-6 {
+        width: 100%;
+    }
+    .pop-up_UF .default-bundle-selected {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #upgradefare-maincontainer.pop-up_UF .my-trip {
+        margin: 10px auto 5px auto;
+        width: auto;
+    }
+    .newBenefits {
+        clear: both;
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+        width: 100%;
+        float: left;
+    }
+    .listBenefits {
+        padding: 0px;
+        list-style-type: none;
+        display: inline-table;
+        float: none;
+        margin: 0px auto;
+        width: auto;
+        text-align: center;
+    }
+    .listBenefits > li {
+        font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        vertical-align: middle!important;
+        padding: 10px 8px!important;
+        width: 100%;
+        display: block;
+        text-align: left;
+        clear: both;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #upgradefare-maincontainer.pop-up_UF .upfare-passenger-flight {
+        margin-bottom: 20px;
+    }
+    .bundle-buttons,
+    .bundle-buttons a {
+        clear: both;
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+        float: none;
+    }
+    #upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-submit {
+        margin: 15px auto;
+            max-width: 250px;
+    line-height: 38px;
+    }
+    #compare-foot p {
+        float: left;
+        width: 100%;
+        color: #999;
+        font-size: 10px;
+    }
+    .newBenefits {
+        clear: both;
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+        width: 100%;
+        float: left;
+    }
+    .listBenefits {
+        padding: 0px;
+        list-style-type: none;
+        display: block;
+        float: left;
+        margin: 0px 25%;
+    }
+   
+    .back a.btn-white {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .panel-flip .flipbtn {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.table-responsive{border: 0px;}
+
+
+
+}
+
+@media screen and (max-width: 560px) {
+    .pop-up_UF .trip-detail span.trip-airport {
+        font-size: 12px;
+    }
+    .pop-up_UF .default-bundle-selected > div.my-trip > div > small .pop-up_UF .default-bundle-selected > div.my-trip > div > small > span {
+        font-size: 10px;
+    }
+    .pop-up_UF .icon-plane i.inter-icon.icon-icn_plane {
+        font-size: 17px;
+        color: #1b4298;
+    }
+    .pop-up_UF .trip-detail {
+        float: left;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .pop-up_UF .trip-detail > i.pin-img,
+    .pop-up_UF .trip-detail span.trip-airport,
+    .pop-up_UF .trip-detail > small,
+    .pop-up_UF .my-trip .icon-plane {
+        float: none;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .fare-Details-list > tr > td {
+        font-size: 12px;
+        text-align: center;
+    }
+    .fare-Details-list tr td i {
+        text-align: center;
+        line-height: normal;
+        float: none;
+        margin: 0px auto;
+        display: block;
+        width: 100%;
+    }
+    .pop-up_UF th.fare-Top {
+        text-align: center;
+    }
+    .pop-up_UF th.fare-Top > span {
+        font-size: 15px;
+        float: none;
+        margin: 0px auto;
+    }
+    .panel-flip {
+        min-height: 960px;
+    }
+    .pop-up_UF th.fare-Top > span.fareTitle {
+        font-size: 38px;
+        float: none;
+        text-shadow: 0 2px 2px rgba(25, 25, 25, 0.40);
+        margin: 0px auto;
+    }
+    #upgradefare-maincontainer.pop-up_UF .upfare-passenger-flight {
+        margin-bottom: 20px;
+    }
+    #compare-foot p {
+        float: left;
+        width: 100%;
+        color: #999;
+        font-size: 10px;
+    }
+    .bundle-buttons,
+    .bundle-buttons a {
+        clear: both;
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+        float: none;
+    }
+    #upgradefare-maincontainer.pop-up_UF .bundle-buttons a.btn.btn-submit {
+        margin: 15px auto;
+    }
+    #upgradefare-maincontainer.pop-up_UF .only-extras.exchange-options .single .combo-label small {
+        max-width: 235px;
+    }
+    .newBenefits {
+        clear: both;
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+        font-family: 'VAGRoundedStd-Light', 'Open Sans', Helvetica, Arial, sans-serif;
+        width: 100%;
+        float: left;
+    }
+    .listBenefits {
+        padding: 0px;
+        list-style-type: none;
+        display: block;
+        float: left;
+        margin: 0px 35px;
+    }
+
+    .back a.btn-white {
+            position: absolute;
+    bottom: 10px;
+    line-height: 25px;
+    max-width: 300px;
+    }
+
+
+    .panel-flip .flipbtn {
+        position: absolute;
+    bottom: 30px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto!important;
+    text-align: center;
+    padding: 5px 0px!important;
+    width: 95%!important;
+}
+
+
+}
+
+/*//////////////////////================== END PopUP UpgradeFre Styles ====================///////////////////*/
+
+/*================================================ END UPGRADE FARE  Main Styles ============================***/
+
+
+/*================================================ END CHECKOUT  Main Styles   ================================================ */
+
+
+/*================================================ CHECKOUT  RETINA HD 5K Styles  ================================================ */
+
+
+/***============================ CHECKOUT  Retina Display ============================***/
+
+@media (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/***============================ END CHECKOUT  Retina Display ============================***/
+
+
+/*================================================END CHECKOUT  RETINA HD 5K Styles  ================================================ */
+
+
+/***============================CHECKOUT  Safari Hacks ============================***/
+
+_::-webkit-:host:not(:root:root),
+.selector {}
+
+_::-webkit-:host:not(:root:root),
+.selector {}
+
+_::-webkit-:not(:root:root),
+.selector {}
+
+,
+_::-webkit-:not(:root:root),
+.selector {}
+
+
+/***============================ END CHECKOUT  Safari Hacks ============================***/
+
+
+/***============================CHECKOUT  Firefox Hacks ============================***/
+
+@-moz-document url-prefix() {
+    #fares-view {
+        padding: 10px 7px;
+    }
+}
+
+
+/***============================ END CHECKOUT  Firefox Hacks ============================***/
+
+
+/**================================================ CHECKOUT  IE 10-11 + EDGE hacks ================================================ **/
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    /* IE10 */
+    a.btn-lightblue,
+    a.btn-lightblue:hover,
+    a.btn-lightblue:focus {
+        background: #6caddf!important;
+    }
+    a.btn-darkblue,
+    a.btn-darkblue:hover,
+    a.btn-darkblue:focus {
+        background: #1b4298!important;
+    }
+    i.fa.fa-check {
+        border-color: #cbe6ac;
+        color: #8dc85a;
+    }
+    i.fa.fa-usd {
+        border: 3px solid #ededed;
+        color: #89bde5;
+    }
+    i.fa.fa-times-circle-o {
+        color: #ededed;
+    }
+
+    .icon-plane i.inter-icon.icon-icn_plane{color:#1b4298}
+    /* IE11 */
+    *::-ms-backdrop,
+    a.btn-lightblue,
+    a.btn-lightblue:hover,
+    a.btn-lightblue:focus {
+        background: #6caddf!important;
+    }
+    a.btn-darkblue,
+    a.btn-darkblue:hover,
+    a.btn-darkblue:focus {
+        background: #1b4298!important;
+    }
+    i.fa.fa-check {
+        border:#cbe6ac;
+        color: #8dc85a;
+    }
+    i.fa.fa-usd {
+        border: #ededed;
+        color: #89bde5;
+    }
+    i.fa.fa-times-circle-o {
+        color: #ededed;
+    }
+    .icon-plane i.inter-icon.icon-icn_plane{color:#1b4298}
+}
+
+
+/* Microsoft EDGE */
+
+@supports (-ms-ime-align:auto) {
+  a.btn-lightblue,
+    a.btn-lightblue:hover,
+    a.btn-lightblue:focus {
+        background: #6caddf!important;
+    }
+    a.btn-darkblue,
+    a.btn-darkblue:hover,
+    a.btn-darkblue:focus {
+        background: #1b4298!important;
+    }
+    i.fa.fa-check {
+        border:#cbe6ac;
+        color: #8dc85a;
+    }
+    i.fa.fa-usd {
+        border: #ededed;
+        color: #89bde5;
+    }
+    i.fa.fa-times-circle-o {
+        color: #ededed;
+    }
+    .icon-plane i.inter-icon.icon-icn_plane{color:#1b4298}
+}
+
+
+
+/**================================================END CHECKOUT  IE 10-11 hacks ================================================ **/

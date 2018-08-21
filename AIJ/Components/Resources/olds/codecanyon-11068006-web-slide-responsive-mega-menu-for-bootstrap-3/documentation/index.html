@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documentation</title>
+<link rel="stylesheet" href="css/style.css" media="all">
+<script src="js/jquery-1.9.1.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1200);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="leftslidebar"><a href="#" class="applogo"><img src="images/logo.png" alt="" /></a>
+  <ul class="slidebarlinks">
+    <li><a href="#first-section"><span> Welcome</span></a></li>
+    <li><a href="#"><span>Off-Canvas menu</span></a>
+    	<ul>
+        <li><a href="#01-section01"><span>Files and Meta</span></a></li>
+        <li><a href="#01-section02"><span>HTML Structure</span></a></li>
+        <li><a href="#01-section03"><span>Color or Gradient</span></a></li>
+        </ul>
+    </li>
+    
+    <li><a href="#"><span>Slide Down Toggle Menu</span></a>
+    	<ul>
+        <li><a href="#02-section01"><span>Files and Meta</span></a></li>
+        <li><a href="#02-section02"><span>HTML Structure</span></a></li>
+        <li><a href="#02-section03"><span>Color or Gradient</span></a></li>
+       
+        </ul>
+    </li>
+    
+      <li><a href="#02-section04"><span>Pure CSS3 navigation</span></a></li>
+    <li><a href="#last-section"><span>Support</span></a></li>
+  </ul>
+  <div class="copyright"><a href="http://webthemex.com/" target="_blank">Powered by WebThemex</a><br>
+  </div>
+</div>
+<div class="helpcontent clearfix">
+<section id="first-section">
+    <h3 class="header01">Web Slide - Responsive Mega Menu for Bootstrap 3+</h3>
+    <hr>
+    <ul class="createdul">
+      <li>Created: 10/05/2015 </li>
+      <li>Version: v3.2 </li>
+      <li>By: <a href="http://codecanyon.net/user/webthemex/portfolio?ref=webthemex" target="_blank">www.codecanyon.net/user/webthemex</a></li>
+    </ul>
+    
+  </section>
+  
+  
+  
+  
+  <section id="01-section01">
+    <h3 class="header01">Add Meta Tag</h3>
+    <hr>
+    <p>Add below meta tags in header section</p>
+    <pre>
+    &lt;meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"&gt;
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="HandheldFriendly" content="True"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;
+    </pre>
+
+    <h3 class="header01">Add Below CSS/JS Files</h3>
+    <hr>
+    <strong>Jquery File</strong>
+    <pre>&lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;</pre>
+    
+    <strong>Bootstrap File</strong>
+    <pre>&lt;script type="text/javascript" src="bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /&gt;
+    </pre>
+    
+    <strong>Main Menu Files</strong>
+<pre>&lt;link rel="stylesheet" type="text/css" media="all" href="css/demo.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/color-theme.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/webslidemenu.css" /&gt;
+&lt;script type="text/javascript" language="javascript" src="js/webslidemenu.js"&gt;&lt;/script&gt;
+    </pre>
+    <div class="massage massage-blue">demo.css just for demo use only</div>
+    
+    <strong>Font Awesome File</strong>
+    <pre>&lt;link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /&gt;
+    </pre>
+
+      
+     
+     
+    <br>
+    <p style="color:#929292;">Look at: Example image</p>
+    <p><img src="images/2.png" alt="" class="imagesty" /></p>
+  </section>
+  
+  
+  <section id="01-section02">
+    <h3 class="header01">HTML Structure</h3>
+    <hr>
+    Put below DIV after <code>&lt;body&gt;</code> Tag and end it on <code>&lt;/body&gt;</code> before body..
+    <pre>&lt;div class="wsmenucontainer clearfix"&gt;<br>&lt;div class="overlapblackbg"&gt;&lt;/div&gt;
+    </pre>
+    Paste below 2 DIV here
+    <pre>
+&lt;div class="wsmobileheader clearfix"&gt;
+&lt;a id="wsnavtoggle" class="animated-arrow"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a class="smallogo"&gt;&lt;img src="images/yoursmalllogo.png" width="120" alt="" /&gt;&lt;/a&gt;
+&lt;a class="callusicon" href="tel:123456789"&gt;&lt;span class="fa fa-phone"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+    <br>
+    <br>
+    <br>
+    <p style="color:#818181;">===== Put navigation and all website code here =====</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>End DIV of "wsmnucontainer clearfix"<br>
+      &lt;/div&gt; </p>
+    <br>
+    <p style="color:#929292;">Look at: Example image</p>
+    <p><img src="images/1.png" alt="" class="imagesty" /></p>
+  </section>
+  
+  
+  <section id="01-section03">
+    <h3 class="header01">How to change color and Gradient</h3>
+    <hr>
+
+<p><strong>To change menu color please apply below class</strong></p>
+<ul class="createdul">
+<li>gry</li>
+<li>blue</li>
+<li>green</li>
+<li>red</li>
+<li>orange</li>
+<li>yellow</li>
+<li>purple</li>
+<li>pink</li>
+</ul>
+    
+    
+<p><strong>To change menu gradient please apply below class</strong> </p>
+<ul class="createdul">
+<li>gry-grdt</li>
+<li>blue-grdt</li>
+<li>green-grdt</li>
+<li>red-grdt</li>
+<li>orange-grdt</li>
+<li>yellow-grdt</li>
+<li>purple-grdt</li>
+<li>pink-grdt</li>
+</ul>
+    
+    
+    <br>
+    <p style="color:#929292;">Look at: Example image</p>
+    <p><img src="images/3.png" alt="" class="imagesty" /></p>
+    <p><img src="images/4.png" alt="" class="imagesty" /></p>
+    <p><img src="images/5.png" alt="" class="imagesty" /></p>
+    <p><img src="images/6.png" alt="" class="imagesty" /></p>
+  </section>
+  
+  
+  
+
+
+
+  <section id="02-section01">
+    <h3 class="header01">Add Meta Tag</h3>
+    <hr>
+    <p>Add below meta tags in header section</p>
+    <pre>
+    &lt;meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"&gt;
+    &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+    &lt;meta name="HandheldFriendly" content="True"&gt;
+    &lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;
+    </pre>
+
+    <h3 class="header01">Add Below CSS/JS Files</h3>
+    <hr>
+    <strong>Jquery File</strong>
+    <pre>&lt;script type="text/javascript" src="js/jquery.min.js"&gt;&lt;/script&gt;</pre>
+    
+    
+    <strong>Bootstrap File</strong>
+    <pre>&lt;script type="text/javascript" src="bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /&gt;
+    </pre>
+    
+    
+    <strong>Main Menu Files</strong>
+<pre>&lt;link rel="stylesheet" type="text/css" media="all" href="css/demo.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/color-theme.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/webslidemenu.css" /&gt;
+&lt;script type="text/javascript" language="javascript" src="js/webslidemenu.js"&gt;&lt;/script&gt;
+    </pre>
+    <div class="massage massage-blue">demo.css just for demo use only</div>
+    
+    <strong>Font Awesome File</strong>
+    <pre>&lt;link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" /&gt;
+    </pre>
+
+      
+     
+     
+    <br>
+    <p style="color:#929292;">Look at: Example image</p>
+    <p><img src="images/2.png" alt="" class="imagesty" /></p>
+  </section>
+  
+  
+  <section id="02-section02">
+    <h3 class="header01">HTML Structure</h3>
+    <hr>
+    <p style="color:#929292;">Look at: Example image</p>
+    <p><img src="images/7.png" alt="" class="imagesty" /></p>
+  </section>
+  
+  
+  <section id="02-section03">
+    <h3 class="header01">How to change color and Gradient</h3>
+    <hr>
+
+<p><strong>To change menu color please apply below class</strong></p>
+<ul class="createdul">
+<li>gry</li>
+<li>blue</li>
+<li>green</li>
+<li>red</li>
+<li>orange</li>
+<li>yellow</li>
+<li>purple</li>
+<li>pink</li>
+</ul>
+    
+    
+<p><strong>To change menu gradient please apply below class</strong> </p>
+<ul class="createdul">
+<li>gry-grdt</li>
+<li>blue-grdt</li>
+<li>green-grdt</li>
+<li>red-grdt</li>
+<li>orange-grdt</li>
+<li>yellow-grdt</li>
+<li>purple-grdt</li>
+<li>pink-grdt</li>
+</ul>
+    
+    
+    <br>
+    <p style="color:#929292;">Look at: Example image</p>
+    <p><img src="images/8.png" alt="" class="imagesty" /></p>
+  </section>
+
+
+
+<section id="02-section04">
+    <h3 class="header01">Pure css3 Responsive Navigation</h3>
+    <hr>
+
+ 
+ 
+    <p> To Build Web page with Pure CSS3 Responsive Navigation You don't have need any type of jQuery..... include only css files... same as "Slide Down Toggle Menu"</p>
+    
+
+
+   <p><img src="images/9.png" alt="" class="imagesty" /></p>
+    
+    <p>Please refer demo files..</p>
+     
+     
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="last-section">
+    <h3 class="header01"> Support and Credits</h3>
+    <hr>
+ 
+    <p style="line-height:25px;">Thank you for purchasing Web Slide Menu. If you have any questions that are beyond the scope of this help file, <br>
+      please feel free to email via my user page <a href="http://codecanyon.net/user/webthemex?ref=webthemex" target="_blank" style="color:#07649d;"> Contact form here</a><br>
+	
+      Thanks so much!</p>
+      
+    <div class="cl" style="height:15px;"></div>
+    
+    <h3 class="header01">Credits</h3>
+    <div style="height:8px;" class="cl"></div>
+    <ul class="createdul">
+    <li>» <a target="_blank" href="http://www.getbootstrap.com/">Bootstrap 3</a></li>
+    <li>» <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Font-Awesome</a></li>
+    </ul>
+    
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="36px" viewBox="0 0 35 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="select" transform="translate(4.000000, 4.000000)">
+                <circle id="Oval-2" fill="#53B847" cx="13" cy="13" r="13"></circle>
+                <polygon id="ico_ok" stroke="#FFFFFF" fill="#FFFFFF" fill-rule="nonzero" points="20.4539415 7.09090909 11.6516368 17.9475141 6.33400464 13.4831224 5.54545455 14.8148099 11.3426141 19.6850553 11.8221415 20.0909091 12.2270901 19.5835919 21.4343434 8.21969399 20.4539415 7.09091315"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

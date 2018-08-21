@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather Plugin Example</title>
+
+		<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+		<script>var __adobewebfontsappname__="dreamweaver"</script>
+		<script src="http://use.edgefonts.net/quicksand:n3,n4:default.js" type="text/javascript"></script>
+
+		<!-- include flatWeatherPlugin.css -->
+		<link href="css/flatWeatherPlugin.css" rel="stylesheet">
+		<!-- include a copy of jquery (if you haven't already) -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<!-- include flatWeatherPlugin.js -->
+		<script src="js/jquery.flatWeatherPlugin.min.js"></script>  
+
+		<script type="text/javascript">
+		function startWeather() {
+		$(document).ready(function() {
+
+			//Setup the plugin, see readme for more examples
+			var example = $("#example").flatWeatherPlugin({
+			location: "Wentzville, MO",
+			country: "USA",
+			api: "yahoo",
+			displayCityNameOnly : false,
+			view : "today",
+			});
+		});
+		}
+		</script>
+
+		<style>
+			
+			/* style the container however you please */
+			#example {
+				position:absolute;
+				color:#fff; 
+				background: #00000;
+				padding: 10px;
+				margin: 30px auto;
+				width: 340px;
+				border-radius: 1px;
+			}
+
+			/* styling for this page only, ignore */
+			body {background: #95a5a6; font-family: sans-serif; background: #000000; padding: 0; margin: 0;}
+			p {color: #888; width: 200px; margin: 0 auto; text-align: center;}
+		</style>
+        <script>
+			var array = ["You look great!","Hi, sexy","test3","test4","test5"]
+			var count = 0;
+			var count2 = 0;
+			function text() {
+				if(count == 5)
+				{
+					var val = Math.floor((Math.random() * 5));
+					count = 0;
+					count2 = count2 + 1;
+					document.getElementById("text").innerHTML = array[val];
+				}
+				count = count + 1;
+			}
+		</script>
+        <script>
+			function startPage() {
+				startTime();
+				startWeather();
+				text();
+			}
+		</script>
+        <script>
+			function startTime() {
+				var day;
+				var month;
+				var hour;
+				var ampm;
+				var currentdate = new Date();
+				switch (new Date().getDay()) {
+					case 0:
+					day = "Sunday";
+					break;
+				case 1:
+ 			       day = "Monday";
+ 			       break;
+ 			   case 2:
+			       day = "Tuesday";
+ 			       break;
+    			case 3:
+        		   day = "Wednesday";
+       			   break;
+    			case 4:
+        			day = "Thursday";
+        			break;
+    			case 5:
+        			day = "Friday";
+       		 		break;
+    			case 6:
+        			day = "Saturday";
+        			break;
+				}
+				switch (new Date().getMonth()) {
+				case 0:
+					month = "January";
+					break;
+				case 1:
+ 			       month = "February";
+ 			       break;
+ 			    case 2:
+			       month = "March";
+ 			       break;
+    			case 3:
+        		   month = "April";
+       			   break;
+    			case 4:
+        			month = "May";
+        			break;
+    			case 5:
+        			month = "June";
+       		 		break;
+    			case 6:
+        			month = "July";
+        			break;
+				case 7:
+        			month = "August";
+        			break;
+				case 8:
+        			month = "September";
+        			break;
+				case 9:
+        			month = "October";
+        			break;
+				case 10:
+        			month = "November";
+        			break;
+				case 11:
+        			month = "December";
+        			break;
+				}
+				var dt = day + ", "
+				+ month  + " " 
+				+ currentdate.getDate() + " " ;
+				document.getElementById("demo").innerHTML = dt;
+				var hour;
+				var ampm;
+				var currentdate = new Date();
+				if(currentdate.getHours() <= 12)
+				{
+					hour = currentdate.getHours();
+					ampm = "AM";
+				}
+				else
+				{
+					hour = currentdate.getHours()-12;
+					ampm = "PM";
+				}
+				if(currentdate.getMinutes() == 0)
+				{
+					var minutes = "00";
+				}
+				else if(currentdate.getMinutes()<10)
+				{
+					var minutes = "0" + currentdate.getMinutes();
+				}
+				else
+				{
+					var minutes = currentdate.getMinutes();
+				}
+				var dt = hour + ":"
+                + minutes + " "
+				+ ampm;
+				document.getElementById("demo2").innerHTML = dt;
+			}
+		</script>
+	</head>
+	<body onload="startPage(); setInterval('startPage()', 1000 )">
+    	<div style="height:0px;margin-left:200px; font-family: quicksand; font-style: normal; font-weight: 500; align-content:center; align-items:center; align-self:center;">
+			<p id="demo" style="width: 600px; color: #FFFFFF; font-size: 50px; align-content:center; align-self:center; align-items:center;"></p>
+            <p id="demo2" style="width: 500px; color: #FFFFFF; font-size: 50px; align-content:center; align-self:center; align-items:center;"></p>
+            
+    </div>
+	
+		<div style="position:absolute; margin-top:0px;" id="example"></div>
+        
+		<div style=" margin-top:585px;font-size: 10px; text-align: center; width: 200px;">
+    <script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 			'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.engadget.com/rss.xml",rssmikle_frame_width: "200",rssmikle_frame_height: "700",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "'Trebuchet MS', Verdana, Arial",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "on",scrollbar: "off",autoscroll: "on",scrolldirection: "up",scrollstep: "6",mcspeed: "20",sort: "Off",rssmikle_title: "off",rssmikle_title_sentence: "News",rssmikle_title_link: "",rssmikle_title_bgcolor: "#000000",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#000000",rssmikle_item_bgimage: "",rssmikle_item_title_length: "75",rssmikle_item_title_color: "#FFF0F0",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#c1c8df",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "crop",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script></div>
+
+<div style="width:878px; margin-top:150px; height:0px;align-content: center; margin-left:200px;">
+	<p style="font-family: quicksand; font-style: normal; font-weight: 400; color: #FFFFFF; font-size: 50px; width: 878px; align-content: center;" id="text">Hi, sexy</p>
+</div>
+
+<div style="margin-top:230px">
+<iframe frameborder="0" scrolling="no" height="234" width="379" allowtransparency="true" marginwidth="0" marginheight="0" src="http://eqrates.investing.com/index.php?pairs_ids=277;6369;6408;243;282;271;26490;252;7997;&header-text-color=%23FFFFFF&header-bg=%23000000&curr-name-color=%23ffffff&inner-text-color=%23ffffff&green-text-color=%239bff82&green-background=transparent;&red-text-color=%23ff8c8c&red-background=transparent;&inner-border-color=%23000000&border-color=%23000000&bg1=%23000000&bg2=%23000000&open=hide&high=hide&low=hide&last_update=hide"></iframe><div style="width:379px;"></div>
+</div>
+
+<div style="margin-top:-265px">
+	<img src="black.png" alt="black" style="width:350px;height:50px;">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<style type="text/css">
+
+#choose-browser {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 10px auto;
+}
+
+#browserlist {
+       display: block;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+#browserlist li {
+    display: inline-table;
+    float: none;
+    margin: 10px;
+    padding: 0px;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+#browserlist > li > a {
+    color: #fff;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+#browserlist li span{display: block;}
+
+#browserlist li span.vendor{display: block; clear: both;}
+
+#browserlist li span.b-img{display: block; margin: 0px auto; float: none; display: inline-table; width: 90px; height: 90px;}
+#browserlist li span.b-img img{width: 100%; height: 100%;}  
+
+
+#outdated h3. #outdated h4{font-family: VAGRoundedStd-Bold, Arial, sans-serif;}
+#outdated p{font-family: 'Open-Sans', Arial, sans-serif;}
+</style>
+<h3>¡Tu navegador está desactualizado!</h3>
+<p>Es necesario que actualices tu navegador para poder visualizar correctamente nuestro sitio, y realizar tus transacciones con total seguridad.</p>
+<div id="choose-browser">
+<p>Actualiza o descarga el navegador de tu preferencia.</p>
+	<ul id="browserlist">
+                <li class="b bf"><a title="Descarga Firefox desde el sitio web oficial." class="l" onmousedown="countBrowser('f')" href="https://www.mozilla.com/firefox/" target="_blank">
+				<span class="b-img"><img src="assets/images/icon/firefox-512.png" alt="firefox"></span>
+                <span class="bro">Firefox</span>
+                <span class="vendor">Mozilla Foundation</span></a>
+                </li>
+                <li class="b bo"><a title="Descarga Opera desde el sitio web oficial." class="l" onmousedown="countBrowser('o')" href="https://www.opera.com/?utm_medium=roc&amp;utm_source=team23_de&amp;utm_campaign=browser-update_org" target="_blank">
+				<span class="b-img"><img src="assets/images/icon/opera-512.png" alt=""></span>
+                <span class="bro">Opera</span>
+                <span class="vendor">Opera Software</span></a>
+                </li>
+                <li class="b bc"><a title="Descarga Google Chrome desde el sitio web oficial." class="l" onmousedown="countBrowser('c')" href="https://www.google.com/chrome/browser/desktop/" target="_blank">
+				<span class="b-img"><img src="assets/images/icon/chrome-512.png" alt=""></span>
+                <span class="bro">Chrome</span>
+                <span class="vendor">Google</span></a>
+                </li>
+                <li class="b bs"><a title="Descarga Safari desde el sitio web oficial." class="l" onmousedown="countBrowser('s')" href="https://support.apple.com/downloads/safari" target="_blank">
+				<span class="b-img"><img src="assets/images/icon/safari-512.png" alt=""></span>
+                <span class="bro">Safari</span>
+                <span class="vendor">Apple</span></a>
+                </li>
+                <li class="b bi"> <a title="Descarga Edge o Internet Explorer desde el sitio web oficial." class="l" onmousedown="countBrowser('i')" href="https://www.microsoft.com/en-us/download/internet-explorer.aspx" target="_blank">
+                <span class="b-img"><img src="assets/images/icon/ie-512.png" alt=""></span>
+                <span class="bro">IE11/Edge</span>
+                <span class="vendor">Microsoft</span></a>
+                </li>
+            </ul>
+</div>
+<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Cerrar">&times;</a></p>
+
+

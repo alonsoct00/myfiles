@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'New Walt Disney UI';
+  src: url('New Walt Disney UI.eot'); /* IE9 Compat Modes */
+  src: url('New Walt Disney UI.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('New Walt Disney UI.woff') format('woff'), /* Modern Browsers */
+       url('New Walt Disney UI.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('New Walt Disney UI.svg#c5b1f9a8fec99ff4720c0f2aba501aa1') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

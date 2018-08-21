@@ -1,0 +1,353 @@
+/***Ajustes HOTELES****/
+
+#updateHotels {
+    display: inline-block;
+    width: auto!important;
+    max-width: inherit;
+}
+
+.hotelInfo .dateControl {
+    display: block;
+}
+
+.form-item {
+    background-color: #fff;
+}
+
+#hotelFilters {
+    display: block!important;
+    float: right;
+    flex: 100%;
+}
+
+#hotelFilters>div>div {
+    display: inline-block;
+    float: right;
+}
+
+div#hotelFilters>div {
+    float: right;
+    padding: 0px;
+    display: inline-flex;
+    position: relative;
+}
+
+input.form-control.filterControl {
+    padding: 0px;
+    line-height: 50px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.filtersButton {
+    position: relative;
+    cursor: pointer;
+    line-height: 45px;
+}
+
+.filtersButton:after {
+    content: '\f1de';
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: right;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    text-align: center;
+    line-height: normal;
+    font-size: 1.8em;
+    color: #cecece;
+    cursor: pointer;
+}
+
+.filtersButton:before {
+    float: right;
+    position: absolute;
+    right: 45px;
+    content: '';
+    border-left: 1px solid #cecece;
+    height: 35px;
+    top: 6px;
+}
+
+
+
+input.form-control.searchControl {
+    line-height: 50px;
+    padding: 0px;
+}
+
+.searchInput {
+    position: relative;
+}
+
+.searchInput:after {
+    content: "\f002";
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: right;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    text-align: center;
+    line-height: normal;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #cecece;
+}
+
+.searchInput:before {
+    float: right;
+    position: absolute;
+    right: 45px;
+    content: '';
+    border-left: 1px solid #cecece;
+    height: 35px;
+    top: 6px;
+}
+
+.hide {
+    display: none!important;
+}
+
+#filtersStar {
+    display: inline-block;
+    clear: both;
+    margin: 20px 0px;
+    float: none;
+    width: 100%;
+}
+
+.rating-input.rating_hotel {
+    display: inline-block;
+    float: left;
+    margin: 0px 10px;
+}
+
+.rating-input .fa {
+    margin: 0px 2px;
+}
+
+.rating-input .fa-star {
+    color: #F5D823;
+}
+
+.rating-input .fa-star-o {
+    color: #e5e5e5;
+    -webkit-text-fill-color: #e5e5e5;
+    -webkit-background-clip: text;
+}
+
+.rateStar {
+    display: block;
+    clear: both;
+    margin: 2px auto;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+span.checkStar {
+    display: inline-block;
+    float: left;
+    line-height: normal;
+}
+
+span.checkStar input {}
+
+span.checkStar label {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#filterRange {
+    display: inline-block;
+    clear: both;
+    margin: 20px 0px;
+    float: none;
+    width: 100%;
+}
+
+.range-slider {
+    width: 100%;
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: calc(100% - (73px));
+    height: 10px;
+    border-radius: 5px;
+    background: #d7dcdf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1b4298;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+.range-slider__range::-webkit-slider-thumb:hover {
+    background: #1b4298;
+}
+
+.range-slider__range:active::-webkit-slider-thumb {
+    background: #1b4298;
+}
+
+.range-slider__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #1b4298;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+}
+
+.range-slider__range::-moz-range-thumb:hover {
+    background: #1b4298;
+}
+
+.range-slider__range:active::-moz-range-thumb {
+    background: #1b4298;
+}
+
+
+/*.range-slider__range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #F5D823;
+}*/
+
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    color: #fff;
+    line-height: 20px;
+    text-align: left;
+    border-radius: 3px;
+    background: #6caddf;
+    padding: 5px 5px;
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.range-slider__value:after {
+    position: absolute;
+    top: 8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #6caddf;
+    border-bottom: 7px solid transparent;
+    content: '';
+}
+
+.range-slider__value:before {
+    content: '$';
+}
+
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
+}
+
+#btnFilterControls {
+    clear: both;
+    display: flex;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+#btnFilterControls #cleanFilters {
+    display: inline-block;
+    width: 100%!important;
+    min-width: auto;
+    border: 1px solid #6caddf;
+    font-size: 13px;
+    padding: 0px;
+    color: #6caddf;
+}
+
+
+#btnFilterControls #applyFilters {
+    display: inline-block;
+    width: 100%!important;
+    min-width: auto;
+    padding: 0px;
+    font-size: 13px;
+}
+
+#sliderRange .slider-selection {
+    background: #6caddf;
+}
+
+
+/***END Ajustes HOTELES****/
+
+
+
+
+
+
+
+
+/***Ajustes Calendario****/
+
+.departure-date a:after {
+    content: "Salida";
+    position: relative;
+    font-size: 10px;
+    clear: both;
+    display: block;
+}
+
+.bookingInterjet .booking-calendar .calendar-content .datepicker .ui-datepicker-calendar td.ui-datepicker-current-day.departure {
+    /*background: none!important;
+    background: #1B4298!important;*/
+    color: white;
+}
+
+.bookingInterjet .booking-calendar .calendar-content .datepicker .ui-datepicker-calendar td.ui-datepicker-current-day.return {
+    /*background: none!important;
+    background: #1B4298!important;*/
+    color: white;
+}
+
+.return-date a:after {
+    content: "Regreso";
+    position: relative;
+    font-size: 10px;
+    clear: both;
+    display: block;
+}
+
+
+
+
+/***END Ajustes Calendario****/
+
+
+
+
+
+

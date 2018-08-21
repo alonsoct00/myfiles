@@ -1,0 +1,3643 @@
+/*Rev Final 1.6*/
+
+
+/* CUSTOM FONT */
+
+@import url('../fonts/VAGRounded/font-styles.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700');
+
+/* FONT AWESOME ICONS CSS */
+
+@import url('font-awesome.min.css');
+
+/*Interjet Icon Font*/
+
+@import url('../fonts/Interfont/css/interfont.css');
+@import url('../fonts/Interfont/css/animation.css');
+.inter-icon {
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    font: normal normal normal 14px/1 interfont;
+    transform: translate(0, 0);
+    margin: 0px auto;
+}
+
+i.inter-icon.icon-icn_card-payment:before,
+i.inter-icon.icon-icn_passenger:before {
+    margin-right: 7px!important;
+}
+
+.panel.with-nav-tabs.panel-default {
+    border: none;
+}
+
+
+/*Interjet Icon Font*/
+
+
+/*RESET*/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+body {
+    margin: 0px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    background: #fff;
+    overflow-x: hidden!important;
+}
+
+:root {
+    --dark-blue: #1b4298;
+    --soft-blue: #6caddf;
+}
+
+ :focus {
+    outline:none!important;
+}
+
+
+.container > .row {
+    margin: 0px!important;
+}
+
+a.btn {
+    width: auto;
+    padding: 0px;
+    height: auto;
+    line-height: 40px;
+    margin: 0px 10px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline: 0px;
+    outline-offset: 0px;
+}
+
+a.btn-transparent,
+input.btn-transparent,
+button.btn-transparent {
+    font-size: 20px;
+    min-width: 150px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border: 1px solid #6caddf;
+    letter-spacing: 0.5px;
+}
+
+a.btn-light-blue,
+input.btn-light-blue,
+button.btn-light-blue,
+a.btn-blue,
+input.btn-blue,
+button.btn-blue,
+a.btn-softblue,
+input.btn-softblue,
+button.btn-softblue {
+    font-size: 20px;
+    background: #6caddf;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border-radius: 100px;
+    min-width: 160px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+a.btn-green,
+input.btn-green,
+a.btn-green:hover,
+input.btn-green:hover,
+a.btn-green:focus,
+input.btn-green:focus {
+    font-size: 20px;
+    min-width: 150px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    background: #d6e034;
+    border-radius: 100px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border: 1px solid #d6e034;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+a.btn-cancel,
+input.btn-cancel,
+button.btn-cancel {
+    font-size: 20px;
+    background: #ccc;
+    color: #666;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    border-radius: 100px;
+    min-width: 160px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+
+input[disabled].btn {
+    background: #ededed!important;
+    color: #666!important;
+}
+
+a.btn-external,
+input.btn-external,
+button.btn-external {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    height: 40px;
+    min-width: 100px;
+    width: auto;
+    padding: 0px 20px;
+    border-radius: 20px;
+    background-color: #6caddf;
+    border: 0px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+a.btn-external:hover,
+input.btn-external:hover,
+a.btn-external:focus,
+input.btn-external:focus,
+button.btn-external:focus,
+button.btn-external:focus {
+    background-color: #358bcd;
+    border: 0px;
+}
+
+a.btn-external.disabled,
+input.btn-external.disabled,
+a.btn-external.disabled:hover,
+input.btn-external.disabled:focus,
+input[disabled].btn.btn-external {
+    background-color: #d2e6f5;
+    cursor: not-allowed;
+    border: 0px;
+}
+
+a.btn-intern:hover,
+input.btn-intern:hover,
+a.btn-intern:focus,
+input.btn-intern:focus,
+button.btn-intern:hover,
+button.btn-intern:focus {
+    //background-color: #358bcd;
+    background-color: #6caddf!important;
+    border: 0px;
+}
+
+a.btn-intern.disabled,
+input.btn-intern.disabled,
+a.btn-intern.disabled:hover,
+input.intern.disabled:focus,
+input[disabled].btn.btn-intern {
+    background-color: #d2e6f5;
+    cursor: not-allowed;
+    border: 0px;
+}
+
+a.btn-intern-second,
+input.btn-intern-second,
+a.btn.cancel-btn,
+input.btn.cancel-btn,
+button.btn.cancel-btn,
+button.btn.cancel-btn {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 16px;
+    height: 30px;
+    min-width: 100px;
+    width: auto;
+    padding: 0px 20px;
+    border-radius: 15px;
+    color: #999!important;
+    background-color: transparent;
+    border: 1px solid #b2b2b2;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+a.btn-intern-second:hover,
+input.btn-intern-second:hover,
+a.btn-intern-second:focus,
+input.btn-intern-second:focus,
+a.btn.cancel-btn:hover,
+input.btn.cancel-btn:focus,
+button.btn.cancel-btn:hover,
+button.btn.cancel-btn:focus {
+    color: #999;
+    background-color: #ededed;
+    border: 1px solid #b2b2b2;
+}
+
+a.btn-intern-second.disabled,
+input.btn-intern-second.disabled,
+a.btn-intern-second.disabled:hover,
+input.btn-intern-second.disabled:focus,
+input[disabled].btn.btn-intern-second,
+a.btn.cancel-btn.disabled,
+input.btn.cancel-btn.disabled {
+    color: #ededed;
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    cursor: not-allowed;
+}
+
+.content-title.grey-title {
+    font-size: 18px;
+    color: #7f7f7f;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.vag-light {
+    font-weight: lighter;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+.vag-bold {
+    font-weight: normal;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+
+.open-normal {
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+.open-bold {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: bold;
+}
+
+.light-weight {
+    font-weight: lighter;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+
+.normal-weight {
+    font-weight: normal;
+}
+
+.bold-weight {
+    font-weight: bold;
+}
+
+p.small-text,
+.small-text {
+    font-size: 12px;
+    color: #4c4c4c;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+a.default-blue {
+    color: #6caddf;
+    text-decoration: underline;
+}
+
+a.default-blue:hover {
+    color: #358bcd;
+    text-decoration: underline;
+}
+
+b.dark-blue,
+.dark-blue {
+    color: #1b4298;
+}
+
+b.soft-blue,
+.soft-blue {
+    color: #6caddf;
+}
+
+b.dark-grey,
+.dark-grey {
+    color: #666666;
+}
+
+b.dark-grey-9,
+.dark-grey-9 {
+    color: #999999;
+}
+
+b.dark-grey-3,
+.dark-grey-3 {
+    color: #333333;
+}
+
+b.grey-4c,
+.grey-4c {
+    color: #4c4c4c;
+}
+
+b.soft-grey,
+.soft-grey {
+    color: #ededed;
+}
+
+b.light-grey,
+.light-grey {
+    color: #7F7F7F;
+}
+
+.bg-dark-blue {
+    background: #1b4298;
+}
+
+.bg-soft-blue,
+{
+    background: #6caddf;
+}
+
+.bg-dark-grey {
+    background: #666666;
+}
+
+.bg-dark-grey-9 {
+    background: #999999;
+}
+
+.bg-dark-grey-3 {
+    background: #333333;
+}
+
+.bg-grey-4c {
+    background: #4c4c4c;
+}
+
+.bg-soft-grey-ed {
+    background: #ededed;
+}
+
+.bg-light-grey-fa {
+    background: #fafafa
+}
+
+.label-sucess,
+.sucess {
+    background-color: #5cb85c;
+}
+
+.label-info,
+.info {
+    background-color: #5bc0de;
+}
+
+.label-warning,
+.warning {
+    background-color: #f0ad4e;
+}
+
+.label-primary,
+.primary {
+    background-color: #428bca;
+}
+
+.label-danger,
+.danger,
+.label-error,
+.error {
+    background-color: #d9534f;
+}
+
+.xsmall-radious-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.small-radious-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.medium-radious-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.large-radious-img {}
+
+#interjet-breadcrumbs .breadcrumb {
+    padding: 0px 15px 0px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-page-content {
+    /* clear: both; */
+    /* display: block; */
+    /* float: left; */
+    /* width: 100%; */
+    /* margin-bottom: 80px; */
+}
+
+.page-top-banner-img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cols-main-content {
+    display: block;
+    margin-bottom: 27px;
+    float: left;
+    margin-top: 30px;
+}
+
+.grid-content {
+    clear: both;
+    float: left;
+    width: 100%;
+    display: flex;
+}
+
+.section.row {
+    margin: 0px;
+}
+
+.gridWrap {
+    flex-wrap: wrap;
+}
+
+.gridH:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.gridH:nth-of-type(3n+1) {
+    margin-left: 0;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.full-width-content {
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+}
+
+.content-col {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-col p {
+    text-align: left;
+    display: block;
+}
+
+.top-col-img {
+    margin: 0px auto 15px auto;
+    display: block;
+}
+
+.grid-content .grid-element {
+    float: left;
+    padding: 0px 11.5px 20px 11.5px;
+    min-height: 320px;
+    overflow-y: hidden;
+}
+
+.grid-content .grid-element .top-grid-content {
+    display: block;
+    background: #fff;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 7px 10px 0 #D8DCE5;
+    min-height: 110px;
+    max-height: 110px;
+    overflow: hidden;
+    line-height: 110px;
+}
+
+.grid-content .grid-element .top-grid-content .logo-img {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px;
+    height: auto;
+}
+
+.grid-content .grid-element .top-grid-content .logo-img img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-content .grid-element .top-grid-content .full-img {}
+
+.grid-content .grid-element .top-grid-content .full-img img {}
+
+.grid-content .grid-element .body-grid-content {
+    background: #FAFAFA;
+    box-shadow: 0 7px 10px 0 #D8DCE5;
+    border: 1px solid #E5E5E5;
+    padding: 18px 18px 18px 18px;
+    text-align: center;
+    position: relative;
+}
+
+.body-grid-content p {
+    text-align: left;
+    min-height: 138px;
+}
+
+.section-page-content article {
+    display: block;
+    margin-bottom: 20px;
+}
+
+ul.interjet-bullet-list {
+    display: block;
+    margin: 15px 0px;
+    list-style-type: none;
+    padding: 0px 0px 0px 20px;
+}
+
+ul.interjet-bullet-list li {
+    display: block;
+    margin: 0px 0px 20px 0px;
+    display: block;
+    margin: 0px 0px 20px 0px;
+    font-size: 14px;
+}
+
+ul.interjet-bullet-list li:before {
+    float: left;
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url(/assets/images/main_sections/icons/Bullet_Interjet.png) no-repeat 0px 0px;
+    background-size: 100%;
+    margin: 1px 5px 1px 0px;
+}
+
+.side-img.auto-height {
+    float: right;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    background: #fafafa;
+    text-align: center;
+    line-height: normal;
+    position: relative;
+}
+
+.auto-height img {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.row.equal.full-width {
+    margin-bottom: 25px;
+}
+
+
+/*Vertical aligment*/
+
+.vert-parent-element {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.vert-element {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-vcenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*****************================== Disney Main Styles ================********************************/
+
+@import url('/assets/fonts/Interfont_disney/css/interfont.css');
+@import url('/assets/fonts/Interfont_disney/css/animation.css');
+@import url('../fonts/VAGRounded/font-styles.css');
+@font-face {
+    font-family: 'disney-font';
+    src: url('/assets/fonts/disney/New Walt Disney UI.eot');
+    src: url('/assets/fonts/disney/New Walt Disney UI.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/disney/New Walt Disney UI.woff') format('woff'), url('/assets/fonts/disney/New Walt Disney UI.ttf') format('truetype'), url('/assets/fonts/disney/New Walt Disney UI.svg') format('svg');
+    url('/assets/fonts/disney/New Walt Disney UI.svg#c5b1f9a8fec99ff4720c0f2aba501aa1') format('svg');
+    font-style: normal;
+    font-weight: 400;
+}
+
+a.btn-intern:hover,
+input.btn-intern:hover,
+a.btn-intern:focus,
+input.btn-intern:focus,
+buttn.btn-intern:hover,
+button.btn-intern:focus {
+    background-color: #6caddf!important;
+    border: 0px;
+}
+
+a.btn-intern,
+input.btn-intern,
+button.btn-intern {
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 16px;
+    color: #fff!important;
+    height: 30px;
+    line-height: 33px;
+    min-width: 100px;
+    width: auto;
+    padding: 0px 20px;
+    border-radius: 15px;
+    background-color: #6caddf;
+    border: 0px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+#main-content {
+    margin: 10px auto;
+    height: auto;
+}
+
+#interjet-breadcrumbs .breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "\f178";
+    padding: 0 5px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.chat.inter-icon.icon-mickey-head:before {
+    background-image: none;
+}
+
+.box-normal {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: auto;
+    overflow-y: hidden;
+    float: left;
+    text-align: center;
+    z-index: 1;
+}
+
+#interjet-breadcrumbs .breadcrumb > .active {
+    color: #1b4298;
+}
+
+#interjet-breadcrumbs .breadcrumb li,
+#interjet-breadcrumbs .breadcrumb li a {
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+#disney-home > h1,
+h1.first-title,
+.first-title {
+    font-size: 30px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin: 0px 0px 20px;
+}
+
+h1.disney-font {
+    font-family: 'disney-font', 'Open Sans', arial, sans-serif !important;
+}
+
+.blue-disney {
+    color: #1B4298;
+}
+
+.soft-blue-disney {
+    color: #6caddf;
+}
+
+p.disney-font {
+    font-family: 'disney-font', 'Open Sans', arial, sans-serif;
+}
+
+.disney-nav-menu a {
+    text-decoration: none;
+    display: inline-block;
+    float: none;
+    line-height: normal;
+}
+
+.disney-nav-menu a:hover,
+.disney-nav-menu a:focus {
+    text-decoration: none;
+}
+
+.disney-nav-menu p.disney-font {
+    font-size: 18px;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: block;
+    clear: both;
+    margin-top: 5px;
+    width: 100px;
+    margin: 0px auto;
+    line-height: normal;
+}
+
+#disney_page .section-txt-desc p {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin: 0px 0px 10px;
+    line-height: normal;
+}
+
+#top-content > div > div > div > div:nth-child(2) > a > p {
+    width: 160px;
+}
+
+.disney-desc-txt h2 {
+    font-size: 20px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin: 0px auto 15px auto;
+}
+
+.disney-desc-txt p {
+    margin: 0px 0px 10px;
+    color: #4c4c4c;
+    font-size: 14px;
+    line-height: normal;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+#top-content > div > h1 > span {
+    font-size: 20px;
+    color: #6caddf;
+}
+
+
+/******Shapes******/
+
+#shaped-content h2 {
+    text-align: left;
+    font-size: 32px;
+    margin-top: 0px;
+}
+
+
+/*Right*/
+
+.shape-trapezoid-right {
+    shape-outside: polygon(0% 0%, 200% 50%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 200% 50%, 0% 100%);
+    clip-path: polygon(0% 0%, 200% 50%, 0% 100%);
+}
+
+
+/*Right-Last*/
+
+
+/*Left*/
+
+.shape-trapezoid-left {
+    shape-outside: polygon(100% 0%, 100% 100%, -200% 50%);
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, -200% 50%);
+    clip-path: polygon(100% 0%, 100% 100%, -200% 50%);
+}
+
+
+/*END-Shapes*/
+
+.mickey-head-img img {
+    width: 85px;
+    height: 80px;
+}
+
+#disney_page #top-content.content-fixed {
+    position: fixed;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    max-height: auto;
+    padding: 20px 0px;
+    background: #fff;
+    z-index: 999;
+    /*shape-outside:polygon(0% 0%,
+    400% 0%,
+    0% 100%);
+    -webkit-clip-path:polygon(0% 0%,
+    400% 0%,
+    0% 100%);
+    clip-path: polygon(0% 0%,
+    400% 0%,
+    0% 100%);*/
+}
+
+.content-fixed {
+    position: fixed;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    min-height: auto;
+    padding: 20px 0px;
+    background: #fff;
+    z-index: 999;
+}
+
+
+/****Parallax Effect*****/
+
+#disney_page .shapped-container {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.container-fluid#shaped-content {
+    position: relative;
+    top: 0;
+    padding: 0px;
+}
+
+#disney_park .col-txt h2 {
+    margin-top: 0px;
+}
+
+/*#shaped-content .box-shape {
+    max-height: 920px;
+}*/
+
+.shapped-container .mickey-head-img {
+    float: none;
+    display: inline-grid;
+    margin: 0px auto;
+    width: 20%;
+}
+
+container .col-txt p {
+    font-size: 14px;
+    margin: 0px 0px 10px;
+}
+
+
+.box-shape .box-front-section .container {
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 0px;
+}
+
+#magic_kingdom {
+    background: url(/assets/images/disney/Fireworks.jpg) no-repeat center center fixed;
+    display: table;
+    height: 83%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0px 130px;
+}
+
+#magic_kingdom .container {
+    min-height: 635px;
+}
+
+#epcot {
+    background: url(/assets/images/disney/epcot-bg.jpg) no-repeat center 150px fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    shape-outside: polygon(0% 0%, 350% 60%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 350% 60%, 0% 100%);
+    clip-path: polygon(0% 0%, 350% 47%, 0% 100%);
+    top: -110px;
+}
+
+#epcot .container {
+    min-height: 600px;
+}
+
+#epcot .container .over-img {
+    width: 400px;
+    height: 361px;
+    position: absolute;
+    top: 9%;
+    right: 0px;
+}
+
+#epcot .container .over-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#epcot .container > .row {
+    bottom: 25px;
+    position: relative;
+}
+
+#disney-h-studios {
+    background: url(/assets/images/disney/Hollywood-bg.png) no-repeat 50px 0px fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: -235px;
+    clip-path: polygon(100% 0%, 100% 100%, -235% 50%);
+    shape-outside: polygon(100% 0%, 100% 100%, -235% 50%);
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, -235% 50%);
+    background-color: #191919;
+    max-height: 850px;
+    min-height: 840px
+}
+
+#animal-kingdom {
+    background: url(/assets/images/disney/Animal-bg.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    shape-outside: polygon(0% 0%, 350% 45%, 0% 150%);
+    -webkit-clip-path: polygon(0% 0%, 350% 45%, 0% 150%);
+    clip-path: polygon(0% 0%, 350% 45%, 0% 150%);
+        top: -435px;
+    max-height: 820px;
+}
+
+#disney_park {
+background: url(/assets/images/disney/disney_park.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 0px 300px;
+    min-height: 920px;
+    max-height: 100%;
+    shape-outside: polygon(100% 0%, 100% 100%, -420% 50%);
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, -420% 50%);
+    clip-path: polygon(100% 0%, 100% 100%, -420% 50%);
+
+}
+
+
+#disney_california {
+    background: url(/assets/images/disney/disney_california.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    shape-outside: polygon(0% 0%, 350% 45%, 0% 150%);
+    -webkit-clip-path: polygon(0% 0%, 350% 45%, 0% 150%);
+    clip-path: polygon(0% 0%, 350% 45%, 0% 150%);
+    top: -290px;
+        max-height: 920px;
+}
+
+.box-front-section {
+    padding: 10px 0;
+}
+
+.box-content-container {
+    padding: 0px !important;
+}
+
+.los-angeles#shaped-content .row.bottom-content {
+    position: relative;
+    top: -290px;
+    background-color: #FBFCFE;
+}
+
+.orlando-florida#shaped-content .row.bottom-content {
+    top: -400px;
+    position: relative;
+background-color: #FBFCFE;
+}
+
+.bottom-content .box-normal {
+    padding-top: 30px;
+}
+
+.bottom-content button#back-btn {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #6caddf;
+    margin: 0px auto;
+    position: relative;
+    top: 80px;
+}
+
+#shaped-content .bottom-content .col-txt {
+    float: left;
+    width: 100%;
+    padding: 0px 35px;
+}
+
+.box-top-img {
+    position: relative;
+    width: 300px;
+    height: 170px;
+    top: 100px;
+    right: 30px;
+    z-index: 100;
+}
+
+.box-top-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-box-transparent {
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 2px 1px 5px 2px #E5E5E5;
+    border-radius: 2px;
+}
+
+.box-content-container .col-txt {
+    float: right;
+    display: inline-block;
+    width: 73%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+.box-content-container .box-footer {
+    clear: both;
+    display: block;
+    background: #FAFAFA;
+    border-radius: 2px;
+    float: left;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+.box-footer ul {
+    display: block;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.box-footer ul li {
+    display: block;
+    float: left;
+    margin-right: 30px;
+    font-family: VAGRoundedStd-Bold;
+    font-size: 12px;
+    color: #1B4298;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.los-angeles .box-footer ul li {
+    margin-right: 25px;
+}
+
+.box-footer i.info-entretenimiento:before {
+    font-size: 0.9em;
+    right: 3px;
+    position: relative;
+}
+
+.box-footer i.inter-icon.icon-follow:before {
+    position: relative;
+    top: 4px;
+}
+
+.box-footer i.inter-icon.icon-fastpass:before {
+    top: 1px;
+    position: relative;
+}
+
+.box-footer i.inter-icon.icon-starwarshelmet:before {
+    position: relative;
+    top: 1px;
+}
+
+.box-footer i.inter-icon.icon-pandorawd:before {
+    position: relative;
+    top: 3px;
+    left: 0.5px;
+}
+
+.box-footer i.inter-icon.icon-wd-compass.info-descubrimientos:before {
+    top: 0.99px;
+    position: relative;
+    left: 0.4px;
+}
+
+.box-footer i.inter-icon.icon-wd-transport.info-transporte:before {
+    position: relative;
+    top: 2px;
+}
+
+.box-footer i.inter-icon.icon-wd-entertainment:before {
+    position: relative;
+    right: 3px;
+    top: 1.5px;
+}
+
+.box-footer i.inter-icon.icon-wd-family:before {
+    position: relative;
+    top: 3px;
+}
+
+.box-footer ul li:hover,
+.box-footer ul li:focus {
+    text-decoration: underline;
+}
+
+.box-footer ul li:hover i,
+.box-footer ul li:focus i {
+    text-decoration: none;
+}
+
+.with-fixed-content#main-content {
+    min-height: 340px;
+    max-height: 330px;
+}
+
+.box-front-section .box-footer i.inter-icon {
+    color: #fff;
+    font-size: 1.8em;
+    width: 30px;
+    height: 30px;
+    line-height: 34px;
+    background: #1B4298;
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 3px;
+}
+
+i.inter-icon.icon-desfiles:before {
+    right: 2px;
+    position: relative;
+}
+
+.box-front-section .box-footer i.inter-icon:before {
+    margin: 0px;
+    line-height: 30px;
+}
+
+.box-front-section .container {
+    min-height: auto;
+    display: table;
+}
+
+.box-front-section .container > .row {
+    margin: 0px;
+    display: table-cell;
+    vertical-align: initial;
+}
+
+.disney-desc-txt {
+    display: block;
+    clear: both;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+#top-disney-tickets {
+    height: 360px;
+}
+
+#top-disney-tickets .section-bg-img {
+    display: block;
+    background: url(/assets/images/disney/disney-bg-top.png) no-repeat 0px 0px;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    bottom: 110px;
+}
+
+#disney-parks {
+    background: #F1F2F2;
+    position: relative;
+    height: 410px;
+    text-align: center;
+    display: table;
+    bottom: 115px;
+}
+
+#disney-parks .panel {
+    position: relative;
+    z-index: 800;
+    bottom: 40px;
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+    float: none;
+    text-align: center;
+    display: inline-table;
+    margin: 0px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#disney-parks > div > h1 > span {
+    clear: both;
+    display: block;
+    margin: 0px;
+    line-height: 20px;
+    font-size: 22px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.park-atractions {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0px 60px;
+}
+
+#disney-parks > div button.view-more-btn {
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+#disney-parks > div > a:hover {
+    text-decoration: none;
+}
+
+.park-atractions .mickey-head-img {
+    padding: 0px;
+    display: inline-table;
+    float: none;
+}
+
+.park-atractions .mickey-head-img a {
+    display: block;
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.park-atractions .mickey-head-img p {
+    max-width: 120px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px auto;
+    line-height: normal;
+}
+
+#disney-parks > div:nth-child(2) > div > div:nth-child(2) > a > p {
+    max-width: 150px;
+}
+
+#tabs-main {
+    display: block;
+    float: left;
+    width: 100%;
+    clear: both;
+    position: relative;
+    bottom: 180px;
+}
+
+#tabs-main > div > div > div.panel {
+    background: none;
+    box-shadow: none;
+    border: 0px!important;
+}
+
+.disney-park-tabs div div .panel-heading {
+    background: none!important;
+    text-align: center;
+    display: block;
+    float: none;
+    padding: 0px;
+    border: 0px!important;
+}
+
+#tabs-main.disney-park-tabs > div > div > div > div.panel-heading > ul {
+    background: none;
+    background: none;
+    border: 0px;
+    display: inline-block;
+    float: none;
+    text-align: center;
+}
+
+#DisneyTabs > ul > li {
+    display: block;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    font-family: VAGRoundedStd-Bold;
+    font-size: 26px;
+    color: #1B4298;
+    line-height: 16px;
+    padding: 10px;
+    min-width: 290px;
+    max-height: 50px;
+    overflow-y: hidden;
+}
+
+#DisneyTabs > ul > li.active {
+    background: #FFFFFF;
+    box-shadow: 0 -2px 0 0 #6CADDF, 1px 0 0 0 #E5E5E5, -1px 0 0 0 #E5E5E5;
+}
+
+#DisneyTabs > ul > li > a {
+    font-size: 26px;
+    color: #B2B2B2!important;
+    font-family: VAGRoundedStd-Bold;
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0px 10px;
+    margin: 0px auto;
+    background: none;
+}
+
+#DisneyTabs > ul > li > a:hover,
+#DisneyTabs > ul > li > a:focus {
+    background: none;
+}
+
+#DisneyTabs > ul > li > a span {
+    color: #B2B2B2;
+    font-size: 20px;
+}
+
+#DisneyTabs > ul > li.active > a {
+    font-size: 26px;
+    color: #1b4298!important;
+    font-family: VAGRoundedStd-Bold;
+    text-decoration: none;
+    border-bottom: 0px!important;
+    background-color: transparent!important;
+}
+
+#DisneyTabs > ul > li.active > a > span {
+    color: #6caddf;
+    font-size: 20px;
+}
+
+#DisneyTabsBody {
+    padding-top: 35px;
+    float: left;
+    width: 100%;
+}
+
+.wrapper-tab.bg-dark-blue {
+    background: #1b4298;
+    margin: 0px 70px;
+    display: block;
+    float: none;
+    position: relative;
+    z-index: 1;
+    min-height: 1010px;
+    height: auto;
+    box-shadow: 0 2px 11px 0 #A0A5A9;
+}
+
+.back-box {
+    position: relative;
+    z-index: 100;
+    display: block;
+    width: 110%;
+    float: none;
+    margin: 0px -5% 60px -5%;
+    left: 0px;
+    right: 0px;
+    min-height: 315px;
+    box-shadow: 0 1px 3px 0 #272727;
+}
+
+.purple-box {
+    background: #7F1ABA;
+    border-radius: 2px;
+}
+
+.green-box {
+    background: #D6E034;
+    border-radius: 2px;
+}
+
+.front-box {
+    position: relative;
+    z-index: 200;
+    width: 104%;
+    right: 0px;
+    margin: 0px -2%;
+    background: #FFFFFF;
+    box-shadow: 0 5px 20px 0 #444444!important;
+    border-radius: 3px;
+    padding-bottom: 8px;
+}
+
+.front-box.pull-right {
+    width: 100%;
+    margin: 0px;
+    left: 28px;
+    top: -35px;
+    bottom: 0px;
+}
+
+.green-box.back-box.pull-right {
+    width: 103%;
+    left: -30px;
+}
+
+span.inter-icon.icon-head-m {
+    font-size: 4em;
+    position: relative;
+    left: -5px;
+    right: 0px;
+    width: 48px;
+    height: 49px;
+    float: left;
+    text-align: center;
+    margin: 12px 10px 10px 0px;
+}
+
+span.inter-icon.icon-head-m:before {
+    margin: 0px;
+    text-align: center;
+}
+
+span.inter-icon > i.inter-icon {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    left: 5px;
+    z-index: 99;
+    color: #fff;
+    display: inline-block;
+    margin: 0px auto;
+    font-size: 22px;
+}
+
+i.inter-icon.icon-ticket {
+    top: 26px!important;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    width: 14px;
+}
+
+.left-box-content {
+    display: block;
+    float: left;
+    max-width: 60%;
+    text-align: center;
+}
+
+.right-box-content {
+    float: left;
+    display: inline-block;
+    max-width: 40%;
+    position: relative;
+    width: 100%;
+}
+
+.right-box-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-box-content .img-right-content {
+    position: absolute;
+    height: 306px;
+    width: 100%;
+    top: -18px;
+    right: -41px;
+    overflow-y: hidden;
+}
+
+#disney_page > div.row {
+    margin: 0px;
+}
+
+div#map-canvas {
+    float: right;
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+
+}
+.right-box-content .img-right-content img {
+    width: auto;
+    height: 100%;
+    display: block;
+}
+.left-box-table {
+    display: table;
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 #E5E5E5;
+    width: 100%;
+    float: none;
+    max-width: 450px;
+    margin: 0px auto;
+    padding: 5px 0px;
+}
+.left-box-table .col-table {
+    float: none;
+    text-align: center;
+    display: table-cell;
+}
+.left-box-content > h5 {
+    font-size: 20px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold;
+    margin: 20px 0px 0px 0px;
+    text-align: left;
+}
+.day-title-table {
+    font-family: VAGRoundedStd-Bold;
+    color: #6caddf;
+    font-size: 24px;
+}
+.day-title-table > small {
+    font-size: 14px;
+    display: inline-block;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+.left-box-content p {
+    text-align: left;
+    float: left;
+    width: 90%;
+    font-size: 14px;
+    color: #4c4c4c;
+    font-family: 'Open Sans', arial, sans-serif;
+    margin: 0px 0px 15px 0px;
+    line-height: normal;
+}
+.cost-content-table {
+    display: block;
+    text-align: center;
+    line-height: normal;
+    border-right: 1px solid #E5E5E5;
+}
+.cost-content-table p {
+    text-align: center;
+    float: none;
+    line-height: normal;
+    width: 100%;
+}
+.cost-content-table p:first-child {
+    margin: 0px;
+}
+.cost-content-table > p > i {
+    color: #6caddf;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.cost-content-table > p > i.icon-wd-icn_niño {
+    font-size: 15px;
+}
+.cost-content-table > p > i.icon-wd-icn_adulto {
+    font-size: 23px;
+}
+.cost-content-table > p > span {
+    font-size: 16px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold;
+}
+.cost-content-table > p > span small {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.col-table:last-child .cost-content-table {
+    border: none;
+}
+.bottom-table {
+    clear: both;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    float: none;
+    margin: 0px auto;
+    background: #FAFAFA;
+    box-shadow: 0 0 4px 0 #E5E5E5;
+}
+.bottom-table > ul {
+    display: block;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px auto;
+}
+.bottom-table > ul > li {
+    float: left;
+    display: block;
+    margin: 5px 10px;
+    font-size: 10px;
+    color: #7f7f7f;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+}
+.bottom-table > ul > li span b {
+    font-family: VAGRoundedStd-Bold;
+}
+.left-box-content p.advert {
+    color: #999!important;
+    font-size: 10px!important;
+    font-style: italic;
+    margin: 15px auto 11px auto!important;
+    line-height: normal;
+    width: 100%;
+}
+.full-table {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-left: 65px;
+    margin-right: 30px;
+}
+.left-box-content.full-content {
+    width: 100%;
+    max-width: 100%;
+}
+.left-box-content.full-content .left-box-table {
+    float: none;
+    min-width: 450px;
+}
+.full-content .right-box-image {
+    display: inline-block;
+    float: left;
+    max-width: 35%;
+    width: 100%;
+}
+.full-content .right-box-image img {
+    width: 100%;
+    height: auto;
+}
+.full-content .right-box-image p {
+    font-family: VAGRoundedStd-Bold;
+    color: #1b4298;
+    font-size: 16px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    width: 100%;
+}
+.ticket-cost.inter-icon.icon-ticket-full {
+    display: block;
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    width: 101px;
+    height: 50px;
+    font-size: 3.3em;
+    color: #1b4298;
+    position: relative;
+}
+.ticket-cost.inter-icon.icon-ticket-full:before {
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+.cost-txt {
+    top: 15px;
+    left: 0px;
+    right: 20px;
+    margin: 0px auto;
+    text-align: center;
+    width: 45px;
+    height: auto;
+    position: absolute;
+}
+.cost-txt p {
+    font-family: VAGRoundedStd-Bold;
+    font-size: 20px;
+    color: #6caddf;
+    text-align: center;
+    margin: 0px auto;
+    line-height: 12px;
+    width: auto;
+    float: none;
+}
+.cost-txt p span {
+    color: #fff;
+    font-size: 20px;
+}
+.cost-txt p span small {
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    font-size: 8px;
+    clear: both;
+    float: right;
+    text-transform: uppercase;
+}
+.full-table .cost-content-table {
+    margin: 0px 0px;
+}
+.chat.inter-icon.icon-mickey-head {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    left: 20px;
+}
+.chat.inter-icon.icon-mickey-head:before {
+    content: '\e876';
+    -webkit-background-clip: text;
+    background-image: linear-gradient(-180deg, #F5A623 0%, #F5A623 100%);
+    font-size: 4.5em;
+    color: #F5A623;
+    text-shadow: 1px 1px 4px #4c4c4c;
+    margin: 0px auto;
+    text-align: center;
+}
+.chat-container {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 160px;
+    z-index: 9999;
+    width: auto;
+    cursor: pointer;
+}
+.buy-legend {
+    float: left;
+    display: inline-block;
+    background-image: linear-gradient(-180deg, #F5A623 0%, #F5A623 100%);
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    z-index: 50;
+    padding: 5px 10px;
+    width: 110px;
+    position: relative;
+    top: 6px;
+    text-align: center;
+}
+.chat .fa-phone {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+}
+.chat .fa-phone:before {
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+}
+.chat p {
+    font-size: 14px;
+    color: #F6A623;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+div#show-to-buy {
+    clear: both;
+    padding: 0px;
+    position: relative;
+    bottom: 35px;
+    left: 50px;
+    right: 0;
+    z-index: 90;
+    width: 345px;
+    background: #FFF1D9;
+    border: 1px solid #F5A623;
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 2px;
+}
+.hidden-box-content {
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 15px 15px;
+}
+.hidden-box-content h3 {
+    margin: 0px 0px 10px 0px;
+}
+.hidden-box-content h2 {
+    font-size: 26px;
+    color: #4c4c4c;
+    margin: 0px 0px 0px;
+}
+.hidden-box-content h2 a {
+    color: #4c4c4c;
+    text-decoration: none;
+    position: relative;
+    z-index: 999;
+}
+.hidden-box-content p b {
+    font-size: 16px;
+}
+.hidden-box-content p {
+    margin: 5px 0px;
+    font-size: 14px;
+    line-height: normal;
+}
+.footer-box {
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 10px auto 40px;
+}
+.footer-box .bigbtn.faqbtn {
+    background: #368BCE;
+    box-shadow: 0 3px 0 0 #22679D;
+    border-radius: 50px;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    color: #FAFAFA;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    padding: 0px!important;
+    font-size: 22px;
+    text-transform: none;
+    font-family: VAGRoundedStd-Bold;
+}
+.footer-box .bigbtn.faqbtn:hover,
+.footer-box .bigbtn.faqbtn:focus {
+    background: #368BCE;
+    box-shadow: 0 3px 0 0 #22679D;
+}
+.faqbtn i {
+    font-size: 40px;
+    position: relative;
+    margin: 0px 5px;
+    line-height: 60px;
+    left: 20px;
+    float: left;
+}
+.footer-box p {
+    color: #fff;
+    font-family: VAGRoundedStd-Bold;
+    font-size: 24px;
+    margin: 0px 0px 10px;
+}
+.footer-box-disney {
+    background: #FAFAFA;
+    box-shadow: 0 6px 15px 0 #B2B2B2;
+    padding: 25px 0px;
+    position: relative;
+    bottom: 520px;
+    z-index: 999;
+}
+.col-disney-footer p {
+    margin: 0px;
+    line-height: normal;
+    font-size: 14px;
+}
+.col-disney-footer h4 {
+    color: #6caddf;
+    text-align: left;
+}
+.col-disney-footer p > span {
+    display: block;
+    clear: both;
+    font-size: 24px;
+    font-family: VAGRoundedStd-Bold;
+    line-height: normal;
+    margin: 10px 0px 0px 0px;
+}
+#orlando > div.tycs-disney {
+    top: 550px;
+}
+.tycs-disney {
+    display: block;
+    position: relative;
+    top: 520px;
+    float: left;
+}
+.tycs-disney p {
+    float: left;
+    clear: both;
+    width: 100%;
+    font-weight: bold;
+    color: #7F7F7F;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.tycs-disney ol {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 20px 0px 20px;
+}
+.tycs-disney ol li {
+    float: left;
+    clear: both;
+    margin: 3px 0px;
+    font-size: 14px;
+}
+div.footer-box-disney > div > h3 {
+    color: #1B4298;
+    margin-bottom: 0px;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+.form-section.form-footer-section {
+    background: transparent;
+    box-shadow: none;
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.footer-box-disney p {
+    margin: 0px;
+}
+div.footer-box-disney > div > p > a {
+    font-weight: bold;
+}
+.col-disney-footer {
+    margin-top: 20px;
+    padding-left: 0px;
+    min-height: 345px;
+    border-right: 1px solid #ededed;
+    padding: 0px 20px
+}
+.col-disney-footer:last-child {
+    border-right: 0px
+}
+.col-disney-footer.col-lg-5.col-sm-12 {
+    padding-left: 30px;
+}
+.form-section .general-form-component input {
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    color: #6caddf;
+    padding: 0px 8px 0px 8px;
+    min-width: 250px;
+    max-width: 100%;
+    position: relative;
+    z-index: 99;
+    cursor: text;
+}
+#CallMe>div>div>div.form-control,
+.form-group .form-control {
+    border: 0;
+    background-image: -o-linear-gradient(#fff, #fff), -o-linear-gradient(#fff, #fff);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    -o-transition: background 0s ease-out;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 3px;
+}
+.form-group {
+    padding: 0px;
+    margin: 0px;
+}
+.form-section .general-form-component {
+    display: block;
+    float: left;
+    width: auto;
+    position: relative;
+    background: #fff;
+    padding: 5px 0px 0px;
+    margin: 5px 10px 5px 0px;
+    box-shadow: 0px 2px 0px #dfdfdf;
+    -webkit-box-shadow: 0px 2px 0px #dfdfdf;
+    -moz-box-shadow: 0px 2px 0px #dfdfdf;
+    border-radius: 3px;
+    min-height: auto;
+    max-height: 60px;
+}
+select.form-control.dropdownjs {
+    border: 0px;
+    opacity: 1 !important;
+    font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+    font-size: 19px;
+    color: #d2d2d2;
+    padding-bottom: 5px!important;
+    position: relative;
+    top: 0px;
+    height: 30px;
+}
+select.form-control.selected {
+    color: #6caddf!important;
+}
+#store-selector {
+    color: #6caddf!important;
+}
+#CallMe input,
+#CallMe select {
+    font-size: 16px;
+    -webkit-box-shadow: none;
+    height: 20px;
+}
+#CallMe input.btn.btn-light-blue {
+    color: #fff;
+    text-transform: none;
+    width: 100px!important;
+    height: 40px;
+    min-width: auto;
+    display: block;
+    line-height: 44px;
+    float: left;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#CallMe input.btn:hover,
+#CallMe input.btn:focus {
+    background: #6caddf;
+}
+div.col-disney-footer.col-lg-4.col-sm-12 {
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    padding-left: 30px;
+}
+.storeLocator {
+    width: 70%!important;
+    min-width: auto;
+}
+.storeLocator select.form-control {
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    -webkit-appearance: none;
+}
+.map-container {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;
+    min-height: 230px;
+    max-height: 230px;
+    overflow: hidden!important;
+    max-width: 400px;
+    box-shadow: 0 5px 18px 0 #B2B2B2;
+    padding: 0px;
+    position: relative;
+    z-index: 0;
+}
+.map-container .store-details p {
+    display: block;
+    margin: 0px;
+    font-size: 14px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: bold;
+}
+.store-details p span {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: normal;
+    display: block;
+    font-size: 12px;
+    margin: 0px 0px 3px 0px;
+}
+.store-details p.store-title {
+    display: block;
+    margin-top: 10px;
+}
+.store-details p.store-location {
+    font-weight: normal;
+    clear: both;
+    margin-top: 3px;
+    font-size: 12px;
+    max-width: 90%;
+}
+.store-details p.store-hours {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.store-details p.store-hours span b {
+    color: #1b4298;
+}
+.store-details p.store-phone {
+    font-size: 12px;
+    margin-top: 10px;
+}
+.map-container .view-map {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    display: block;
+    z-index: 99;
+}
+.map-container a {
+    color: #368BCE;
+    font-weight: bold;
+}
+div#store-info {
+    position: absolute;
+    z-index: 10;
+    background-image: linear-gradient(89deg, rgba(255, 255, 255, 0.00) 4%, rgba(255, 255, 255, 0.76) 35%);
+    max-height: 230px;
+    height: 100%;
+    max-width: 385px;
+    margin-left: 15px;
+}
+#disney_page > div.row > div > div > div.col-disney-footer.col-lg-5.col-sm-12 > div {
+    margin-top: 0px;
+}
+.general-form-component.select-element.storeLocator {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#CallMe > div.form-section > input:focus,
+#store-selector:focus {
+    outline: none;
+}
+#CallMe .form-section .general-form-component {
+    width: 97%;
+}
+div#map-canvas {
+    float: right;
+    display: block;
+    width: 50%;
+    height: 230px;
+    position: relative;
+}
+.disney-modal-carousel {
+    min-width: 700px;
+    margin: 40px auto;
+}
+.disney-modal-carousel .modal-header {
+    padding: 0px 10px;
+    height: 67px;
+    line-height: 67px;
+    border-bottom: 0px;
+    border-top: 0px;
+    box-shadow: 0 -3px 0 0 #6caddf;
+    margin-bottom: -1px;
+    z-index: 10;
+}
+.disney-modal-carousel .modal-title {
+    margin: 0;
+    font-size: 26px!important;
+    color: #fff;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    text-align: center!important;
+    line-height: normal;
+}
+.modal-title small {
+    color: #6caddf;
+    display: none;
+}
+.disney-modal-carousel .modal-header button.close {
+    top: 10px;
+}
+.disney-modal-carousel .modal-body {
+    height: auto!important;
+    max-height: 650px!important;
+    min-height: 500px;
+    overflow-y: hidden!important;
+}
+.combo-galeria * .modal-body {
+    overflow-y: hidden !important;
+}
+.modal-Disney * .slick-slide {
+    height: auto;
+}
+.modal-Disney {
+    /*overflow-y: hidden !important;*/
+    
+    top: -25px !important;
+}
+.modal-fast .modal-body {
+    padding: 0px 30px;
+    text-align: left;
+}
+.modal-Disney .modal-dialog {
+    margin: 0px auto;
+    width: 700px;
+    height: auto;
+}
+.slider.slider-gallery {
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 9px 0 #A0A5A9;
+}
+.slider-gallery .slick-slide h4 {
+    display: block;
+    clear: both;
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    height: 47px;
+    padding: 0px;
+    color: #1b4298!important;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif!important;
+}
+.slider-nav-gallery .slick-slide {
+    margin: 0px 10px 0px;
+    background: transparent;
+    width: 184px!important;
+}
+.slider-nav-gallery .slick-slide p {
+    clear: both;
+    color: #1b4298;
+    text-align: center;
+    font-size: 13px;
+    font-family: VAGRoundedStd-Bold;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+.slider.slider-nav-gallery {
+    width: 595px;
+    margin: 0px auto;
+    background: none;
+    height: auto;
+    max-height: 150px;
+}
+.slider-nav-gallery .slick-list {
+    padding: 0px!important;
+}
+.slider-nav-gallery button.slick-arrow {
+    display: block;
+    line-height: 10px;
+}
+.slider-nav-gallery button.slick-arrow.slick-prev {
+    left: -35px;
+}
+.slider-nav-gallery button.slick-arrow.slick-next {
+    right: -30px;
+}
+.combo-galeria {
+    min-width: auto;
+}
+.combo-galeria .modal-dialog {
+    min-width: 920px;
+    height: auto;
+}
+.combo-item-img {
+    max-width: 370px;
+    overflow-x: hidden;
+    min-height: 300px;
+}
+.combo-item-detail {
+    display: inline-block;
+    clear: none;
+    position: absolute;
+    width: 60%;
+    right: 0px;
+}
+.combo-item-detail.pull-left > h4 {
+    float: left;
+    display: block;
+    margin-top: 30px;
+    font-size: 24px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    color: #1b4298;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+}
+.combo-item-detail.pull-left > h4 >small {
+    color: #368BCE;
+    font-size: 14px;
+    font-family: 'VAGRoundedStd-Light';
+    display: block;
+    clear: both;
+    margin: 5px 0px 0px 0px;
+    text-align: left;
+}
+.combo-item-detail p {
+    float: left;
+    display: block;
+    max-width: 565px;
+}
+
+.combo-item-detail * {
+    text-align: left;
+}
+.combo-item-detail p {
+    float: left;
+    display: block;
+    max-width: 565px;
+    clear: both;
+    text-align: left;
+    padding: 0px 20px;
+    line-height: normal;
+    font-size: 14px;
+}
+.combo-gallery .combo-item.slick-slide {
+    max-height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 9px 0 #A0A5A9;
+    margin-bottom: 20px;
+    line-height: normal;
+    overflow-y: hidden;
+    min-height: 300px;
+}
+
+.combo-gallery .combo-item.slick-slide:focus, .combo-gallery .combo-item.slick-slide:hover{
+    outline:none;
+    border: 0px;
+}
+
+.combo-gallery .combo-item-img img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    display: block;
+    right: 15%;
+}
+.slider-nav-combo-gallery .slick-slide {
+margin: 0px 10px 0px;
+    background: transparent;
+    width: 184px!important;
+    height: 100%;
+    cursor: pointer;
+    overflow-x: hidden;
+    max-height: 160px;
+    overflow-y: hidden;
+}
+.slider.combo-gallery.slick-slider {
+    background: transparent;
+}
+.slider-nav-combo-gallery .slick-slide p {
+    clear: both;
+    color: #1b4298;
+    text-align: center;
+    font-size: 14px;
+    font-family: VAGRoundedStd-Bold;
+    line-height: normal;
+}
+.slider.slider-nav-combo-gallery {
+    width: 800px;
+    margin: 0px auto;
+    background: none;
+    height: auto;
+    max-height: 150px;
+}
+.slider-nav-combo-gallery .slick-list {
+    padding: 0px!important;
+}
+.slider-nav-combo-gallery button.slick-arrow {
+    display: block;
+    line-height: 10px;
+}
+.slider-nav-combo-gallery button.slick-arrow.slick-prev {
+    left: -35px;
+}
+.slider-nav-combo-gallery button.slick-arrow.slick-next {
+    right: -30px;
+}
+.accordion-faqs .panel-heading .accordion-toggle:after {
+    font-family: 'FontAwesome';
+    content: "\f00d";
+    float: right;
+}
+.accordion-faqs .panel-heading .accordion-toggle.collapsed:after {
+    content: "\f067";
+}
+#main-content.container-fluid > div.row {
+    margin: 0px;
+}
+#top-disneyFAQ-tickets {
+    height: 335px;
+}
+#top-disneyFAQ-tickets .bg-img-top-section {
+    background: url(/assets//images/disney/top-faqs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#top-disneyFAQ-tickets h3 {
+    color: #fff;
+    text-align: center;
+    margin: 55px auto 10px auto;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+#top-disneyFAQ-tickets p.default-txt.page-description {
+    max-width: 70%;
+    margin: 0px auto;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+#DisneyFAQTabs > ul > li {
+    display: block;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    font-family: VAGRoundedStd-Bold;
+    font-size: 22px;
+    color: #1B4298;
+    line-height: 16px;
+    padding: 20px 10px 10px 10px;
+    min-width: 290px;
+    max-height: 70px;
+    overflow-y: hidden;
+}
+#DisneyFAQTabs > ul > li.active {
+    background: #FFFFFF;
+    box-shadow: 1px 0 0 0 #E5E5E5, -1px 0 0 0 #E5E5E5;
+    top: 0px;
+}
+#DisneyFAQTabs > ul > li > a {
+    font-size: 26px;
+    color: #B2B2B2!important;
+    font-family: VAGRoundedStd-Bold;
+    text-decoration: none;
+    border-bottom: 0px;
+    border-right: 0px;
+    padding: 0px 10px;
+    margin: 0px auto;
+    background-color: transparent;
+}
+#DisneyFAQTabs > ul > li > a:hover {
+    background-color: transparent;
+}
+#DisneyFAQTabs > ul > li > a span {
+    color: #B2B2B2;
+    font-size: 12px;
+}
+#DisneyFAQTabs > ul > li.active > a {
+    font-size: 26px;
+    color: #1b4298!important;
+    font-family: VAGRoundedStd-Bold;
+    text-decoration: none;
+    border-bottom: 0px!important;
+    background-color: transparent!important;
+}
+#DisneyFAQTabs > ul > li.active > a > span {
+    color: #6caddf;
+    font-size: 12px;
+}
+#DisneyFAQTabsBody .panel-body {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+.accordion-faqs .panel-title a {
+    display: block;
+    width: 100%;
+}
+div#DisneyFAQTabs {
+    background: #FAFAFA;
+    text-align: center;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+    box-shadow: 0px 1px 0 0 #E5E5E5;
+    font-family: VAGRoundedStd-Bold;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 0px;
+    height: 56px;
+}
+#DisneyFAQTabs ul.nav.nav-tabs {
+    background: transparent;
+    display: inline-block;
+    float: none;
+    padding: 0px;
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+    bottom: 10px;
+}
+.footer-boxFAQ-disney {
+    background: #FAFAFA;
+    box-shadow: 0 6px 15px 0 #B2B2B2;
+    padding: 25px 0px;
+    position: relative;
+    bottom: 0px;
+    z-index: 999;
+}
+.accordion-faqs .panel-default .panel-heading {
+    background: #FFFFFF;
+    /*box-shadow: 0 -1px 0 0 #DFDFDF, 0 1px 0 0 #DFDFDF;*/
+    
+    border-radius: 0px;
+    background-image: none;
+    background-repeat: no-repeat;
+    color: #1b4298;
+    text-decoration: none;
+    padding: 11px 0px 11px 10px;
+}
+.accordion-faqs .panel-default .panel-heading h4 a {
+    font-size: 15px;
+    color: #1b4298;
+    text-decoration: none;
+}
+.accordion-faqs .panel.panel-default {
+    border: 0px!important;
+    box-shadow: 0 -1px 0 0 #DFDFDF, 0 1px 0 0 #DFDFDF;
+    border-radius: 0px;
+    margin: 0px;
+}
+.panel-group.accordion-faqs .panel.panel-default:first-child {
+    box-shadow: none;
+}
+@media screen and (min-width: 1100px) {
+    #epcot .col-txt p br {
+        display: none;
+    }
+}
+@media (max-width: 1100px) and (min-width: 960px) {
+    div#tabs-main {
+        overflow: hidden;
+        max-width: 1100px;
+    }
+    
+    .park-atractions {
+        padding: 0px 35px;
+    }
+    
+    #disney-parks .panel {
+        margin: 0px 5px;
+    }
+    
+    .right-box-content {
+        float: left;
+        display: inline-block;
+        max-width: 50%;
+        position: absolute;
+        width: 100%;
+        right: -45px;
+        top: 30px;
+    }
+    
+    .right-box-content .img-right-content {
+        position: absolute;
+        height: 306px;
+        width: 100%;
+        top: -30px;
+        right: -45px;
+        overflow-y: hidden;
+    }
+    
+    .right-box-content img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    
+    .left-box-content p {
+        width: 80%;
+        font-size: 13px;
+    }
+    
+    .left-box-content p.advert {
+        margin: 10px auto 10px;
+    }
+}
+@media (max-width: 960px) and (min-width: 320px) {
+
+    
+    .box-top-img {
+        float: none;
+        display: block;
+        clear: both;
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+        position: static;
+        margin-top: 10%;
+        box-shadow: none;
+    }
+    
+    .box-content-container {
+        display: block;
+        position: static;
+        float: left;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.80);
+    }
+    
+    .box-content-container .col-txt {
+        float: none;
+        padding: 0px 20px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    div.col-txt > h2 {
+        text-align: center!important;
+        float: none;
+    }
+    
+    div.col-txt > p {
+        text-align: left;
+    }
+    
+    .box-footer ul {
+        display: block;
+        margin: 0px;
+        list-style-type: none;
+        float: none;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .box-footer ul li {
+        text-indent: -999999px;
+        font-size: 0px;
+        margin: 0px 5px 0px;
+        float: none;
+        display: inline-block;
+    }
+    
+    .box-footer ul li i {
+        text-indent: 0;
+        display: block;
+        font-size: 20px!important;
+    }
+    
+    #magic_kingdom {
+        min-height: 950px;
+    }
+    
+    #epcot {
+        min-height: 920px;
+    }
+    
+    #epcot {
+        top: -160px;
+    }
+    
+    #epcot .container .over-img {
+        display: none;
+    }
+    
+    #epcot div.col-txt > p br {
+        display: none;
+    }
+    
+    #disney-h-studios {
+        background: url(/assets//images/disney/Hollywood-bg.jpg) no-repeat center center fixed;
+        top: -270px;
+        min-height: 1000px;
+    }
+    
+    #animal-kingdom {
+        background: url(/assets//images/disney/Animal-bg.jpg) no-repeat center center fixed;
+        display: table;
+        height: 100%;
+        top: -460px;
+        min-height: 820px;
+    }
+    
+    .box-front-section {
+        min-height: inherit;
+        height: auto;
+    }
+    
+    .shape-trapezoid-right,
+    .shape-trapezoid-left {
+        shape-outside: none!important;
+        -webkit-clip-path: none!important;
+        clip-path: none!important;
+    }
+    
+    #disney_park {
+        min-height: 1250px;
+    }
+    
+    #disney_california {
+        min-height: 1000px;
+    }
+}
+
+/***============================ Shapes ============================***/
+.shapped-container {
+    /* display: block; */
+    /* margin-top: 30px; */
+}
+.box-normal {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: auto;
+    overflow-y: hidden;
+    float: left;
+    text-align: center;
+    z-index: 1;
+}
+.box-shape.under-shape {
+    z-index: 1;
+}
+.box-normal .col-txt,
+.box-shape .col-txt {
+    text-align: left;
+    margin-top: 5%;
+}
+.box-normal .col-img,
+.box-shape .col-img {
+    max-height: 100%;
+    padding: 0px;
+    position: relative;
+    height: 100%;
+}
+.box-normal .col-img img,
+.box-shape .col-img img {
+    height: 100%;
+    width: 100%;
+}
+.box-normal .col-bg-img {
+    background: #fafafa no-repeat 0px 0px;
+    min-height: 300px;
+    height: auto;
+    float: left;
+    width: 100%;
+}
+.box-shape .col-bg-img {
+    background: #fff;
+    min-height: 300px;
+    max-height: 100%;
+    float: left;
+}
+.box-normal .col-bg-txt {
+    max-width: 50%;
+    margin-top: 5%;
+    display: block;
+    float: left;
+}
+
+/*trapezoids*/
+.clipboard {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    /*background: red;*/
+}
+.clipboard > div.vert-element {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.trapezoid-right {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+}
+.trapezoid-left {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+.bottom-content button#back-btn {
+    width: 150px!important;
+    height: 40px!important;
+    line-height: 40px!important;
+    color: #fff;
+    background: #6caddf!important;
+    margin: 0px auto;
+    position: relative!important;
+    top: 80px;
+}
+
+/***============================ Media Queries ============================***/
+@media (min-width: 310px) and (max-width:560px) {
+
+
+    .box-content-container .box-footer{display: none;}
+
+
+    .vert-element {
+        position: static;
+        top: 0;
+        transform: none;
+    }
+    
+    .box-shape .col-img {
+        padding: 0px;
+        overflow: hidden;
+        margin: 60px 0px 20px 0px;
+    }
+    
+    .box-normal .col-img {
+        overflow: hidden;
+    }
+    
+    .box-shape {
+        min-height: 550px!important;
+    }
+    
+    .col-txt {
+        text-align: center!important;
+    }
+    
+    div#disney-home * {
+        position: static;
+        height: auto;
+    }
+    
+    #DisneyTabsBody {
+        padding-top: 0px;
+    }
+    
+    #DisneyTabs > ul > li {
+        min-width: auto;
+        max-height: auto;
+    }
+
+    a#back-btn {
+    display: block;
+    clear: none;
+    float: left;
+    top: 20px;
+    left: 30%;
+    right: 0px;
+    margin: 0px auto;
+}
+
+    .orlando-florida#shaped-content .row.bottom-content{display: block; position: static!important;}
+    
+    #top-disney-tickets .section-bg-img {
+        display: block;
+        background: url(/assets/images/disney/disney-bg-top.png) no-repeat -39px -10px;
+        background-size: cover;
+        height: 300px;
+        position: static;
+    }
+    
+    #DisneyTabs > ul > li > a span {
+        display: block;
+        clear: both;
+    }
+    
+    .park-atractions {
+        padding: 0px 5px;
+    }
+    
+    #disney-parks > div > h1 > span {
+        text-transform: capitalize;
+    }
+    
+    #disney-parks .panel {
+        margin: 0px 10px;
+    }
+    
+    #disney-parks > div button.view-more-btn {
+        display: block;
+        margin: 0px auto 0px auto;
+        border-radius: 100px;
+        line-height: 32px;
+    }
+    
+    #disney-parks .panel {
+        z-index: 1000;
+        bottom: 40px;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 15px 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .front-box {
+        z-index: 200;
+        width: 100%;
+        right: 0px;
+        margin: 0px 0px;
+        background: #FFFFFF;
+        box-shadow: 0 5px 20px 0 #444444!important;
+        border-radius: 3px;
+        height: 100%;
+        min-height: 60%;
+    }
+    
+    .disney-desc-txt p {
+        margin: 0px 0px 25px;
+        color: #4c4c4c;
+        font-size: 14px;
+        line-height: normal;
+        font-family: 'Open Sans', arial, sans-serif;
+        text-align: left;
+    }
+    
+    .right-box-content {
+        float: none;
+        display: block;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+    }
+    
+    .left-box-content {
+        display: block;
+        float: left;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    span.inter-icon.icon-head-m {
+        font-size: 4em;
+        position: relative!important;
+        left: 0px;
+        right: 0px;
+        width: 48px;
+        height: 49px!important;
+        float: left;
+        text-align: center;
+        margin: 12px 10px 10px 0px;
+    }
+    
+    .left-box-content > h5 {
+        font-size: 20px;
+        color: #1b4298;
+        font-family: VAGRoundedStd-Bold;
+        margin: 20px 0px 0px 0px;
+        text-align: left;
+        display: inline-block;
+    }
+    
+    .left-box-content p {
+        float: left;
+    }
+    
+    span.inter-icon > i.inter-icon {
+        position: absolute!important;
+        top: 20px;
+        right: 0px;
+        left: 5px;
+        z-index: 99;
+        color: #fff;
+        display: inline-block;
+        margin: 0px auto;
+        font-size: 22px;
+    }
+    
+    .green-box.back-box.pull-right {
+        width: 110%;
+        left: 0px;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    .left-box-content.full-content .left-box-table {
+        display: table;
+        min-width: auto;
+    }
+    
+    .left-box-table .col-table {
+        display: table-row;
+        border-bottom: 1px solid #ededed;
+        width: 100%;
+        padding: 5px 0px 10px 0px;
+        text-align: center;
+        float: left;
+    }
+    
+    .full-table {
+        display: block;
+        float: left;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .full-content .right-box-image {
+        display: inline-block;
+        float: left;
+        max-width: 100%;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .footer-box {
+        padding-bottom: 30px;
+    }
+    
+    .ticket-cost.inter-icon.icon-ticket-full {
+        position: relative;
+    }
+    
+    .cost-txt {
+        position: absolute!important;
+        top: 15px;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto;
+        text-align: center;
+        width: 80px;
+    }
+    
+    .cost-content-table {
+        border-right: 0px;
+    }
+    
+    .cost-content-table p {
+        margin: 0px;
+    }
+    
+    .ticket-cost.inter-icon.icon-ticket-full {
+        display: block;
+        width: 160px;
+        height: auto;
+    }
+    
+    .bottom-table > ul > li {
+        float: none;
+        display: block;
+        margin: 5px 10px;
+        font-size: 10px;
+        color: #7f7f7f;
+        font-family: 'VAGRoundedStd-Light', Arial, sans-serif;
+        text-align: left;
+        line-height: normal;
+    }
+    
+    .bottom-table {
+        clear: both;
+        display: inline-block;
+        width: auto;
+        text-align: center;
+        float: none;
+        margin: 0px auto;
+        background: #FAFAFA;
+        box-shadow: 0 0 4px 0 #E5E5E5;
+        position: relative!important;
+        bottom: -2px;
+    }
+    
+    .general-form-component.select-element.storeLocator {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        width: 100%!important;
+    }
+    
+    div#store-info {
+        position: static;
+        z-index: 10;
+        background-image: linear-gradient(89deg, rgba(255, 255, 255, 0.00) 4%, rgba(255, 255, 255, 0.76) 35%);
+        max-height: 300px;
+        height: 100%!important;
+        max-width: 100%;
+        display: block;
+        margin: 0px auto;
+    }
+    
+    div#map-canvas {
+        display: none;
+    }
+    
+    .wrapper-tab.bg-dark-blue {
+        margin: 0px auto;
+    }
+}
+@media (min-width: 560px) and (max-width:768px) {
+    #disney-parks .panel {
+        position: static;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 25px 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .section-txt-desc {
+        padding: 0px;
+    }
+    
+    #tabs-main {
+        display: block;
+        float: left;
+        width: 100%;
+        clear: both;
+        position: relative;
+        bottom: 125px;
+    }
+    
+    .left-box-content {
+        display: block;
+        float: left;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .right-box-content .img-right-content {
+        position: static;
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    
+    .right-box-content {
+        float: none;
+        display: block;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .disney-desc-txt p {
+        margin: 0px 0px 25px;
+    }
+    
+    .full-content .right-box-image {
+        display: inline-block;
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .back-box {
+        position: relative;
+        z-index: 100;
+        display: block;
+        width: 110%;
+        float: none;
+        margin: 0px auto;
+        left: 0px;
+        right: 0px;
+        min-height: 650px;
+        box-shadow: 0 1px 3px 0 #272727;
+    }
+    
+    .green-box.back-box.pull-right {
+        width: 100%;
+        left: -10px;
+    }
+    
+    .full-table {
+        display: block;
+        float: left;
+        text-align: center;
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) and (max-width:970px) {
+    #disney-parks .panel {
+        position: static;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+        float: none;
+        text-align: center;
+        display: block;
+        margin: 25px 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .section-txt-desc {
+        padding: 0px;
+    }
+    
+    #tabs-main {
+        display: block;
+        float: left;
+        width: 100%;
+        clear: both;
+        position: relative;
+        bottom: 125px;
+    }
+    
+    .left-box-content {
+        display: block;
+        float: left;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .right-box-content .img-right-content {
+        position: static;
+        width: 100%;
+        float: none;
+        display: block;
+    }
+    
+    .right-box-content {
+        float: none;
+        display: block;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .disney-desc-txt p {
+        margin: 0px 0px 25px;
+    }
+    
+    .full-content .right-box-image {
+        display: inline-block;
+        float: none;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .back-box {
+        position: relative;
+        z-index: 100;
+        display: block;
+        width: 110%;
+        float: none;
+        margin: 0px auto;
+        left: 0px;
+        right: 0px;
+        min-height: 650px;
+        box-shadow: 0 1px 3px 0 #272727;
+    }
+    
+    .green-box.back-box.pull-right {
+        width: 100%;
+        left: -10px;
+    }
+    
+    .full-table {
+        display: block;
+        float: left;
+        text-align: center;
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+@media (min-width: 970px) and (max-width:1100px) {
+    .tycs-disney {
+        position: relative;
+        top: 0px;
+    }
+    
+    .footer-box-disney {
+        bottom: 0px;
+    }
+    
+    .wrapper-tab.bg-dark-blue {
+        min-height: 1100px;
+    }
+}
+@media (min-width:2100px) {
+    .box-front-section .container {
+            min-height: 100%;
+            display: inherit;
+            height: 100%;
+        }
+        .box-front-section .container > .row {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            bottom: 25%;
+        }
+        #epcot .container > .row {
+            bottom: 0px;
+            position: relative;
+        }
+        .box-normal .col-txt,
+        .box-shape .col-txt {
+            margin-top: 30px !important;
+        }
+        #shaped-content .box-shape {
+            max-height: 820px;
+        }
+
+        #shaped-content .row.bottom-content {
+        top: -200px!important;
+        }
+
+
+}
+
+
+/**Retina**/
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+   .box-front-section .container > .row {
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#disney-h-studios.box-front-section .container {
+    top: 120px;
+    position: relative;
+}
+
+#shaped-content .box-shape {
+    max-height: 860px;
+}
+
+
+
+}
+
+
+/***==================================================================== Crossbrowsing Hacks ================================================***/
+
+/***============================ Safari Hacks ============================***/
+_::-webkit-full-page-media,
+_:future,
+:root .row.equal {
+    display: block!important;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .content-col {
+    min-height: 235px;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .vert-parent-element {
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    transform-style: flat;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .vert-element {
+    position: relative;
+    top: 0px;
+    transform: none;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .checked-baggage .vert-element {
+    margin-top: 5%;
+}
+@media not all and (min-resolution: .001dpcm) {
+    @media {
+        .box-front-section .container {
+            min-height: 100%;
+            display: inherit;
+            height: 100%;
+        }
+        .box-front-section .container > .row {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            bottom: 25%;
+        }
+
+        .shapped-container .mickey-head-img {
+    float: none;
+    display: inline-block;
+    margin: 0px auto;
+    width: 20%;
+}
+
+        .box-contennt-container{padding: 40px 0px 0px 0px!important;}
+
+
+        #epcot .container > .row {
+            bottom: 25%;
+            position: relative;
+        }
+        .box-normal .col-txt,
+        .box-shape .col-txt {
+            margin-top: 30px !important;
+        }
+        #shaped-content .box-shape {
+            max-height: 820px;
+        }
+
+        #animal-kingdom {
+             max-height: 820px!important;
+        }
+
+        #disney-springs.box-front-section{
+
+        max-height: 450px;
+        bottom: 10px;
+
+
+        }
+
+
+        .box-shape .box-front-section .container{top:0px;}
+
+        .box-shape .col-txt{margin-top: 20px;}
+
+        #shaped-content .row.bottom-content{
+            position: relative;
+            top: -370px;
+            background-color: #FBFCFE;
+            z-index: 100000;
+
+        }
+
+
+
+        
+    }
+}
+
+/***============================ END Safari Hacks ============================***/
+
+/***============================ Firefox Hacks ============================***/
+@-moz-document url-prefix() {
+    #selector {}
+}
+
+/***============================ END Firefox Hacks ============================***/
+
+/**============================= IE 10-11 + EDGE hacks ========================== **/
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+        #disney-parks .panel {
+        position: static;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+        float: left;
+        text-align: center;
+        display: block;
+        margin: 25px 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: auto;
+    }
+
+    .park-atractions{padding: 0px 0px;}
+
+
+    .shapped-container .mickey-head-img{
+        display: inline-block;
+        line-height: normal;
+    }
+
+}
+
+
+
+
+    /* IE11 */
+    
+    *::-ms-backdrop,
+    #disney-parks .panel {
+        position: static;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+        float: left;
+        text-align: center;
+        display: block;
+        margin: 25px 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: auto;
+    }
+
+    *::-ms-backdrop,
+    .park-atractions{padding: 0px 0px;}
+}
+
+/* Microsoft EDGE */
+@supports (-ms-ime-align:auto) {
+    #disney-parks .panel {
+        position: static;
+        background: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 2px 4px 0 rgba(76, 76, 76, 0.50);
+        float: left;
+        text-align: center;
+        display: block;
+        margin: 25px 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: auto;
+    }
+
+    .park-atractions{padding: 0px 0px;}
+}
+
+/**============================= END IE 10-11 + EDGE hacks ========================== **/
+
+/***==================================================================== END Crossbrowsing Hacks ================================================***/
+#questions {
+    text-decoration: none !important;
+}
+.form-section .general-form-component label {
+    font-size: 12px;
+    color: #666;
+    font-family: VAGRoundedStd-Bold, Arial, sans-serif;
+    padding: 5px 3px 0px 8px;
+    float: left;
+}
+.form-group.is-focused .form-control {
+    outline: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#6caddf, #6caddf), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#6caddf, #6caddf), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#6caddf, #6caddf), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 100% 2px, 100% 1px;
+    background-size: 100% 2px, 100% 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+}
+a#back-btn {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #6caddf;
+    margin: 0px auto;
+    position: relative;
+    top: 80px;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+a#back-btn:hover,
+a#back-btn:focus {
+    color: white;
+}
+.modal-title small {
+    color: #fff;
+}
+div.combo-item-detail.pull-left {
+    max-height: 300px;
+    overflow-y: auto;
+}
+p.copyright {
+    color: white;
+    font-size: 9px;
+}
